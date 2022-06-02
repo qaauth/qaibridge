@@ -4,25 +4,20 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge3(failed)">
+  <test thread-count="1" verbose="0" name="iBridge 22(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01">
+      <class name="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test">
         <methods>
-          <include name="searchClientArsNoCaseList"/>
-          <include name="tearDown"/>
-          <include name="pendingCaseSubmissionVerification"/>
-          <include name="verifyInsufficientAllocator"/>
+          <include name="bgvLogin"/>
+          <include name="initiateViaCandidate"/>
           <include name="setup"/>
-          <include name="verifyInsufficientDocsQcAllocator"/>
-          <include name="candidateEmailVerification"/>
-          <include name="initiateCaseIndividuallyExtended"/>
-          <include name="candidateLoginAccount"/>
-          <include name="submittedCasesTrackerWipCases"/>
-          <include name="verifyInsufficientDocsQuality"/>
-          <include name="submittedForVerification"/>
+          <include name="signDriveLogin"/>
+          <include name="verifyOLAcceptedByCandidate"/>
+          <include name="uploadCTCFile"/>
+          <include name="emailVerification"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01 -->
+      </class> <!-- com.signdrive.testcases.SignDrive_Rejected_EPFO_Test -->
     </classes>
-  </test> <!-- iBridge3(failed) -->
+  </test> <!-- iBridge 22(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

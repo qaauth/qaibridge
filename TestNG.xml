@@ -1,137 +1,108 @@
+<suite name="iBridge" preserve-order="true" thread-count="1"
+	verbose="10">
 
-<suite name="iBridge" preserve-order="true" thread-count="1" verbose="10">
-<listeners>
-<listener class-name="com.iBridge.utilities.Reporting"/>
-</listeners>
-<!--  Postpaid Enterprise Test Cases      -->
+	<listeners>
+		<listener class-name="com.iBridge.utilities.Reporting" />
+	</listeners>
 
-  <!-- <test name="iBridge1">
+	<!-- Postpaid Enterprise Test Cases -->
+
+	<!-- <test name="iBridge1"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_LoginTest_01" /> </classes> 
+		</test> -->
+
+	<!-- <test name="iBridge2"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_CasesPendingInitiation_01" 
+		/> </classes> </test> -->
+
+	<!-- <test name="iBridge3"> <parameter name="browser" value="chrome"/> <classes> 
+		<class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01"/> 
+		</classes> </test> -->
+
+	<!-- <test name="iBridge4"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_InsufficientBridge_01" /> 
+		</classes> </test> -->
+
+	<!-- <test name="iBridge5"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_CostApproval_01" /> </classes> 
+		</test> -->
+
+	<!-- <test name="iBridge6"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02" 
+		/> </classes> </test> -->
+	<!-- <test name="iBridge7"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_CaseCompletion_01" /> </classes> 
+		</test> -->
+
+	<!-- <test name="iBridge8"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03" 
+		/> </classes> </test> -->
+
+	<!-- <test name="iBridge9"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_SubmitCasesInBulkExtended_04" 
+		/> </classes> </test> -->
+
+
+	<!-- Postpaid Enterprise Test Cases -->
+
+	<!-- Prepaid Client Enp Admin Test Cases iBridge SME Client MOTHER DAIRY 
+		FRUIT & VEGETABLE PRIVATE LIMITED -->
+	<!-- <test name="iBridge10"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" 
+		/> </classes> </test> -->
+	<!-- <test name="iBridge11"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" 
+		/> </classes> </test> -->
+
+	<!-- <test name="iBridge12"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" /> 
+		</classes> </test> -->
+
+	<!-- <test name="iBridge13"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" 
+		/> </classes> </test> -->
+
+	<!-- <test name="iBridge14"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" 
+		/> </classes> </test> -->
+
+	<!-- Prepaid Client Enp Admin Test Cases -->
+
+	<!-- <test name="iBridge15"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_PrepaidEnpAdmin_01" /> </classes> 
+		</test> -->
+	<!-- <test name="iBridge16"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" 
+		/> </classes> </test> -->
+
+	<!-- <test name="iBridge17"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" 
+		/> </classes> </test> -->
+
+	<!-- <test name="iBridge18"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
+		/> </classes> </test> -->
+
+	<!-- SignDrive Test Cases -->
+	
+	<!-- <test name="iBridge 20">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.iBridge.testcases.TC_LoginTest_01" />
+			<class name="com.signdrive.testcases.SignDrive_Approved_Test" />
 		</classes>
 	</test>
-
- <test name="iBridge2">
+	 -->
+	<!-- <test name="iBridge 21">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.iBridge.testcases.TC_CasesPendingInitiation_01" />
+			<class name="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" />
 		</classes>
-	</test>    -->
-
- <test name="iBridge3">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-           <class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01"/>
-        </classes> 
-    </test> 
-
- <!-- <test name="iBridge4">
+	</test> -->
+	
+	<test name="iBridge 22">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.iBridge.testcases.TC_InsufficientBridge_01" />
+			<class name="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" />
 		</classes>
 	</test>
-	
-	<test name="iBridge5">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_CostApproval_01" />
-		</classes>
-  </test>  -->
-
-<!--  <test name="iBridge6">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02" />
-		</classes>
-	</test>  -->
-	
-	<!-- <test name="iBridge7">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_CaseCompletion_01" />
-		</classes>
-	</test>  --> 
-
- <!-- <test name="iBridge8">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03" />
-		</classes>
-	</test> -->
-
-	<!-- <test name="iBridge9">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_SubmitCasesInBulkExtended_04" />
-		</classes>
-	</test> --> 
-	<!--  Postpaid Enterprise Test Cases      -->
-
-<!--  Prepaid Client Enp Admin Test Cases iBridge SME Client MOTHER DAIRY FRUIT & VEGETABLE PRIVATE LIMITED  -->
- <!-- <test name="iBridge10">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" />
-		</classes>
-	</test> --> 
-	
-	<!-- <test name="iBridge11">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" />
-		</classes>
-	</test>   -->
-
-<!--  <test name="iBridge12">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" />
-		</classes>
-	</test>  -->
-
- <!-- <test name="iBridge13">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" />
-		</classes>
-	</test>  -->
-	
-	<!-- <test name="iBridge14">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" />
-		</classes>
-	</test>  -->
-	
-	<!--  Prepaid Client Enp Admin Test Cases      -->
-	
-	<!-- <test name="iBridge15">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_PrepaidEnpAdmin_01" />
-		</classes>
-	</test> -->
-	
-	<!-- <test name="iBridge16">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" />
-		</classes>
-	</test> -->
-	
-	<!-- <test name="iBridge17">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" />
-		</classes>
-	</test> -->
-	
-	<!-- <test name="iBridge18">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" />
-		</classes>
-	</test> -->
 </suite>

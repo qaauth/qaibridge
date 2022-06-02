@@ -62,12 +62,12 @@ public class BridgeLoginPage {
 	@CacheLookup
 	WebElement verifyCandidateBulkArsNoInBridge;
 	
-	// Click on Dashboard Module test
+	// Click on Dashboard Module
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]")
 	@CacheLookup
 	WebElement clickOnDashboard;
 
-	// Action Methods for Login functionalities of the Bridge Portals
+	// Action Methods for Login functionalities of the Bridge Portal
 	public void loginBridgeAccount(String username, String password) {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(txtUserName));

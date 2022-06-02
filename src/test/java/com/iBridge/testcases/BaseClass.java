@@ -11,16 +11,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.iBridge.utilities.ReadConfig;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	// Create ReadConfig class object
@@ -49,19 +45,35 @@ public class BaseClass {
 	// SME Client Login Details
 	public String usernameSme = readconfig.getUsernameSme();
 	public String passwordSme = readconfig.getpasswordSme();
-	
+
 	// Enp Admin Prepaid Client
 	public String EnpAdminURL = readconfig.getEnpAdminApplication();
 	public String enpAdminUsername = readconfig.getEnpAdminUsername();
 	public String enpAdminPassword = readconfig.getEnpAdminPassword();
-	
+
 	// Prepaid Candidate Client
 	public String candidateUsername = readconfig.getPrepaidCandidateUsername();
 	public String candidatePrePassword = readconfig.getPrepaidCandidatePassword();
-	
+
 	// iBridge Cat Login Details
 	public String iBridgeCatUsername = readconfig.getiBridgeCatUsername();
 	public String iBridgeCatPassword = readconfig.getiBridgeCatPassword();
+
+	// SignDrive Canidate login url
+	public String SignDrivebaseUrl = readconfig.getSignDriveApplication();
+	public String iBridgeSignDriveUsername = readconfig.getiBridgeSignDriveUsername();
+	public String iBridgeSignDrivePassword = readconfig.getiBridgeSignDrivePassword();
+
+	// Gmail Login Url
+	public String GmailUrl = readconfig.getGmailUrl();
+	public String GmailUserNameSignDrive = readconfig.getemail();
+	public String GmailPasswordSignDrive = readconfig.getGmailpassword();
+	
+	// Hit the Cron
+	public String cronUrl = readconfig.getCronUrl();
+
+	// BGV Url
+	public String bgvUrl = readconfig.getbgvUrl();
 	
 	public static WebDriver driver;
 	public static Logger logger;
@@ -71,10 +83,10 @@ public class BaseClass {
 
 	// Route to candidate Mailinator Url Check
 	public String mailinatorUrl = readconfig.getMailinatorMailUrl();
-	
+
 	// Prepaid Candidate Login Url
 	public String candidatePrepaidUrl = readconfig.getPrepaidCandidateUrl();
-	
+
 	@Parameters("browser")
 	@BeforeClass
 	public void setup(String br) {
@@ -84,10 +96,10 @@ public class BaseClass {
 
 		if (br.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
-			//WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			//driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
-			
+			// driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+
 		} else if (br.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", readconfig.getFirefoxPath());
 			driver = new FirefoxDriver();
@@ -100,7 +112,7 @@ public class BaseClass {
 		driver.get(baseURL);// it is copy to TestCase_001
 	}
 
-	@AfterClass
+//	@AfterClass
 	public void tearDown() {
 		driver.quit();
 		// driver.close();

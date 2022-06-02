@@ -2,10 +2,7 @@ package com.iBridge.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileWriter;
 import java.util.Properties;
-
-import org.apache.commons.lang3.RandomStringUtils;
 
 public class ReadConfig {
 	Properties pro;
@@ -145,11 +142,13 @@ public class ReadConfig {
 	}
 
 	public String getEnpAdminUsername() {
+		System.out.println(pro.getProperty("enpAdminUsername"));
 		String enpAdminUsername = pro.getProperty("enpAdminUsername");
 		return enpAdminUsername;
 	}
 
 	public String getEnpAdminPassword() {
+		System.out.println(pro.getProperty("enpAdminPassword"));
 		String enpAdminPassword = pro.getProperty("enpAdminPassword");
 		return enpAdminPassword;
 	}
@@ -180,4 +179,83 @@ public class ReadConfig {
 		String iBridgeCatPassword = pro.getProperty("iBridgeCatPassword");
 		return iBridgeCatPassword;
 	}
+
+	//// To read each and every value from Candidate-- SignDrive
+	public String getSignDriveApplication() {
+		String baseUrl = pro.getProperty("baseUrl");
+		return baseUrl;
+	}
+
+	public String getiBridgeSignDriveUsername() {
+		String iBridgeSignDriveUsername = pro.getProperty("usernameSignDriveUsername");
+		return iBridgeSignDriveUsername;
+	}
+
+	public String getiBridgeSignDrivePassword() {
+		String iBridgeSignDrivePassword = pro.getProperty("passwordSignDrivePassword");
+		return iBridgeSignDrivePassword;
+	}
+
+	// Get SignDrive Client Name
+	public String getiBridgeClientname() {
+		return pro.getProperty("ClientName");
+	}
+
+	// Get SignDrive Pending CTC Upload Status Message
+	public String getPendingCTCUploadStatusMsg() {
+		return pro.getProperty("pendingCTCUploadStatusMsg");
+	}
+
+	// Get SignDrive Pending CTC Upload Status Message
+	public String getPendingCandidateSignatureStatusMsg() {
+		return pro.getProperty("getPendingCandidateSignatureStatusMsg");
+	}
+	
+	// Verify Cron Hit Message
+	public String getHitCronStatus()
+	{
+		return pro.getProperty("pendingReviewToday");
+	}
+	
+	// Verify Complete Status
+	public String getCompleteStatus()
+	{
+		return pro.getProperty("completedtoday");
+	}
+	
+	// Verify Reject Offer Letter by Candidate
+	public String getrejectOfferLetter()
+	{
+		return pro.getProperty("OfferRejectedCandidateToday");
+	}
+	// Get SignDrive Email details
+	public String getemail() {
+		return pro.getProperty("email");
+	}
+	
+	public String getGmailUrl()
+	{
+		return pro.getProperty("Gmailurl");
+	}
+
+	public String getGmailUserName() {
+		return pro.getProperty("GmailUsername");
+	}
+
+	public String getGmailpassword() {
+		return pro.getProperty("GmailPassword");
+	}
+	
+	// Cron url
+	public String getCronUrl()
+	{
+		return pro.getProperty("CronUrl");
+	}
+
+	//BGV Url
+	public String getbgvUrl()
+	{
+		return pro.getProperty("BgvUrl");
+	}
+	
 }

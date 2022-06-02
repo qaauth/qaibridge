@@ -10,7 +10,7 @@ import com.iBridge.pageobject.LoginPage;
 public class TC_LoginTest_01 extends BaseClass {
 	@Test(enabled = true, testName = "Login Test", priority = 1)
 	public void loginTest() throws IOException, InterruptedException {
-		driver.get(baseURL);
+		driver.get(SignDrivebaseUrl);
 		logger.info("Url is opened");
 		LoginPage login = new LoginPage(driver);
 		login.login(username, password);
