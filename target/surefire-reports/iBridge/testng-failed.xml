@@ -13,8 +13,12 @@
           <include name="initiateViaCandidate"/>
           <include name="setup"/>
           <include name="signDriveLogin"/>
+          <include name="fillAndSumitForm"/>
+          <include name="verifyInstaform"/>
           <include name="verifyOLAcceptedByCandidate"/>
+          <include name="instaform"/>
           <include name="uploadCTCFile"/>
+          <include name="pendingSignOffBucket"/>
           <include name="emailVerification"/>
         </methods>
       </class> <!-- com.signdrive.testcases.SignDrive_Rejected_EPFO_Test -->

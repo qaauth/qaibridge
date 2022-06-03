@@ -228,6 +228,12 @@ public class ReadConfig {
 	{
 		return pro.getProperty("OfferRejectedCandidateToday");
 	}
+	
+	// Verify Reject EPFO Candidate
+	public String getrejectEpfo()
+	{
+		return pro.getProperty("candidateRejected");
+	}
 	// Get SignDrive Email details
 	public String getemail() {
 		return pro.getProperty("email");

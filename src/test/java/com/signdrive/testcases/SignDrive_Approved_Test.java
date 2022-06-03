@@ -22,14 +22,17 @@ public class SignDrive_Approved_Test extends BaseClass {
 	public Email_Verification_page email;
 
 	public SignDrive_Approved_Test() {
+		
 		firstName = RandomStrings.randomeStringCandidateFirstName();
 		middleName = RandomStrings.randomeStringCandidateMiddleName();
 		lastName = RandomStrings.randomeStringCandidateLastName();
 	}
 
 	// SignDrive Login functionality
+	
 	@Test(enabled = true, testName = "SignDriveLogin", priority = 1)
 	public void signDriveLogin() throws InterruptedException {
+		
 		driver.get(SignDrivebaseUrl);
 		logger.info("URL is opened");
 		newCase = new Initiate_newcase_page(driver, firstName, middleName, lastName);
@@ -38,6 +41,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// Initiate Via Candidate(IVC)
+	
 	@Test(enabled = true, testName = "Initiate New Case", priority = 2, dependsOnMethods = "signDriveLogin")
 	public void initiateViaCandidate() throws InterruptedException, ParseException {
 
@@ -71,6 +75,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// Upload file
+	
 	@Test(enabled = true, testName = "UploadFile", priority = 3, dependsOnMethods = "initiateViaCandidate")
 	public void uploadCTCFile() throws InterruptedException {
 
@@ -83,6 +88,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 	
 	// Candidate receive the OL link after checker review the OL
+	
 	@Test(enabled = true, testName = "emailVerification", priority = 4, dependsOnMethods = "uploadCTCFile")
 	public void emailVerification() throws InterruptedException {
 
@@ -107,6 +113,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// Verify OL Accepted By Candidate and hit the cron
+	
 	@Test(enabled = true, testName = "verifyOLAcceptedByCandidate", priority = 5, dependsOnMethods = "emailVerification")
 	public void verifyOLAcceptedByCandidate() throws InterruptedException {
 
@@ -130,6 +137,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// BGV link/ Pre-Joining formalities link trigger to candidate
+	
 	@Test(enabled = true, testName = "BGV Login", priority = 6, dependsOnMethods = "verifyOLAcceptedByCandidate")
 	public void bgvLogin() throws InterruptedException {
 
@@ -157,6 +165,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// Fill & submit the BGV form
+	
 	@Test(enabled = true, testName = "Fill & submit the BGV form", priority = 7, dependsOnMethods = "bgvLogin")
 	public void fillAndSumitForm() throws InterruptedException, ParseException {
 
@@ -193,6 +202,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// Case move to pending sign off bucket
+	
 	@Test(enabled = true, testName = "Case move to pending sign off bucket", priority = 8, dependsOnMethods = "fillAndSumitForm")
 	public void pendingSignOffBucket() throws InterruptedException {
 
@@ -208,6 +218,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// Verify new link trigger for instaForm based on assertion message
+	
 	@Test(enabled = true, testName = "Verify new link trigger for instaform based on assertion message", priority = 9, dependsOnMethods = "pendingSignOffBucket")
 	public void verifyInstaform() throws InterruptedException {
 
@@ -225,6 +236,7 @@ public class SignDrive_Approved_Test extends BaseClass {
 	}
 
 	// InstaForm functionality
+	
 	@Test(enabled = true, testName = "instaform", priority = 10, dependsOnMethods = "verifyInstaform")
 	public void instaform() throws InterruptedException {
 

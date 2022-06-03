@@ -1,6 +1,7 @@
 package com.signdrive.pageobject;
 
 import java.util.ArrayList;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.iBridge.testcases.BaseClass;
@@ -24,6 +24,7 @@ public class Email_Verification_page extends BaseClass {
 	ReadConfig config = new ReadConfig();
 
 	public Email_Verification_page(WebDriver rdriver) {
+
 		ldriver = rdriver;
 		PageFactory.initElements(ldriver, this);
 	}
@@ -95,6 +96,7 @@ public class Email_Verification_page extends BaseClass {
 	WebElement bgvCreadinalsMailReceive;
 
 	// New link trigger for Instaform to candidate
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@automation-id='startSignBtn']")
 	WebElement startButton;
@@ -110,30 +112,49 @@ public class Email_Verification_page extends BaseClass {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@class='msb-tag-layer-container signatureTagForm']")
 	WebElement signHereButton;
-	
+
 	// Reject by Candidate
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@ng-click='openRejectForm()']")
 	WebElement rejectForm;
-	
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@ng-change='newTagChange()']")
 	WebElement addRejectionReason;
-	
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@automation-id='button-Reject']")
 	WebElement reject;
-	
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[text()='I am disapproving this document.']")
 	WebElement rejectText;
-	
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@automation-id='modal-reject']")
 	WebElement noRegistraction;
+	
+	// Reject InstaForm
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@automation-id='openRejectFormBtn']")
+	WebElement rejectEpfo;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='display-text ng-binding']")
+	WebElement rejectReason;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@automation-id='button-Reject']")
+	WebElement rejectbutton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='btn btn-default btn-sm']")
+	WebElement okInstaform;
 
 	// Gmail Login Functionality
 	public void loginGmailAccount(String GmailUsername, String GmailPassword) throws InterruptedException {
+
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(userName));
 		userName.clear();
@@ -145,8 +166,9 @@ public class Email_Verification_page extends BaseClass {
 		nextContinue.click();
 	}
 
-	// verify Candidate Receive the Offer Letter Link
+	// Verify Candidate Receive the Offer Letter Link
 	public boolean verifyCandidateReceiveOLLink() throws InterruptedException {
+
 		Thread.sleep(6000);
 		firstReceivedMail.click();
 		Thread.sleep(3000);
@@ -158,6 +180,7 @@ public class Email_Verification_page extends BaseClass {
 
 	// Offer Letter Signed By Candidate
 	public void offerLetterSignedByCandidate() throws InterruptedException {
+
 		wait = new WebDriverWait(ldriver, 180);
 		wait.until(ExpectedConditions.visibilityOf(candidateOffertLetterLink));
 		candidateOffertLetterLink.click();
@@ -181,7 +204,9 @@ public class Email_Verification_page extends BaseClass {
 		driver.switchTo().window(tabs.get(0));
 	}
 
+	// Get the BGV (Background verification) credentials
 	public ArrayList<String> getBGVCredentials() throws InterruptedException {
+
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.elementToBeClickable(bgvCreadinalsMailReceive));
 		bgvCreadinalsMailReceive.click();
@@ -192,12 +217,12 @@ public class Email_Verification_page extends BaseClass {
 		ArrayList<String> bgvCredentials = new ArrayList<String>();
 		bgvCredentials.add(BGVUsernameXpath.getText().trim().split(" ")[1]);
 		bgvCredentials.add(BGVPasswordXpath.getText().trim().split(" ")[1]);
-
 		return bgvCredentials;
 	}
 
 	// Candidate receive the instaForm link
 	public void instaform() throws InterruptedException {
+
 		wait = new WebDriverWait(ldriver, 180);
 		wait.until(ExpectedConditions.visibilityOf(candidateOffertLetterLink));
 		candidateOffertLetterLink.click();
@@ -206,7 +231,6 @@ public class Email_Verification_page extends BaseClass {
 		wait = new WebDriverWait(ldriver, 180);
 		wait.until(ExpectedConditions.visibilityOf(checkBoxOfferLetter));
 		checkBoxOfferLetter.click();
-		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.elementToBeClickable(startSignButton));
 		startSignButton.click();
@@ -215,23 +239,18 @@ public class Email_Verification_page extends BaseClass {
 		Thread.sleep(3000);
 		finishButton.click();
 		Thread.sleep(2000);
-
 		startButton.click();
 		JavascriptExecutor js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView();", signatureTagForm);
 		signatureTagForm.click();
 		Thread.sleep(3000);
 		finishbutton.click();
-
-//		wait = new WebDriverWait(ldriver, 120);
-//		wait.until(ExpectedConditions.elementToBeClickable(startButton));
 		Thread.sleep(3000);
 		startButton.click();
 		JavascriptExecutor executor = (JavascriptExecutor) ldriver;
 		executor.executeScript("arguments[0].click();", signHereButton);
 		Thread.sleep(3000);
 		finishbutton.click();
-		
 		No.click();
 		ldriver.close();
 		Thread.sleep(1000);
@@ -239,9 +258,10 @@ public class Email_Verification_page extends BaseClass {
 		ldriver.close();
 		ldriver.switchTo().window(tabs.get(0));
 	}
-	
-	public void olRejectbyCandidate() throws InterruptedException
-	{
+
+	// Offer letter Rejected by Candidate
+	public void olRejectbyCandidate() throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 180);
 		wait.until(ExpectedConditions.visibilityOf(candidateOffertLetterLink));
 		candidateOffertLetterLink.click();
@@ -261,6 +281,31 @@ public class Email_Verification_page extends BaseClass {
 		rejectText.click();
 		reject.click();
 		noRegistraction.click();
+		driver.close();
+		driver.switchTo().window(tabs.get(1));
+		driver.close();
+		driver.switchTo().window(tabs.get(0));
+	}
+	
+	public void rejectInstaForm() throws InterruptedException
+	{
+		wait = new WebDriverWait(ldriver, 180);
+		wait.until(ExpectedConditions.visibilityOf(candidateOffertLetterLink));
+		candidateOffertLetterLink.click();
+		ArrayList<String> tabs = new ArrayList<String>(ldriver.getWindowHandles());
+		ldriver.switchTo().window(tabs.get(2));
+		wait = new WebDriverWait(ldriver, 180);
+		wait.until(ExpectedConditions.visibilityOf(checkBoxOfferLetter));
+		checkBoxOfferLetter.click();
+		Thread.sleep(2000);
+		rejectEpfo.click();
+		Thread.sleep(2000);
+		addRejectionReason.click();
+		Thread.sleep(2000);
+		rejectText.click();
+		Thread.sleep(1000);
+		rejectbutton.click();
+		okInstaform.click();
 		driver.close();
 		driver.switchTo().window(tabs.get(1));
 		driver.close();

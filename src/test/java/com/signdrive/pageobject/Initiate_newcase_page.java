@@ -46,10 +46,13 @@ public class Initiate_newcase_page extends BaseClass {
 	public String checkXpathEnd = "]";
 	public String rejectXpathStart = "//*[text()=";
 	public String rejectXpathEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
+	public String rejectEpfoXpathStart = "//*[text()=";
+	public String rejectEpfoEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
 
 	ReadConfig config = new ReadConfig();
 
 	public Initiate_newcase_page(WebDriver rdriver, String firstName, String middleName, String lastName) {
+
 		ldriver = rdriver;
 		newName = "' " + firstName + " " + middleName + " " + lastName + " '";
 		PageFactory.initElements(driver, this);
@@ -142,6 +145,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement saveAndContinue;
 
 	// Step 3 - Candidate Summary (Add Candidate Information)
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//input[@id='first-name']")
 	WebElement txtFirstName;
@@ -155,6 +159,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement txtLastName;
 
 	// Date of Birth (DOB)
+
 	@CacheLookup
 	@FindBy(how = How.ID, using = "date-of-birth")
 	WebElement clickDateOfBirth;
@@ -172,6 +177,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement txtMobileNumber;
 
 	// Additional Field(s)
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@class='row']//child::div[@class='col-sm-6']//child::div[@class='material-design-box']//child::select[@id='bridge-location-id']")
 	WebElement locationId;
@@ -197,6 +203,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement ignoreDuplicate;
 
 	// Candidate information saved successfully
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Candidate information saved successfully')]")
 	WebElement verifyToastMsg;
@@ -206,6 +213,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement clickOnContinueBtn;
 
 	// Case Preview- INITIATE (Please review the screen before you proceed)
+
 	@CacheLookup
 	@FindBy(how = How.ID, using = "initiateBtn")
 	WebElement clickInitiateBtn;
@@ -215,10 +223,6 @@ public class Initiate_newcase_page extends BaseClass {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "(//*[@class='tag-name'] )[1]")
 	WebElement pendingCTCUploadStatus;
-
-//	@CacheLookup
-//	@FindBy(how = How.XPATH, using = "//*[text()=' {fullName} ']//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class=\"action-box\"]//child::a[@title='Upload Offer Letter']        ")
-//	WebElement uploadOfferLetter;
 
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div/input")
@@ -279,16 +283,19 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement closeVerificationFromBtn;
 
 	// INSTRUCTIONS TO FILL BACKGROUND VERIFICATION FORM
+
 	@FindBy(xpath = "//*[@id='instruction-popup']/div/div/div[1]/button/img")
 	@CacheLookup
 	WebElement clickOnInstructionPopupCrossBtn;
 
 	// Verify After Login By Candidate Account-- Case Submission Summary Text
+
 	@CacheLookup
 	@FindBy(xpath = "//label[contains(text(),'Step 3 - Candidate Summary')]")
 	WebElement verifyCandidateSummaryText;
 
 	// AUTHORIZATION--Step 3 - Candidate Summary
+
 	@FindBy(xpath = "//*[@id=\"mCSB_1_container\"]/div/div/div[4]/div/div/div[1]/label/span")
 	@CacheLookup
 	WebElement verifyText;
@@ -330,6 +337,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement confirmAndProceed;
 
 	// Candidate Information
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-father-full-name']")
 	WebElement fatherFullName;
@@ -343,11 +351,13 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement fatherQualification;
 
 	// personal Information
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-blood-group']")
 	WebElement bloodGroup;
 
 	// Bank Account Details
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-bank-name']")
 	WebElement bankName;
@@ -380,7 +390,8 @@ public class Initiate_newcase_page extends BaseClass {
 	@FindBy(how = How.XPATH, using = "//*[@value='Continue']")
 	WebElement continueButton;
 
-	// Aadhar Details
+	// Aadhaar Details
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='check-data-78491-115']")
 	WebElement aaddharCardNumber;
@@ -436,6 +447,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement txtPoliceStation;
 
 	// Add Documents
+
 	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div/div[6]/div/div/div/div[2]/div[1]/div/input[1]")
 	@CacheLookup
 	WebElement uploadAddressProof;
@@ -443,7 +455,9 @@ public class Initiate_newcase_page extends BaseClass {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@class='new-continue-btn pull-right show_forms_valid']")
 	WebElement savebutton;
+
 	// Onboading details
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-current-location']")
 	WebElement currentLocation;
@@ -511,6 +525,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement pensionNomineeDob;
 
 	// PROVIDENT FUND ORGANIZATION
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-earlier-member-epf-scheme-n']")
 	WebElement noMemberEpf;
@@ -520,6 +535,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement noMemberEp;
 
 	// International worker
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-international-worker-y']")
 	WebElement yes;
@@ -541,6 +557,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement passportTo;
 
 	// GRATUITY DETAILS
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-bank-account-number']")
 	WebElement bankAccountNumberDetails;
@@ -550,6 +567,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement ifscCodeOfBranch;
 
 	// GRATUITY NOMINATION
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='customfields-data-gratuity-nominee-name']")
 	WebElement gratuityName;
@@ -583,6 +601,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement clickOk;
 
 	// Candidate Logout
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/nav/div[2]/div/ul/li/a/span")
 	WebElement clickOnCandidateName;
@@ -592,6 +611,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement clickOnLogoutBtn;
 
 	// Verify Initiate Case Thank You Message
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//label[contains(text(),'Thank You!')]")
 	WebElement verifyCaseThankYouMsg;
@@ -659,6 +679,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement documentApproved;
 
 	// Disclosure under corporate GoverNance
+
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[text()='Disclosure under Corporate Governance']")
 	WebElement disclosureCorporate;
@@ -684,7 +705,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement esicForm;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[3]/div/div/div[2]/div[1]/div/div[2]/div/div[2]/div[1]/button[2]")
+	@FindBy(how = How.XPATH, using = "//*[@action_type='APPROVE_SD_DOC']")
 	WebElement approveEsicDoc;
 
 	@CacheLookup
@@ -766,6 +787,7 @@ public class Initiate_newcase_page extends BaseClass {
 		saveAndContinue.click();
 	}
 
+	// Check wise Select
 	public void checkWiseSelect(String count) throws InterruptedException {
 
 		indiaCreditDefaultDatabaseCheck.click();
@@ -778,17 +800,21 @@ public class Initiate_newcase_page extends BaseClass {
 
 	// Candidate Summary (Add Candidate Information)
 	public void candidateFirstName(String firstName) {
+
 		txtFirstName.sendKeys(firstName);
 	}
 
 	public void candidateMiddleName(String middleName) {
+
 		txtMiddleName.sendKeys(middleName);
 	}
 
 	public void candidateLastName(String lastName) {
+
 		txtLastName.sendKeys(lastName);
 	}
 
+	// Add Candidate DOB, Email And Mobile
 	public void addCandidateDOBEmailAndMobile(String mobileNumber, String dob)
 			throws ParseException, InterruptedException {
 
@@ -808,6 +834,7 @@ public class Initiate_newcase_page extends BaseClass {
 		Thread.sleep(2000);
 	}
 
+	// Add Employee id and Client name
 	public void enterEmployeeIDAndClientName() throws InterruptedException {
 
 		logger.info("Enter Employee ID and Client Name");
@@ -817,6 +844,7 @@ public class Initiate_newcase_page extends BaseClass {
 		txtEmailId.click();
 	}
 
+	// Add to Queue
 	public void addToQueue() throws InterruptedException {
 
 		Actions a = new Actions(driver);
@@ -828,6 +856,7 @@ public class Initiate_newcase_page extends BaseClass {
 			clickOnContinueBtn.click();
 			Thread.sleep(1000);
 			clickInitiateBtn.click();
+
 		} else {
 			System.out.println("Canidate details not save successfully");
 		}
@@ -840,6 +869,7 @@ public class Initiate_newcase_page extends BaseClass {
 				.getText();
 		if (status.equals(config.getPendingCTCUploadStatusMsg())) {
 			return true;
+
 		} else {
 			logger.info("Case is not migrated to Offer Letter Bucket");
 			return false;
@@ -850,7 +880,6 @@ public class Initiate_newcase_page extends BaseClass {
 	public void fileUpload(String uploadDoc) throws InterruptedException {
 
 		if (verifyCaseMigrateToOfferLetterBucket() == true) {
-
 			ldriver.findElement(By.xpath(uploadOfferLetterPathStart.concat(newName).concat(uploadOfferLetterPathEnd)))
 					.click();
 			Thread.sleep(3000);
@@ -867,6 +896,7 @@ public class Initiate_newcase_page extends BaseClass {
 				.getText();
 		if (status.equals(config.getPendingCandidateSignatureStatusMsg())) {
 			return true;
+
 		} else {
 			logger.info("CTC not uploaded...");
 			return false;
@@ -891,10 +921,12 @@ public class Initiate_newcase_page extends BaseClass {
 
 	// Verify signed review offer letter
 	public boolean verifySignedReviewOfferLetter() {
+
 		String statusCronHit = ldriver.findElement(By.xpath(hitCronStatusStart.concat(newName).concat(hitCronEnd)))
 				.getText();
 		if (statusCronHit.equals(config.getHitCronStatus())) {
 			return true;
+
 		} else {
 			logger.info("page is not refersh");
 		}
@@ -903,6 +935,7 @@ public class Initiate_newcase_page extends BaseClass {
 
 	// Approve Offer Letter
 	public void approveOfferLetter() throws InterruptedException {
+
 		Thread.sleep(5000);
 		ldriver.findElement(By.xpath(approvePathStart.concat(newName).concat(approvePathEnd))).click();
 		Thread.sleep(1000);
@@ -919,10 +952,12 @@ public class Initiate_newcase_page extends BaseClass {
 
 	// verify complete review status
 	public boolean completeReviewStatus() {
+
 		String statusComplete = ldriver.findElement(By.xpath(completePathStart.concat(newName).concat(completePathEnd)))
 				.getText();
 		if (statusComplete.equals(config.getCompleteStatus())) {
 			return true;
+
 		} else {
 			logger.info(" status not completed today");
 		}
@@ -943,8 +978,9 @@ public class Initiate_newcase_page extends BaseClass {
 		return bgvLoginScreenMsg.isDisplayed();
 	}
 
-	// Authorization
+	// Authorization details
 	public void candidateSumitForm() throws InterruptedException {
+
 		clickOnInstructionPopupCrossBtn.click();
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
@@ -963,7 +999,7 @@ public class Initiate_newcase_page extends BaseClass {
 		clickOnContinueBtn1.click();
 		Thread.sleep(1000);
 
-		// profile
+		// profile details
 		Select preSelect = new Select(prefix);
 		preSelect.selectByVisibleText("Doctor");
 		Thread.sleep(2000);
@@ -973,21 +1009,23 @@ public class Initiate_newcase_page extends BaseClass {
 		logger.info("profile details add sucessfully");
 	}
 
-	// other personal details
+	// Other personal details
 	public void addOtherPersonalDetails() throws InterruptedException {
+
 		fatherFullName.sendKeys("jagdishsing");
 		fatherQualification.sendKeys("B.tech");
-//		Actions a = new Actions(driver);
-//		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+		JavaScriptManuplator.javaScriptExecutor(bloodGroup, "arguments[0].scrollIntoView(true);", ldriver);
 		Thread.sleep(1000);
 		bloodGroup.sendKeys("A");
 		logger.info("other personal details add sucessfully");
-
 	}
 
 	public void bankAccountDetails() throws InterruptedException {
-//		Actions a = new Actions(driver);
-//		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+
+		Thread.sleep(2000);
+		JavaScriptManuplator.javaScriptExecutor(bankName, "arguments[0].scrollIntoView(true);", ldriver);
+		Thread.sleep(2000);
 		bankName.sendKeys("Axis");
 		Thread.sleep(1000);
 		nameAsPerBankAccount.sendKeys("sapna");
@@ -1001,16 +1039,17 @@ public class Initiate_newcase_page extends BaseClass {
 		Thread.sleep(2000);
 		continueButton.click();
 		logger.info("add bankaccount details successfully");
-
 	}
 
 	// Address Details
 	public void candidateAddress(String flat, String colony, String residingForm, String pinCode, String state,
 			String city, String station, String uploadAddress) throws InterruptedException, ParseException {
+
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
 		try {
 			selectWithinIndia.click();
+
 		} catch (StaleElementReferenceException e) {
 			selectWithinIndia.click();
 		}
@@ -1023,7 +1062,6 @@ public class Initiate_newcase_page extends BaseClass {
 		js.executeScript("arguments[0].removeAttribute('readonly')", clickOnResidingForm);
 		Thread.sleep(1000);
 		clickOnResidingForm.sendKeys(residingForm);
-		// checkBoxTillDate.clear();
 		checkBoxTillDate.click();
 		txtPinCode.clear();
 		txtPinCode.sendKeys(pinCode);
@@ -1047,16 +1085,17 @@ public class Initiate_newcase_page extends BaseClass {
 		uploadAddressProof.sendKeys(uploadAddress);
 		Thread.sleep(2000);
 		savebutton.click();
-
 	}
 
 	// OnBoarding details
 	public void onboardingDetails() throws InterruptedException {
+
 		currentLocation.sendKeys("Agra");
 		religion.sendKeys("Hindu");
 		uanNumber.sendKeys("343454345678");
-//		Actions a = new Actions(driver);
-//		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+		JavaScriptManuplator.javaScriptExecutor(nomieeName, "arguments[0].scrollIntoView(true);", ldriver);
+		Thread.sleep(2000);
 		nomieeName.sendKeys("Jyoti");
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(nomieeAddress));
@@ -1070,9 +1109,9 @@ public class Initiate_newcase_page extends BaseClass {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(nomieeAmount));
 		nomieeAmount.sendKeys("100");
-		Thread.sleep(1000);
-//		Actions b = new Actions(driver);
-//		b.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+		JavaScriptManuplator.javaScriptExecutor(familyMemberName, "arguments[0].scrollIntoView(true);", ldriver);
+		Thread.sleep(2000);
 		familyMemberName.sendKeys("sona");
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(familyMemberAddress));
@@ -1103,11 +1142,11 @@ public class Initiate_newcase_page extends BaseClass {
 		noMemberEpf.click();
 		Thread.sleep(1000);
 		noMemberEp.click();
-
 	}
 
 	// International worker & GRATUITY DETAIL
 	public void internationalGratuity() throws InterruptedException {
+
 		yes.click();
 		Actions a = new Actions(driver);
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
@@ -1123,7 +1162,9 @@ public class Initiate_newcase_page extends BaseClass {
 		passportTo.click();
 		bankAccountNumberDetails.sendKeys("232323454567");
 		ifscCodeOfBranch.sendKeys("UBIN000005");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
+		JavaScriptManuplator.javaScriptExecutor(gratuityName, "arguments[0].scrollIntoView(true);", ldriver);
+		Thread.sleep(2000);
 		gratuityName.sendKeys("soni");
 		Thread.sleep(1000);
 		gratuityAddress.sendKeys("Bulandshahr");
@@ -1145,8 +1186,9 @@ public class Initiate_newcase_page extends BaseClass {
 		clickOk.click();
 	}
 
+	// Candidate Logout
 	public void CandidateLogout() {
-		// Candidate Logout
+
 		clickOnCandidateName.click();
 		wait = new WebDriverWait(driver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnLogoutBtn));
@@ -1154,7 +1196,9 @@ public class Initiate_newcase_page extends BaseClass {
 		driver.close();
 	}
 
+	// Verify Initiate Case ThankYou Msg
 	public String verifyInitiateCaseThankYouMsg() {
+
 		wait = new WebDriverWait(driver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyCaseThankYouMsg));
 		return verifyCaseThankYouMsg.getText();
@@ -1167,8 +1211,6 @@ public class Initiate_newcase_page extends BaseClass {
 		wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOf(caseSubmissionSummary));
 		caseSubmissionSummary.click();
-
-		// Submit the case from Pending Sign-off Bucket
 		wait = new WebDriverWait(driver, 120);
 		wait.until(ExpectedConditions.visibilityOf(pendingSignOff));
 		pendingSignOff.click();
@@ -1182,11 +1224,15 @@ public class Initiate_newcase_page extends BaseClass {
 		ok.click();
 	}
 
-	// Case Migrates to submitted for verification bucket, WIP Bucket, and Documents
-	// for signature Bucket
+	/**
+	 * Case Migrates to submitted for verification bucket, WIP Bucket, and Document
+	 * for signature Bucket
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void caseMigrates() throws InterruptedException {
+
 		submittedForVerification.click();
-		// viewDetails.click();
 		logger.info("Case migrates to WIP bucket");
 		Thread.sleep(1000);
 		documentForSignature.click();
@@ -1194,6 +1240,7 @@ public class Initiate_newcase_page extends BaseClass {
 
 	// Review & Approve the InstaForm by user
 	public void approveInstaFormLink() throws InterruptedException {
+
 		folderViewSignedDoc.click();
 		Thread.sleep(1000);
 		approve.click();
@@ -1213,7 +1260,6 @@ public class Initiate_newcase_page extends BaseClass {
 
 		// ESIC Form
 		Thread.sleep(2000);
-//		folderViewSignedDoc.click();
 		esicForm.click();
 		approveEsicDoc.click();
 		Thread.sleep(3000);
@@ -1222,23 +1268,21 @@ public class Initiate_newcase_page extends BaseClass {
 		okEsic.click();
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", approveEsicdoc);
-
 	}
 
 	public void cronhit() throws InterruptedException {
+
 		((JavascriptExecutor) driver).executeScript("window.open()");
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 		driver.get(cronUrl);
 		Thread.sleep(5000);
-//		wait = new WebDriverWait(ldriver, 120);
-//		wait.until(ExpectedConditions.visibilityOf(cronRun));
-
 		driver.close();
 	}
 
 	// Cron Hit
 	public void cron() throws InterruptedException {
+
 		((JavascriptExecutor) ldriver).executeScript("window.open()");
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
@@ -1249,12 +1293,29 @@ public class Initiate_newcase_page extends BaseClass {
 
 	// Rejected Offer Letter Review Status
 	public boolean rejectOfferLetterReviewStatus() {
+
 		String RejectOfferLetterCandidate = ldriver
 				.findElement(By.xpath(rejectXpathStart.concat(newName).concat(rejectXpathEnd))).getText();
 		if (RejectOfferLetterCandidate.equals(config.getrejectOfferLetter())) {
 			return true;
+
 		} else {
 			logger.info("Candidate Offer Letter not Rejected");
+		}
+		return false;
+	}
+	
+	// Rejected EPFO Review Status
+	public boolean rejectEpfoReviewStatus() throws InterruptedException {
+
+		String RejectEpfoLetter = ldriver
+				.findElement(By.xpath(rejectEpfoXpathStart.concat(newName).concat(rejectEpfoEnd))).getText();
+		Thread.sleep(2000);
+		if (RejectEpfoLetter.equals(config.getrejectEpfo())) {
+			return true;
+
+		} else {
+			logger.info("Epfo not Rejected");
 		}
 		return false;
 	}

@@ -21,14 +21,17 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 	public Email_Verification_page email;
 
 	public SignDrive_RejectedOfferLetter_Test() {
+
 		firstName = RandomStrings.randomeStringCandidateFirstName();
 		middleName = RandomStrings.randomeStringCandidateMiddleName();
 		lastName = RandomStrings.randomeStringCandidateLastName();
 	}
 
 	// SignDrive Login functionality
+
 	@Test(enabled = true, testName = "SignDriveLogin", priority = 1)
 	public void signDriveLogin() throws InterruptedException {
+
 		driver.get(SignDrivebaseUrl);
 		logger.info("URL is opened");
 		newCase = new Initiate_newcase_page(driver, firstName, middleName, lastName);
@@ -37,6 +40,7 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 	}
 
 	// Initiate Via Candidate(IVC)
+
 	@Test(enabled = true, testName = "Initiate New Case", priority = 2, dependsOnMethods = "signDriveLogin")
 	public void initiateViaCandidate() throws InterruptedException, ParseException {
 
@@ -67,25 +71,27 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 		// Initiate Case
 		newCase.addToQueue();
 		Thread.sleep(1000);
-		logger.info("Initiate new case");	
+		logger.info("Initiate new case");
 	}
-	
-	// Upload CTC File
-	
-	@Test(enabled = true, testName = "Upload CTC File", priority = 3, dependsOnMethods = "initiateViaCandidate")
-	public void uploadCtcFile() throws InterruptedException
-	{
-		// CTC File upload
-				newCase.fileUpload((System.getProperty("user.dir") + "/documents/ctc_excel_formate.xls"));
 
-				// Checker review the OL
-				Assert.assertTrue(newCase.verifyCTCUploaded());
-				logger.info("CTC File uploaded");
+	// Upload CTC File
+
+	@Test(enabled = true, testName = "Upload CTC File", priority = 3, dependsOnMethods = "initiateViaCandidate")
+	public void uploadCtcFile() throws InterruptedException {
+		
+		// CTC File upload
+		newCase.fileUpload((System.getProperty("user.dir") + "/documents/ctc_excel_formate.xls"));
+
+		// Checker review the OL
+		Assert.assertTrue(newCase.verifyCTCUploaded());
+		logger.info("CTC File uploaded");
 	}
-	
+
+	// Candidate receive OL link
+
 	@Test(enabled = true, testName = "Upload CTC File", priority = 4, dependsOnMethods = "uploadCtcFile")
-	public void candidateReceiveLink() throws InterruptedException
-	{
+	public void candidateReceiveLink() throws InterruptedException {
+
 		((JavascriptExecutor) driver).executeScript("window.open()");
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
@@ -95,19 +101,19 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 		email.loginGmailAccount(GmailUserNameSignDrive, GmailPasswordSignDrive);
 		logger.info("Gmail account logged in");
 		Email_Verification_page mail = new Email_Verification_page(driver);
-		
+
 		// Verify email receives by the candidate
 		if (email.verifyCandidateReceiveOLLink() == true) {
 
 			Thread.sleep(2000);
-			
+
 			// verify Offer Letter Signed By the candidate
-			
-			 mail.olRejectbyCandidate();
+
+			mail.olRejectbyCandidate();
 			logger.info("Offer Letter Reject by candidate");
-			
+
 			// Hit the Cron
-			
+
 			newCase.cron();
 			Thread.sleep(2000);
 			ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
