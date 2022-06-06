@@ -4,24 +4,18 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge 22(failed)">
+  <test thread-count="1" verbose="0" name="iBridge 23(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test">
+      <class name="com.signdrive.testcases.SignDrive_ManaulTrigger_Test">
         <methods>
-          <include name="bgvLogin"/>
-          <include name="initiateViaCandidate"/>
-          <include name="setup"/>
           <include name="signDriveLogin"/>
-          <include name="fillAndSumitForm"/>
-          <include name="verifyInstaform"/>
-          <include name="verifyOLAcceptedByCandidate"/>
-          <include name="instaform"/>
-          <include name="uploadCTCFile"/>
-          <include name="pendingSignOffBucket"/>
+          <include name="setup"/>
+          <include name="initiateViaCandidate"/>
           <include name="emailVerification"/>
+          <include name="uploadCTCFile"/>
         </methods>
-      </class> <!-- com.signdrive.testcases.SignDrive_Rejected_EPFO_Test -->
+      </class> <!-- com.signdrive.testcases.SignDrive_ManaulTrigger_Test -->
     </classes>
-  </test> <!-- iBridge 22(failed) -->
+  </test> <!-- iBridge 23(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

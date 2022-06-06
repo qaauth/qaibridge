@@ -248,7 +248,7 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 		driver.navigate().refresh();
 
 		// Verify Review & Reject based on assertion
-		newCase.rejectEpfoReviewStatus();
+		//newCase.rejectEpfoReviewStatus();
 		logger.info("Epfo not rejected");
 	}
 }

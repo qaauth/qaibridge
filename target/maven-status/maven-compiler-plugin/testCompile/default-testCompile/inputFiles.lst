@@ -63,6 +63,7 @@
 /home/sapna.chaudhary/eclipse-workspace/ibridge/src/test/java/com/signdrive/pageobject/AdminPageAction.java
 /home/sapna.chaudhary/eclipse-workspace/ibridge/src/test/java/com/signdrive/pageobject/Email_Verification_page.java
 /home/sapna.chaudhary/eclipse-workspace/ibridge/src/test/java/com/iBridge/pageobject/SubmitCaseInBulkExcelUpload.java
+/home/sapna.chaudhary/eclipse-workspace/ibridge/src/test/java/com/signdrive/testcases/SignDrive_ManaulTrigger_Test.java
 /home/sapna.chaudhary/eclipse-workspace/ibridge/src/test/java/com/signdrive/testcases/SignDrive_Approved_Test.java
 /home/sapna.chaudhary/eclipse-workspace/ibridge/src/test/java/com/iBridge/testcases/old/TC_InitiateCasesIndividually_02.java
 /home/sapna.chaudhary/eclipse-workspace/ibridge/src/test/java/com/iBridge/sme/testcases/TC_InitiateViaCandidateSmeExtended_02.java
