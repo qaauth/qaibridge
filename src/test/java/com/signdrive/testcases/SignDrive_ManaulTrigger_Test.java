@@ -110,4 +110,163 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 			logger.info("Offer Letter Signed By Candidate");
 		}
 	}
+
+	// Verify OL Accepted By Candidate and hit the Cron
+
+	@Test(enabled = true, testName = "verifyOLAcceptedByCandidate", priority = 5, dependsOnMethods = "emailVerification")
+	public void verifyOLAcceptedByCandidate() throws InterruptedException {
+
+		// Hit the Cron
+		newCase.cronHit();
+		Thread.sleep(1000);
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(0));
+		driver.navigate().refresh();
+		logger.info("Hit the cron");
+		newCase.verifySignedReviewOfferLetter();
+		logger.info("verify pending review");
+
+		// Approve Offer Letter Enterprise user
+		newCase.approveOfferLetter();
+		logger.info("Approve Offer Letter");
+
+		// Verify Review status Enterprise User
+		newCase.completeReviewStatus();
+		logger.info("Verify Review status Enterprice User ");
+	}
+
+	// BGV link/ Pre-Joining formalities link trigger to candidate
+
+	@Test(enabled = true, testName = "BGV Login", priority = 6, dependsOnMethods = "verifyOLAcceptedByCandidate")
+	public void bgvLogin() throws InterruptedException {
+
+		// Get BGV credentials
+		((JavascriptExecutor) driver).executeScript("window.open()");
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		driver.get(GmailUrl);
+		logger.info("Gmail URL is opened");
+		email = new Email_Verification_page(driver);
+		Thread.sleep(5000);
+		ArrayList<String> bgvCredentil = email.getBGVCredentials();
+		String bgvUserName = bgvCredentil.get(0);
+
+		Thread.sleep(2000);
+		String bgvPassword = bgvCredentil.get(1);
+
+		// Login BGV link receive by candidate with credentials
+		Thread.sleep(5000);
+		driver.navigate().to(bgvUrl);
+		Thread.sleep(3000);
+		logger.info("BGV URL is opened");
+		Assert.assertTrue(newCase.bgvLogin(bgvUserName, bgvPassword), "BGV not Logged In");
+		logger.info("BGV Logged In");
+	}
+
+	// Fill & submit the BGV form
+
+	@Test(enabled = true, testName = "Fill & submit the BGV form", priority = 7, dependsOnMethods = "bgvLogin")
+	public void fillAndSumitForm() throws InterruptedException, ParseException {
+
+		newCase.candidateSumitForm();
+		newCase.addOtherPersonalDetails();
+		logger.info("Add personal details successfully");
+
+		// Bank Account Details & Address & Gratuity
+		newCase.bankAccountDetails();
+		logger.info("bank account details add successfully");
+
+		// Address Details
+		newCase.candidateAddress("23", "Mayur Vihar", "04-04-2009", "323233", "hi", "Delhi", "Mayur Vihar",
+				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
+		logger.info("Candidate Address details Setup Successfully!!");
+
+		// OnboaedingDetails
+		newCase.onboardingDetails();
+		logger.info("onboarding details add successfully");
+
+		// International worker & GRATUITY DETAIL
+		newCase.internationalGratuity();
+		logger.info("international worker details add successfully");
+
+		// Candidate logout
+
+		// Verify Thank you Msg
+		newCase.verifyInitiateCaseThankYouMsg();
+		logger.info("Verifed thankyou msg successfully");
+
+		// Candidate logout
+		newCase.CandidateLogout();
+		logger.info("Candidate logged out successfully");
+	}
+
+	// Case move to pending sign off bucket
+
+	@Test(enabled = true, testName = "Case move to pending sign off bucket", priority = 8, dependsOnMethods = "fillAndSumitForm")
+	public void pendingSignOffBucket() throws InterruptedException {
+
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(0));
+		newCase.caseMoveToTheSignOffBucket();
+
+		// Case Migrates to submitted for verification bucket, WIP Bucket, and Documents
+		// for signature Bucket
+		newCase.caseMigrates();
+		logger.info(
+				"Case Migrates to submitted for verification bucket, WIP Bucket, and Documents for signature Bucket");
+	}
+
+	// Verify new link trigger for instaForm based on assertion message
+
+	@Test(enabled = true, testName = "Verify new link trigger for instaform based on assertion message", priority = 9, dependsOnMethods = "pendingSignOffBucket")
+	public void verifyInstaform() throws InterruptedException {
+
+		// New link trigger for InstaForm to candidate
+		((JavascriptExecutor) driver).executeScript("window.open()");
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		driver.get(GmailUrl);
+		logger.info("Gmail URL is opened");
+		email = new Email_Verification_page(driver);
+		Email_Verification_page mail1 = new Email_Verification_page(driver);
+		mail1.verifyCandidateReceiveOLLink();
+		Thread.sleep(2000);
+		logger.info("New link trigger for InstaForm to candidate successfully");
+	}
+
+	// InstaForm functionality
+
+	@Test(enabled = true, testName = "instaform", priority = 10, dependsOnMethods = "verifyInstaform")
+	public void instaform() throws InterruptedException {
+
+		email.instaform();
+		logger.info("fill the instaform suceessfully");
+
+		// Hit the CRON
+		newCase.cronhit();
+		Thread.sleep(2000);
+		logger.info("Hit the cron");
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(0));
+		driver.navigate().refresh();
+
+		// Review & Approve the InstaForm by user
+		newCase.approveInstaFormLink();
+		logger.info("Approve the insta form link");
+		
+		// Hit the Cron and Refresh the iBridge window
+				newCase.cronhit();
+				Thread.sleep(2000);
+				logger.info("Hit the cron");
+				ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
+				driver.switchTo().window(tab.get(0));
+				driver.navigate().refresh();
+	}
+	
+	// Add Additional Details
+	@Test(enabled = true, testName = "Add Additional Details", priority = 11, dependsOnMethods = "instaform")
+	public void addAdditionalDetail() throws InterruptedException
+	{
+		newCase.addAdditionalDetails();
+	}
 }

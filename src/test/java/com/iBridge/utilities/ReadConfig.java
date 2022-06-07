@@ -234,6 +234,12 @@ public class ReadConfig {
 	{
 		return pro.getProperty("candidateRejected");
 	}
+	
+	// Verify pending for manual trigger
+	public String getpendingForManualtrigger()
+	{
+		return pro.getProperty("pendingForManualTrigger");
+	}
 	// Get SignDrive Email details
 	public String getemail() {
 		return pro.getProperty("email");

@@ -9,23 +9,49 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">iBridge</th></tr>
-<tr><td><a href="#t0">iBridge 23</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">148,131</td><td></td><td></td></tr>
+<tr><td><a href="#t0">iBridge 23</a></td><td class="num">4</td><td class="num attn">6</td><td class="num attn">1</td><td class="num">305,051</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">iBridge</th></tr></tbody><tbody id="t0"><tr><th colspan="4">iBridge 23 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</td><td><a href="#m0">emailVerification</a></td><td rowspan="1">1654516872648</td><td rowspan="1">46942</td></tr><tr><th colspan="4">iBridge 23 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</td><td><a href="#m1">initiateViaCandidate</a></td><td rowspan="1">1654516784472</td><td rowspan="1">59459</td></tr><tr class="passedeven"><td><a href="#m2">signDriveLogin</a></td><td rowspan="1">1654516777758</td><td rowspan="1">6698</td></tr><tr class="passedeven"><td><a href="#m3">uploadCTCFile</a></td><td rowspan="1">1654516843932</td><td rowspan="1">28715</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">iBridge</th></tr></tbody><tbody id="t0"><tr><th colspan="4">iBridge 23 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</td><td><a href="#m0">verifyOLAcceptedByCandidate</a></td><td rowspan="1">1654612038111</td><td rowspan="1">144516</td></tr><tr><th colspan="4">iBridge 23 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="6">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</td><td><a href="#m1">addAdditionalDetail</a></td><td rowspan="1">1654612182645</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">bgvLogin</a></td><td rowspan="1">1654612182637</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">fillAndSumitForm</a></td><td rowspan="1">1654612182640</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">instaform</a></td><td rowspan="1">1654612182644</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">pendingSignOffBucket</a></td><td rowspan="1">1654612182641</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">verifyInstaform</a></td><td rowspan="1">1654612182643</td><td rowspan="1">0</td></tr><tr><th colspan="4">iBridge 23 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</td><td><a href="#m7">emailVerification</a></td><td rowspan="1">1654611962004</td><td rowspan="1">76102</td></tr><tr class="passedeven"><td><a href="#m8">initiateViaCandidate</a></td><td rowspan="1">1654611889830</td><td rowspan="1">46543</td></tr><tr class="passedeven"><td><a href="#m9">signDriveLogin</a></td><td rowspan="1">1654611883855</td><td rowspan="1">5956</td></tr><tr class="passedeven"><td><a href="#m10">uploadCTCFile</a></td><td rowspan="1">1654611936376</td><td rowspan="1">25627</td></tr></tbody>
 </table>
-<h2>iBridge 23</h2><h3 id="m0">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#emailVerification</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.signdrive.pageobject.Email_Verification_page.offerLetterSignedByCandidate(Email_Verification_page.java:190)
-	at com.signdrive.testcases.SignDrive_ManaulTrigger_Test.emailVerification(SignDrive_ManaulTrigger_Test.java:109)
+<h2>iBridge 23</h2><h3 id="m0">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#verifyOLAcceptedByCandidate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.173.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.vdFZ0Y}, goog:chromeOptions: {debuggerAddress: localhost:36643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 665e00da230fcefc846e01bf9b33f5af
+*** Element info: {Using=xpath, value=//*[@action_type=&apos;APPROVE_SD_DOC&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.signdrive.pageobject.Initiate_newcase_page.approveOfferLetter(Initiate_newcase_page.java:964)
+	at com.signdrive.testcases.SignDrive_ManaulTrigger_Test.verifyOLAcceptedByCandidate(SignDrive_ManaulTrigger_Test.java:130)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#initiateViaCandidate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#signDriveLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#uploadCTCFile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#addAdditionalDetail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.addAdditionalDetail()[pri:11, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@2ed94a8b] depends on not successfully finished methods
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#bgvLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.bgvLogin()[pri:6, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@2ed94a8b] depends on not successfully finished methods
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#fillAndSumitForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.fillAndSumitForm()[pri:7, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@2ed94a8b] depends on not successfully finished methods
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#instaform</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.instaform()[pri:10, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@2ed94a8b] depends on not successfully finished methods
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#pendingSignOffBucket</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.pendingSignOffBucket()[pri:8, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@2ed94a8b] depends on not successfully finished methods
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#verifyInstaform</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.verifyInstaform()[pri:9, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@2ed94a8b] depends on not successfully finished methods
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#emailVerification</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#initiateViaCandidate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#signDriveLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.signdrive.testcases.SignDrive_ManaulTrigger_Test#uploadCTCFile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -48,6 +48,8 @@ public class Initiate_newcase_page extends BaseClass {
 	public String rejectXpathEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
 	public String rejectEpfoXpathStart = "//*[text()=";
 	public String rejectEpfoEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
+	public String pendingForManualTriggerStart = "//*[text()=";
+	public String pendingForManualTriggerEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
 
 	ReadConfig config = new ReadConfig();
 
@@ -719,7 +721,27 @@ public class Initiate_newcase_page extends BaseClass {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[3]/div/div/div[1]/button/img")
 	WebElement approveEsicdoc;
-
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[5]/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[2]/div[1]/h4/div[3]/div[2]/a")
+	WebElement clickOnMoreAction;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH,using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[5]/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[1]/div[1]/h4/div[3]/div[2]/ul/li[1]/a")
+	WebElement addAdditionslDetails;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[5]/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[21]/div/div/div[2]/form/div[2]/div[1]/div/label")
+	WebElement doj;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Employee Number']")
+	WebElement employeeNumber;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='update-sign-drive-add-details-submit-btn']")
+	WebElement update;
+	
 	// Action Method for Login functionalities of the SignDrive Portal
 	public void loginSignDriveAccount(String username, String password) throws InterruptedException {
 
@@ -1318,5 +1340,40 @@ public class Initiate_newcase_page extends BaseClass {
 			logger.info("Epfo not Rejected");
 		}
 		return false;
+	}
+	
+	// Pending For Manual Trigger Status
+	public boolean pendingForManualTrigger() throws InterruptedException
+	{
+		String PendingFormanualTrigger = ldriver
+				.findElement(By.xpath(pendingForManualTriggerStart.concat(newName).concat(pendingForManualTriggerEnd))).getText();
+		Thread.sleep(2000);
+		if(PendingFormanualTrigger.equals(config.getpendingForManualtrigger()))
+		{
+			return true;
+		}
+		else
+		{
+			logger.info("pending for manual trigger status not change");
+		}
+		return false;
+	}
+	
+	// Add Additional Details
+	public void addAdditionalDetails() throws InterruptedException
+	{
+		clickOnMoreAction.click();
+		Thread.sleep(2000);
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", addAdditionslDetails);
+		Thread.sleep(2000);
+		doj.click();
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].removeAttribute('readonly')", doj);
+		doj.sendKeys("10-06-2022");
+		Thread.sleep(1000);
+		employeeNumber.sendKeys("8054");
+		Thread.sleep(1000);
+		update.click();
 	}
 }
