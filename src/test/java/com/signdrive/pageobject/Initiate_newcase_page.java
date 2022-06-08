@@ -50,6 +50,8 @@ public class Initiate_newcase_page extends BaseClass {
 	public String rejectEpfoEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
 	public String pendingForManualTriggerStart = "//*[text()=";
 	public String pendingForManualTriggerEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
+	public String pendingMoreActionStart = "(//*[text()=";
+	public String pendingMoreActionEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']//following::a[@class='dropdown-toggle more-action-dropdown-link'])[1]";
 
 	ReadConfig config = new ReadConfig();
 
@@ -723,7 +725,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement approveEsicdoc;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[5]/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[2]/div[1]/h4/div[3]/div[2]/a")
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[5]/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[1]/div[1]/h4/div[3]/div[2]/a")
 	WebElement clickOnMoreAction;
 	
 	@CacheLookup
@@ -731,16 +733,71 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement addAdditionslDetails;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[5]/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[21]/div/div/div[2]/form/div[2]/div[1]/div/label")
+	@FindBy(how = How.ID, using = "additionaldoj")
 	WebElement doj;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//*[text()='Employee Number']")
+	@FindBy(how = How.XPATH, using = "//*[@name='appointment_emp_number']")
 	WebElement employeeNumber;
 	
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='update-sign-drive-add-details-submit-btn']")
 	WebElement update;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@title='Trigger Documents Manually']")
+	WebElement triggerDocumentManually;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='checkbox46']")
+	WebElement appointmentLetter;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Trigger Document(s)']")
+	WebElement triggerDocument;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Ok']")
+	WebElement okManualDocument;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@title='Submitted for Verification']")
+	WebElement sideSubmittedForVerification;
+	
+	// Appointment Letter
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@action_box_id='action-div-21647']")
+	WebElement viewSignDoc;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@action_type='APPROVE_SD_DOC']")
+	WebElement approveSdDoc;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='reject-approve-doc-btn']")
+	WebElement approveDocButton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Ok']")
+	WebElement okText;
+	
+	// Form 11 Updated
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@aria-controls='2710pdf']")
+	WebElement pdf;
+	
+	// Corporate governance
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@aria-controls='2711pdf']")
+	WebElement corporateGovernance;
+	
+	// Esic Form
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@aria-controls='2712pdf']")
+	WebElement esicform;
 	
 	// Action Method for Login functionalities of the SignDrive Portal
 	public void loginSignDriveAccount(String username, String password) throws InterruptedException {
@@ -1362,18 +1419,64 @@ public class Initiate_newcase_page extends BaseClass {
 	// Add Additional Details
 	public void addAdditionalDetails() throws InterruptedException
 	{
-		clickOnMoreAction.click();
+//		ldriver.findElement(By.xpath(pendingMoreActionStart.concat("'MRzK LFzb eCEG'").concat(pendingMoreActionEnd))).click();
 		Thread.sleep(2000);
+		clickOnMoreAction.click();
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", addAdditionslDetails);
 		Thread.sleep(2000);
-		doj.click();
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("arguments[0].removeAttribute('readonly')", doj);
+		doj.clear();
+		JavascriptExecutor js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].removeAttribute('readonly')", doj);
 		doj.sendKeys("10-06-2022");
 		Thread.sleep(1000);
+		employeeNumber.clear();
 		employeeNumber.sendKeys("8054");
 		Thread.sleep(1000);
 		update.click();
+		Thread.sleep(2000);
+	}
+	
+	// Trigger Document Manually
+	public void triggerDocumentManually() throws InterruptedException
+	{
+		triggerDocumentManually.click();
+		Thread.sleep(1000);
+		appointmentLetter.click();
+		triggerDocument.click();
+		Thread.sleep(2000);
+		okManualDocument.click();
+	}
+	
+	public void documentForVerification() throws InterruptedException
+	{
+		sideBarExpand.click();
+		caseSubmissionSummary.click();
+		Thread.sleep(2000);
+		sideSubmittedForVerification.click();
+//		submittedForVerification.click();
+		Thread.sleep(1000);
+		documentForSignature.click();
+	}
+	
+	// Review & Approve the AL by user
+	public void reviewAndApproveAL() throws InterruptedException
+	{
+		viewSignDoc.click();
+		approveSdDoc.click();
+		Thread.sleep(2000);
+		approveDocButton.click();
+		Thread.sleep(1000);
+		okText.click();
+//		Thread.sleep(2000);
+//		pdf.click();
+//		Thread.sleep(1000);
+//		corporateGovernance.click();
+//		Thread.sleep(1000);
+//		esicform.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(documentApproveClose));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", documentApproveClose);
 	}
 }

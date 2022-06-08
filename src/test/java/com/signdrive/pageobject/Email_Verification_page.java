@@ -151,6 +151,50 @@ public class Email_Verification_page extends BaseClass {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@class='btn btn-default btn-sm']")
 	WebElement okInstaform;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Next']")
+	WebElement nextSign;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[8]/div/div[1]/div[3]/div/table/tbody/tr[1]/td[4]/div[2]/span[1]/span")
+	WebElement alLinkCandidate;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()=' Link: Signature Request for Mahindra First Choice Wheels Limited']")
+	WebElement signatureForALCandidate;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@ng-show='showFinish || totalBlocks === 1']")
+	WebElement finish;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@ng-click='field.onClick($event)'])[1]")
+	WebElement signOne;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@automation-id='nextTagBtn']")
+	WebElement nextSignature;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@ng-click='field.onClick($event)'])[2]")
+	WebElement signTwo;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@ng-click='field.onClick($event)'])[3]")
+	WebElement signThree;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@ng-click='field.onClick($event)'])[4]")
+	WebElement signfour;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@ng-click='field.onClick($event)'])[5]")
+	WebElement signFive;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[3]/div/div/div/div[1]/div[1]/div[2]/div[2]/div[1]/msb-printable-tags-form/dynamic-form/form/form-item[3]/div/div[1]/form-field/div[3]")
+	WebElement signDoc;
 
 	// Gmail Login Functionality
 	public void loginGmailAccount(String GmailUsername, String GmailPassword) throws InterruptedException {
@@ -310,5 +354,52 @@ public class Email_Verification_page extends BaseClass {
 		driver.switchTo().window(tabs.get(1));
 		driver.close();
 		driver.switchTo().window(tabs.get(0));
+	}
+	
+	public void alSignedByCanidate() throws InterruptedException
+	{
+		wait = new WebDriverWait(ldriver, 250);
+		wait.until(ExpectedConditions.visibilityOf(signatureForALCandidate));
+		signatureForALCandidate.click();
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(2));
+		wait = new WebDriverWait(ldriver, 160);
+		wait.until(ExpectedConditions.visibilityOf(checkBoxOfferLetter));
+		checkBoxOfferLetter.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.elementToBeClickable(startSignButton));
+		startSignButton.click();
+		Thread.sleep(2000);
+		signHere.click();
+		nextSign.click();
+		
+		Thread.sleep(2000);
+		signOne.click();
+		nextSignature.click();
+		
+		Thread.sleep(2000);
+		signTwo.click();
+		nextSignature.click();
+		
+		Thread.sleep(2000);
+		signThree.click();
+		nextSignature.click();
+		nextSignature.click();
+		
+		Thread.sleep(2000);
+		signfour.click();
+		nextSignature.click();
+		
+		Thread.sleep(3000);
+		signFive.click();
+		nextSignature.click();
+		Thread.sleep(2000);
+		finish.click();
+		No.click();
+		ldriver.close();
+		Thread.sleep(1000);
+		ldriver.switchTo().window(tabs.get(1));
+		ldriver.close();
+		ldriver.switchTo().window(tabs.get(0));
 	}
 }

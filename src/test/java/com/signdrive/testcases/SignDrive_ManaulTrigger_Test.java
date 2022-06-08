@@ -78,6 +78,7 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 	@Test(enabled = true, testName = "UploadFile", priority = 3, dependsOnMethods = "initiateViaCandidate")
 	public void uploadCTCFile() throws InterruptedException {
 
+		
 		// CTC File upload
 		newCase.fileUpload((System.getProperty("user.dir") + "/documents/ctc_excel_formate.xls"));
 
@@ -261,12 +262,64 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 				ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
 				driver.switchTo().window(tab.get(0));
 				driver.navigate().refresh();
+				logger.info("Refresh the main window");
 	}
 	
 	// Add Additional Details
 	@Test(enabled = true, testName = "Add Additional Details", priority = 11, dependsOnMethods = "instaform")
 	public void addAdditionalDetail() throws InterruptedException
 	{
+		//newCase.documentForVerification();
 		newCase.addAdditionalDetails();
+		newCase.triggerDocumentManually();
+		logger.info("Add Additional Details");
 	}
+	
+	// Candidate Receive the AL Link
+	@Test(enabled = true, testName = "Candidate Receive the AL Link", priority = 12, dependsOnMethods = "addAdditionalDetail")
+	public void alLink() throws InterruptedException
+	{
+		((JavascriptExecutor) driver).executeScript("window.open()");
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		driver.get(GmailUrl);
+		logger.info("Gmail URL is opened");
+		email = new Email_Verification_page(driver);
+		Email_Verification_page mail1 = new Email_Verification_page(driver);
+		mail1.verifyCandidateReceiveOLLink();
+		Thread.sleep(2000);
+		logger.info("New link trigger for AL to candidate successfully");
+		   mail1.alSignedByCanidate();
+		logger.info("Candidate signed by AL");
+//		((JavascriptExecutor) driver).executeScript("window.open()");
+//		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+//		driver.switchTo().window(tabs.get(1));
+//		driver.get(GmailUrl);
+//		logger.info("url is opened");
+//		email = new Email_Verification_page(driver);
+//		email.loginGmailAccount(GmailUserNameSignDrive, GmailPasswordSignDrive);
+//		logger.info("Gmail account logged in");
+//		Email_Verification_page mail = new Email_Verification_page(driver);
+//
+//		// Verify email receives by the candidate
+//		if (email.verifyCandidateReceiveOLLink() == true) {
+//			Thread.sleep(2000);
+//		   mail.alSignedByCanidate();
+//		logger.info("Candidate signed by AL");
+//	}
+		
+		// Hit the Cron and Refresh the iBridge window
+		newCase.cronhit();
+		Thread.sleep(2000);
+		logger.info("Hit the cron");
+		ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tab.get(0));
+		driver.navigate().refresh();
+		logger.info("Refresh the main window");
+		
+		// Review And Approve the AL
+		newCase.reviewAndApproveAL();
+	}
+	
+	
 }

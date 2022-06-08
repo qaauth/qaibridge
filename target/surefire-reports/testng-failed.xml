@@ -12,15 +12,16 @@
           <include name="addAdditionalDetail"/>
           <include name="bgvLogin"/>
           <include name="signDriveLogin"/>
+          <include name="verifyOLAcceptedByCandidate"/>
+          <include name="instaform"/>
+          <include name="emailVerification"/>
+          <include name="pendingSignOffBucket"/>
+          <include name="alLink"/>
           <include name="setup"/>
           <include name="verifyInstaform"/>
           <include name="fillAndSumitForm"/>
           <include name="initiateViaCandidate"/>
-          <include name="verifyOLAcceptedByCandidate"/>
-          <include name="instaform"/>
-          <include name="emailVerification"/>
           <include name="uploadCTCFile"/>
-          <include name="pendingSignOffBucket"/>
         </methods>
       </class> <!-- com.signdrive.testcases.SignDrive_ManaulTrigger_Test -->
     </classes>
