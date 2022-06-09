@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="526.074" tests="12" errors="0" skipped="5" failures="1">
+<testsuite name="TestSuite" time="358.091" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf975835536171657060.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6634506517450561101.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,65 +59,8 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="signDriveLogin" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="4.48"/>
-  <testcase name="initiateViaCandidate" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="46.795"/>
-  <testcase name="uploadCTCFile" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="24.785"/>
-  <testcase name="emailVerification" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="50.981"/>
-  <testcase name="verifyOLAcceptedByCandidate" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="145.886"/>
-  <testcase name="bgvLogin" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="50.009"/>
-  <testcase name="fillAndSumitForm" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="203.138">
-    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=101.0.4951.54)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.173.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.SGCx2H}, goog:chromeOptions: {debuggerAddress: localhost:33911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ba84d2debc397c380d35a9985ec60745&#10;*** Element info: {Using=xpath, value=//*[text()=&apos;Ok&apos;]}" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=101.0.4951.54)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.173.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.SGCx2H}, goog:chromeOptions: {debuggerAddress: localhost:33911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ba84d2debc397c380d35a9985ec60745
-*** Element info: {Using=xpath, value=//*[text()='Ok']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.signdrive.pageobject.Initiate_newcase_page.internationalGratuity(Initiate_newcase_page.java:1265)
-	at com.signdrive.testcases.SignDrive_ManaulTrigger_Test.fillAndSumitForm(SignDrive_ManaulTrigger_Test.java:190)
-</failure>
-    <system-out><![CDATA[ INFO [main] (Initiate_newcase_page.java:1088)- profile details add sucessfully
- INFO [main] (Initiate_newcase_page.java:1100)- other personal details add sucessfully
- INFO [main] (SignDrive_ManaulTrigger_Test.java:174)- Add personal details successfully
- INFO [main] (Initiate_newcase_page.java:1120)- add bankaccount details successfully
- INFO [main] (SignDrive_ManaulTrigger_Test.java:178)- bank account details add successfully
- INFO [main] (SignDrive_ManaulTrigger_Test.java:183)- Candidate Address details Setup Successfully!!
-01-01-01970
- INFO [main] (SignDrive_ManaulTrigger_Test.java:187)- onboarding details add successfully
-]]></system-out>
-  </testcase>
-  <testcase name="pendingSignOffBucket" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInstaform" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="instaform" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addAdditionalDetail" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="alLink" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="signDriveLogin" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="9.187"/>
+  <testcase name="initiateViaCandidate" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="59.543"/>
+  <testcase name="uploadCtcFile" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="38.532"/>
+  <testcase name="candidateReceiveLink" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="250.829"/>
 </testsuite>

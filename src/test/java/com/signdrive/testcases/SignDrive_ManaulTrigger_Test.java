@@ -78,7 +78,6 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 	@Test(enabled = true, testName = "UploadFile", priority = 3, dependsOnMethods = "initiateViaCandidate")
 	public void uploadCTCFile() throws InterruptedException {
 
-		
 		// CTC File upload
 		newCase.fileUpload((System.getProperty("user.dir") + "/documents/ctc_excel_formate.xls"));
 
@@ -154,9 +153,9 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 
 		Thread.sleep(2000);
 		String bgvPassword = bgvCredentil.get(1);
-
+		
 		// Login BGV link receive by candidate with credentials
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		driver.navigate().to(bgvUrl);
 		Thread.sleep(3000);
 		logger.info("BGV URL is opened");
@@ -192,7 +191,7 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 
 		// Candidate logout
 
-		// Verify Thank you Msg
+		// Verify Thank you Message
 		newCase.verifyInitiateCaseThankYouMsg();
 		logger.info("Verifed thankyou msg successfully");
 
@@ -254,60 +253,7 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 		// Review & Approve the InstaForm by user
 		newCase.approveInstaFormLink();
 		logger.info("Approve the insta form link");
-		
-		// Hit the Cron and Refresh the iBridge window
-				newCase.cronhit();
-				Thread.sleep(2000);
-				logger.info("Hit the cron");
-				ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
-				driver.switchTo().window(tab.get(0));
-				driver.navigate().refresh();
-				logger.info("Refresh the main window");
-	}
-	
-	// Add Additional Details
-	@Test(enabled = true, testName = "Add Additional Details", priority = 11, dependsOnMethods = "instaform")
-	public void addAdditionalDetail() throws InterruptedException
-	{
-		//newCase.documentForVerification();
-		newCase.addAdditionalDetails();
-		newCase.triggerDocumentManually();
-		logger.info("Add Additional Details");
-	}
-	
-	// Candidate Receive the AL Link
-	@Test(enabled = true, testName = "Candidate Receive the AL Link", priority = 12, dependsOnMethods = "addAdditionalDetail")
-	public void alLink() throws InterruptedException
-	{
-		((JavascriptExecutor) driver).executeScript("window.open()");
-		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-		driver.switchTo().window(tabs.get(1));
-		driver.get(GmailUrl);
-		logger.info("Gmail URL is opened");
-		email = new Email_Verification_page(driver);
-		Email_Verification_page mail1 = new Email_Verification_page(driver);
-		mail1.verifyCandidateReceiveOLLink();
-		Thread.sleep(2000);
-		logger.info("New link trigger for AL to candidate successfully");
-		   mail1.alSignedByCanidate();
-		logger.info("Candidate signed by AL");
-//		((JavascriptExecutor) driver).executeScript("window.open()");
-//		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-//		driver.switchTo().window(tabs.get(1));
-//		driver.get(GmailUrl);
-//		logger.info("url is opened");
-//		email = new Email_Verification_page(driver);
-//		email.loginGmailAccount(GmailUserNameSignDrive, GmailPasswordSignDrive);
-//		logger.info("Gmail account logged in");
-//		Email_Verification_page mail = new Email_Verification_page(driver);
-//
-//		// Verify email receives by the candidate
-//		if (email.verifyCandidateReceiveOLLink() == true) {
-//			Thread.sleep(2000);
-//		   mail.alSignedByCanidate();
-//		logger.info("Candidate signed by AL");
-//	}
-		
+
 		// Hit the Cron and Refresh the iBridge window
 		newCase.cronhit();
 		Thread.sleep(2000);
@@ -316,10 +262,51 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 		driver.switchTo().window(tab.get(0));
 		driver.navigate().refresh();
 		logger.info("Refresh the main window");
+	}
+
+	// Add Additional Details
+	@Test(enabled = true, testName = "Add Additional Details", priority = 11, dependsOnMethods = "instaform")
+	public void addAdditionalDetail() throws InterruptedException {
 		
+		// newCase.documentForVerification();
+		newCase.addAdditionalDetails();
+		newCase.triggerDocumentManually();
+		logger.info("Add Additional Details");
+	}
+
+	// Candidate Receive the AL Link
+	@Test(enabled = true, testName = "Candidate Receive the AL Link", priority = 12, dependsOnMethods = "addAdditionalDetail")
+	public void alLink() throws InterruptedException {
+		
+		((JavascriptExecutor) driver).executeScript("window.open()");
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		driver.get(GmailUrl);
+		logger.info("Gmail URL is opened");
+		email = new Email_Verification_page(driver);
+		Email_Verification_page mail1 = new Email_Verification_page(driver);
+		driver.navigate().to(GmailUrl);
+		Thread.sleep(5000);
+		mail1.candidateReceiveTheALLink();
+		Thread.sleep(2000);
+		logger.info("New link trigger for AL to candidate successfully");
+		
+		// Candidate Signed by the AL
+		mail1.alSignedByCanidate();
+		logger.info("Candidate signed by AL");
+
+		// Hit the Cron and Refresh the iBridge window
+		newCase.cronhit();
+		Thread.sleep(2000);
+		logger.info("Hit the cron");
+		ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tab.get(0));
+		driver.navigate().refresh();
+		logger.info("Refresh the ibridge window");
+
 		// Review And Approve the AL
 		newCase.reviewAndApproveAL();
+		logger.info("Approve the AL successfully");
 	}
-	
-	
+
 }

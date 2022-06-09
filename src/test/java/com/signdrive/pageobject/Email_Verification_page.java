@@ -195,6 +195,14 @@ public class Email_Verification_page extends BaseClass {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[3]/div/div/div/div[1]/div[1]/div[2]/div[2]/div[1]/msb-printable-tags-form/dynamic-form/form/form-item[3]/div/div[1]/form-field/div[3]")
 	WebElement signDoc;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@name='iBridge Support'])[2]")
+	WebElement alLinkReceiveBycandidate;
+	
+	@CacheLookup
+	@FindBy (how = How.XPATH, using = "//*[@data-tooltip='Show trimmed content']")
+	WebElement trimmedContent;
 
 	// Gmail Login Functionality
 	public void loginGmailAccount(String GmailUsername, String GmailPassword) throws InterruptedException {
@@ -213,7 +221,7 @@ public class Email_Verification_page extends BaseClass {
 	// Verify Candidate Receive the Offer Letter Link
 	public boolean verifyCandidateReceiveOLLink() throws InterruptedException {
 
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		firstReceivedMail.click();
 		Thread.sleep(3000);
 		Actions a = new Actions(driver);
@@ -360,6 +368,7 @@ public class Email_Verification_page extends BaseClass {
 	{
 		wait = new WebDriverWait(ldriver, 250);
 		wait.until(ExpectedConditions.visibilityOf(signatureForALCandidate));
+		Thread.sleep(5000);
 		signatureForALCandidate.click();
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(2));
@@ -401,5 +410,17 @@ public class Email_Verification_page extends BaseClass {
 		ldriver.switchTo().window(tabs.get(1));
 		ldriver.close();
 		ldriver.switchTo().window(tabs.get(0));
+	}
+	
+	public boolean candidateReceiveTheALLink() throws InterruptedException
+	{
+		Thread.sleep(10000);
+		firstReceivedMail.click();
+		Thread.sleep(3000);
+		trimmedContent.click();
+		Actions a = new Actions(driver);
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(6000);
+		return candidateOffertLetterLink.isDisplayed();
 	}
 }

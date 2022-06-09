@@ -85,26 +85,26 @@
 
 	<!-- SignDrive Test Cases -->
 	
-	<!-- <test name="iBridge 20">
+	<test name="iBridge 20">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_Approved_Test" />
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test name="iBridge 21">
+	<test name="iBridge 21">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" />
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test name="iBridge 22">
+	<test name="iBridge 22">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" />
 		</classes>
-	</test> -->
+	</test>
 	
 	<test name="iBridge 23">
 		<parameter name="browser" value="chrome" />

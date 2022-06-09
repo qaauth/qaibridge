@@ -52,7 +52,8 @@ public class Initiate_newcase_page extends BaseClass {
 	public String pendingForManualTriggerEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']";
 	public String pendingMoreActionStart = "(//*[text()=";
 	public String pendingMoreActionEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::label[@class='tag-name']//following::a[@class='dropdown-toggle more-action-dropdown-link'])[1]";
-
+	public String pendingApproveAlStart = "//*[text()=";
+	public String pendingApproveAlEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::a[@title='View Signed docs']";
 	ReadConfig config = new ReadConfig();
 
 	public Initiate_newcase_page(WebDriver rdriver, String firstName, String middleName, String lastName) {
@@ -767,7 +768,7 @@ public class Initiate_newcase_page extends BaseClass {
 	// Appointment Letter
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//*[@action_box_id='action-div-21647']")
+	@FindBy(how = How.XPATH, using = "//*[@action_box_id='action-div-21705']")
 	WebElement viewSignDoc;
 	
 	@CacheLookup
@@ -798,6 +799,10 @@ public class Initiate_newcase_page extends BaseClass {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@aria-controls='2712pdf']")
 	WebElement esicform;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[ @class='modal fade new-modal-popup checks-count-popup zoom-thumbnail-img-popup in']//button")
+	WebElement documentClose;
 	
 	// Action Method for Login functionalities of the SignDrive Portal
 	public void loginSignDriveAccount(String username, String password) throws InterruptedException {
@@ -1338,7 +1343,7 @@ public class Initiate_newcase_page extends BaseClass {
 		okDoc.click();
 
 		// ESIC Form
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		esicForm.click();
 		approveEsicDoc.click();
 		Thread.sleep(3000);
@@ -1419,7 +1424,6 @@ public class Initiate_newcase_page extends BaseClass {
 	// Add Additional Details
 	public void addAdditionalDetails() throws InterruptedException
 	{
-//		ldriver.findElement(By.xpath(pendingMoreActionStart.concat("'MRzK LFzb eCEG'").concat(pendingMoreActionEnd))).click();
 		Thread.sleep(2000);
 		clickOnMoreAction.click();
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -1454,7 +1458,6 @@ public class Initiate_newcase_page extends BaseClass {
 		caseSubmissionSummary.click();
 		Thread.sleep(2000);
 		sideSubmittedForVerification.click();
-//		submittedForVerification.click();
 		Thread.sleep(1000);
 		documentForSignature.click();
 	}
@@ -1462,21 +1465,17 @@ public class Initiate_newcase_page extends BaseClass {
 	// Review & Approve the AL by user
 	public void reviewAndApproveAL() throws InterruptedException
 	{
+		Thread.sleep(3000);
+		//ldriver.findElement(By.xpath(pendingApproveAlStart.concat(newName).concat(pendingApproveAlEnd))).click();
 		viewSignDoc.click();
 		approveSdDoc.click();
 		Thread.sleep(2000);
 		approveDocButton.click();
 		Thread.sleep(1000);
 		okText.click();
-//		Thread.sleep(2000);
-//		pdf.click();
-//		Thread.sleep(1000);
-//		corporateGovernance.click();
-//		Thread.sleep(1000);
-//		esicform.click();
 		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(documentApproveClose));
+		wait.until(ExpectedConditions.visibilityOf(documentClose));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", documentApproveClose);
+		js.executeScript("arguments[0].click();", documentClose);
 	}
 }
