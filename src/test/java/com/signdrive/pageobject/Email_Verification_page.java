@@ -203,25 +203,42 @@ public class Email_Verification_page extends BaseClass {
 	@CacheLookup
 	@FindBy (how = How.XPATH, using = "//*[@data-tooltip='Show trimmed content']")
 	WebElement trimmedContent;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='gb_Ba gbii']")
+	WebElement userAccountIcon;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Sign out'][@class='wBFtm']")
+	WebElement mailLogout;
 
-	// Gmail Login Functionality
+	// GMail Login Functionality
 	public void loginGmailAccount(String GmailUsername, String GmailPassword) throws InterruptedException {
 
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(userName));
 		userName.clear();
 		userName.sendKeys(GmailUsername);
-		Thread.sleep(2000);
 		next.click();
 		password.sendKeys(GmailPassword);
 		Thread.sleep(2000);
 		nextContinue.click();
 	}
 
+	public void logoutGmailAccount() throws InterruptedException
+	{
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(userAccountIcon));
+		userAccountIcon.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(mailLogout));
+		mailLogout.click();
+	}
+	
 	// Verify Candidate Receive the Offer Letter Link
 	public boolean verifyCandidateReceiveOLLink() throws InterruptedException {
 
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		firstReceivedMail.click();
 		Thread.sleep(3000);
 		Actions a = new Actions(driver);
@@ -244,11 +261,9 @@ public class Email_Verification_page extends BaseClass {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.elementToBeClickable(startSignButton));
 		startSignButton.click();
-		Thread.sleep(2000);
-		signHere.click();
-		Thread.sleep(3000);
-		finishButton.click();
 		Thread.sleep(1000);
+		signHere.click();
+		finishButton.click();
 		No.click();
 		driver.close();
 		driver.switchTo().window(tabs.get(1));
@@ -265,9 +280,9 @@ public class Email_Verification_page extends BaseClass {
 		Thread.sleep(2000);
 		Actions a = new Actions(driver);
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(1000);
 		ArrayList<String> bgvCredentials = new ArrayList<String>();
 		bgvCredentials.add(BGVUsernameXpath.getText().trim().split(" ")[1]);
+		Thread.sleep(5000);
 		bgvCredentials.add(BGVPasswordXpath.getText().trim().split(" ")[1]);
 		return bgvCredentials;
 	}
@@ -286,22 +301,21 @@ public class Email_Verification_page extends BaseClass {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.elementToBeClickable(startSignButton));
 		startSignButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		signHere.click();
-		Thread.sleep(3000);
 		finishButton.click();
 		Thread.sleep(2000);
 		startButton.click();
 		JavascriptExecutor js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView();", signatureTagForm);
 		signatureTagForm.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		finishbutton.click();
 		Thread.sleep(3000);
 		startButton.click();
 		JavascriptExecutor executor = (JavascriptExecutor) ldriver;
 		executor.executeScript("arguments[0].click();", signHereButton);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		finishbutton.click();
 		No.click();
 		ldriver.close();
@@ -392,8 +406,12 @@ public class Email_Verification_page extends BaseClass {
 		
 		Thread.sleep(2000);
 		signThree.click();
+		wait = new WebDriverWait(ldriver, 160);
+		wait.until(ExpectedConditions.visibilityOf(nextSignature));
 		nextSignature.click();
+		Thread.sleep(2000);
 		nextSignature.click();
+	
 		
 		Thread.sleep(2000);
 		signfour.click();

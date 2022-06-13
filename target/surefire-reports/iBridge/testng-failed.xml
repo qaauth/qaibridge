@@ -11,15 +11,15 @@
         <methods>
           <include name="addAdditionalDetail"/>
           <include name="bgvLogin"/>
-          <include name="signDriveLogin"/>
+          <include name="signDrivelogin"/>
           <include name="verifyOLAcceptedByCandidate"/>
           <include name="instaform"/>
           <include name="emailVerification"/>
           <include name="pendingSignOffBucket"/>
+          <include name="fillAndSubmitForm"/>
           <include name="alLink"/>
           <include name="setup"/>
           <include name="verifyInstaform"/>
-          <include name="fillAndSumitForm"/>
           <include name="initiateViaCandidate"/>
           <include name="uploadCTCFile"/>
         </methods>

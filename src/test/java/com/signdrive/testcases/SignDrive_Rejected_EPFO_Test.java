@@ -47,7 +47,7 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 		// Initiate new case
 		newCase.sidebarExpandBtn();
 		logger.info("Clicked on expand bar and initiate new case");
-		Thread.sleep(3000);
+		
 
 		// Package Selection
 		newCase.clickUnCheckWiseSelect("1", "1", "1", "1", "1", "1");
@@ -57,19 +57,16 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 		newCase.candidateFirstName(firstName);
 		newCase.candidateMiddleName(middleName);
 		newCase.candidateLastName(lastName);
-		Thread.sleep(1000);
 		newCase.addCandidateDOBEmailAndMobile("8009744341", "04-04-1991");
 		logger.info("Candidate information added");
 
 		// Additional Fields
 		newCase.selectLocationFromDropDown();
-		Thread.sleep(1000);
 		newCase.enterEmployeeIDAndClientName();
-		Thread.sleep(1000);
+		
 
 		// Initiate Case
 		newCase.addToQueue();
-		Thread.sleep(1000);
 		logger.info("Additional fields added");
 	}
 
@@ -103,7 +100,6 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 
 		// Verify email receives by the candidate
 		if (email.verifyCandidateReceiveOLLink() == true) {
-			Thread.sleep(2000);
 			// verify Offer Letter Signed By the candidate
 			mail.offerLetterSignedByCandidate();
 			logger.info("Offer Letter Signed By Candidate");
@@ -117,7 +113,6 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 
 		// Hit the Cron
 		newCase.cronHit();
-		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(0));
 		driver.navigate().refresh();
@@ -146,17 +141,15 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 		driver.get(GmailUrl);
 		logger.info("Gmail URL is opened");
 		email = new Email_Verification_page(driver);
-		Thread.sleep(5000);
 		ArrayList<String> bgvCredentil = email.getBGVCredentials();
 		String bgvUserName = bgvCredentil.get(0);
-
-		Thread.sleep(2000);
 		String bgvPassword = bgvCredentil.get(1);
 
 		// Login BGV link receive by candidate with credentials
-		Thread.sleep(5000);
+		
+		Thread.sleep(20000);
 		driver.navigate().to(bgvUrl);
-		Thread.sleep(3000);
+//		driver.get(bgvUrl);
 		logger.info("BGV URL is opened");
 		Assert.assertTrue(newCase.bgvLogin(bgvUserName, bgvPassword), "BGV not Logged In");
 		logger.info("BGV Logged In");
@@ -167,7 +160,7 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 	@Test(enabled = true, testName = "Fill & submit the BGV form", priority = 7, dependsOnMethods = "bgvLogin")
 	public void fillAndSumitForm() throws InterruptedException, ParseException {
 
-		newCase.candidateSumitForm();
+		newCase.candidateSubmitForm();
 		newCase.addOtherPersonalDetails();
 		logger.info("Add personal details successfully");
 
@@ -195,6 +188,7 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 		// Candidate logout
 		newCase.CandidateLogout();
 		logger.info("Candidate logged out successfully");
+		
 	}
 
 	// Case move to pending sign off bucket
@@ -227,7 +221,6 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 		email = new Email_Verification_page(driver);
 		Email_Verification_page mail1 = new Email_Verification_page(driver);
 		mail1.verifyCandidateReceiveOLLink();
-		Thread.sleep(2000);
 		logger.info("New link trigger for InstaForm to candidate successfully");
 	}
 
@@ -241,7 +234,6 @@ public class SignDrive_Rejected_EPFO_Test extends BaseClass {
 
 		// Hit the CRON
 		newCase.cronhit();
-		Thread.sleep(2000);
 		logger.info("Hit the cron");
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(0));

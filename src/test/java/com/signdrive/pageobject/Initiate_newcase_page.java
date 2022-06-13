@@ -32,6 +32,7 @@ public class Initiate_newcase_page extends BaseClass {
 	JavascriptExecutor js;
 	String fullName;
 	String newName;
+	String newName1;
 	public String uploadOfferLetterPathStart = "//*[text()=";
 	public String uploadOfferLetterPathEnd = "]//parent::div//parent::div[@class='candiate-details']//following-sibling::div[@class='action-box']//child::a[@title='Upload Offer Letter']";
 	public String uploadStatusPathStart = "//*[text()=";
@@ -60,6 +61,7 @@ public class Initiate_newcase_page extends BaseClass {
 
 		ldriver = rdriver;
 		newName = "' " + firstName + " " + middleName + " " + lastName + " '";
+		newName1 = "'" + firstName + " " + middleName + " " + lastName + "'";
 		PageFactory.initElements(driver, this);
 	}
 
@@ -804,6 +806,11 @@ public class Initiate_newcase_page extends BaseClass {
 	@FindBy(how = How.XPATH, using = "//*[ @class='modal fade new-modal-popup checks-count-popup zoom-thumbnail-img-popup in']//button")
 	WebElement documentClose;
 	
+	// Verify After Login By BT Account-- Case Submission Summary Text
+		@CacheLookup
+		@FindBy(xpath = "//h3[contains(text(),'Case Submission Summary')]")
+		WebElement verifyCaseSubmissionSummaryText;
+	
 	// Action Method for Login functionalities of the SignDrive Portal
 	public void loginSignDriveAccount(String username, String password) throws InterruptedException {
 
@@ -812,7 +819,12 @@ public class Initiate_newcase_page extends BaseClass {
 		usernameField.sendKeys(username);
 		passwordField.sendKeys(password);
 		login_Btn.click();
-		Thread.sleep(2000);
+	}
+	
+	public String verifyDashboardCaseSubmissionSummaryText() {
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(verifyCaseSubmissionSummaryText));
+		return verifyCaseSubmissionSummaryText.getText();
 	}
 
 	// Initiate Via Candidate(IVC)
@@ -879,7 +891,6 @@ public class Initiate_newcase_page extends BaseClass {
 		addressVerification.click();
 		federalCriminalcheck.click();
 		countryCriminalCheckUSA.click();
-		Thread.sleep(5000);
 	}
 
 	// Candidate Summary (Add Candidate Information)
@@ -906,7 +917,6 @@ public class Initiate_newcase_page extends BaseClass {
 		js.executeScript("arguments[0].removeAttribute('readonly')", clickDateOfBirth);
 		clickDateOfBirth.sendKeys(dob);
 		txtMobileNumber.sendKeys(mobileNumber);
-		Thread.sleep(1000);
 		txtEmailId.sendKeys(config.getemail());
 	}
 
@@ -915,7 +925,6 @@ public class Initiate_newcase_page extends BaseClass {
 
 		Select location = new Select(locationId);
 		location.selectByVisibleText("Gurgaon");
-		Thread.sleep(2000);
 	}
 
 	// Add Employee id and Client name
@@ -923,7 +932,6 @@ public class Initiate_newcase_page extends BaseClass {
 
 		logger.info("Enter Employee ID and Client Name");
 		employeeIDField.sendKeys(config.getiBridgeClientname());
-		Thread.sleep(2000);
 		clientNameField.sendKeys(config.getiBridgeClientname());
 		txtEmailId.click();
 	}
@@ -938,7 +946,6 @@ public class Initiate_newcase_page extends BaseClass {
 		ignoreDuplicate.click();
 		if (verifyToastMsg.isDisplayed() == true) {
 			clickOnContinueBtn.click();
-			Thread.sleep(1000);
 			clickInitiateBtn.click();
 
 		} else {
@@ -966,9 +973,7 @@ public class Initiate_newcase_page extends BaseClass {
 		if (verifyCaseMigrateToOfferLetterBucket() == true) {
 			ldriver.findElement(By.xpath(uploadOfferLetterPathStart.concat(newName).concat(uploadOfferLetterPathEnd)))
 					.click();
-			Thread.sleep(3000);
 			dragDropFileHere.sendKeys(uploadDoc);
-			Thread.sleep(1000);
 			upload.click();
 		}
 	}
@@ -1020,13 +1025,10 @@ public class Initiate_newcase_page extends BaseClass {
 	// Approve Offer Letter
 	public void approveOfferLetter() throws InterruptedException {
 
-		Thread.sleep(5000);
 		ldriver.findElement(By.xpath(approvePathStart.concat(newName).concat(approvePathEnd))).click();
-		Thread.sleep(1000);
 		approveDocument.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		approveButton.click();
-		Thread.sleep(1000);
 		okButton.click();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(documentApproveClose));
@@ -1051,9 +1053,7 @@ public class Initiate_newcase_page extends BaseClass {
 	// BGV Login
 	public boolean bgvLogin(String username, String password) throws InterruptedException {
 
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(bgvUsernameField));
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		bgvUsernameField.sendKeys(username);
 		bgvPasswordField.sendKeys(password);
 		bgv_Login_Btn.click();
@@ -1063,7 +1063,7 @@ public class Initiate_newcase_page extends BaseClass {
 	}
 
 	// Authorization details
-	public void candidateSumitForm() throws InterruptedException {
+	public void candidateSubmitForm() throws InterruptedException {
 
 		clickOnInstructionPopupCrossBtn.click();
 		js = (JavascriptExecutor) ldriver;
@@ -1073,20 +1073,16 @@ public class Initiate_newcase_page extends BaseClass {
 		JavaScriptManuplator.javaScriptExecutor(checkConcentCheckBox, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(checkAgreeCheckBox, "arguments[0].click()", ldriver);
-		Thread.sleep(1000);
 		Actions actionBuilder = new Actions(ldriver);
 		Action drawAction = actionBuilder.moveToElement(ldriver.findElement(By.xpath("//div[@id='signatureparent']")))
 				.clickAndHold().moveByOffset(-50, 60).moveByOffset(-60, -70).moveByOffset(150, 60)
 				.moveByOffset(-60, -70).doubleClick().build();
 		drawAction.perform();
-		Thread.sleep(2000);
 		clickOnContinueBtn1.click();
-		Thread.sleep(1000);
 
 		// profile details
 		Select preSelect = new Select(prefix);
 		preSelect.selectByVisibleText("Doctor");
-		Thread.sleep(2000);
 		Select geSelect = new Select(gender);
 		geSelect.selectByVisibleText("Male");
 		saveAndContinueProfile.click();
@@ -1100,7 +1096,7 @@ public class Initiate_newcase_page extends BaseClass {
 		fatherQualification.sendKeys("B.tech");
 		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(bloodGroup, "arguments[0].scrollIntoView(true);", ldriver);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		bloodGroup.sendKeys("A");
 		logger.info("other personal details add sucessfully");
 	}
@@ -1119,7 +1115,6 @@ public class Initiate_newcase_page extends BaseClass {
 		micrNumber.sendKeys("32345");
 		bankAddressWithPincode.sendKeys("NearrodeAgra232345");
 		uploadCancelledCheque.sendKeys("/home/sapna.chaudhary/eclipse-workspace/ibridge/documents/ARN.pdf");
-		Thread.sleep(1000);
 		Thread.sleep(2000);
 		continueButton.click();
 		logger.info("add bankaccount details successfully");
@@ -1152,11 +1147,10 @@ public class Initiate_newcase_page extends BaseClass {
 		txtCityName.clear();
 		txtCityName.sendKeys(city);
 		txtStateName.clear();
-		Thread.sleep(1000);
+		Thread.sleep(2000 );
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].value='Del'", txtStateName);
 		txtStateName.sendKeys(state);
-		Thread.sleep(1000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].value='Delhi'", txtCityName);
 		txtCityName.clear();
@@ -1165,7 +1159,6 @@ public class Initiate_newcase_page extends BaseClass {
 		txtPoliceStation.sendKeys(station);
 		Actions a = new Actions(driver);
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(3000);
 		uploadAddressProof.sendKeys(uploadAddress);
 		Thread.sleep(2000);
 		savebutton.click();
@@ -1173,58 +1166,49 @@ public class Initiate_newcase_page extends BaseClass {
 
 	// OnBoarding details
 	public void onboardingDetails() throws InterruptedException {
-
+		
+		Thread.sleep(1000);
 		currentLocation.sendKeys("Agra");
 		religion.sendKeys("Hindu");
 		uanNumber.sendKeys("343454345678");
 		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(nomieeName, "arguments[0].scrollIntoView(true);", ldriver);
-		Thread.sleep(2000);
 		nomieeName.sendKeys("Jyoti");
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(nomieeAddress));
 		nomieeAddress.sendKeys("agra");
-		Thread.sleep(2000);
 		Select nominee = new Select(nomieeRelationship);
 		nominee.selectByVisibleText("Father");
 		nomieeRelationship.click();
-		Thread.sleep(1000);
 		nomineeAge.sendKeys("45");
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(nomieeAmount));
 		nomieeAmount.sendKeys("100");
-		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(familyMemberName, "arguments[0].scrollIntoView(true);", ldriver);
 		Thread.sleep(2000);
 		familyMemberName.sendKeys("sona");
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(familyMemberAddress));
 		familyMemberAddress.sendKeys("AgraNagar");
-		Thread.sleep(3000);
 		Select member = new Select(familyMemberRelationship);
 		member.selectByVisibleText("Father");
 		wait.until(ExpectedConditions.visibilityOf(familyMemberAddress));
 		familyMemberAddress.sendKeys("AgraNagar");
 		familyMemberRelationship.click();
 		familyMemberAge.sendKeys("34");
-		Thread.sleep(1000);
 		pensionNomineeNmae.sendKeys("divya");
 		pensionNomineeAddress.sendKeys("VijayNagar");
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(pensionNomineeRelationship));
 		pensionNomineeRelationship.sendKeys("Father");
-		Thread.sleep(1000);
 		Date date = new Date(0);
 		SimpleDateFormat datefor = new SimpleDateFormat("dd-MM-yyyyy");
 		String StringDate = datefor.format(date);
 		System.out.println(StringDate);
 		pensionNomineeDob.sendKeys(StringDate);
-		Thread.sleep(2000);
 
 		// PROVIDENT FUND ORGANIZATION
-		Thread.sleep(1000);
 		noMemberEpf.click();
-		Thread.sleep(1000);
 		noMemberEp.click();
 	}
 
@@ -1246,27 +1230,22 @@ public class Initiate_newcase_page extends BaseClass {
 		passportTo.click();
 		bankAccountNumberDetails.sendKeys("232323454567");
 		ifscCodeOfBranch.sendKeys("UBIN000005");
-		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(gratuityName, "arguments[0].scrollIntoView(true);", ldriver);
-		Thread.sleep(2000);
 		gratuityName.sendKeys("soni");
-		Thread.sleep(1000);
 		gratuityAddress.sendKeys("Bulandshahr");
 		Select gratutity = new Select(gratuityRelationship);
 		gratutity.selectByVisibleText("Friend");
-		Thread.sleep(2000);
 		gratuityRelationship.click();
-		Thread.sleep(2000);
 		gratuityAge.sendKeys("43");
-		Thread.sleep(3000);
 		amountShare.sendKeys("100");
-		Thread.sleep(2000);
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(submit));
 		submit.click();
-		Thread.sleep(2000);
 		Actions b = new Actions(driver);
 		b.sendKeys(Keys.PAGE_DOWN).build().perform();
-		sumitbutton.click();
 		Thread.sleep(2000);
+		sumitbutton.click();
+		Thread.sleep(1000);
 		clickOk.click();
 	}
 
@@ -1298,7 +1277,6 @@ public class Initiate_newcase_page extends BaseClass {
 		wait = new WebDriverWait(driver, 120);
 		wait.until(ExpectedConditions.visibilityOf(pendingSignOff));
 		pendingSignOff.click();
-		Thread.sleep(1000);
 		submitButton.click();
 		checkbox.click();
 		wait = new WebDriverWait(driver, 120);
@@ -1326,24 +1304,23 @@ public class Initiate_newcase_page extends BaseClass {
 	public void approveInstaFormLink() throws InterruptedException {
 
 		folderViewSignedDoc.click();
-		Thread.sleep(1000);
 		approve.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		approveLink.click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		okClick.click();
-		Thread.sleep(3000);
 
 		// disclosureCorporate
+		Thread.sleep(2000);
 		disclosureCorporate.click();
 		approveDisclosure.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		approveDoc.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		okDoc.click();
 
 		// ESIC Form
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		esicForm.click();
 		approveEsicDoc.click();
 		Thread.sleep(3000);
@@ -1360,7 +1337,6 @@ public class Initiate_newcase_page extends BaseClass {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 		driver.get(cronUrl);
-		Thread.sleep(5000);
 		driver.close();
 	}
 
@@ -1371,7 +1347,6 @@ public class Initiate_newcase_page extends BaseClass {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 		driver.get(cronUrl);
-		Thread.sleep(5000);
 		driver.close();
 	}
 
@@ -1428,22 +1403,19 @@ public class Initiate_newcase_page extends BaseClass {
 		clickOnMoreAction.click();
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", addAdditionslDetails);
-		Thread.sleep(2000);
 		doj.clear();
 		JavascriptExecutor js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].removeAttribute('readonly')", doj);
 		doj.sendKeys("10-06-2022");
-		Thread.sleep(1000);
 		employeeNumber.clear();
 		employeeNumber.sendKeys("8054");
-		Thread.sleep(1000);
 		update.click();
-		Thread.sleep(2000);
 	}
 	
 	// Trigger Document Manually
 	public void triggerDocumentManually() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		triggerDocumentManually.click();
 		Thread.sleep(1000);
 		appointmentLetter.click();
@@ -1456,9 +1428,7 @@ public class Initiate_newcase_page extends BaseClass {
 	{
 		sideBarExpand.click();
 		caseSubmissionSummary.click();
-		Thread.sleep(2000);
 		sideSubmittedForVerification.click();
-		Thread.sleep(1000);
 		documentForSignature.click();
 	}
 	
@@ -1466,8 +1436,8 @@ public class Initiate_newcase_page extends BaseClass {
 	public void reviewAndApproveAL() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		//ldriver.findElement(By.xpath(pendingApproveAlStart.concat(newName).concat(pendingApproveAlEnd))).click();
-		viewSignDoc.click();
+		ldriver.findElement(By.xpath(pendingApproveAlStart.concat(newName1).concat(pendingApproveAlEnd))).click();
+//		viewSignDoc.click();
 		approveSdDoc.click();
 		Thread.sleep(2000);
 		approveDocButton.click();

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-iBridge">
-              <span class="suite-name border-passed">iBridge</span>
+              <span class="suite-name border-failed">iBridge</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-iBridge">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">36 methods, 1 failed,  3 skipped,  32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-iBridge" class="hide-methods failed suite-iBridge"> (hide)</a> <!-- hide-methods failed suite-iBridge -->
+                      <a href="#" panel-name="suite-iBridge" class="show-methods failed suite-iBridge"> (show)</a> <!-- show-methods failed suite-iBridge -->
+                    </span>
+                    <div class="method-list-content failed suite-iBridge">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="verifyInstaform">verifyInstaform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-iBridge -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-iBridge" class="hide-methods skipped suite-iBridge"> (hide)</a> <!-- hide-methods skipped suite-iBridge -->
+                      <a href="#" panel-name="suite-iBridge" class="show-methods skipped suite-iBridge"> (show)</a> <!-- show-methods skipped suite-iBridge -->
+                    </span>
+                    <div class="method-list-content skipped suite-iBridge">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="addAdditionalDetail">addAdditionalDetail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="alLink">alLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="instaform">instaform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-iBridge -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +140,57 @@
                     <div class="method-list-content passed suite-iBridge">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="bgvLogin">bgvLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="bgvLogin">bgvLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="bgvLogin">bgvLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" hash-for-method="candidateReceiveLink">candidateReceiveLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="emailVerification">emailVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="emailVerification">emailVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="emailVerification">emailVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="fillAndSubmitForm">fillAndSubmitForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="fillAndSumitForm">fillAndSumitForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="fillAndSumitForm">fillAndSumitForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="initiateViaCandidate">initiateViaCandidate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -112,12 +200,102 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="initiateViaCandidate">initiateViaCandidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="initiateViaCandidate">initiateViaCandidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="instaform">instaform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="instaform">instaform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="pendingSignOffBucket">pendingSignOffBucket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="pendingSignOffBucket">pendingSignOffBucket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="pendingSignOffBucket">pendingSignOffBucket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="signDriveLogin">signDriveLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" hash-for-method="signDriveLogin">signDriveLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="signDriveLogin">signDriveLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="signDrivelogin">signDrivelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="uploadCTCFile">uploadCTCFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="uploadCTCFile">uploadCTCFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="uploadCTCFile">uploadCTCFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" hash-for-method="uploadCtcFile">uploadCtcFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="verifyInstaform">verifyInstaform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="verifyInstaform">verifyInstaform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Approved_Test" hash-for-method="verifyOLAcceptedByCandidate">verifyOLAcceptedByCandidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" hash-for-method="verifyOLAcceptedByCandidate">verifyOLAcceptedByCandidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-iBridge" title="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" hash-for-method="verifyOLAcceptedByCandidate">verifyOLAcceptedByCandidate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-iBridge -->
@@ -132,6 +310,81 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-iBridge" class="panel iBridge">
+          <div class="suite-iBridge-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInstaform">
+                  </a> <!-- verifyInstaform -->
+                  <span class="method-name">verifyInstaform</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.80.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.LOIdO1}, goog:chromeOptions: {debuggerAddress: localhost:43787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea4e93e855a6db24fc725ec1ca816f94
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.signdrive.pageobject.Email_Verification_page.verifyCandidateReceiveOLLink(Email_Verification_page.java:242)
+	at com.signdrive.testcases.SignDrive_ManaulTrigger_Test.verifyInstaform(SignDrive_ManaulTrigger_Test.java:228)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-iBridge-class-failed -->
+          <div class="suite-iBridge-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAdditionalDetail">
+                  </a> <!-- addAdditionalDetail -->
+                  <span class="method-name">addAdditionalDetail</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.addAdditionalDetail()[pri:11, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="alLink">
+                  </a> <!-- alLink -->
+                  <span class="method-name">alLink</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.alLink()[pri:12, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="instaform">
+                  </a> <!-- instaform -->
+                  <span class="method-name">instaform</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.instaform()[pri:10, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-iBridge-class-skipped -->
           <div class="suite-iBridge-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -168,6 +421,226 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-iBridge-class-passed -->
+          <div class="suite-iBridge-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.signdrive.testcases.SignDrive_Rejected_EPFO_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bgvLogin">
+                  </a> <!-- bgvLogin -->
+                  <span class="method-name">bgvLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailVerification">
+                  </a> <!-- emailVerification -->
+                  <span class="method-name">emailVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillAndSumitForm">
+                  </a> <!-- fillAndSumitForm -->
+                  <span class="method-name">fillAndSumitForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="initiateViaCandidate">
+                  </a> <!-- initiateViaCandidate -->
+                  <span class="method-name">initiateViaCandidate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="instaform">
+                  </a> <!-- instaform -->
+                  <span class="method-name">instaform</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pendingSignOffBucket">
+                  </a> <!-- pendingSignOffBucket -->
+                  <span class="method-name">pendingSignOffBucket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signDriveLogin">
+                  </a> <!-- signDriveLogin -->
+                  <span class="method-name">signDriveLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadCTCFile">
+                  </a> <!-- uploadCTCFile -->
+                  <span class="method-name">uploadCTCFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInstaform">
+                  </a> <!-- verifyInstaform -->
+                  <span class="method-name">verifyInstaform</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOLAcceptedByCandidate">
+                  </a> <!-- verifyOLAcceptedByCandidate -->
+                  <span class="method-name">verifyOLAcceptedByCandidate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-iBridge-class-passed -->
+          <div class="suite-iBridge-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.signdrive.testcases.SignDrive_Approved_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bgvLogin">
+                  </a> <!-- bgvLogin -->
+                  <span class="method-name">bgvLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailVerification">
+                  </a> <!-- emailVerification -->
+                  <span class="method-name">emailVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillAndSumitForm">
+                  </a> <!-- fillAndSumitForm -->
+                  <span class="method-name">fillAndSumitForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="initiateViaCandidate">
+                  </a> <!-- initiateViaCandidate -->
+                  <span class="method-name">initiateViaCandidate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="instaform">
+                  </a> <!-- instaform -->
+                  <span class="method-name">instaform</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pendingSignOffBucket">
+                  </a> <!-- pendingSignOffBucket -->
+                  <span class="method-name">pendingSignOffBucket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signDriveLogin">
+                  </a> <!-- signDriveLogin -->
+                  <span class="method-name">signDriveLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadCTCFile">
+                  </a> <!-- uploadCTCFile -->
+                  <span class="method-name">uploadCTCFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInstaform">
+                  </a> <!-- verifyInstaform -->
+                  <span class="method-name">verifyInstaform</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOLAcceptedByCandidate">
+                  </a> <!-- verifyOLAcceptedByCandidate -->
+                  <span class="method-name">verifyOLAcceptedByCandidate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-iBridge-class-passed -->
+          <div class="suite-iBridge-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bgvLogin">
+                  </a> <!-- bgvLogin -->
+                  <span class="method-name">bgvLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailVerification">
+                  </a> <!-- emailVerification -->
+                  <span class="method-name">emailVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillAndSubmitForm">
+                  </a> <!-- fillAndSubmitForm -->
+                  <span class="method-name">fillAndSubmitForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="initiateViaCandidate">
+                  </a> <!-- initiateViaCandidate -->
+                  <span class="method-name">initiateViaCandidate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pendingSignOffBucket">
+                  </a> <!-- pendingSignOffBucket -->
+                  <span class="method-name">pendingSignOffBucket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signDrivelogin">
+                  </a> <!-- signDrivelogin -->
+                  <span class="method-name">signDrivelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadCTCFile">
+                  </a> <!-- uploadCTCFile -->
+                  <span class="method-name">uploadCTCFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOLAcceptedByCandidate">
+                  </a> <!-- verifyOLAcceptedByCandidate -->
+                  <span class="method-name">verifyOLAcceptedByCandidate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-iBridge-class-passed -->
         </div> <!-- panel iBridge -->
         <div panel-name="test-xml-iBridge" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -181,12 +654,30 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.iBridge.utilities.Reporting&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;iBridge 20&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.signdrive.testcases.SignDrive_Approved_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- iBridge 20 --&gt;
   &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;iBridge 21&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- iBridge 21 --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;iBridge 22&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.signdrive.testcases.SignDrive_Rejected_EPFO_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- iBridge 22 --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;iBridge 23&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.signdrive.testcases.SignDrive_ManaulTrigger_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- iBridge 23 --&gt;
 &lt;/suite&gt; &lt;!-- iBridge --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,7 +689,16 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">iBridge 20 (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">iBridge 21 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">iBridge 22 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">iBridge 23 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,28 +724,156 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(36);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'candidateReceiveLink')
 data.setCell(0, 2, 'com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test')
-data.setCell(0, 3, 250828);
+data.setCell(0, 3, 183886);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'initiateViaCandidate')
-data.setCell(1, 2, 'com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test')
-data.setCell(1, 3, 59542);
+data.setCell(1, 1, 'verifyOLAcceptedByCandidate')
+data.setCell(1, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(1, 3, 171358);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'uploadCtcFile')
-data.setCell(2, 2, 'com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test')
-data.setCell(2, 3, 38532);
+data.setCell(2, 1, 'verifyOLAcceptedByCandidate')
+data.setCell(2, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(2, 3, 162731);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'signDriveLogin')
-data.setCell(3, 2, 'com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test')
-data.setCell(3, 3, 9185);
+data.setCell(3, 1, 'verifyOLAcceptedByCandidate')
+data.setCell(3, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(3, 3, 158704);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'instaform')
+data.setCell(4, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(4, 3, 156443);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'instaform')
+data.setCell(5, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(5, 3, 129962);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'bgvLogin')
+data.setCell(6, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(6, 3, 67063);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'bgvLogin')
+data.setCell(7, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(7, 3, 65362);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'bgvLogin')
+data.setCell(8, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(8, 3, 64304);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'fillAndSumitForm')
+data.setCell(9, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(9, 3, 62937);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'fillAndSubmitForm')
+data.setCell(10, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(10, 3, 60898);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'fillAndSumitForm')
+data.setCell(11, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(11, 3, 58125);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'emailVerification')
+data.setCell(12, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(12, 3, 57995);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'emailVerification')
+data.setCell(13, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(13, 3, 51283);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'emailVerification')
+data.setCell(14, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(14, 3, 50191);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'initiateViaCandidate')
+data.setCell(15, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(15, 3, 43664);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'initiateViaCandidate')
+data.setCell(16, 2, 'com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test')
+data.setCell(16, 3, 41515);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'initiateViaCandidate')
+data.setCell(17, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(17, 3, 38123);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyInstaform')
+data.setCell(18, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(18, 3, 32279);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'uploadCTCFile')
+data.setCell(19, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(19, 3, 28350);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'initiateViaCandidate')
+data.setCell(20, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(20, 3, 27943);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'uploadCTCFile')
+data.setCell(21, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(21, 3, 27924);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyInstaform')
+data.setCell(22, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(22, 3, 25531);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'uploadCtcFile')
+data.setCell(23, 2, 'com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test')
+data.setCell(23, 3, 24193);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'uploadCTCFile')
+data.setCell(24, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(24, 3, 23911);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyInstaform')
+data.setCell(25, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(25, 3, 23740);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'pendingSignOffBucket')
+data.setCell(26, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(26, 3, 20250);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'pendingSignOffBucket')
+data.setCell(27, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(27, 3, 20232);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'pendingSignOffBucket')
+data.setCell(28, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(28, 3, 20147);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'signDriveLogin')
+data.setCell(29, 2, 'com.signdrive.testcases.SignDrive_Approved_Test')
+data.setCell(29, 3, 11065);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'signDriveLogin')
+data.setCell(30, 2, 'com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test')
+data.setCell(30, 3, 4915);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'signDriveLogin')
+data.setCell(31, 2, 'com.signdrive.testcases.SignDrive_Rejected_EPFO_Test')
+data.setCell(31, 3, 3976);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'signDrivelogin')
+data.setCell(32, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(32, 3, 2777);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'instaform')
+data.setCell(33, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'addAdditionalDetail')
+data.setCell(34, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'alLink')
+data.setCell(35, 2, 'com.signdrive.testcases.SignDrive_ManaulTrigger_Test')
+data.setCell(35, 3, 0);
 window.suiteTableData['iBridge']= { tableData: data, tableDiv: 'times-div-iBridge'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 32 minutes</span>
               <div id="times-div-iBridge">
               </div> <!-- times-div-iBridge -->
             </div> <!-- times-div -->
@@ -271,26 +899,165 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.signdrive.testcases.SignDrive_Approved_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signDriveLogin</span>
-                <span class="method-start">7946 ms</span>
+                <span class="method-start">6602 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">initiateViaCandidate</span>
-                <span class="method-start">17162 ms</span>
+                <span class="method-start">17695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uploadCTCFile</span>
+                <span class="method-start">45639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">emailVerification</span>
+                <span class="method-start">73564 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyOLAcceptedByCandidate</span>
+                <span class="method-start">123756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bgvLogin</span>
+                <span class="method-start">282461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fillAndSumitForm</span>
+                <span class="method-start">346766 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pendingSignOffBucket</span>
+                <span class="method-start">409703 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyInstaform</span>
+                <span class="method-start">429954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">instaform</span>
+                <span class="method-start">455486 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">612571 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">signDriveLogin</span>
+                <span class="method-start">617938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">initiateViaCandidate</span>
+                <span class="method-start">622854 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">uploadCtcFile</span>
-                <span class="method-start">76707 ms</span>
+                <span class="method-start">664370 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">candidateReceiveLink</span>
-                <span class="method-start">115240 ms</span>
+                <span class="method-start">688563 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.signdrive.testcases.SignDrive_Rejected_EPFO_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">872512 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">signDriveLogin</span>
+                <span class="method-start">877228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">initiateViaCandidate</span>
+                <span class="method-start">881205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uploadCTCFile</span>
+                <span class="method-start">924870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">emailVerification</span>
+                <span class="method-start">948782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyOLAcceptedByCandidate</span>
+                <span class="method-start">1000066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bgvLogin</span>
+                <span class="method-start">1171425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fillAndSumitForm</span>
+                <span class="method-start">1238489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pendingSignOffBucket</span>
+                <span class="method-start">1296614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyInstaform</span>
+                <span class="method-start">1316847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">instaform</span>
+                <span class="method-start">1340588 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.signdrive.testcases.SignDrive_ManaulTrigger_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1470624 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">signDrivelogin</span>
+                <span class="method-start">1475305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">initiateViaCandidate</span>
+                <span class="method-start">1478083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uploadCTCFile</span>
+                <span class="method-start">1516207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">emailVerification</span>
+                <span class="method-start">1544559 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyOLAcceptedByCandidate</span>
+                <span class="method-start">1602555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bgvLogin</span>
+                <span class="method-start">1765287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fillAndSubmitForm</span>
+                <span class="method-start">1830650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pendingSignOffBucket</span>
+                <span class="method-start">1891549 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyInstaform</span>
+                <span class="method-start">1911696 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

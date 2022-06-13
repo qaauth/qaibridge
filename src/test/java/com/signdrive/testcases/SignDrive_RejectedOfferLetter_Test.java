@@ -47,7 +47,7 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 		// Initiate new case
 		newCase.sidebarExpandBtn();
 		logger.info("Clicked on expand bar and initiate new case");
-		Thread.sleep(3000);
+		
 
 		// Package Selection
 		newCase.clickUnCheckWiseSelect("1", "1", "1", "1", "1", "1");
@@ -58,19 +58,17 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 		newCase.candidateFirstName(firstName);
 		newCase.candidateMiddleName(middleName);
 		newCase.candidateLastName(lastName);
-		Thread.sleep(1000);
+		
 		newCase.addCandidateDOBEmailAndMobile("8009744341", "04-04-1991");
 		logger.info("Candidate information added");
 
 		// Additional Fields
 		newCase.selectLocationFromDropDown();
-		Thread.sleep(1000);
 		newCase.enterEmployeeIDAndClientName();
-		Thread.sleep(1000);
+		
 
 		// Initiate Case
 		newCase.addToQueue();
-		Thread.sleep(1000);
 		logger.info("Initiate new case");
 	}
 
@@ -105,8 +103,6 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 		// Verify email receives by the candidate
 		if (email.verifyCandidateReceiveOLLink() == true) {
 
-			Thread.sleep(2000);
-
 			// verify Offer Letter Signed By the candidate
 
 			mail.olRejectbyCandidate();
@@ -115,7 +111,6 @@ public class SignDrive_RejectedOfferLetter_Test extends BaseClass {
 			// Hit the Cron
 
 			newCase.cron();
-			Thread.sleep(2000);
 			ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
 			driver.switchTo().window(tab.get(0));
 			driver.navigate().refresh();
