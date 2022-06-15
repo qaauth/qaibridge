@@ -47,17 +47,19 @@
 
 	<!-- Prepaid Client Enp Admin Test Cases iBridge SME Client MOTHER DAIRY 
 		FRUIT & VEGETABLE PRIVATE LIMITED -->
+		
 	<!-- <test name="iBridge10"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" 
 		/> </classes> </test> -->
-	<!-- <test name="iBridge11"> <parameter name="browser" value="chrome" /> 
+		
+	<test name="iBridge11"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" 
-		/> </classes> </test> -->
+		/> </classes> </test>
 
 	<!-- <test name="iBridge12"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" /> 
-		</classes> </test> -->
-
+		</classes> </test>
+ -->
 	<!-- <test name="iBridge13"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" 
 		/> </classes> </test> -->
@@ -85,31 +87,31 @@
 
 	<!-- SignDrive Test Cases -->
 	
-	<test name="iBridge 20">
+	<!-- <test name="iBridge 20">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_Approved_Test" />
 		</classes>
-	</test>
+	</test> -->
 	
-	<test name="iBridge 21">
+	<!-- <test name="iBridge 21">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" />
 		</classes>
-	</test>
+	</test> -->
 	
-	<test name="iBridge 22">
+	<!-- <test name="iBridge 22">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" />
 		</classes>
-	</test>
+	</test> -->
 	
-	<test name="iBridge 23">
+	<!-- <test name="iBridge 23">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" />
 		</classes>
-	</test>
+	</test> -->
 </suite>

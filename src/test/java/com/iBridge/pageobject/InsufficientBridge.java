@@ -810,7 +810,7 @@ public class InsufficientBridge {
 			JavaScriptManuplator.selectOptionFromDropDown(selectDocsQcAllocator, "Docs QC Allocator");
 			//Select docsQCAllocator = new Select(selectDocsQcAllocator);
 			//docsQCAllocator.selectByIndex(24);
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
 			wait = new WebDriverWait(ldriver, 360);

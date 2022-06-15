@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1,921.801" tests="36" errors="0" skipped="3" failures="1">
+<testsuite name="TestSuite" time="181.779" tests="18" errors="0" skipped="14" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6218460871272683647.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8835942855244622635.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,47 +59,19 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="signDriveLogin" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="11.067"/>
-  <testcase name="initiateViaCandidate" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="27.944"/>
-  <testcase name="uploadCTCFile" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="27.927"/>
-  <testcase name="emailVerification" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="50.189"/>
-  <testcase name="verifyOLAcceptedByCandidate" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="158.705"/>
-  <testcase name="bgvLogin" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="64.304"/>
-  <testcase name="fillAndSumitForm" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="62.937"/>
-  <testcase name="pendingSignOffBucket" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="20.251"/>
-  <testcase name="verifyInstaform" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="25.53"/>
-  <testcase name="instaform" classname="com.signdrive.testcases.SignDrive_Approved_Test" time="156.443"/>
-  <testcase name="signDriveLogin" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="4.915"/>
-  <testcase name="initiateViaCandidate" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="41.514"/>
-  <testcase name="uploadCtcFile" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="24.193"/>
-  <testcase name="candidateReceiveLink" classname="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test" time="183.886"/>
-  <testcase name="signDriveLogin" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="3.976"/>
-  <testcase name="initiateViaCandidate" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="43.664"/>
-  <testcase name="uploadCTCFile" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="23.911"/>
-  <testcase name="emailVerification" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="51.283"/>
-  <testcase name="verifyOLAcceptedByCandidate" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="171.357"/>
-  <testcase name="bgvLogin" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="67.063"/>
-  <testcase name="fillAndSumitForm" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="58.128"/>
-  <testcase name="pendingSignOffBucket" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="20.229"/>
-  <testcase name="verifyInstaform" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="23.74"/>
-  <testcase name="instaform" classname="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test" time="129.963"/>
-  <testcase name="signDrivelogin" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="2.778"/>
-  <testcase name="initiateViaCandidate" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="38.123"/>
-  <testcase name="uploadCTCFile" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="28.352"/>
-  <testcase name="emailVerification" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="57.995"/>
-  <testcase name="verifyOLAcceptedByCandidate" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="162.731"/>
-  <testcase name="bgvLogin" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="65.363"/>
-  <testcase name="fillAndSubmitForm" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="60.899"/>
-  <testcase name="pendingSignOffBucket" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="20.148"/>
-  <testcase name="verifyInstaform" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="32.293">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.80.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.LOIdO1}, goog:chromeOptions: {debuggerAddress: localhost:43787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ea4e93e855a6db24fc725ec1ca816f94" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  <testcase name="verifyInsufficientVerifier" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="46.593"/>
+  <testcase name="verifyInsufficientAppearingOniBridge" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="44.29"/>
+  <testcase name="verifyInsufficientpendingForFulfilment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="16.456"/>
+  <testcase name="verifyInsufficiencyFulfillment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="74.44">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.80.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce5725531fd8db5d772b584458afd0b4&#10;*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]"}
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ARS-NBT-LAP-068', ip: '192.168.80.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.LOIdO1}, goog:chromeOptions: {debuggerAddress: localhost:43787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea4e93e855a6db24fc725ec1ca816f94
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce5725531fd8db5d772b584458afd0b4
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -110,30 +82,60 @@ Session ID: ea4e93e855a6db24fc725ec1ca816f94
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.signdrive.pageobject.Email_Verification_page.verifyCandidateReceiveOLLink(Email_Verification_page.java:242)
-	at com.signdrive.testcases.SignDrive_ManaulTrigger_Test.verifyInstaform(SignDrive_ManaulTrigger_Test.java:228)
+	at com.iBridge.sme.pageobject.InsufficientBridgeSme.userAdminInsufficiencyFulfillment(InsufficientBridgeSme.java:1346)
+	at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment(TC_InsufficientBridgeSme_01.java:109)
 </failure>
-    <system-out><![CDATA[ INFO [main] (SignDrive_ManaulTrigger_Test.java:225)- Gmail URL is opened
-enp.admin@authbridge.com
-Auth@123
-enp.admin@authbridge.com
-Auth@123
+    <system-out><![CDATA[ INFO [main] (TC_InsufficientBridgeSme_01.java:102)- Bridge Url is opened
+ INFO [main] (TC_InsufficientBridgeSme_01.java:105)- Bridge account has Logged successfully!
 ]]></system-out>
   </testcase>
-  <testcase name="instaform" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
+  <testcase name="verifyInsufficientCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="addAdditionalDetail" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
+  <testcase name="verifyCostApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="alLink" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
+  <testcase name="verifycostApprovalRequiredInsuffCasePresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifycostApprovalRequiredRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAdminUserReasonInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyApprovalRequiredAndInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyApprovalRequiredInsuffPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyApprovalRequiredInsuffBothRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyInsufficientBothCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAdminUserInsuffRaisedCasesOnHold" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyInsuffCasesOnHoldPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyInsuffCasesOnHoldRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifywithdrawCaseStatusClosedByClient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
     <skipped/>
   </testcase>
 </testsuite>

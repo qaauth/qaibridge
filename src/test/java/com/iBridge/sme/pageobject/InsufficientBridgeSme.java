@@ -497,6 +497,11 @@ public class InsufficientBridgeSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//button[@id='complete_search']")
 	WebElement clickOnCompleteSearchBtn;
+	
+	// By sapna
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[1]/div[1]/h4[2]/a")
+	WebElement loadResult;
 
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]")
@@ -1144,10 +1149,10 @@ public class InsufficientBridgeSme {
 
 		// Confirmation Alert-- There are 1 overlapping tenures between employment
 		// checks.
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnOkUnderstoodBtn));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnOkUnderstoodBtn);
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnOkUnderstoodBtn));
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnOkUnderstoodBtn);
 
 		Select seniorLevel = new Select(selectSeniorLevel);
 		seniorLevel.selectByIndex(3);
@@ -1196,9 +1201,9 @@ public class InsufficientBridgeSme {
 
 		// Confirmation- Alert There are 1 overlapping tenures between employment
 		// checks.
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnOkIUnderstoodBtn));
-		clickOnOkIUnderstoodBtn.click();
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnOkIUnderstoodBtn));
+//		clickOnOkIUnderstoodBtn.click();
 		Thread.sleep(1000);
 		Select seniorCaseLevel = new Select(selectSeniorCaseLevel);
 		seniorCaseLevel.selectByIndex(3);
@@ -1307,11 +1312,11 @@ public class InsufficientBridgeSme {
 		caseCheckVerification.selectByIndex(4);
 
 		// Case Check - Mark Insufficiency
-		Select selectReasonForInsufficiency = new Select(selectSelectReasonForInsufficiency);
-		selectReasonForInsufficiency.selectByIndex(1);
-		txtInsufficientComment.sendKeys(insuffComments);
-		clickOnMarkAsInsufficientBtn.click();
-		Thread.sleep(1000);
+//		Select selectReasonForInsufficiency = new Select(selectSelectReasonForInsufficiency);
+//		selectReasonForInsufficiency.selectByIndex(1);
+//		txtInsufficientComment.sendKeys(insuffComments);
+//		clickOnMarkAsInsufficientBtn.click();
+//		Thread.sleep(1000);
 	}
 
 	public String verifyMarkedAsInsufficientMsg() {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" ignored="0" total="36" passed="32">
+<testng-results skipped="14" failed="1" ignored="0" total="18" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="iBridge" duration-ms="1944219" started-at="2022-06-12T12:43:16Z" finished-at="2022-06-12T13:15:40Z">
+  <suite name="iBridge" duration-ms="196733" started-at="2022-06-15T12:02:48Z" finished-at="2022-06-15T12:06:04Z">
     <groups>
     </groups>
-    <test name="iBridge 20" duration-ms="612150" started-at="2022-06-12T12:43:16Z" finished-at="2022-06-12T12:53:28Z">
-      <class name="com.signdrive.testcases.SignDrive_Approved_Test">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="setup" is-config="true" duration-ms="6598" started-at="2022-06-12T12:43:16Z" finished-at="2022-06-12T12:43:23Z">
+    <test name="iBridge11" duration-ms="196733" started-at="2022-06-15T12:02:48Z" finished-at="2022-06-15T12:06:04Z">
+      <class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="setup" is-config="true" duration-ms="14690" started-at="2022-06-15T12:02:48Z" finished-at="2022-06-15T12:03:02Z">
           <params>
             <param index="0">
               <value>
@@ -18,200 +18,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="signDriveLogin()[pri:1, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="signDriveLogin" duration-ms="11065" started-at="2022-06-12T12:43:23Z" finished-at="2022-06-12T12:43:34Z">
+        <test-method status="PASS" signature="verifyInsufficientVerifier()[pri:1, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientVerifier" duration-ms="46592" started-at="2022-06-15T12:03:02Z" finished-at="2022-06-15T12:03:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signDriveLogin -->
-        <test-method status="PASS" signature="initiateViaCandidate()[pri:2, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="initiateViaCandidate" duration-ms="27943" started-at="2022-06-12T12:43:34Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.signDriveLogin" finished-at="2022-06-12T12:44:02Z">
+        </test-method> <!-- verifyInsufficientVerifier -->
+        <test-method status="PASS" signature="verifyInsufficientAppearingOniBridge()[pri:2, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientAppearingOniBridge" duration-ms="44288" started-at="2022-06-15T12:03:49Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientVerifier" finished-at="2022-06-15T12:04:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initiateViaCandidate -->
-        <test-method status="PASS" signature="uploadCTCFile()[pri:3, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="uploadCTCFile" duration-ms="27924" started-at="2022-06-12T12:44:02Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.initiateViaCandidate" finished-at="2022-06-12T12:44:30Z">
+        </test-method> <!-- verifyInsufficientAppearingOniBridge -->
+        <test-method status="PASS" signature="verifyInsufficientpendingForFulfilment()[pri:3, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientpendingForFulfilment" duration-ms="16456" started-at="2022-06-15T12:04:33Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientAppearingOniBridge" finished-at="2022-06-15T12:04:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadCTCFile -->
-        <test-method status="PASS" signature="emailVerification()[pri:4, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="emailVerification" duration-ms="50191" started-at="2022-06-12T12:44:30Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.uploadCTCFile" finished-at="2022-06-12T12:45:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emailVerification -->
-        <test-method status="PASS" signature="verifyOLAcceptedByCandidate()[pri:5, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="verifyOLAcceptedByCandidate" duration-ms="158704" started-at="2022-06-12T12:45:20Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.emailVerification" finished-at="2022-06-12T12:47:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOLAcceptedByCandidate -->
-        <test-method status="PASS" signature="bgvLogin()[pri:6, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="bgvLogin" duration-ms="64304" started-at="2022-06-12T12:47:59Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.verifyOLAcceptedByCandidate" finished-at="2022-06-12T12:49:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bgvLogin -->
-        <test-method status="PASS" signature="fillAndSumitForm()[pri:7, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="fillAndSumitForm" duration-ms="62937" started-at="2022-06-12T12:49:03Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.bgvLogin" finished-at="2022-06-12T12:50:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillAndSumitForm -->
-        <test-method status="PASS" signature="pendingSignOffBucket()[pri:8, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="pendingSignOffBucket" duration-ms="20250" started-at="2022-06-12T12:50:06Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.fillAndSumitForm" finished-at="2022-06-12T12:50:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pendingSignOffBucket -->
-        <test-method status="PASS" signature="verifyInstaform()[pri:9, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="verifyInstaform" duration-ms="25531" started-at="2022-06-12T12:50:26Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.pendingSignOffBucket" finished-at="2022-06-12T12:50:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInstaform -->
-        <test-method status="PASS" signature="instaform()[pri:10, instance:com.signdrive.testcases.SignDrive_Approved_Test@2ed94a8b]" name="instaform" duration-ms="156443" started-at="2022-06-12T12:50:52Z" depends-on-methods="com.signdrive.testcases.SignDrive_Approved_Test.verifyInstaform" finished-at="2022-06-12T12:53:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instaform -->
-      </class> <!-- com.signdrive.testcases.SignDrive_Approved_Test -->
-    </test> <!-- iBridge 20 -->
-    <test name="iBridge 21" duration-ms="259883" started-at="2022-06-12T12:53:29Z" finished-at="2022-06-12T12:57:49Z">
-      <class name="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test@34b7bfc0]" name="setup" is-config="true" duration-ms="5366" started-at="2022-06-12T12:53:29Z" finished-at="2022-06-12T12:53:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="signDriveLogin()[pri:1, instance:com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test@34b7bfc0]" name="signDriveLogin" duration-ms="4915" started-at="2022-06-12T12:53:34Z" finished-at="2022-06-12T12:53:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signDriveLogin -->
-        <test-method status="PASS" signature="initiateViaCandidate()[pri:2, instance:com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test@34b7bfc0]" name="initiateViaCandidate" duration-ms="41515" started-at="2022-06-12T12:53:39Z" depends-on-methods="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test.signDriveLogin" finished-at="2022-06-12T12:54:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateViaCandidate -->
-        <test-method status="PASS" signature="uploadCtcFile()[pri:3, instance:com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test@34b7bfc0]" name="uploadCtcFile" duration-ms="24193" started-at="2022-06-12T12:54:21Z" depends-on-methods="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test.initiateViaCandidate" finished-at="2022-06-12T12:54:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadCtcFile -->
-        <test-method status="PASS" signature="candidateReceiveLink()[pri:4, instance:com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test@34b7bfc0]" name="candidateReceiveLink" duration-ms="183886" started-at="2022-06-12T12:54:45Z" depends-on-methods="com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test.uploadCtcFile" finished-at="2022-06-12T12:57:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- candidateReceiveLink -->
-      </class> <!-- com.signdrive.testcases.SignDrive_RejectedOfferLetter_Test -->
-    </test> <!-- iBridge 21 -->
-    <test name="iBridge 22" duration-ms="598043" started-at="2022-06-12T12:57:49Z" finished-at="2022-06-12T13:07:47Z">
-      <class name="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="setup" is-config="true" duration-ms="4716" started-at="2022-06-12T12:57:49Z" finished-at="2022-06-12T12:57:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="signDriveLogin()[pri:1, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="signDriveLogin" duration-ms="3976" started-at="2022-06-12T12:57:53Z" finished-at="2022-06-12T12:57:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signDriveLogin -->
-        <test-method status="PASS" signature="initiateViaCandidate()[pri:2, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="initiateViaCandidate" duration-ms="43664" started-at="2022-06-12T12:57:57Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.signDriveLogin" finished-at="2022-06-12T12:58:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateViaCandidate -->
-        <test-method status="PASS" signature="uploadCTCFile()[pri:3, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="uploadCTCFile" duration-ms="23911" started-at="2022-06-12T12:58:41Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.initiateViaCandidate" finished-at="2022-06-12T12:59:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadCTCFile -->
-        <test-method status="PASS" signature="emailVerification()[pri:4, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="emailVerification" duration-ms="51283" started-at="2022-06-12T12:59:05Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.uploadCTCFile" finished-at="2022-06-12T12:59:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emailVerification -->
-        <test-method status="PASS" signature="verifyOLAcceptedByCandidate()[pri:5, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="verifyOLAcceptedByCandidate" duration-ms="171358" started-at="2022-06-12T12:59:56Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.emailVerification" finished-at="2022-06-12T13:02:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOLAcceptedByCandidate -->
-        <test-method status="PASS" signature="bgvLogin()[pri:6, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="bgvLogin" duration-ms="67063" started-at="2022-06-12T13:02:48Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.verifyOLAcceptedByCandidate" finished-at="2022-06-12T13:03:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bgvLogin -->
-        <test-method status="PASS" signature="fillAndSumitForm()[pri:7, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="fillAndSumitForm" duration-ms="58125" started-at="2022-06-12T13:03:55Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.bgvLogin" finished-at="2022-06-12T13:04:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillAndSumitForm -->
-        <test-method status="PASS" signature="pendingSignOffBucket()[pri:8, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="pendingSignOffBucket" duration-ms="20232" started-at="2022-06-12T13:04:53Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.fillAndSumitForm" finished-at="2022-06-12T13:05:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pendingSignOffBucket -->
-        <test-method status="PASS" signature="verifyInstaform()[pri:9, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="verifyInstaform" duration-ms="23740" started-at="2022-06-12T13:05:13Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.pendingSignOffBucket" finished-at="2022-06-12T13:05:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInstaform -->
-        <test-method status="PASS" signature="instaform()[pri:10, instance:com.signdrive.testcases.SignDrive_Rejected_EPFO_Test@3551a94]" name="instaform" duration-ms="129962" started-at="2022-06-12T13:05:37Z" depends-on-methods="com.signdrive.testcases.SignDrive_Rejected_EPFO_Test.verifyInstaform" finished-at="2022-06-12T13:07:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instaform -->
-      </class> <!-- com.signdrive.testcases.SignDrive_Rejected_EPFO_Test -->
-    </test> <!-- iBridge 22 -->
-    <test name="iBridge 23" duration-ms="473379" started-at="2022-06-12T13:07:47Z" finished-at="2022-06-12T13:15:40Z">
-      <class name="com.signdrive.testcases.SignDrive_ManaulTrigger_Test">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="setup" is-config="true" duration-ms="4681" started-at="2022-06-12T13:07:47Z" finished-at="2022-06-12T13:07:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="signDrivelogin()[pri:1, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="signDrivelogin" duration-ms="2777" started-at="2022-06-12T13:07:51Z" finished-at="2022-06-12T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signDrivelogin -->
-        <test-method status="PASS" signature="initiateViaCandidate()[pri:2, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="initiateViaCandidate" duration-ms="38123" started-at="2022-06-12T13:07:54Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.signDrivelogin" finished-at="2022-06-12T13:08:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateViaCandidate -->
-        <test-method status="PASS" signature="uploadCTCFile()[pri:3, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="uploadCTCFile" duration-ms="28350" started-at="2022-06-12T13:08:32Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.initiateViaCandidate" finished-at="2022-06-12T13:09:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadCTCFile -->
-        <test-method status="PASS" signature="emailVerification()[pri:4, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="emailVerification" duration-ms="57995" started-at="2022-06-12T13:09:01Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.uploadCTCFile" finished-at="2022-06-12T13:09:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emailVerification -->
-        <test-method status="PASS" signature="verifyOLAcceptedByCandidate()[pri:5, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="verifyOLAcceptedByCandidate" duration-ms="162731" started-at="2022-06-12T13:09:59Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.emailVerification" finished-at="2022-06-12T13:12:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOLAcceptedByCandidate -->
-        <test-method status="PASS" signature="bgvLogin()[pri:6, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="bgvLogin" duration-ms="65362" started-at="2022-06-12T13:12:41Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.verifyOLAcceptedByCandidate" finished-at="2022-06-12T13:13:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bgvLogin -->
-        <test-method status="PASS" signature="fillAndSubmitForm()[pri:7, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="fillAndSubmitForm" duration-ms="60898" started-at="2022-06-12T13:13:47Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.bgvLogin" finished-at="2022-06-12T13:14:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillAndSubmitForm -->
-        <test-method status="PASS" signature="pendingSignOffBucket()[pri:8, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="pendingSignOffBucket" duration-ms="20147" started-at="2022-06-12T13:14:48Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.fillAndSubmitForm" finished-at="2022-06-12T13:15:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pendingSignOffBucket -->
-        <test-method status="FAIL" signature="verifyInstaform()[pri:9, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="verifyInstaform" duration-ms="32279" started-at="2022-06-12T13:15:08Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.pendingSignOffBucket" finished-at="2022-06-12T13:15:40Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        </test-method> <!-- verifyInsufficientpendingForFulfilment -->
+        <test-method status="FAIL" signature="verifyInsufficiencyFulfillment()[pri:4, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficiencyFulfillment" duration-ms="74435" started-at="2022-06-15T12:04:50Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientpendingForFulfilment" finished-at="2022-06-15T12:06:04Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]"}
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ARS-NBT-LAP-068', ip: '192.168.80.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.LOIdO1}, goog:chromeOptions: {debuggerAddress: localhost:43787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea4e93e855a6db24fc725ec1ca816f94]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce5725531fd8db5d772b584458afd0b4
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]"}
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'ARS-NBT-LAP-068', ip: '192.168.80.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.LOIdO1}, goog:chromeOptions: {debuggerAddress: localhost:43787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea4e93e855a6db24fc725ec1ca816f94
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce5725531fd8db5d772b584458afd0b4
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -222,15 +63,15 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy8.click(Unknown Source)
-at com.signdrive.pageobject.Email_Verification_page.verifyCandidateReceiveOLLink(Email_Verification_page.java:242)
-at com.signdrive.testcases.SignDrive_ManaulTrigger_Test.verifyInstaform(SignDrive_ManaulTrigger_Test.java:228)
+at com.iBridge.sme.pageobject.InsufficientBridgeSme.userAdminInsufficiencyFulfillment(InsufficientBridgeSme.java:1346)
+at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment(TC_InsufficientBridgeSme_01.java:109)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -261,17 +102,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInstaform -->
-        <test-method status="SKIP" signature="instaform()[pri:10, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="instaform" duration-ms="1" started-at="2022-06-12T13:15:40Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.verifyInstaform" finished-at="2022-06-12T13:15:40Z">
+        </test-method> <!-- verifyInsufficiencyFulfillment -->
+        <test-method status="SKIP" signature="verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientCasesPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment" finished-at="2022-06-15T12:06:04Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method SignDrive_ManaulTrigger_Test.instaform()[pri:10, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.instaform()[pri:10, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -298,14 +139,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instaform -->
-        <test-method status="SKIP" signature="addAdditionalDetail()[pri:11, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="addAdditionalDetail" duration-ms="0" started-at="2022-06-12T13:15:40Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.instaform" finished-at="2022-06-12T13:15:40Z">
+        </test-method> <!-- verifyInsufficientCasesPresentOrNot -->
+        <test-method status="SKIP" signature="verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyCostApprovalRequiredInsufficient" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot" finished-at="2022-06-15T12:06:04Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method SignDrive_ManaulTrigger_Test.addAdditionalDetail()[pri:11, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.addAdditionalDetail()[pri:11, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -332,14 +173,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addAdditionalDetail -->
-        <test-method status="SKIP" signature="alLink()[pri:12, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b]" name="alLink" duration-ms="0" started-at="2022-06-12T13:15:40Z" depends-on-methods="com.signdrive.testcases.SignDrive_ManaulTrigger_Test.addAdditionalDetail" finished-at="2022-06-12T13:15:40Z">
+        </test-method> <!-- verifyCostApprovalRequiredInsufficient -->
+        <test-method status="SKIP" signature="verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifycostApprovalRequiredInsuffCasePresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient" finished-at="2022-06-15T12:06:04Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method SignDrive_ManaulTrigger_Test.alLink()[pri:12, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method SignDrive_ManaulTrigger_Test.alLink()[pri:12, instance:com.signdrive.testcases.SignDrive_ManaulTrigger_Test@13c78c0b] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -366,8 +207,382 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alLink -->
-      </class> <!-- com.signdrive.testcases.SignDrive_ManaulTrigger_Test -->
-    </test> <!-- iBridge 23 -->
+        </test-method> <!-- verifycostApprovalRequiredInsuffCasePresentOrNot -->
+        <test-method status="SKIP" signature="verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifycostApprovalRequiredRemovedOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycostApprovalRequiredRemovedOrNot -->
+        <test-method status="SKIP" signature="verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredInsufficient" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredInsufficient -->
+        <test-method status="SKIP" signature="verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredAndInsufficientBoth" duration-ms="1" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredAndInsufficientBoth -->
+        <test-method status="SKIP" signature="verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyAdminUserReasonInsufficientBoth" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserReasonInsufficientBoth -->
+        <test-method status="SKIP" signature="verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredInsuffPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredInsuffPresentOrNot -->
+        <test-method status="SKIP" signature="verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredInsuffBothRemovedOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredInsuffBothRemovedOrNot -->
+        <test-method status="SKIP" signature="verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientBothCasesPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientBothCasesPresentOrNot -->
+        <test-method status="SKIP" signature="verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsuffCasesOnHoldPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsuffCasesOnHoldPresentOrNot -->
+        <test-method status="SKIP" signature="verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyAdminUserInsuffRaisedCasesOnHold" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserInsuffRaisedCasesOnHold -->
+        <test-method status="SKIP" signature="verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsuffCasesOnHoldRemovedOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsuffCasesOnHoldRemovedOrNot -->
+        <test-method status="SKIP" signature="verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifywithdrawCaseStatusClosedByClient" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot" finished-at="2022-06-15T12:06:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywithdrawCaseStatusClosedByClient -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01 -->
+    </test> <!-- iBridge11 -->
   </suite> <!-- iBridge -->
 </testng-results>

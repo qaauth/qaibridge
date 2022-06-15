@@ -484,7 +484,7 @@ public class InitiateSelfCaseSme {
 	WebElement txtGapEmploymentDetail;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[14]/div[1]/div[7]/div[1]/label[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/div/form/div[14]/div/div[8]/div/label")
 	WebElement clickOnProvideDocumentLaterRadioBtn;
 
 	@CacheLookup
@@ -640,7 +640,7 @@ public class InitiateSelfCaseSme {
 	WebElement txtPreviousGapEmp;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/form[1]/div[14]/div[1]/div[7]/div[1]/label[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/form/div[14]/div/div[8]/div/label")
 	WebElement clickOnPreviousDocumentLaterCheckBox;
 
 	@CacheLookup
@@ -1436,12 +1436,12 @@ public class InitiateSelfCaseSme {
 		js.executeScript("arguments[0].click()", clickOnAuthorizeSubmitBtn);
 
 		// Payment --Continue to pay-- Verify Candidate profile for background
-		wait = new WebDriverWait(ldriver, 60);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnContinueToPayBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnContinueToPayBtn);
 
-		wait = new WebDriverWait(ldriver, 60);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnClickToPayForCaseInitiationBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnClickToPayForCaseInitiationBtn);
@@ -1464,7 +1464,7 @@ public class InitiateSelfCaseSme {
 	// Thank you for completing payment- Case(s) initiated for background
 	// verification.
 	public String verifyThankYouCompletingPaymentSuccessMsg() {
-		wait = new WebDriverWait(ldriver, 120);
+		wait = new WebDriverWait(ldriver, 160);
 		wait.until(ExpectedConditions.visibilityOf(verifyCompletingPaymentText));
 		return verifyCompletingPaymentText.getText();
 	}

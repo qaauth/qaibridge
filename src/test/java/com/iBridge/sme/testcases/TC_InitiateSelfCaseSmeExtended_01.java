@@ -136,7 +136,8 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 		InitiateSelfCaseSme authorizationRelease = new InitiateSelfCaseSme(driver);
 		authorizationRelease.authorizationReleaseNote((System.getProperty("user.dir") + "/documents/ARN.pdf"));
 		logger.info("Authorization Release Note has added Successfully!");
-
+		
+		Thread.sleep(2000);
 		if (authorizationRelease.verifyThankYouCompletingPaymentSuccessMsg()
 				.contains("Thank you for completing payment")) {
 			Assert.assertTrue(true);
