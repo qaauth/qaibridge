@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="14" failed="1" ignored="0" total="18" passed="3">
+<testng-results skipped="9" failed="1" ignored="0" total="15" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="iBridge" duration-ms="196733" started-at="2022-06-15T12:02:48Z" finished-at="2022-06-15T12:06:04Z">
+  <suite name="iBridge" duration-ms="253811" started-at="2022-06-16T10:49:23Z" finished-at="2022-06-16T10:53:37Z">
     <groups>
     </groups>
-    <test name="iBridge11" duration-ms="196733" started-at="2022-06-15T12:02:48Z" finished-at="2022-06-15T12:06:04Z">
-      <class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="setup" is-config="true" duration-ms="14690" started-at="2022-06-15T12:02:48Z" finished-at="2022-06-15T12:03:02Z">
+    <test name="iBridge13" duration-ms="253811" started-at="2022-06-16T10:49:23Z" finished-at="2022-06-16T10:53:37Z">
+      <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="setup" is-config="true" duration-ms="9997" started-at="2022-06-16T10:49:23Z" finished-at="2022-06-16T10:49:33Z">
           <params>
             <param index="0">
               <value>
@@ -18,41 +18,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyInsufficientVerifier()[pri:1, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientVerifier" duration-ms="46592" started-at="2022-06-15T12:03:02Z" finished-at="2022-06-15T12:03:49Z">
+        <test-method status="PASS" signature="initiateViaCandidateCaseSme()[pri:1, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="initiateViaCandidateCaseSme" duration-ms="50242" started-at="2022-06-16T10:49:33Z" finished-at="2022-06-16T10:50:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInsufficientVerifier -->
-        <test-method status="PASS" signature="verifyInsufficientAppearingOniBridge()[pri:2, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientAppearingOniBridge" duration-ms="44288" started-at="2022-06-15T12:03:49Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientVerifier" finished-at="2022-06-15T12:04:33Z">
+        </test-method> <!-- initiateViaCandidateCaseSme -->
+        <test-method status="PASS" signature="verifyFormNotSubmittedCaseList()[pri:2, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyFormNotSubmittedCaseList" duration-ms="2720" started-at="2022-06-16T10:50:24Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.initiateViaCandidateCaseSme" finished-at="2022-06-16T10:50:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInsufficientAppearingOniBridge -->
-        <test-method status="PASS" signature="verifyInsufficientpendingForFulfilment()[pri:3, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientpendingForFulfilment" duration-ms="16456" started-at="2022-06-15T12:04:33Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientAppearingOniBridge" finished-at="2022-06-15T12:04:50Z">
+        </test-method> <!-- verifyFormNotSubmittedCaseList -->
+        <test-method status="PASS" signature="candidateSmeEmailVerification()[pri:3, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="candidateSmeEmailVerification" duration-ms="11435" started-at="2022-06-16T10:50:26Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyFormNotSubmittedCaseList" finished-at="2022-06-16T10:50:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInsufficientpendingForFulfilment -->
-        <test-method status="FAIL" signature="verifyInsufficiencyFulfillment()[pri:4, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficiencyFulfillment" duration-ms="74435" started-at="2022-06-15T12:04:50Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientpendingForFulfilment" finished-at="2022-06-15T12:06:04Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- candidateSmeEmailVerification -->
+        <test-method status="PASS" signature="candidateSmeAccountLogin()[pri:4, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="candidateSmeAccountLogin" duration-ms="76754" started-at="2022-06-16T10:50:38Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.candidateSmeEmailVerification" finished-at="2022-06-16T10:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- candidateSmeAccountLogin -->
+        <test-method status="PASS" signature="candidateProfileDetailsFilling()[pri:5, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="candidateProfileDetailsFilling" duration-ms="90674" started-at="2022-06-16T10:51:54Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.candidateSmeAccountLogin" finished-at="2022-06-16T10:53:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- candidateProfileDetailsFilling -->
+        <test-method status="FAIL" signature="verifyAuthorizationRelease()[pri:6, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyAuthorizationRelease" duration-ms="11706" started-at="2022-06-16T10:53:25Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.candidateProfileDetailsFilling" finished-at="2022-06-16T10:53:37Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]"}
+              <![CDATA[chrome not reachable
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.80.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ce5725531fd8db5d772b584458afd0b4
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.gjoDjd}, goog:chromeOptions: {debuggerAddress: localhost:43291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f0f7f1d87adfbc3ee4137c57f1f4c8
+*** Element info: {Using=xpath, value=//h1[contains(text(),'Thank you for completing your profile')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]"}
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.80.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ce5725531fd8db5d772b584458afd0b4
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.gjoDjd}, goog:chromeOptions: {debuggerAddress: localhost:43291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f0f7f1d87adfbc3ee4137c57f1f4c8
+*** Element info: {Using=xpath, value=//h1[contains(text(),'Thank you for completing your profile')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -69,9 +75,14 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy8.click(Unknown Source)
-at com.iBridge.sme.pageobject.InsufficientBridgeSme.userAdminInsufficiencyFulfillment(InsufficientBridgeSme.java:1346)
-at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment(TC_InsufficientBridgeSme_01.java:109)
+at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+at com.iBridge.sme.pageobject.CandidateSubmitProfileSme.verifyThankYouCompletingProfileMsg(CandidateSubmitProfileSme.java:1166)
+at com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyAuthorizationRelease(TC_InitiateViaCandidateSmeExtended_02.java:222)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,17 +113,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInsufficiencyFulfillment -->
-        <test-method status="SKIP" signature="verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientCasesPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyAuthorizationRelease -->
+        <test-method status="SKIP" signature="verifyInitiateViaCandidateCasePaymentPending()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyInitiateViaCandidateCasePaymentPending" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyAuthorizationRelease" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyInitiateViaCandidateCasePaymentPending()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyInitiateViaCandidateCasePaymentPending()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -139,14 +150,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInsufficientCasesPresentOrNot -->
-        <test-method status="SKIP" signature="verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyCostApprovalRequiredInsufficient" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyInitiateViaCandidateCasePaymentPending -->
+        <test-method status="SKIP" signature="verifyFormSubmittedBucket()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyFormSubmittedBucket" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyInitiateViaCandidateCasePaymentPending" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyFormSubmittedBucket()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyFormSubmittedBucket()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -173,14 +184,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCostApprovalRequiredInsufficient -->
-        <test-method status="SKIP" signature="verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifycostApprovalRequiredInsuffCasePresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyFormSubmittedBucket -->
+        <test-method status="SKIP" signature="verifyPaymentPendingBucket()[pri:9, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyPaymentPendingBucket" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyFormSubmittedBucket" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyPaymentPendingBucket()[pri:9, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyPaymentPendingBucket()[pri:9, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -207,14 +218,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifycostApprovalRequiredInsuffCasePresentOrNot -->
-        <test-method status="SKIP" signature="verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifycostApprovalRequiredRemovedOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyPaymentPendingBucket -->
+        <test-method status="SKIP" signature="verifyWorkInProgressBucket()[pri:10, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyWorkInProgressBucket" duration-ms="1" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyPaymentPendingBucket" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyWorkInProgressBucket()[pri:10, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyWorkInProgressBucket()[pri:10, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -241,14 +252,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifycostApprovalRequiredRemovedOrNot -->
-        <test-method status="SKIP" signature="verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredInsufficient" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyWorkInProgressBucket -->
+        <test-method status="SKIP" signature="verifyCaseAppearingInTotalCaseSentList()[pri:11, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyCaseAppearingInTotalCaseSentList" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyWorkInProgressBucket" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyCaseAppearingInTotalCaseSentList()[pri:11, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyCaseAppearingInTotalCaseSentList()[pri:11, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -275,14 +286,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyApprovalRequiredInsufficient -->
-        <test-method status="SKIP" signature="verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredAndInsufficientBoth" duration-ms="1" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyCaseAppearingInTotalCaseSentList -->
+        <test-method status="SKIP" signature="searchClientArsNoCaseList()[pri:12, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="searchClientArsNoCaseList" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyCaseAppearingInTotalCaseSentList" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.searchClientArsNoCaseList()[pri:12, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.searchClientArsNoCaseList()[pri:12, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -309,14 +320,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyApprovalRequiredAndInsufficientBoth -->
-        <test-method status="SKIP" signature="verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyAdminUserReasonInsufficientBoth" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- searchClientArsNoCaseList -->
+        <test-method status="SKIP" signature="verifyInsufficientDocsQcAllocator()[pri:13, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyInsufficientDocsQcAllocator" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.searchClientArsNoCaseList" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQcAllocator()[pri:13, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQcAllocator()[pri:13, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -343,14 +354,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAdminUserReasonInsufficientBoth -->
-        <test-method status="SKIP" signature="verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredInsuffPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyInsufficientDocsQcAllocator -->
+        <test-method status="SKIP" signature="verifyInsufficientDocsQuality()[pri:14, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyInsufficientDocsQuality" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQcAllocator" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQuality()[pri:14, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQuality()[pri:14, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -377,14 +388,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyApprovalRequiredInsuffPresentOrNot -->
-        <test-method status="SKIP" signature="verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyApprovalRequiredInsuffBothRemovedOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot" finished-at="2022-06-15T12:06:04Z">
+        </test-method> <!-- verifyInsufficientDocsQuality -->
+        <test-method status="SKIP" signature="verifyInsufficientAllocator()[pri:15, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447]" name="verifyInsufficientAllocator" duration-ms="0" started-at="2022-06-16T10:53:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQuality" finished-at="2022-06-16T10:53:37Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
+              <![CDATA[Method TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientAllocator()[pri:15, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientAllocator()[pri:15, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@3fb6a447] depends on not successfully finished methods
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -411,178 +422,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyApprovalRequiredInsuffBothRemovedOrNot -->
-        <test-method status="SKIP" signature="verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsufficientBothCasesPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot" finished-at="2022-06-15T12:06:04Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInsufficientBothCasesPresentOrNot -->
-        <test-method status="SKIP" signature="verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsuffCasesOnHoldPresentOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold" finished-at="2022-06-15T12:06:04Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInsuffCasesOnHoldPresentOrNot -->
-        <test-method status="SKIP" signature="verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyAdminUserInsuffRaisedCasesOnHold" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot" finished-at="2022-06-15T12:06:04Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAdminUserInsuffRaisedCasesOnHold -->
-        <test-method status="SKIP" signature="verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifyInsuffCasesOnHoldRemovedOrNot" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot" finished-at="2022-06-15T12:06:04Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInsuffCasesOnHoldRemovedOrNot -->
-        <test-method status="SKIP" signature="verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447]" name="verifywithdrawCaseStatusClosedByClient" duration-ms="0" started-at="2022-06-15T12:06:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot" finished-at="2022-06-15T12:06:04Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifywithdrawCaseStatusClosedByClient -->
-      </class> <!-- com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01 -->
-    </test> <!-- iBridge11 -->
+        </test-method> <!-- verifyInsufficientAllocator -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02 -->
+    </test> <!-- iBridge13 -->
   </suite> <!-- iBridge -->
 </testng-results>

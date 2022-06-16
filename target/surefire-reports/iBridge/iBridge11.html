@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>iBridge11</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/14</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/15</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 15 17:32:48 IST 2022</td>
+<td>Started on:</td><td>Thu Jun 16 12:03:05 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>196 seconds (196733 ms)</td>
+<tr><td>Total time:</td><td>70 seconds (70516 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment()'><b>verifyInsufficiencyFulfillment</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]&quot;}
+<td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientpendingForFulfilment()'><b>verifyInsufficientpendingForFulfilment</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.80.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ce5725531fd8db5d772b584458afd0b4
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.QkrF0M}, goog:chromeOptions: {debuggerAddress: localhost:38449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c47282d52adf188d9c48548a1d2c6a04
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[3]/div[2]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -97,19 +96,23 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.sme.pageobject.InsufficientBridgeSme.userAdminInsufficiencyFulfillment(InsufficientBridgeSme.java:1346)
-	at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment(TC_InsufficientBridgeSme_01.java:109)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1372422140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1372422140'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]&quot;}
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.iBridge.sme.pageobject.InsufficientiBridgeSme.verifyInsuffsentForReviewMsg(InsufficientiBridgeSme.java:301)
+	at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientpendingForFulfilment(TC_InsufficientBridgeSme_01.java:84)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3565780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3565780'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.80.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ce5725531fd8db5d772b584458afd0b4
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.QkrF0M}, goog:chromeOptions: {debuggerAddress: localhost:38449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c47282d52adf188d9c48548a1d2c6a04
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[3]/div[2]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -126,9 +129,14 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.sme.pageobject.InsufficientBridgeSme.userAdminInsufficiencyFulfillment(InsufficientBridgeSme.java:1346)
-	at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment(TC_InsufficientBridgeSme_01.java:109)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.iBridge.sme.pageobject.InsufficientiBridgeSme.verifyInsuffsentForReviewMsg(InsufficientiBridgeSme.java:301)
+	at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientpendingForFulfilment(TC_InsufficientBridgeSme_01.java:84)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,7 +166,7 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>74</td>
+<td>10</td>
 <td>com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -171,17 +179,12 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientAppearingOniBridge()'><b>verifyInsufficientAppearingOniBridge</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td></td>
-<td>44</td>
+<td>14</td>
 <td>com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447</td></tr>
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientVerifier()'><b>verifyInsufficientVerifier</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td></td>
-<td>46</td>
-<td>com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447</td></tr>
-<tr>
-<td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientpendingForFulfilment()'><b>verifyInsufficientpendingForFulfilment</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
-<td></td>
-<td>16</td>
+<td>39</td>
 <td>com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -194,8 +197,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()'><b>verifyAdminUserInsuffRaisedCasesOnHold</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1129869771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1129869771'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace751021317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace751021317'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -223,8 +226,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()'><b>verifyAdminUserReasonInsufficientBoth</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1493988307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1493988307'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace710623214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace710623214'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -252,8 +255,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()'><b>verifyApprovalRequiredAndInsufficientBoth</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1805443519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1805443519'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082351661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2082351661'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -281,8 +284,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()'><b>verifyApprovalRequiredInsuffBothRemovedOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1978504976", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1978504976'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1389774257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1389774257'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -310,8 +313,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()'><b>verifyApprovalRequiredInsuffPresentOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636322481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1636322481'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859690270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859690270'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -339,8 +342,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()'><b>verifyApprovalRequiredInsufficient</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865201235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1865201235'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace67730604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace67730604'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -368,8 +371,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()'><b>verifyCostApprovalRequiredInsufficient</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1089584667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1089584667'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1278002745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1278002745'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -397,8 +400,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()'><b>verifyInsuffCasesOnHoldPresentOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620459733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1620459733'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1896552614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1896552614'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -426,8 +429,37 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()'><b>verifyInsuffCasesOnHoldRemovedOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2044337856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2044337856'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace294658299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace294658299'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment()'><b>verifyInsufficiencyFulfillment</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
+<td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment()[pri:4, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865219266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865219266'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment()[pri:4, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -455,8 +487,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()'><b>verifyInsufficientBothCasesPresentOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1338368149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1338368149'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace553759818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace553759818'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -484,8 +516,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()'><b>verifyInsufficientCasesPresentOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1288108586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1288108586'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2138005960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2138005960'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -513,8 +545,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()'><b>verifycostApprovalRequiredInsuffCasePresentOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2054757222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2054757222'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace214649627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace214649627'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -542,8 +574,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()'><b>verifycostApprovalRequiredRemovedOrNot</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace348132918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace348132918'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15477956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15477956'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -571,8 +603,8 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 <tr>
 <td title='com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()'><b>verifywithdrawCaseStatusClosedByClient</b><br>Test class: com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace435914790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace435914790'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1033856359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1033856359'><pre>java.lang.Throwable: Method TC_InsufficientBridgeSme_01.verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)

@@ -769,10 +769,12 @@ public class InsufficientBridge {
 		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
-		Thread.sleep(1000);
-		wait = new WebDriverWait(ldriver, 360);
-		wait.until(ExpectedConditions.visibilityOf(clickOnLoadResultLink));
-		JavaScriptManuplator.javaScriptExecutor(clickOnLoadResultLink, "arguments[0].click()", ldriver);
+		Thread.sleep(3000);
+//		wait = new WebDriverWait(ldriver, 360);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnLoadResultLink));
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", clickOnLoadResultLink);
+//		clickOnLoadResultLink.click();
 		wait = new WebDriverWait(ldriver, 360);
 		wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 		JavaScriptManuplator.javaScriptExecutor(clickOniBridgeCountAllNo, "arguments[0].click()", ldriver);
@@ -814,6 +816,7 @@ public class InsufficientBridge {
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
 			wait = new WebDriverWait(ldriver, 360);
+			
 			wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 			clickOniBridgeCountAllNo.click();
 			

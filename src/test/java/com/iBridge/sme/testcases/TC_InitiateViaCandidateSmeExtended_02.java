@@ -102,7 +102,7 @@ public class TC_InitiateViaCandidateSmeExtended_02 extends BaseClass {
 		logger.info("Mailinator Mail URL has Successfully!");
 		CandidateEmailVeificationSme verificationSme = new CandidateEmailVeificationSme(driver);
 		if (verificationSme.verifyMailinatorSmeMailSubject().contains(
-				"Pre-Joining Formalities for MOTHER DAIRY FRUIT & VEGETABLE PRIVATE LIMITED")) {
+				"Pre-Joining Formalities for Flipkart.com")) {
 			Assert.assertTrue(true);
 			logger.info("Mailinator Mail Subject has got successfully!");
 		} else {

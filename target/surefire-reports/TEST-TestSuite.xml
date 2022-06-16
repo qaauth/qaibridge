@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="181.779" tests="18" errors="0" skipped="14" failures="1">
+<testsuite name="TestSuite" time="243.538" tests="15" errors="0" skipped="9" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8835942855244622635.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1998336690879255512.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,19 +59,20 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyInsufficientVerifier" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="46.593"/>
-  <testcase name="verifyInsufficientAppearingOniBridge" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="44.29"/>
-  <testcase name="verifyInsufficientpendingForFulfilment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="16.456"/>
-  <testcase name="verifyInsufficiencyFulfillment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="74.44">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.80.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce5725531fd8db5d772b584458afd0b4&#10;*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]"}
+  <testcase name="initiateViaCandidateCaseSme" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="50.242"/>
+  <testcase name="verifyFormNotSubmittedCaseList" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="2.719"/>
+  <testcase name="candidateSmeEmailVerification" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="11.434"/>
+  <testcase name="candidateSmeAccountLogin" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="76.755"/>
+  <testcase name="candidateProfileDetailsFilling" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="90.675"/>
+  <testcase name="verifyAuthorizationRelease" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="11.713">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=101.0.4951.54)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.gjoDjd}, goog:chromeOptions: {debuggerAddress: localhost:43291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 53f0f7f1d87adfbc3ee4137c57f1f4c8&#10;*** Element info: {Using=xpath, value=//h1[contains(text(),&apos;Thank you for completing your profile&apos;)]}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.80.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.7Va0mr}, goog:chromeOptions: {debuggerAddress: localhost:44063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ce5725531fd8db5d772b584458afd0b4
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.gjoDjd}, goog:chromeOptions: {debuggerAddress: localhost:43291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f0f7f1d87adfbc3ee4137c57f1f4c8
+*** Element info: {Using=xpath, value=//h1[contains(text(),'Thank you for completing your profile')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -88,54 +89,43 @@ Session ID: ce5725531fd8db5d772b584458afd0b4
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.sme.pageobject.InsufficientBridgeSme.userAdminInsufficiencyFulfillment(InsufficientBridgeSme.java:1346)
-	at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment(TC_InsufficientBridgeSme_01.java:109)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.iBridge.sme.pageobject.CandidateSubmitProfileSme.verifyThankYouCompletingProfileMsg(CandidateSubmitProfileSme.java:1166)
+	at com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyAuthorizationRelease(TC_InitiateViaCandidateSmeExtended_02.java:222)
 </failure>
-    <system-out><![CDATA[ INFO [main] (TC_InsufficientBridgeSme_01.java:102)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridgeSme_01.java:105)- Bridge account has Logged successfully!
+    <system-out><![CDATA[ INFO [main] (TC_InitiateViaCandidateSmeExtended_02.java:220)- Authorization Signature has completed Successfully!
 ]]></system-out>
   </testcase>
-  <testcase name="verifyInsufficientCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyInitiateViaCandidateCasePaymentPending" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyCostApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyFormSubmittedBucket" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifycostApprovalRequiredInsuffCasePresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyPaymentPendingBucket" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyWorkInProgressBucket" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifycostApprovalRequiredRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyCaseAppearingInTotalCaseSentList" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyAdminUserReasonInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyApprovalRequiredAndInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyInsufficientDocsQcAllocator" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyApprovalRequiredInsuffPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyInsufficientDocsQuality" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyApprovalRequiredInsuffBothRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInsufficientBothCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyAdminUserInsuffRaisedCasesOnHold" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInsuffCasesOnHoldPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInsuffCasesOnHoldRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifywithdrawCaseStatusClosedByClient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyInsufficientAllocator" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="0">
     <skipped/>
   </testcase>
 </testsuite>
