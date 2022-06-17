@@ -32,15 +32,15 @@ public class TC_InsufficientBridgeSme_01 extends BaseClass {
 		String arsNumber[] = data.split(" ");
 		insuffVerifierSme.superAdminVerifier(arsNumber[0], "24-Feb-2021", "12 PM", "Insufficient comment is good");
 		logger.info("Antecedents to Verify all Records have filled Successfully!");
-//		if (insuffVerifierSme.verifyMarkedAsInsufficientMsg()
-//				.contains("Check is successfully marked as Insufficient.")) {
-//			Assert.assertTrue(true);
-//			logger.info("Check is successfully marked as Insufficient.!");
-//		} else {
-//			logger.info("Check is not successfully marked as Insufficient.!");
-//			captureScreen(driver, "verifyChecksSuccessfullyMsg");
-//			Assert.assertTrue(false);
-//		}
+		if (insuffVerifierSme.verifyMarkedAsInsufficientMsg()
+				.contains("Check is successfully marked as Insufficient.")) {
+			Assert.assertTrue(true);
+			logger.info("Check is successfully marked as Insufficient.!");
+		} else {
+			logger.info("Check is not successfully marked as Insufficient.!");
+			captureScreen(driver, "verifyChecksSuccessfullyMsg");
+			Assert.assertTrue(false);
+		}
 
 		insuffVerifierSme.clickOnVerifierLogoutBtn();
 		logger.info("Bridge Account has logged out Successfully!");

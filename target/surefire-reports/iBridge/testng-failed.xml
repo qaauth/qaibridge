@@ -4,29 +4,32 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge13(failed)">
+  <test thread-count="1" verbose="0" name="iBridge11(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02">
+      <class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01">
         <methods>
-          <include name="candidateSmeAccountLogin"/>
-          <include name="verifyCaseAppearingInTotalCaseSentList"/>
-          <include name="verifyInsufficientDocsQuality"/>
-          <include name="initiateViaCandidateCaseSme"/>
-          <include name="searchClientArsNoCaseList"/>
-          <include name="candidateSmeEmailVerification"/>
-          <include name="verifyFormSubmittedBucket"/>
-          <include name="candidateProfileDetailsFilling"/>
-          <include name="verifyWorkInProgressBucket"/>
-          <include name="verifyFormNotSubmittedCaseList"/>
-          <include name="verifyPaymentPendingBucket"/>
-          <include name="verifyInitiateViaCandidateCasePaymentPending"/>
+          <include name="verifywithdrawCaseStatusClosedByClient"/>
+          <include name="verifyInsufficiencyFulfillment"/>
+          <include name="verifycostApprovalRequiredInsuffCasePresentOrNot"/>
+          <include name="verifyInsuffCasesOnHoldPresentOrNot"/>
+          <include name="verifyApprovalRequiredInsufficient"/>
+          <include name="verifyInsufficientAppearingOniBridge"/>
+          <include name="verifyApprovalRequiredInsuffPresentOrNot"/>
+          <include name="verifycostApprovalRequiredRemovedOrNot"/>
+          <include name="verifyInsufficientBothCasesPresentOrNot"/>
+          <include name="verifyInsuffCasesOnHoldRemovedOrNot"/>
+          <include name="verifyInsufficientVerifier"/>
+          <include name="verifyCostApprovalRequiredInsufficient"/>
+          <include name="verifyInsufficientpendingForFulfilment"/>
           <include name="setup"/>
-          <include name="verifyAuthorizationRelease"/>
-          <include name="verifyInsufficientDocsQcAllocator"/>
-          <include name="verifyInsufficientAllocator"/>
+          <include name="verifyApprovalRequiredAndInsufficientBoth"/>
+          <include name="verifyAdminUserReasonInsufficientBoth"/>
+          <include name="verifyAdminUserInsuffRaisedCasesOnHold"/>
+          <include name="verifyInsufficientCasesPresentOrNot"/>
+          <include name="verifyApprovalRequiredInsuffBothRemovedOrNot"/>
         </methods>
-      </class> <!-- com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02 -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01 -->
     </classes>
-  </test> <!-- iBridge13(failed) -->
+  </test> <!-- iBridge11(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

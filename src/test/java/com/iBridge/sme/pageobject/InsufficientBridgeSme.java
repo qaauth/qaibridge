@@ -656,7 +656,7 @@ public class InsufficientBridgeSme {
 	WebElement txtInsuffComments;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//input[@id='insuff_comment']")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table/thead/tr[3]/td/input")
 	WebElement txtInsuffCost;
 
 	@CacheLookup
@@ -1312,11 +1312,11 @@ public class InsufficientBridgeSme {
 		caseCheckVerification.selectByIndex(4);
 
 		// Case Check - Mark Insufficiency
-//		Select selectReasonForInsufficiency = new Select(selectSelectReasonForInsufficiency);
-//		selectReasonForInsufficiency.selectByIndex(1);
-//		txtInsufficientComment.sendKeys(insuffComments);
-//		clickOnMarkAsInsufficientBtn.click();
-//		Thread.sleep(1000);
+		Select selectReasonForInsufficiency = new Select(selectSelectReasonForInsufficiency);
+		selectReasonForInsufficiency.selectByIndex(1);
+		txtInsufficientComment.sendKeys(insuffComments);
+		clickOnMarkAsInsufficientBtn.click();
+		Thread.sleep(1000);
 	}
 
 	public String verifyMarkedAsInsufficientMsg() {

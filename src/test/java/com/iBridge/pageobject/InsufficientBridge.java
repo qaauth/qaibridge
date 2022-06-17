@@ -805,7 +805,7 @@ public class InsufficientBridge {
 		Thread.sleep(1000);
 	}
 	
-	// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal
+	// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal sapna
 		public void superSmeAdminDocsQcAllocator() throws InterruptedException, IOException {
 			wait = new WebDriverWait(ldriver, 120);
 			wait.until(ExpectedConditions.visibilityOf(selectDocsQcAllocator));
@@ -816,7 +816,8 @@ public class InsufficientBridge {
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
 			wait = new WebDriverWait(ldriver, 360);
-			
+			Thread.sleep(3000);
+			clickOnLoadResultLink.click();
 			wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 			clickOniBridgeCountAllNo.click();
 			
@@ -847,7 +848,7 @@ public class InsufficientBridge {
 			Thread.sleep(1000);
 		}
 		
-		// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal
+		// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal sapna
 		public void superCandidateSmeAdminDocsQcAllocator() throws InterruptedException, IOException {
 			wait = new WebDriverWait(ldriver, 120);
 			wait.until(ExpectedConditions.visibilityOf(selectDocsQcAllocator));
@@ -858,6 +859,8 @@ public class InsufficientBridge {
 			Thread.sleep(3000);
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
+			Thread.sleep(2000);
+			clickOnLoadResultLink.click();
 			wait = new WebDriverWait(ldriver, 360);
 			wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 			clickOniBridgeCountAllNo.click();

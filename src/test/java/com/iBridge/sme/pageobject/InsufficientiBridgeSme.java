@@ -269,7 +269,7 @@ public class InsufficientiBridgeSme {
 		return verifyCaseStatusInsuffArsNumber.getText();
 	}
 
-	public String verifyInsufficienciesCountNumber() {
+	public String verifyInsufficienciesCountNumber() throws InterruptedException {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyInsufficienciesCountNo));
 		return verifyInsufficienciesCountNo.getText();
