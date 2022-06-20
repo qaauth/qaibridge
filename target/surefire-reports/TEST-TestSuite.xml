@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="121.778" tests="18" errors="0" skipped="16" failures="1">
+<testsuite name="TestSuite" time="130.44" tests="7" errors="0" skipped="2" failures="2">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5164599983516170807.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1209920118599021631.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,72 +59,64 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyInsufficientVerifier" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="91.345"/>
-  <testcase name="verifyInsufficientAppearingOniBridge" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="30.433">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.iBridge.sme.pageobject.InsufficientiBridgeSme.insuffRaiseInInsufficienciesBucket(InsufficientiBridgeSme.java:260)
-	at com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientAppearingOniBridge(TC_InsufficientBridgeSme_01.java:58)
+  <testcase name="checksSummaryClosedByClient" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="17.758"/>
+  <testcase name="educationWCheckCloseVerification" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="0.938"/>
+  <testcase name="verificationQualityAllocator" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="20.874"/>
+  <testcase name="verificationQualityReleasedForReport" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="11.575">
+    <failure message="Cannot locate option with index: 2&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.67.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.67.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:183)
+	at com.iBridge.sme.pageobject.CaseCompletionSme.superAdminVerificationQuality(CaseCompletionSme.java:1768)
+	at com.iBridge.sme.testcases.TC_CaseCompletionSme_01.verificationQualityReleasedForReport(TC_CaseCompletionSme_01.java:117)
 </failure>
-    <system-out><![CDATA[ INFO [main] (TC_InsufficientBridgeSme_01.java:54)- iBridge Url is opened
-]]></system-out>
   </testcase>
-  <testcase name="verifyInsufficientpendingForFulfilment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="verifyReportsManager" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="79.295">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[8]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]&quot;}&#10;  (Session info: chrome=101.0.4951.54)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.67.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-44-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.JmJe6E}, goog:chromeOptions: {debuggerAddress: localhost:41609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: abc7ad4c64a45b6e378e8492dd6762ca&#10;*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[8]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[8]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]"}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.67.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-44-generic', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.JmJe6E}, goog:chromeOptions: {debuggerAddress: localhost:41609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: abc7ad4c64a45b6e378e8492dd6762ca
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[8]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+	at com.iBridge.sme.pageobject.CaseCompletionSme.superAdminReportManager(CaseCompletionSme.java:1907)
+	at com.iBridge.sme.testcases.TC_CaseCompletionSme_01.verifyReportsManager(TC_CaseCompletionSme_01.java:161)
+</failure>
+  </testcase>
+  <testcase name="verificationQualityAllocatorForReport" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyInsufficiencyFulfillment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInsufficientCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyCostApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifycostApprovalRequiredInsuffCasePresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifycostApprovalRequiredRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyAdminUserReasonInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyApprovalRequiredAndInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyApprovalRequiredInsuffPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyApprovalRequiredInsuffBothRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInsufficientBothCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyAdminUserInsuffRaisedCasesOnHold" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInsuffCasesOnHoldPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyInsuffCasesOnHoldRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifywithdrawCaseStatusClosedByClient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="0">
+  <testcase name="generateCaseReportPdf" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="0">
     <skipped/>
   </testcase>
 </testsuite>

@@ -779,16 +779,19 @@ public class CaseCompletionSme {
 	@FindBy(how = How.XPATH, using = "//input[@id='chk_unconfirmed']")
 	WebElement checkOnUntraceableCheckBox;
 	
+	// sapna
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table[7]/tbody/tr[6]/td[3]/select")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table[7]/tbody/tr[2]/td[3]/select")
 	WebElement selectResidenceStatus;
 	
+	// sapna
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table[7]/tbody/tr[12]/td[3]/select")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table[7]/tbody/tr[11]/td[3]/select")
 	WebElement selectResidenceType;
 	
+	//sapna
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table[7]/tbody/tr[15]/td[3]/select")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table[7]/tbody/tr[14]/td[3]/select")
 	WebElement selectVerificationType;
 
 	@CacheLookup
@@ -976,17 +979,17 @@ public class CaseCompletionSme {
 
 	// Case Documents Received-- Permanent Address Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[3]/div[1]/h4/a")
 	WebElement clickOnPermanentSubmitBtn;
 
 	// Case Documents Received-- Drug Test
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[4]/div[1]/h4/a")
 	WebElement clickOnDrugTestSubmitBtn;
 
 	// Case Documents Received-- Professional Reference Check
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[5]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[5]/div[1]/h4/a")
 	WebElement clickOnProfessionalSubmitBtn;
 
 	// Case Documents Received-- Personal Reference Check
@@ -1150,12 +1153,12 @@ public class CaseCompletionSme {
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnCurrentEmploymentVerification);
 
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", selectCurrentEmploymentCloseByClient);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(selectCurrentEmploymentCloseByClient));
-		Select criminalCaseCheckVerification = new Select(selectCurrentEmploymentCloseByClient);
-		criminalCaseCheckVerification.selectByIndex(4);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", selectCurrentEmploymentCloseByClient);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(selectCurrentEmploymentCloseByClient));
+//		Select criminalCaseCheckVerification = new Select(selectCurrentEmploymentCloseByClient);
+//		criminalCaseCheckVerification.selectByIndex(4);
 
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectCurrentEmploymentCategory));
@@ -1884,20 +1887,20 @@ public class CaseCompletionSme {
 		js.executeScript("arguments[0].click()", clickOnProfessionalSubmitBtn);
 
 		// Case Documents Received-- Personal Reference Check
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPersonalSubmitBtn);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(clickOnPersonalSubmitBtn));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnPersonalSubmitBtn);
-
-		// Case Documents Received-- Previous Employment Verification
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPreviousSubmitBtn);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(clickOnPreviousSubmitBtn));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnPreviousSubmitBtn);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPersonalSubmitBtn);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnPersonalSubmitBtn));
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnPersonalSubmitBtn);
+//
+//		// Case Documents Received-- Previous Employment Verification
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPreviousSubmitBtn);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnPreviousSubmitBtn));
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnPreviousSubmitBtn);
 
 		// Case Documents Received-- PAN No Verification
 		js = (JavascriptExecutor) ldriver;

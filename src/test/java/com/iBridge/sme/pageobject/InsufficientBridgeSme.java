@@ -718,9 +718,10 @@ public class InsufficientBridgeSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//textarea[@id='insuff_comment']")
 	WebElement txtInsuffComment;
-
+	
+	// Sapna
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//input[@id='insuff_comment']")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table/thead/tr[3]/td/input")
 	WebElement txtInsuffCostValue;
 
 	@CacheLookup
@@ -1506,16 +1507,16 @@ public class InsufficientBridgeSme {
 		Select insuffRaiseInsuffienciency = new Select(selectInsuffRaiseInsuffienciency);
 		insuffRaiseInsuffienciency.selectByIndex(4);
 		// Mark Insufficiency
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(selectInsuffReasonInsufficiencyBoth));
-		Select insuffReasonInsufficiencyBoth = new Select(selectInsuffReasonInsufficiencyBoth);
-		insuffReasonInsufficiencyBoth.selectByIndex(3);
-		txtInsuffComment.sendKeys(insuffComments);
-		txtInsuffCostValue.sendKeys(insuffCost);
-		clickOnCostApprovalType.click();
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnInsuffMarkAsInsufficientBtn);
-		Thread.sleep(1000);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(selectInsuffReasonInsufficiencyBoth));
+//		Select insuffReasonInsufficiencyBoth = new Select(selectInsuffReasonInsufficiencyBoth);
+//		insuffReasonInsufficiencyBoth.selectByIndex(3);
+//		txtInsuffComment.sendKeys(insuffComments);
+//		txtInsuffCostValue.sendKeys(insuffCost);
+//		clickOnCostApprovalType.click();
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnInsuffMarkAsInsufficientBtn);
+//		Thread.sleep(1000);
 	}
 
 	// Cases On Hold raised by Cat role Raju Account

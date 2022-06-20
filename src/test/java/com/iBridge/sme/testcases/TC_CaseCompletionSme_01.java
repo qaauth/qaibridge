@@ -29,28 +29,28 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		CaseCompletionSme checksSummaryClosedByClient = new CaseCompletionSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
 		String arsNumber[] = data.split(" ");
-		checksSummaryClosedByClient.userAdminChecksSummaryClosedByClient(arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-				"Close By Client comment is good");
-		logger.info("Check is successfully marked as Closed by Client.!");
-
-		if (checksSummaryClosedByClient.verifyProfessionalReferenceCheckClosedByClientMsg()
-				.contains("Professional Reference Check ( Closed by Client )")) {
-			Assert.assertTrue(true);
-			logger.info("All Checks Summary are successfully marked as Closed by Client.!");
-		} else {
-			logger.info("All Checks Summary are not successfully marked as Closed by Client.!");
-			captureScreen(driver, "verifySuccessfullyMarkedAsClosedByClientMsg");
-			Assert.assertTrue(false);
-		}
+//		checksSummaryClosedByClient.userAdminChecksSummaryClosedByClient(arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+//				"Close By Client comment is good");
+//		logger.info("Check is successfully marked as Closed by Client.!");
+//
+//		if (checksSummaryClosedByClient.verifyProfessionalReferenceCheckClosedByClientMsg()
+//				.contains("Professional Reference Check ( Closed by Client )")) {
+//			Assert.assertTrue(true);
+//			logger.info("All Checks Summary are successfully marked as Closed by Client.!");
+//		} else {
+//			logger.info("All Checks Summary are not successfully marked as Closed by Client.!");
+//			captureScreen(driver, "verifySuccessfullyMarkedAsClosedByClientMsg");
+//			Assert.assertTrue(false);
+//		}
 
 		checksSummaryClosedByClient.bridgeAccountLoggedOut();
 		logger.info("Bridge Account Logged Out has Successfully!");
@@ -67,23 +67,24 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		CaseCompletionSme currentAddressVerification = new CaseCompletionSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
 		String arsNumber[] = data.split(" ");
-		currentAddressVerification.currentAddressVerificationCheck(arsNumber[0], "110091", "Yes", "Ankit Kumar",
-				"Two Years", "24-Feb-2021", "Good Comments", "Delhi", "Shariq Abbas", "12 PM", "White", "White Color",
-				"Gurugram");
-		logger.info("Current Address Verification Antecedents to Verify details have been filled successfully!");
-
-		if (currentAddressVerification.verifyCurrentAddressVerificationCompletedTextName()
-				.contains("Current Address Verification ( Completed )")) {
-			Assert.assertTrue(true);
-			logger.info("Current Address Verification Check is successfully marked as Closed by Client.!");
-		} else {
-			logger.info("Current Address Verification Check is not successfully marked as Closed by Client.!");
-			captureScreen(driver, "verifyCurrentAddressVerificationCompletedTextName");
-			Assert.assertTrue(false);
-		}
+//		currentAddressVerification.currentAddressVerificationCheck(arsNumber[0], "110091", "Yes", "Ankit Kumar",
+//				"Two Years", "24-Feb-2021", "Good Comments", "Delhi", "Shariq Abbas", "12 PM", "White", "White Color",
+//				"Gurugram");
+//		logger.info("Current Address Verification Antecedents to Verify details have been filled successfully!");
+//
+//		if (currentAddressVerification.verifyCurrentAddressVerificationCompletedTextName()
+//				.contains("Current Address Verification ( Completed )")) {
+//			Assert.assertTrue(true);
+//			logger.info("Current Address Verification Check is successfully marked as Closed by Client.!");
+//		} else {
+//			logger.info("Current Address Verification Check is not successfully marked as Closed by Client.!");
+//			captureScreen(driver, "verifyCurrentAddressVerificationCompletedTextName");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Verification Quality Allocator--Check List - Search Result - (14 records)
+
 	@Test(enabled = true, testName = "Verify Verification Quality Allocator--Check List", priority = 3, dependsOnMethods = {
 			"educationWCheckCloseVerification" })
 	public void verificationQualityAllocator() throws IOException, InterruptedException {
@@ -105,7 +106,8 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		}
 	}
 
-	/*// Verification Quality-- Check List - Search Result - (14 records)
+	// Verification Quality-- Check List - Search Result - (14 records)
+
 	@Test(enabled = true, testName = "Verification Quality Released for Report", priority = 4, dependsOnMethods = {
 			"verificationQualityAllocator" })
 	public void verificationQualityReleasedForReport() throws IOException, InterruptedException {
@@ -148,7 +150,7 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 			Assert.assertTrue(false);
 		}
 	}
-*/
+
 	// Reports Manager -- Search Report
 	@Test(enabled = true, testName = "Verify Reports Manager Search Report", priority = 4, dependsOnMethods = {
 			"verificationQualityAllocator" })
