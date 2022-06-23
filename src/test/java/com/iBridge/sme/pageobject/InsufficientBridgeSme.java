@@ -1251,7 +1251,7 @@ public class InsufficientBridgeSme {
 		assignToVerifierName.selectByIndex(1);
 
 		Select teamMemberName = new Select(selectTeamMemberName);
-		teamMemberName.selectByIndex(6);
+		teamMemberName.selectByIndex(7);
 		txtCheckComments.sendKeys(checkComments);
 		Thread.sleep(1000);
 		clickOnGoAllocatorBtn.click();
@@ -1507,16 +1507,16 @@ public class InsufficientBridgeSme {
 		Select insuffRaiseInsuffienciency = new Select(selectInsuffRaiseInsuffienciency);
 		insuffRaiseInsuffienciency.selectByIndex(4);
 		// Mark Insufficiency
-//		wait = new WebDriverWait(ldriver, 60);
-//		wait.until(ExpectedConditions.visibilityOf(selectInsuffReasonInsufficiencyBoth));
-//		Select insuffReasonInsufficiencyBoth = new Select(selectInsuffReasonInsufficiencyBoth);
-//		insuffReasonInsufficiencyBoth.selectByIndex(3);
-//		txtInsuffComment.sendKeys(insuffComments);
-//		txtInsuffCostValue.sendKeys(insuffCost);
-//		clickOnCostApprovalType.click();
-//		js = (JavascriptExecutor) ldriver;
-//		js.executeScript("arguments[0].click()", clickOnInsuffMarkAsInsufficientBtn);
-//		Thread.sleep(1000);
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(selectInsuffReasonInsufficiencyBoth));
+		Select insuffReasonInsufficiencyBoth = new Select(selectInsuffReasonInsufficiencyBoth);
+		insuffReasonInsufficiencyBoth.selectByIndex(3);
+		txtInsuffComment.sendKeys(insuffComments);
+		txtInsuffCostValue.sendKeys(insuffCost);
+		clickOnCostApprovalType.click();
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", clickOnInsuffMarkAsInsufficientBtn);
+		Thread.sleep(1000);
 	}
 
 	// Cases On Hold raised by Cat role Raju Account

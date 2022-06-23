@@ -88,13 +88,6 @@ public class InsufficientBridge {
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Yes')]")
 	WebElement clickOnActionConfAlertYesBtn;
 	
-	
-	
-	
-	
-	
-	
-	
 	// Client Portal Count-- Get Total Records - 185 
 	@FindBy(xpath = "//h4[contains(text(),'Client Portal Count')]")
 	@CacheLookup
@@ -104,11 +97,6 @@ public class InsufficientBridge {
 	@CacheLookup
 	WebElement getCasesTotalRecords;
 	
-	
-	
-	
-	
-
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[contains(text(),'All selected cases were successfully allocated to QC Team Member.')]")
 	WebElement verifyCaseSuccessfullyAllocated;
@@ -816,7 +804,7 @@ public class InsufficientBridge {
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
 			wait = new WebDriverWait(ldriver, 360);
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			clickOnLoadResultLink.click();
 			wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 			clickOniBridgeCountAllNo.click();
@@ -840,7 +828,7 @@ public class InsufficientBridge {
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(selectDdlCasesAssignedTo));
 			Select ddlCasesAssignedTo = new Select(selectDdlCasesAssignedTo);
-			ddlCasesAssignedTo.selectByIndex(4);
+			ddlCasesAssignedTo.selectByIndex(5);
 			clickOnGoBtn.click();
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(clickOnActionConfAlertYesBtn));
@@ -884,7 +872,7 @@ public class InsufficientBridge {
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(selectDdlCasesAssignedTo));
 			Select ddlCasesAssignedTo = new Select(selectDdlCasesAssignedTo);
-			ddlCasesAssignedTo.selectByIndex(4);
+			ddlCasesAssignedTo.selectByIndex(5);
 			clickOnGoBtn.click();
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(clickOnActionConfAlertYesBtn));
@@ -1337,7 +1325,7 @@ public class InsufficientBridge {
 		assignToVerifierName.selectByIndex(1);
 
 		Select teamMemberName = new Select(selectTeamMemberName);
-		teamMemberName.selectByIndex(6);
+		teamMemberName.selectByIndex(7);
 		txtCheckComments.sendKeys(checkComments);
 		Thread.sleep(1000);
 		clickOnGoAllocatorBtn.click();

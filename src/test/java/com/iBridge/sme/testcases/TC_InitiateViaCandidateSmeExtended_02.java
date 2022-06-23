@@ -26,6 +26,7 @@ public class TC_InitiateViaCandidateSmeExtended_02 extends BaseClass {
 	// Initiate Via Candidate SME --New Case
 	@Test(enabled = true, testName = "Verify Initiate Via Candidate SME New Case", priority = 1)
 	public void initiateViaCandidateCaseSme() throws InterruptedException, IOException {
+		Thread.sleep(2000);
 		driver.get(baseURL);
 		logger.info("iBridge Url is opened");
 		LoginPage loginPage = new LoginPage(driver);

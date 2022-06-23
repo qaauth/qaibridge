@@ -981,97 +981,173 @@ public class CaseCompletionSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[3]/div[1]/h4/a")
 	WebElement clickOnPermanentSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[1]")
+	WebElement submitPermanentAddress;
 
 	// Case Documents Received-- Drug Test
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[4]/div[1]/h4/a")
 	WebElement clickOnDrugTestSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[2]")
+	WebElement submitDrug;
 
 	// Case Documents Received-- Professional Reference Check
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[5]/div[1]/h4/a")
 	WebElement clickOnProfessionalSubmitBtn;
-
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[3]")
+	WebElement submitProfessional;
+	
 	// Case Documents Received-- Personal Reference Check
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[6]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[6]/div[1]/h4/a")
 	WebElement clickOnPersonalSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[4]")
+	WebElement submitPersonal;
 
 	// Case Documents Received-- Previous Employment Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[7]/div[1]/h4/a")
 	WebElement clickOnPreviousSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how =How.XPATH, using = "(//*[@type='submit'])[5]")
+	WebElement submitPrevious;
 
 	// Case Documents Received-- PAN No Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[8]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[8]/div[1]/h4/a")
 	WebElement clickOnPanSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[6]")
+	WebElement submitOnPanSubmitBtn;
 
 	// Case Documents Received-- India Advanced Web and Media Searches
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[9]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[9]/div[1]/h4/a")
 	WebElement clickOnIndiaAdvancedSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[7]")
+	WebElement submitOnIndiaAdvancedSubmitBtn;
 
 	// Case Documents Received-- Current Address Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[10]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[10]/div[1]/h4/a")
 	WebElement clickOnCurrentAddressSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[8]")
+	WebElement submitOnCurrentSubmitBtn;
 
 	// Case Documents Received-- Current Employment Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[11]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[11]/div[1]/h4/a")
 	WebElement clickOnCurrentEmpSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[9]")
+	WebElement submitOnCurrentEmpSubmitBtn;
 
 	// Case Documents Received-- India Credit Default Database Check
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[12]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[12]/div[1]/h4/a")
 	WebElement clickOnIndiaCreditSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[10]")
+	WebElement submitOnIndiaSubmitBtn;
 
 	// Case Documents Received-- National Identity Check
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[13]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[13]/div[1]/h4/a")
 	WebElement clickOnNationalSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[11]")
+	WebElement submitOnNationalSubmitBtn;
 
 	// Case Documents Received-- India Civil Litigation Database Check
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[14]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[14]/div[1]/h4/a")
 	WebElement clickOnIndiaCivilSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[12]")
+	WebElement submitOnCivilSubmitBtn;
 
 	// Case Documents Received-- India Court Record Check through Law Firm
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[15]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[15]/div[1]/h4/a")
 	WebElement clickOnIndiaCourtSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[13]")
+	WebElement submitOnIndiaCourtSubmitBtn;
 
 	// Case Documents Received-- CV Validation
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[16]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[16]/div[1]/h4/a")
 	WebElement clickOnCvSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[14]")
+	WebElement submitOnCVSubmitBtn;
 
 	// Case Documents Received-- India Comprehensive Criminal Record Database Check
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[17]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[17]/div[1]/h4/a")
 	WebElement clickOnIndiaComprehensiveSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[15]")
+	WebElement submitOnIndiaComprehensiveSubmitBtn;
 
 	// Case Documents Received-- India Database Check Level 1
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[18]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[18]/div[1]/h4/a")
 	WebElement clickOnIndiaDatabaseSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[16]")
+	WebElement submitOnIndiaDatabaseSubmitBtn;
 
 	// Case Documents Received-- India Court Record Database Check
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[19]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[19]/div[1]/h4/a")
 	WebElement clickOnIndiaCourtRecordSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[17]")
+	WebElement submitOnIndiaCourtRecordSubmitBtn;
 
 	// Case Documents Received-- Global Regulator Compliance and Department Database
 	// Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[20]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[20]/div[1]/h4/a")
 	WebElement clickOnGlobalSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[18]")
+	WebElement submitOnGlobalSubmitBtn;
 
 	// Case Documents Received-- Education Verification Written
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[21]/div[3]/div[1]/div[1]/form[1]/div[2]/div[2]/div[5]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[21]/div[1]/h4/a")
 	WebElement clickOnEducationSubmitBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "(//*[@type='submit'])[19]")
+	WebElement submitOnEducationSubmitBtn;
 
 	// Report Review -- Case Documents Received
 	@CacheLookup
@@ -1153,12 +1229,12 @@ public class CaseCompletionSme {
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnCurrentEmploymentVerification);
 
-//		js = (JavascriptExecutor) ldriver;
-//		js.executeScript("arguments[0].scrollIntoView(true);", selectCurrentEmploymentCloseByClient);
-//		wait = new WebDriverWait(ldriver, 60);
-//		wait.until(ExpectedConditions.visibilityOf(selectCurrentEmploymentCloseByClient));
-//		Select criminalCaseCheckVerification = new Select(selectCurrentEmploymentCloseByClient);
-//		criminalCaseCheckVerification.selectByIndex(4);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].scrollIntoView(true);", selectCurrentEmploymentCloseByClient);
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(selectCurrentEmploymentCloseByClient));
+		Select criminalCaseCheckVerification = new Select(selectCurrentEmploymentCloseByClient);
+		criminalCaseCheckVerification.selectByIndex(4);
 
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectCurrentEmploymentCategory));
@@ -1745,8 +1821,8 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(selectUserRoleVerificationQualityAllocator));
 		JavaScriptManuplator.selectOptionFromDropDown(selectUserRoleVerificationQualityAllocator, "Verification Quality Allocator");
-		//Select userRoleVerificationQualityAllocator = new Select(selectUserRoleVerificationQualityAllocator);
-		//userRoleVerificationQualityAllocator.selectByIndex(65);
+		Select userRoleVerificationQualityAllocator = new Select(selectUserRoleVerificationQualityAllocator);
+		userRoleVerificationQualityAllocator.selectByIndex(65);
 		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
@@ -1789,7 +1865,7 @@ public class CaseCompletionSme {
 			throws InterruptedException {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(selectUserAdminRoleVerificationQualityAllocator));
-		//JavaScriptManuplator.selectOptionFromDropDown(selectUserAdminRoleVerificationQualityAllocator, "Verification Quality Allocator");
+		JavaScriptManuplator.selectOptionFromDropDown(selectUserAdminRoleVerificationQualityAllocator, "Verification Quality Allocator");
 		Select userRoleVerificationQualityAllocator = new Select(selectUserAdminRoleVerificationQualityAllocator);
 		userRoleVerificationQualityAllocator.selectByIndex(65);
 		Thread.sleep(3000);
@@ -1862,13 +1938,14 @@ public class CaseCompletionSme {
 		Actions act = new Actions(ldriver);
 		act.moveToElement(ele).click().perform();
 
-		// Case Documents Received-- Permanent Address Verification
+//		// Case Documents Received-- Permanent Address Verification
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPermanentSubmitBtn);
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnPermanentSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnPermanentSubmitBtn);
+		submitPermanentAddress.click();
 
 		// Case Documents Received-- Drug Test
 		js = (JavascriptExecutor) ldriver;
@@ -1877,6 +1954,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnDrugTestSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDrugTestSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitDrug);
+		//submitDrug.click();
 
 		// Case Documents Received-- Professional Reference Check
 		js = (JavascriptExecutor) ldriver;
@@ -1885,22 +1965,31 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnProfessionalSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnProfessionalSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitProfessional);
+		//submitProfessional.click();
 
 		// Case Documents Received-- Personal Reference Check
-//		js = (JavascriptExecutor) ldriver;
-//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPersonalSubmitBtn);
-//		wait = new WebDriverWait(ldriver, 60);
-//		wait.until(ExpectedConditions.visibilityOf(clickOnPersonalSubmitBtn));
-//		js = (JavascriptExecutor) ldriver;
-//		js.executeScript("arguments[0].click()", clickOnPersonalSubmitBtn);
-//
-//		// Case Documents Received-- Previous Employment Verification
-//		js = (JavascriptExecutor) ldriver;
-//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPreviousSubmitBtn);
-//		wait = new WebDriverWait(ldriver, 60);
-//		wait.until(ExpectedConditions.visibilityOf(clickOnPreviousSubmitBtn));
-//		js = (JavascriptExecutor) ldriver;
-//		js.executeScript("arguments[0].click()", clickOnPreviousSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPersonalSubmitBtn);
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(clickOnPersonalSubmitBtn));
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", clickOnPersonalSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitPersonal);
+		//submitPersonal.click();
+
+		// Case Documents Received-- Previous Employment Verification
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].scrollIntoView(true);", clickOnPreviousSubmitBtn);
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(clickOnPreviousSubmitBtn));
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", clickOnPreviousSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitPrevious);
+		//submitPrevious.click();
 
 		// Case Documents Received-- PAN No Verification
 		js = (JavascriptExecutor) ldriver;
@@ -1909,6 +1998,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnPanSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnPanSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()",submitOnPanSubmitBtn );
+		//submitOnPanSubmitBtn.click();
 
 		// Case Documents Received-- India Advanced Web and Media Searches
 		js = (JavascriptExecutor) ldriver;
@@ -1917,6 +2009,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnIndiaAdvancedSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnIndiaAdvancedSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()",submitOnIndiaAdvancedSubmitBtn );
+		//submitOnIndiaAdvancedSubmitBtn.click();
 
 		// Case Documents Received-- Current Address Verification
 		js = (JavascriptExecutor) ldriver;
@@ -1925,6 +2020,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnCurrentAddressSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnCurrentAddressSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()",submitOnCurrentSubmitBtn );
+		//submitOnCurrentSubmitBtn.click();
 
 		// Case Documents Received-- Current Employment Verification
 		js = (JavascriptExecutor) ldriver;
@@ -1933,6 +2031,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnCurrentEmpSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnCurrentEmpSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnCurrentEmpSubmitBtn);
+		//submitOnCurrentEmpSubmitBtn.click();
 
 		// Case Documents Received-- India Credit Default Database Check
 		js = (JavascriptExecutor) ldriver;
@@ -1941,6 +2042,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnIndiaCreditSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnIndiaCreditSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnIndiaSubmitBtn);
+		//submitOnIndiaSubmitBtn.click();
 
 		// Case Documents Received-- National Identity Check
 		js = (JavascriptExecutor) ldriver;
@@ -1949,6 +2053,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnNationalSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnNationalSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnNationalSubmitBtn);
+		//submitOnNationalSubmitBtn.click();
 
 		// Case Documents Received-- India Civil Litigation Database Check
 		js = (JavascriptExecutor) ldriver;
@@ -1957,6 +2064,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnIndiaCivilSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnIndiaCivilSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnCivilSubmitBtn);
+		//submitOnCivilSubmitBtn.click();
 
 		// Case Documents Received-- India Court Record Check through Law Firm
 		js = (JavascriptExecutor) ldriver;
@@ -1965,6 +2075,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnIndiaCourtSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnIndiaCourtSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnIndiaCourtSubmitBtn);
+		//submitOnIndiaCourtSubmitBtn.click();
 
 		// Case Documents Received-- CV Validation
 		js = (JavascriptExecutor) ldriver;
@@ -1973,6 +2086,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnCvSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnCvSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnCVSubmitBtn);
+		//submitOnCVSubmitBtn.click();
 
 		// Case Documents Received-- India Comprehensive Criminal Record Database Check
 		js = (JavascriptExecutor) ldriver;
@@ -1981,6 +2097,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnIndiaComprehensiveSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnIndiaComprehensiveSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnIndiaComprehensiveSubmitBtn);
+		//submitOnIndiaComprehensiveSubmitBtn.click();
 
 		// Case Documents Received-- India Database Check Level 1
 		js = (JavascriptExecutor) ldriver;
@@ -1989,6 +2108,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnIndiaDatabaseSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnIndiaDatabaseSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnIndiaDatabaseSubmitBtn);
+		//submitOnIndiaDatabaseSubmitBtn.click();
 
 		// Case Documents Received-- India Court Record Database Check
 		js = (JavascriptExecutor) ldriver;
@@ -1997,6 +2119,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnIndiaCourtRecordSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnIndiaCourtRecordSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnIndiaCourtRecordSubmitBtn);
+		//submitOnIndiaCourtRecordSubmitBtn.click();
 
 		// Case Documents Received-- Global Regulator Compliance and Department Database
 		// Verification
@@ -2006,6 +2131,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnGlobalSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnGlobalSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnGlobalSubmitBtn);
+		//submitOnGlobalSubmitBtn.click();
 
 		// Case Documents Received-- Education Verification Written
 		js = (JavascriptExecutor) ldriver;
@@ -2014,6 +2142,9 @@ public class CaseCompletionSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnEducationSubmitBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnEducationSubmitBtn);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", submitOnEducationSubmitBtn);
+		//submitOnEducationSubmitBtn.click();
 
 		// Report Review -- Case Documents Received
 		js = (JavascriptExecutor) ldriver;
@@ -2038,7 +2169,7 @@ public class CaseCompletionSme {
 			e.printStackTrace();
 		}
 		Thread.sleep(2000);
-		clickOnReviewButton.click();
+//		clickOnReviewButton.click();
 		Thread.sleep(1000);
 	}
 

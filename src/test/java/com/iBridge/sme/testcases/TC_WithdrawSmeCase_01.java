@@ -23,6 +23,7 @@ public class TC_WithdrawSmeCase_01 extends BaseClass {
 	// Form Not Submitted case marking withdrawn
 	@Test(enabled = true, testName = "Verify Form Not Submitted case making withdrawn", priority = 1)
 	public void verifyFormNotSubmittedCaseWithdraw() throws IOException, InterruptedException {
+		Thread.sleep(2000);
 		driver.get(baseURL);
 		logger.info("iBridge Url is opened");
 		LoginPage loginPage = new LoginPage(driver);

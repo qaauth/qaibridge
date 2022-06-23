@@ -269,15 +269,15 @@ public class TC_InsufficientBridgeSme_01 extends BaseClass {
 		reasonInsufficientBoth.adminUserReasonInsufficientBoth(arsNumber[0], "25-Feb-2021", "12 PM",
 				"Insufficient is good Comments", "40");
 		logger.info("Approval Required mark insufficient have filled Successfully!");
-//		if (reasonInsufficientBoth.verifyMarkAsInsufficientMessage()
-//				.contains("Check is successfully marked as Insufficient.")) {
-//			Assert.assertTrue(true);
-//			logger.info("Check is successfully marked as Insufficient.");
-//		} else {
-//			logger.info("Check is Not successfully marked as Insufficient.");
-//			captureScreen(driver, "verifyMarkAsInsufficientMessage");
-//			Assert.assertTrue(false);
-//		}
+		if (reasonInsufficientBoth.verifyMarkAsInsufficientMessage()
+				.contains("Check is successfully marked as Insufficient.")) {
+			Assert.assertTrue(true);
+			logger.info("Check is successfully marked as Insufficient.");
+		} else {
+			logger.info("Check is Not successfully marked as Insufficient.");
+			captureScreen(driver, "verifyMarkAsInsufficientMessage");
+			Assert.assertTrue(false);
+		}
 
 		reasonInsufficientBoth.clickOnVerifierLogoutBtn();
 		logger.info("Bridge Account has logged out Successfully!");
@@ -297,7 +297,7 @@ public class TC_InsufficientBridgeSme_01 extends BaseClass {
 		Thread.sleep(2000);
 //		driver.navigate().refresh();
 		Thread.sleep(2000);
-//		costApprovalRequiredBoth.approvalRequiredCountNo();
+		costApprovalRequiredBoth.approvalRequiredCountNo();
 		totalApprovalRequiredCount = Integer.parseInt(costApprovalRequiredBoth.approvalRequiredCountNo());
 		// Approval Required -iBridge SME --Overview Action Required
 		costApprovalRequiredBoth.approvalRequiredInsufficient();
