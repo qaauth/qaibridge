@@ -210,7 +210,7 @@ public class TC_WithdrawSmeCase_01 extends BaseClass {
 		WithdrawnSmeCase withdrawWorkInProgress = new WithdrawnSmeCase(driver);
 		withdrawWorkInProgress.withdrawWorkInProgressBucket();
 		logger.info("Ivc Sme case has withdrawn successfully!");
-
+		
 		if (withdrawWorkInProgress.verifySuccessfullyUpdatedMsg().contains("Case has been successfully Updated.")) {
 			Assert.assertTrue(true);
 			logger.info("Case has been successfully Updated.!");
@@ -236,6 +236,6 @@ public class TC_WithdrawSmeCase_01 extends BaseClass {
 			logger.info("Candidate name has Not been verified successfully!");
 			captureScreen(driver, "verifyClosedByClientCandidateFullName");
 			Assert.assertTrue(false);
-		}
+		}	
 	}
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="283.761" tests="7" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="113.895" tests="8" errors="0" skipped="3" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf3419762555712278864.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2810457545479338939.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,11 +59,36 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="checksSummaryClosedByClient" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="18.262"/>
-  <testcase name="educationWCheckCloseVerification" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="0.88"/>
-  <testcase name="verificationQualityAllocator" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="172.716"/>
-  <testcase name="verificationQualityReleasedForReport" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="0.004"/>
-  <testcase name="verificationQualityAllocatorForReport" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="0"/>
-  <testcase name="verifyReportsManager" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="27.215"/>
-  <testcase name="generateCaseReportPdf" classname="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" time="64.684"/>
+  <testcase name="initiateSelfCaseSme" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="23.657"/>
+  <testcase name="candidateProfileDetailsFilling" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="60.97"/>
+  <testcase name="verifyAuthorizationRelease" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="13.684"/>
+  <testcase name="verifyWorkInProgressCases" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="8.784"/>
+  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="6.8">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.iBridge.pageobject.BridgeLoginPage.arsNumberSearch(BridgeLoginPage.java:89)
+	at com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.searchClientArsNoCaseList(TC_InitiateSelfCaseSmeExtended_01.java:189)
+</failure>
+    <system-out><![CDATA[ INFO [main] (TC_InitiateSelfCaseSmeExtended_01.java:181)- Bridge Url is opened
+ INFO [main] (TC_InitiateSelfCaseSmeExtended_01.java:184)- Bridge account Logged successfully!
+]]></system-out>
+  </testcase>
+  <testcase name="verifyInsufficientDocsQcAllocator" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyInsufficientDocsQuality" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyInsufficientAllocator" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

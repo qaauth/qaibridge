@@ -905,6 +905,43 @@ public class InitiateSelfCaseSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//td[contains(text(),'No Record Found!')]")
 	WebElement verifyNoRecordFoundMessage;
+	
+	// Search Ars Number
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//a[@href='#searchModal']")
+	WebElement search;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@name='ars_number']")
+	WebElement arsNumber;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/div/div/div/div/div/div[1]/div/form/div/div[3]/button")
+	WebElement searcButton;
+	
+	// Advanced Search
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@href='#searchModal']")
+	WebElement searchAdvanced;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Advanced Search']")
+	WebElement advancedSearch;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='first-name']")
+	WebElement firstName;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='client-name']")
+	WebElement selectProcess;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@value='Search']")
+	WebElement searchAdvancedButton;
+	
 
 	// Initiate Self --Initiate new case
 	public void initiateNewCase() throws InterruptedException {
@@ -1464,17 +1501,20 @@ public class InitiateSelfCaseSme {
 	// Thank you for completing payment- Case(s) initiated for background
 	// verification.
 	public String verifyThankYouCompletingPaymentSuccessMsg() {
+		
 		wait = new WebDriverWait(ldriver, 160);
 		wait.until(ExpectedConditions.visibilityOf(verifyCompletingPaymentText));
 		return verifyCompletingPaymentText.getText();
 	}
 
 	// iBridge Dashboard -- Work In Progress Case
-	public void dashboardWorkInProgressCases() throws InterruptedException {
+	public void dashboardWorkInProgressCases(String arsNumberValue, String firstNameValue) throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnDashboardModule));
 		clickOnDashboardModule.click();
-
+		
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnWipCountNumberBucket));
 		clickOnWipCountNumberBucket.click();
@@ -1491,6 +1531,22 @@ public class InitiateSelfCaseSme {
 		} catch (Exception e) {
 			// e.printStackTrace();
 		}
+		ldriver.navigate().back();
+		search.click();
+		Thread.sleep(3000);
+		System.out.println(arsNumberValue);
+		arsNumber.sendKeys(arsNumberValue);
+		searcButton.click();
+		
+		ldriver.navigate().back();
+		searchAdvanced.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(advancedSearch));
+		advancedSearch.click();
+		firstName.sendKeys(firstNameValue);
+		Select location = new Select(selectProcess);
+		location.selectByVisibleText("CheckWise");
+		searchAdvancedButton.click();
 	}
 
 	public String verifyInitiateSelfCaseCandidateName() {
@@ -1550,5 +1606,44 @@ public class InitiateSelfCaseSme {
 		wait.until(ExpectedConditions.visibilityOf(verifyNoRecordFoundMessage));
 		System.out.println("RAJU============" + verifyNoRecordFoundMessage.getText());
 		return verifyNoRecordFoundMessage.getText();
+	}
+	
+	// Get Ars Number
+	public String getArsNumber()
+	{
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(getArsNumberIntiateSelfCase));
+		return getArsNumberIntiateSelfCase.getText();
+	}
+	
+	// Verify Ars Number
+	public void arsNumberSearch(String arsNumberValue) throws InterruptedException
+	{
+		Thread.sleep(2000);
+		ldriver.navigate().back();
+		clickOnDashboardModule.click();
+		search.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(arsNumber));
+		arsNumber.sendKeys(arsNumberValue);
+		System.out.println(arsNumberValue);
+		searcButton.click();
+	}
+	
+	// Advanced Search
+	public void advancedSearch(String firstNameValue)
+	{
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(search));
+		search.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(advancedSearch));
+		advancedSearch.click();
+		firstName.sendKeys(firstNameValue);
+		Select location = new Select(selectProcess);
+		location.selectByVisibleText("CheckWise");
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(searchAdvancedButton));
+		searchAdvancedButton.click();
 	}
 }

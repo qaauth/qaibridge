@@ -4,21 +4,22 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge14(failed)">
+  <test thread-count="1" verbose="0" name="iBridge10(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.sme.testcases.TC_CaseCompletionSme_01">
+      <class name="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01">
         <methods>
-          <include name="verificationQualityAllocatorForReport"/>
-          <include name="verifyReportsManager"/>
-          <include name="verificationQualityAllocator"/>
+          <include name="verifyInsufficientDocsQcAllocator"/>
           <include name="setup"/>
-          <include name="verificationQualityReleasedForReport"/>
-          <include name="generateCaseReportPdf"/>
-          <include name="educationWCheckCloseVerification"/>
-          <include name="checksSummaryClosedByClient"/>
+          <include name="candidateProfileDetailsFilling"/>
+          <include name="searchClientArsNoCaseList"/>
+          <include name="verifyInsufficientDocsQuality"/>
+          <include name="verifyAuthorizationRelease"/>
+          <include name="verifyWorkInProgressCases"/>
+          <include name="initiateSelfCaseSme"/>
+          <include name="verifyInsufficientAllocator"/>
         </methods>
-      </class> <!-- com.iBridge.sme.testcases.TC_CaseCompletionSme_01 -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01 -->
     </classes>
-  </test> <!-- iBridge14(failed) -->
+  </test> <!-- iBridge10(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

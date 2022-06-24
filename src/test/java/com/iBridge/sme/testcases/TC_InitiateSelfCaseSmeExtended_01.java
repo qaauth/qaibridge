@@ -18,6 +18,9 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 	String firstName;
 	String middleName;
 	String lastName;
+	String arsNumber[];
+
+	InitiateSelfCaseSme advanced = new InitiateSelfCaseSme(driver);
 
 	// Initiate Self SME New Case--
 	@Test(enabled = true, testName = "Initiate Self SME New Case", priority = 1)
@@ -136,7 +139,7 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 		InitiateSelfCaseSme authorizationRelease = new InitiateSelfCaseSme(driver);
 		authorizationRelease.authorizationReleaseNote((System.getProperty("user.dir") + "/documents/ARN.pdf"));
 		logger.info("Authorization Release Note has added Successfully!");
-		
+
 		Thread.sleep(2000);
 		if (authorizationRelease.verifyThankYouCompletingPaymentSuccessMsg()
 				.contains("Thank you for completing payment")) {
@@ -154,17 +157,20 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 			"verifyAuthorizationRelease" })
 	public void verifyWorkInProgressCases() throws InterruptedException, IOException {
 		InitiateSelfCaseSme workInProgressCases = new InitiateSelfCaseSme(driver);
-		workInProgressCases.dashboardWorkInProgressCases();
+		String data = new String(Files.readAllBytes(Paths.get("copyInitiateSelfCaseArs.txt")));
+		arsNumber = data.split(" ");
+		workInProgressCases.dashboardWorkInProgressCases(arsNumber[0], firstName);
 		logger.info("Work In Progress Cases has been Verified Successfully!");
 
-		if (workInProgressCases.verifyInitiateSelfCaseCandidateName().contains(firstName)) {
-			Assert.assertTrue(true);
-			logger.info("Initiate Self Case Candidate Name has been Successfully!");
-		} else {
-			logger.info("Initiate Self Case Candidate Name not been Successfully!");
-			captureScreen(driver, "verifyInitiateSelfCaseCandidateName");
-			Assert.assertTrue(false);
-		}
+//		if (workInProgressCases.verifyInitiateSelfCaseCandidateName().contains(firstName)) {
+//			Assert.assertTrue(true);
+//			logger.info("Initiate Self Case Candidate Name has been Successfully!");
+//		} else {
+//			logger.info("Initiate Self Case Candidate Name not been Successfully!");
+//			captureScreen(driver, "verifyInitiateSelfCaseCandidateName");
+//			Assert.assertTrue(false);
+//		}
+		
 	}
 
 	// Verify after logged in bridge portal and search Ars Number in Case List
@@ -194,12 +200,13 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 		}
 	}
 
-	// Verify Docs Qc Allocator role and All selected cases successfully allocated to QC Team Member
+	// Verify Docs Qc Allocator role and All selected cases successfully allocated
+	// to QC Team Member
 	@Test(enabled = true, testName = "Verify Docs Qc Allocator role and All selected cases successfully allocated to QC Team Member", priority = 6, dependsOnMethods = {
 			"searchClientArsNoCaseList" })
 	public void verifyInsufficientDocsQcAllocator() throws InterruptedException, IOException {
 		InsufficientBridge insuffDocsQcAllocator = new InsufficientBridge(driver);
-		//insuffDocsQcAllocator.superAdminDocsQcAllocator();
+		// insuffDocsQcAllocator.superAdminDocsQcAllocator();
 		insuffDocsQcAllocator.superSmeAdminDocsQcAllocator();
 		logger.info("Select Docs Qc Allocator has Successfully!");
 
@@ -214,7 +221,8 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 		}
 	}
 
-	// Verify Docs Quality role and The Case was successfully released for Verification.
+	// Verify Docs Quality role and The Case was successfully released for
+	// Verification.
 	@Test(enabled = true, testName = "Verify Docs Quality role and The Case was successfully released for Verification.", priority = 7, dependsOnMethods = {
 			"verifyInsufficientDocsQcAllocator" })
 	public void verifyInsufficientDocsQuality() throws InterruptedException, IOException {
@@ -250,8 +258,9 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 	public void verifyInsufficientAllocator() throws IOException, InterruptedException {
 		InsufficientBridgeSme insuffAllocatorSme = new InsufficientBridgeSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("copyInitiateSelfCaseArs.txt")));
-		String arsNumber[] = data.split(" ");
+		arsNumber = data.split(" ");
 		insuffAllocatorSme.superAdminAllocator(arsNumber[0], "Allocator check Comments has entered successfully");
+		// arsNumber = advanced.getArsNumber();
 		if (insuffAllocatorSme.verifyChecksSuccessfullyMsg()
 				.contains("Checks are successfully allocated to Shariq Abbas")) {
 			Assert.assertTrue(true);
