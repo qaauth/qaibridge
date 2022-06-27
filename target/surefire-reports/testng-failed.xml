@@ -4,22 +4,18 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge10(failed)">
+  <test thread-count="1" verbose="0" name="iBridge12(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01">
+      <class name="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01">
         <methods>
-          <include name="verifyInsufficientDocsQcAllocator"/>
+          <include name="verifyInitiateViaCandidateCaseWithdraw"/>
           <include name="setup"/>
-          <include name="candidateProfileDetailsFilling"/>
-          <include name="searchClientArsNoCaseList"/>
-          <include name="verifyInsufficientDocsQuality"/>
-          <include name="verifyAuthorizationRelease"/>
-          <include name="verifyWorkInProgressCases"/>
-          <include name="initiateSelfCaseSme"/>
-          <include name="verifyInsufficientAllocator"/>
+          <include name="verifyCandidateNameInWithdrawnBucket"/>
+          <include name="verifyFormNotSubmittedCaseWithdraw"/>
+          <include name="verifyclosedByClientBucket"/>
         </methods>
-      </class> <!-- com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01 -->
+      </class> <!-- com.iBridge.sme.testcases.TC_WithdrawSmeCase_01 -->
     </classes>
-  </test> <!-- iBridge10(failed) -->
+  </test> <!-- iBridge12(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

@@ -1,19 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 137.182 sec <<< FAILURE! - in TestSuite
-searchClientArsNoCaseList(com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01)  Time elapsed: 6.8 sec  <<< FAILURE!
-java.lang.NullPointerException: null
-	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+Tests run: 45, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1,490.797 sec <<< FAILURE! - in TestSuite
+verifyInitiateViaCandidateCaseWithdraw(com.iBridge.sme.testcases.TC_WithdrawSmeCase_01)  Time elapsed: 250.053 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (47547ead93de11a26165cf094174501a)] -> xpath: //div[contains(text(),'Dashboard')]] (tried for 60 second(s) with 500 milliseconds interval)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.iBridge.pageobject.BridgeLoginPage.arsNumberSearch(BridgeLoginPage.java:89)
-	at com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.searchClientArsNoCaseList(TC_InitiateSelfCaseSmeExtended_01.java:189)
+	at com.iBridge.sme.pageobject.CandidateSubmitProfileSme.clickOnSmeDashboardModule(CandidateSubmitProfileSme.java:1172)
+	at com.iBridge.sme.testcases.TC_WithdrawSmeCase_01.verifyInitiateViaCandidateCaseWithdraw(TC_WithdrawSmeCase_01.java:205)
 

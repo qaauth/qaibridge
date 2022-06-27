@@ -15,11 +15,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class InitiateSelfCaseSme {
 	WebDriver ldriver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
+	String beforeDeductionExpectedAmount;
+	float afterDeductionExpectedAmount;
+
+	String beforeDeductionActualAmount;
+	double afterDeductionActualAmount;
 
 	public InitiateSelfCaseSme(WebDriver rdriver) {
 		this.ldriver = rdriver;
@@ -942,9 +948,32 @@ public class InitiateSelfCaseSme {
 	@FindBy(how = How.XPATH, using = "//*[@value='Search']")
 	WebElement searchAdvancedButton;
 	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='menu-wallet-icon']")
+	WebElement walletIcon;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='mg-b0']")
+	WebElement walletAmount;
+	
 
 	// Initiate Self --Initiate new case
 	public void initiateNewCase() throws InterruptedException {
+		Thread.sleep(4000);
+		walletIcon.click();
+		beforeDeductionExpectedAmount = walletAmount.getText().trim();
+		System.out.println(beforeDeductionExpectedAmount);
+		String [] val = beforeDeductionExpectedAmount.split(",");
+		String splittedAmount = "";
+		for(int itr=0; itr < val.length; itr++)
+		{
+			splittedAmount = splittedAmount + val[itr];
+			
+		}
+		System.out.println(splittedAmount);
+		afterDeductionExpectedAmount = (float) (Float.parseFloat(splittedAmount)-7919334.00);
+		System.out.println(afterDeductionExpectedAmount);
+		ldriver.navigate().back();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInitiateNewCase));
 		clickOnInitiateNewCase.click();
@@ -953,7 +982,7 @@ public class InitiateSelfCaseSme {
 		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Initiate Self')]"));
 		Actions actions = new Actions(ldriver);
 		actions.moveToElement(element).click().perform();
-		Thread.sleep(1000);
+		Thread.sleep(1000);		
 	}
 
 	// Step 1-Package Selection-- Buy Checks - Packages
@@ -1514,6 +1543,17 @@ public class InitiateSelfCaseSme {
 		wait.until(ExpectedConditions.visibilityOf(clickOnDashboardModule));
 		clickOnDashboardModule.click();
 		
+		walletIcon.click();
+		beforeDeductionActualAmount = walletAmount.getText().trim();
+		String [] value1 = beforeDeductionActualAmount.split(",");
+		String splittedAmount = "";
+		for(int itr=0; itr < value1.length; itr++)
+		{
+			splittedAmount = splittedAmount + value1[itr];
+		}
+		System.out.println("==="+splittedAmount+"======"+afterDeductionExpectedAmount+"===");
+//		Assert.assertEquals(splittedAmount, afterDeductionExpectedAmount);
+		ldriver.navigate().back();
 		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnWipCountNumberBucket));
@@ -1646,4 +1686,18 @@ public class InitiateSelfCaseSme {
 		wait.until(ExpectedConditions.invisibilityOf(searchAdvancedButton));
 		searchAdvancedButton.click();
 	}
+	
+	// Wallet Amount
+	public String getamount() throws InterruptedException
+	{
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(walletIcon));
+		walletIcon.click();
+		String val = walletAmount.getText().trim();
+		System.out.println(val);
+		return val;
+		
+	}
+	
+	
 }

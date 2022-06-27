@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" ignored="0" total="8" passed="4">
+<testng-results skipped="1" failed="1" ignored="0" total="45" passed="43">
   <reporter-output>
   </reporter-output>
-  <suite name="iBridge" duration-ms="136311" started-at="2022-06-24T11:46:51Z" finished-at="2022-06-24T11:49:07Z">
+  <suite name="iBridge" duration-ms="1490175" started-at="2022-06-27T12:05:40Z" finished-at="2022-06-27T12:30:30Z">
     <groups>
     </groups>
-    <test name="iBridge10" duration-ms="136311" started-at="2022-06-24T11:46:51Z" finished-at="2022-06-24T11:49:07Z">
+    <test name="iBridge10" duration-ms="325252" started-at="2022-06-27T12:05:40Z" finished-at="2022-06-27T12:11:05Z">
       <class name="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="setup" is-config="true" duration-ms="22165" started-at="2022-06-24T11:46:51Z" finished-at="2022-06-24T11:47:14Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="setup" is-config="true" duration-ms="8446" started-at="2022-06-27T12:05:40Z" finished-at="2022-06-27T12:05:48Z">
           <params>
             <param index="0">
               <value>
@@ -18,38 +18,159 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="initiateSelfCaseSme()[pri:1, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="initiateSelfCaseSme" duration-ms="23656" started-at="2022-06-24T11:47:14Z" finished-at="2022-06-24T11:47:37Z">
+        <test-method status="PASS" signature="initiateSelfCaseSme()[pri:1, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="initiateSelfCaseSme" duration-ms="31739" started-at="2022-06-27T12:05:48Z" finished-at="2022-06-27T12:06:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateSelfCaseSme -->
-        <test-method status="PASS" signature="candidateProfileDetailsFilling()[pri:2, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="candidateProfileDetailsFilling" duration-ms="60971" started-at="2022-06-24T11:47:37Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.initiateSelfCaseSme" finished-at="2022-06-24T11:48:38Z">
+        <test-method status="PASS" signature="candidateProfileDetailsFilling()[pri:2, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="candidateProfileDetailsFilling" duration-ms="62366" started-at="2022-06-27T12:06:20Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.initiateSelfCaseSme" finished-at="2022-06-27T12:07:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- candidateProfileDetailsFilling -->
-        <test-method status="PASS" signature="verifyAuthorizationRelease()[pri:3, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyAuthorizationRelease" duration-ms="13684" started-at="2022-06-24T11:48:38Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.candidateProfileDetailsFilling" finished-at="2022-06-24T11:48:52Z">
+        <test-method status="PASS" signature="verifyAuthorizationRelease()[pri:3, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyAuthorizationRelease" duration-ms="13583" started-at="2022-06-27T12:07:23Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.candidateProfileDetailsFilling" finished-at="2022-06-27T12:07:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAuthorizationRelease -->
-        <test-method status="PASS" signature="verifyWorkInProgressCases()[pri:4, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyWorkInProgressCases" duration-ms="8783" started-at="2022-06-24T11:48:52Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyAuthorizationRelease" finished-at="2022-06-24T11:49:01Z">
+        <test-method status="PASS" signature="verifyWorkInProgressCases()[pri:4, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyWorkInProgressCases" duration-ms="10131" started-at="2022-06-27T12:07:36Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyAuthorizationRelease" finished-at="2022-06-27T12:07:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWorkInProgressCases -->
-        <test-method status="FAIL" signature="searchClientArsNoCaseList()[pri:5, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="searchClientArsNoCaseList" duration-ms="6782" started-at="2022-06-24T11:49:01Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyWorkInProgressCases" finished-at="2022-06-24T11:49:07Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="searchClientArsNoCaseList()[pri:5, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="searchClientArsNoCaseList" duration-ms="13544" started-at="2022-06-27T12:07:46Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyWorkInProgressCases" finished-at="2022-06-27T12:08:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchClientArsNoCaseList -->
+        <test-method status="PASS" signature="verifyInsufficientDocsQcAllocator()[pri:6, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyInsufficientDocsQcAllocator" duration-ms="50591" started-at="2022-06-27T12:08:00Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.searchClientArsNoCaseList" finished-at="2022-06-27T12:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientDocsQcAllocator -->
+        <test-method status="PASS" signature="verifyInsufficientDocsQuality()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyInsufficientDocsQuality" duration-ms="121445" started-at="2022-06-27T12:08:50Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQcAllocator" finished-at="2022-06-27T12:10:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientDocsQuality -->
+        <test-method status="PASS" signature="verifyInsufficientAllocator()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyInsufficientAllocator" duration-ms="13156" started-at="2022-06-27T12:10:52Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQuality" finished-at="2022-06-27T12:11:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientAllocator -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01 -->
+    </test> <!-- iBridge10 -->
+    <test name="iBridge11" duration-ms="434286" started-at="2022-06-27T12:11:05Z" finished-at="2022-06-27T12:18:20Z">
+      <class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="setup" is-config="true" duration-ms="4440" started-at="2022-06-27T12:11:05Z" finished-at="2022-06-27T12:11:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyInsufficientVerifier()[pri:1, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsufficientVerifier" duration-ms="38863" started-at="2022-06-27T12:11:10Z" finished-at="2022-06-27T12:11:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientVerifier -->
+        <test-method status="PASS" signature="verifyInsufficientAppearingOniBridge()[pri:2, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsufficientAppearingOniBridge" duration-ms="10580" started-at="2022-06-27T12:11:49Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientVerifier" finished-at="2022-06-27T12:11:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientAppearingOniBridge -->
+        <test-method status="PASS" signature="verifyInsufficientpendingForFulfilment()[pri:3, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsufficientpendingForFulfilment" duration-ms="15589" started-at="2022-06-27T12:11:59Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientAppearingOniBridge" finished-at="2022-06-27T12:12:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientpendingForFulfilment -->
+        <test-method status="PASS" signature="verifyInsufficiencyFulfillment()[pri:4, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsufficiencyFulfillment" duration-ms="28398" started-at="2022-06-27T12:12:15Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientpendingForFulfilment" finished-at="2022-06-27T12:12:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficiencyFulfillment -->
+        <test-method status="PASS" signature="verifyInsufficientCasesPresentOrNot()[pri:5, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsufficientCasesPresentOrNot" duration-ms="58526" started-at="2022-06-27T12:12:43Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficiencyFulfillment" finished-at="2022-06-27T12:13:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientCasesPresentOrNot -->
+        <test-method status="PASS" signature="verifyCostApprovalRequiredInsufficient()[pri:6, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyCostApprovalRequiredInsufficient" duration-ms="31564" started-at="2022-06-27T12:13:42Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientCasesPresentOrNot" finished-at="2022-06-27T12:14:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCostApprovalRequiredInsufficient -->
+        <test-method status="PASS" signature="verifycostApprovalRequiredInsuffCasePresentOrNot()[pri:7, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifycostApprovalRequiredInsuffCasePresentOrNot" duration-ms="53486" started-at="2022-06-27T12:14:13Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyCostApprovalRequiredInsufficient" finished-at="2022-06-27T12:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycostApprovalRequiredInsuffCasePresentOrNot -->
+        <test-method status="PASS" signature="verifyApprovalRequiredInsufficient()[pri:8, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyApprovalRequiredInsufficient" duration-ms="21414" started-at="2022-06-27T12:15:07Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredInsuffCasePresentOrNot" finished-at="2022-06-27T12:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredInsufficient -->
+        <test-method status="PASS" signature="verifycostApprovalRequiredRemovedOrNot()[pri:9, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifycostApprovalRequiredRemovedOrNot" duration-ms="9734" started-at="2022-06-27T12:15:28Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsufficient" finished-at="2022-06-27T12:15:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycostApprovalRequiredRemovedOrNot -->
+        <test-method status="PASS" signature="verifyAdminUserReasonInsufficientBoth()[pri:10, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyAdminUserReasonInsufficientBoth" duration-ms="31471" started-at="2022-06-27T12:15:38Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifycostApprovalRequiredRemovedOrNot" finished-at="2022-06-27T12:16:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserReasonInsufficientBoth -->
+        <test-method status="PASS" signature="verifyApprovalRequiredAndInsufficientBoth()[pri:11, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyApprovalRequiredAndInsufficientBoth" duration-ms="50951" started-at="2022-06-27T12:16:09Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserReasonInsufficientBoth" finished-at="2022-06-27T12:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredAndInsufficientBoth -->
+        <test-method status="PASS" signature="verifyApprovalRequiredInsuffPresentOrNot()[pri:12, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyApprovalRequiredInsuffPresentOrNot" duration-ms="28151" started-at="2022-06-27T12:17:00Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredAndInsufficientBoth" finished-at="2022-06-27T12:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredInsuffPresentOrNot -->
+        <test-method status="PASS" signature="verifyApprovalRequiredInsuffBothRemovedOrNot()[pri:13, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyApprovalRequiredInsuffBothRemovedOrNot" duration-ms="5955" started-at="2022-06-27T12:17:29Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffPresentOrNot" finished-at="2022-06-27T12:17:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyApprovalRequiredInsuffBothRemovedOrNot -->
+        <test-method status="PASS" signature="verifyInsufficientBothCasesPresentOrNot()[pri:14, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsufficientBothCasesPresentOrNot" duration-ms="5474" started-at="2022-06-27T12:17:35Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyApprovalRequiredInsuffBothRemovedOrNot" finished-at="2022-06-27T12:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsufficientBothCasesPresentOrNot -->
+        <test-method status="PASS" signature="verifyAdminUserInsuffRaisedCasesOnHold()[pri:15, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyAdminUserInsuffRaisedCasesOnHold" duration-ms="22105" started-at="2022-06-27T12:17:40Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsufficientBothCasesPresentOrNot" finished-at="2022-06-27T12:18:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserInsuffRaisedCasesOnHold -->
+        <test-method status="PASS" signature="verifyInsuffCasesOnHoldPresentOrNot()[pri:16, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsuffCasesOnHoldPresentOrNot" duration-ms="2114" started-at="2022-06-27T12:18:02Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyAdminUserInsuffRaisedCasesOnHold" finished-at="2022-06-27T12:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsuffCasesOnHoldPresentOrNot -->
+        <test-method status="PASS" signature="verifyInsuffCasesOnHoldRemovedOrNot()[pri:17, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifyInsuffCasesOnHoldRemovedOrNot" duration-ms="6041" started-at="2022-06-27T12:18:04Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldPresentOrNot" finished-at="2022-06-27T12:18:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInsuffCasesOnHoldRemovedOrNot -->
+        <test-method status="PASS" signature="verifywithdrawCaseStatusClosedByClient()[pri:18, instance:com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01@523884b2]" name="verifywithdrawCaseStatusClosedByClient" duration-ms="9397" started-at="2022-06-27T12:18:10Z" depends-on-methods="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01.verifyInsuffCasesOnHoldRemovedOrNot" finished-at="2022-06-27T12:18:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywithdrawCaseStatusClosedByClient -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01 -->
+    </test> <!-- iBridge11 -->
+    <test name="iBridge12" duration-ms="308830" started-at="2022-06-27T12:18:20Z" finished-at="2022-06-27T12:23:29Z">
+      <class name="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_WithdrawSmeCase_01@66a3ffec]" name="setup" is-config="true" duration-ms="5238" started-at="2022-06-27T12:18:20Z" finished-at="2022-06-27T12:18:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyFormNotSubmittedCaseWithdraw()[pri:1, instance:com.iBridge.sme.testcases.TC_WithdrawSmeCase_01@66a3ffec]" name="verifyFormNotSubmittedCaseWithdraw" duration-ms="51099" started-at="2022-06-27T12:18:25Z" finished-at="2022-06-27T12:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormNotSubmittedCaseWithdraw -->
+        <test-method status="PASS" signature="verifyCandidateNameInWithdrawnBucket()[pri:2, instance:com.iBridge.sme.testcases.TC_WithdrawSmeCase_01@66a3ffec]" name="verifyCandidateNameInWithdrawnBucket" duration-ms="2428" started-at="2022-06-27T12:19:16Z" depends-on-methods="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01.verifyFormNotSubmittedCaseWithdraw" finished-at="2022-06-27T12:19:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCandidateNameInWithdrawnBucket -->
+        <test-method status="FAIL" signature="verifyInitiateViaCandidateCaseWithdraw()[pri:3, instance:com.iBridge.sme.testcases.TC_WithdrawSmeCase_01@66a3ffec]" name="verifyInitiateViaCandidateCaseWithdraw" duration-ms="250042" started-at="2022-06-27T12:19:19Z" depends-on-methods="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01.verifyCandidateNameInWithdrawnBucket" finished-at="2022-06-27T12:23:29Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (47547ead93de11a26165cf094174501a)] -> xpath: //div[contains(text(),'Dashboard')]] (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-at com.iBridge.pageobject.BridgeLoginPage.arsNumberSearch(BridgeLoginPage.java:89)
-at com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.searchClientArsNoCaseList(TC_InitiateSelfCaseSmeExtended_01.java:189)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (47547ead93de11a26165cf094174501a)] -> xpath: //div[contains(text(),'Dashboard')]] (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at com.iBridge.sme.pageobject.CandidateSubmitProfileSme.clickOnSmeDashboardModule(CandidateSubmitProfileSme.java:1172)
+at com.iBridge.sme.testcases.TC_WithdrawSmeCase_01.verifyInitiateViaCandidateCaseWithdraw(TC_WithdrawSmeCase_01.java:205)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,115 +199,154 @@ at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90
 at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Dashboard')]"}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.34.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.WhIpqp}, goog:chromeOptions: {debuggerAddress: localhost:44837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47547ead93de11a26165cf094174501a
+*** Element info: {Using=xpath, value=//div[contains(text(),'Dashboard')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+... 30 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInitiateViaCandidateCaseWithdraw -->
+        <test-method status="SKIP" signature="verifyclosedByClientBucket()[pri:4, instance:com.iBridge.sme.testcases.TC_WithdrawSmeCase_01@66a3ffec]" name="verifyclosedByClientBucket" duration-ms="0" started-at="2022-06-27T12:23:29Z" depends-on-methods="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01.verifyInitiateViaCandidateCaseWithdraw" finished-at="2022-06-27T12:23:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC_WithdrawSmeCase_01.verifyclosedByClientBucket()[pri:4, instance:com.iBridge.sme.testcases.TC_WithdrawSmeCase_01@66a3ffec] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC_WithdrawSmeCase_01.verifyclosedByClientBucket()[pri:4, instance:com.iBridge.sme.testcases.TC_WithdrawSmeCase_01@66a3ffec] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyclosedByClientBucket -->
+      </class> <!-- com.iBridge.sme.testcases.TC_WithdrawSmeCase_01 -->
+    </test> <!-- iBridge12 -->
+    <test name="iBridge13" duration-ms="421309" started-at="2022-06-27T12:23:29Z" finished-at="2022-06-27T12:30:30Z">
+      <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="setup" is-config="true" duration-ms="7101" started-at="2022-06-27T12:23:29Z" finished-at="2022-06-27T12:23:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="initiateViaCandidateCaseSme()[pri:1, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="initiateViaCandidateCaseSme" duration-ms="32502" started-at="2022-06-27T12:23:36Z" finished-at="2022-06-27T12:24:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateViaCandidateCaseSme -->
+        <test-method status="PASS" signature="verifyFormNotSubmittedCaseList()[pri:2, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyFormNotSubmittedCaseList" duration-ms="2475" started-at="2022-06-27T12:24:08Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.initiateViaCandidateCaseSme" finished-at="2022-06-27T12:24:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormNotSubmittedCaseList -->
+        <test-method status="PASS" signature="candidateSmeEmailVerification()[pri:3, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="candidateSmeEmailVerification" duration-ms="3985" started-at="2022-06-27T12:24:11Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyFormNotSubmittedCaseList" finished-at="2022-06-27T12:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- candidateSmeEmailVerification -->
+        <test-method status="PASS" signature="candidateSmeAccountLogin()[pri:4, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="candidateSmeAccountLogin" duration-ms="69996" started-at="2022-06-27T12:24:15Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.candidateSmeEmailVerification" finished-at="2022-06-27T12:25:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- candidateSmeAccountLogin -->
+        <test-method status="PASS" signature="candidateProfileDetailsFilling()[pri:5, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="candidateProfileDetailsFilling" duration-ms="53625" started-at="2022-06-27T12:25:25Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.candidateSmeAccountLogin" finished-at="2022-06-27T12:26:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- candidateProfileDetailsFilling -->
+        <test-method status="PASS" signature="verifyAuthorizationRelease()[pri:6, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyAuthorizationRelease" duration-ms="10925" started-at="2022-06-27T12:26:18Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.candidateProfileDetailsFilling" finished-at="2022-06-27T12:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAuthorizationRelease -->
+        <test-method status="PASS" signature="verifyInitiateViaCandidateCasePaymentPending()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyInitiateViaCandidateCasePaymentPending" duration-ms="28813" started-at="2022-06-27T12:26:29Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyAuthorizationRelease" finished-at="2022-06-27T12:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInitiateViaCandidateCasePaymentPending -->
+        <test-method status="PASS" signature="verifyFormSubmittedBucket()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyFormSubmittedBucket" duration-ms="2546" started-at="2022-06-27T12:26:58Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyInitiateViaCandidateCasePaymentPending" finished-at="2022-06-27T12:27:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormSubmittedBucket -->
+        <test-method status="PASS" signature="verifyPaymentPendingBucket()[pri:9, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyPaymentPendingBucket" duration-ms="8327" started-at="2022-06-27T12:27:01Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyFormSubmittedBucket" finished-at="2022-06-27T12:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentPendingBucket -->
+        <test-method status="PASS" signature="verifyWorkInProgressBucket()[pri:10, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyWorkInProgressBucket" duration-ms="2448" started-at="2022-06-27T12:27:09Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyPaymentPendingBucket" finished-at="2022-06-27T12:27:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkInProgressBucket -->
+        <test-method status="PASS" signature="verifyCaseAppearingInTotalCaseSentList()[pri:11, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyCaseAppearingInTotalCaseSentList" duration-ms="2723" started-at="2022-06-27T12:27:11Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyWorkInProgressBucket" finished-at="2022-06-27T12:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCaseAppearingInTotalCaseSentList -->
+        <test-method status="PASS" signature="searchClientArsNoCaseList()[pri:12, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="searchClientArsNoCaseList" duration-ms="16017" started-at="2022-06-27T12:27:14Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyCaseAppearingInTotalCaseSentList" finished-at="2022-06-27T12:27:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchClientArsNoCaseList -->
-        <test-method status="SKIP" signature="verifyInsufficientDocsQcAllocator()[pri:6, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyInsufficientDocsQcAllocator" duration-ms="0" started-at="2022-06-24T11:49:07Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.searchClientArsNoCaseList" finished-at="2022-06-24T11:49:07Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQcAllocator()[pri:6, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQcAllocator()[pri:6, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="verifyInsufficientDocsQcAllocator()[pri:13, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyInsufficientDocsQcAllocator" duration-ms="48494" started-at="2022-06-27T12:27:30Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.searchClientArsNoCaseList" finished-at="2022-06-27T12:28:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInsufficientDocsQcAllocator -->
-        <test-method status="SKIP" signature="verifyInsufficientDocsQuality()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyInsufficientDocsQuality" duration-ms="0" started-at="2022-06-24T11:49:07Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQcAllocator" finished-at="2022-06-24T11:49:07Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQuality()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQuality()[pri:7, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="verifyInsufficientDocsQuality()[pri:14, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyInsufficientDocsQuality" duration-ms="118689" started-at="2022-06-27T12:28:19Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQcAllocator" finished-at="2022-06-27T12:30:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInsufficientDocsQuality -->
-        <test-method status="SKIP" signature="verifyInsufficientAllocator()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad]" name="verifyInsufficientAllocator" duration-ms="0" started-at="2022-06-24T11:49:07Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientDocsQuality" finished-at="2022-06-24T11:49:07Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientAllocator()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TC_InitiateSelfCaseSmeExtended_01.verifyInsufficientAllocator()[pri:8, instance:com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01@4520ebad] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="verifyInsufficientAllocator()[pri:15, instance:com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02@604ed9f0]" name="verifyInsufficientAllocator" duration-ms="12624" started-at="2022-06-27T12:30:17Z" depends-on-methods="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02.verifyInsufficientDocsQuality" finished-at="2022-06-27T12:30:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInsufficientAllocator -->
-      </class> <!-- com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01 -->
-    </test> <!-- iBridge10 -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02 -->
+    </test> <!-- iBridge13 -->
   </suite> <!-- iBridge -->
 </testng-results>

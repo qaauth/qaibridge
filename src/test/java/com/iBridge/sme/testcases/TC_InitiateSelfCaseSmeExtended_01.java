@@ -38,7 +38,8 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 			captureScreen(driver, "verifySmeDashboardText");
 			Assert.assertTrue(false);
 		}
-
+//		String amount = advanced.getamount();
+		
 		InitiateSelfCaseSme initiateSelfCase = new InitiateSelfCaseSme(driver);
 		initiateSelfCase.initiateNewCase();
 		logger.info("Initiate Self name has clicked Succesfully!");
@@ -150,6 +151,7 @@ public class TC_InitiateSelfCaseSmeExtended_01 extends BaseClass {
 			captureScreen(driver, "verifyThankYouCompletingPaymentSuccessMsg");
 			Assert.assertTrue(false);
 		}
+		
 	}
 
 	// Verify case status in WIP bucket
