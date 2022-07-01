@@ -39,13 +39,13 @@ public class PrepaidCandidateEmailVerification {
 
 	// Action Methods for the Mailinator
 	public String verifyMailinatorMailSubject() {
-		wait = new WebDriverWait(ldriver, 120);
+		wait = new WebDriverWait(ldriver, 160);
 		wait.until(ExpectedConditions.visibilityOf(verifyBackgroundCheckforBritishTelecom));
 		return verifyBackgroundCheckforBritishTelecom.getText();
 	}
 
 	public void mailinatorVerificationMail() throws InterruptedException {
-		wait = new WebDriverWait(ldriver, 120);
+		wait = new WebDriverWait(ldriver, 160);
 		wait.until(ExpectedConditions.visibilityOf(clickBackgroundCheckforBritishTelecom));
 		clickBackgroundCheckforBritishTelecom.click();
 		Thread.sleep(1000);

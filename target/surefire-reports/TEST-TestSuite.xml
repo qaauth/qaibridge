@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1,464.147" tests="45" errors="0" skipped="1" failures="1">
+<testsuite name="TestSuite" time="358.979" tests="10" errors="0" skipped="4" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf3080888724311941305.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7078526290161033915.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,36 +59,13 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="initiateSelfCaseSme" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="31.741"/>
-  <testcase name="candidateProfileDetailsFilling" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="62.366"/>
-  <testcase name="verifyAuthorizationRelease" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="13.584"/>
-  <testcase name="verifyWorkInProgressCases" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="10.131"/>
-  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="13.544"/>
-  <testcase name="verifyInsufficientDocsQcAllocator" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="50.591"/>
-  <testcase name="verifyInsufficientDocsQuality" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="121.446"/>
-  <testcase name="verifyInsufficientAllocator" classname="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" time="13.156"/>
-  <testcase name="verifyInsufficientVerifier" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="38.863"/>
-  <testcase name="verifyInsufficientAppearingOniBridge" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="10.58"/>
-  <testcase name="verifyInsufficientpendingForFulfilment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="15.59"/>
-  <testcase name="verifyInsufficiencyFulfillment" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="28.402"/>
-  <testcase name="verifyInsufficientCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="58.523"/>
-  <testcase name="verifyCostApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="31.565"/>
-  <testcase name="verifycostApprovalRequiredInsuffCasePresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="53.486"/>
-  <testcase name="verifyApprovalRequiredInsufficient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="21.414"/>
-  <testcase name="verifycostApprovalRequiredRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="9.734"/>
-  <testcase name="verifyAdminUserReasonInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="31.471"/>
-  <testcase name="verifyApprovalRequiredAndInsufficientBoth" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="50.951"/>
-  <testcase name="verifyApprovalRequiredInsuffPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="28.151"/>
-  <testcase name="verifyApprovalRequiredInsuffBothRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="5.956"/>
-  <testcase name="verifyInsufficientBothCasesPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="5.473"/>
-  <testcase name="verifyAdminUserInsuffRaisedCasesOnHold" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="22.107"/>
-  <testcase name="verifyInsuffCasesOnHoldPresentOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="2.114"/>
-  <testcase name="verifyInsuffCasesOnHoldRemovedOrNot" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="6.041"/>
-  <testcase name="verifywithdrawCaseStatusClosedByClient" classname="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" time="9.398"/>
-  <testcase name="verifyFormNotSubmittedCaseWithdraw" classname="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" time="51.099"/>
-  <testcase name="verifyCandidateNameInWithdrawnBucket" classname="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" time="2.428"/>
-  <testcase name="verifyInitiateViaCandidateCaseWithdraw" classname="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" time="250.053">
-    <failure message="Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (47547ead93de11a26165cf094174501a)] -&gt; xpath: //div[contains(text(),&apos;Dashboard&apos;)]] (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (47547ead93de11a26165cf094174501a)] -> xpath: //div[contains(text(),'Dashboard')]] (tried for 60 second(s) with 500 milliseconds interval)
+  <testcase name="verifyEnpAdminLoginAccount" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="12.443"/>
+  <testcase name="verifyInitiateNewCaseForIvc" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="62.626"/>
+  <testcase name="verifyPendingCaseSubmissionVerification" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="5.169"/>
+  <testcase name="candidateEmailVerification" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="9.416"/>
+  <testcase name="verifyCandidateFullfillAllFormDetails" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="79.115"/>
+  <testcase name="verifyPrepaidAmountPayableValue" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="190.21">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: /html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]&apos; (tried for 120 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]' (tried for 120 second(s) with 500 milliseconds interval)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,51 +88,23 @@
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.iBridge.sme.pageobject.CandidateSubmitProfileSme.clickOnSmeDashboardModule(CandidateSubmitProfileSme.java:1172)
-	at com.iBridge.sme.testcases.TC_WithdrawSmeCase_01.verifyInitiateViaCandidateCaseWithdraw(TC_WithdrawSmeCase_01.java:205)
+	at com.iBridge.pageobject.PrepaidCandidateFulfillInformation.prepaidPaymentPendingCases(PrepaidCandidateFulfillInformation.java:1599)
+	at com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue(TC_PrepaidInitiateCaseIndividuallyExtended_01.java:203)
 </failure>
-    <system-out><![CDATA[ INFO [main] (TC_WithdrawSmeCase_01.java:93)- Initiate Via Candidate name has clicked Succesfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:96)- Buy Checks Selection Packages have been Checked Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:113)- Candidate mobile Number and Cv have been uploaded successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:120)- Mailinator Mail URL has Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:123)- Mailinator Mail has Verified Successfully!
-[Ljava.lang.String;@33319df0 INFO [main] (TC_WithdrawSmeCase_01.java:126)- Get Username and Password!
- INFO [main] (TC_WithdrawSmeCase_01.java:132)- iBridge Url is opened
- INFO [main] (TC_WithdrawSmeCase_01.java:134)- Sme Account has logged out successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:136)- Candidate Login iBridge portal Url is opened
-USER_8366_9605_51538===gC6w27mjvc
- INFO [main] (TC_WithdrawSmeCase_01.java:141)- SME User Id and Password have entered Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:144)- Candidate Profile details Have been filled successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:150)- Candidate Profile Details -PAN Card has been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:154)- Candidate Profile Details -Voter Card has been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:159)- Candidate Current Address Verification details has been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:163)- Candidate Permanent Address Verification details has been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:167)- Candidate Education Details has been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:174)- Candidate Current Employment Details has been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:181)- Candidate Previous Employment Details has been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:186)- Professional Reference Details have been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:190)- Personal Reference Details have been added Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:195)- Authorization Signature has completed Successfully!
- INFO [main] (TC_WithdrawSmeCase_01.java:200)- iBridge Url is opened
- INFO [main] (TC_WithdrawSmeCase_01.java:203)- Sme Account has been logged successfully!
+    <system-out><![CDATA[ INFO [main] (TC_PrepaidInitiateCaseIndividuallyExtended_01.java:198)- Prepaid Enp Admin Url has opened Successfully!
+ INFO [main] (TC_PrepaidInitiateCaseIndividuallyExtended_01.java:201)- Prepaid Candidate account has Logged successfully!
 ]]></system-out>
   </testcase>
-  <testcase name="verifyclosedByClientBucket" classname="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" time="0">
+  <testcase name="verifyPrepaidPaymentPendingCases" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="initiateViaCandidateCaseSme" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="32.502"/>
-  <testcase name="verifyFormNotSubmittedCaseList" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="2.476"/>
-  <testcase name="candidateSmeEmailVerification" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="3.985"/>
-  <testcase name="candidateSmeAccountLogin" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="69.996"/>
-  <testcase name="candidateProfileDetailsFilling" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="53.625"/>
-  <testcase name="verifyAuthorizationRelease" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="10.925"/>
-  <testcase name="verifyInitiateViaCandidateCasePaymentPending" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="28.813"/>
-  <testcase name="verifyFormSubmittedBucket" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="2.546"/>
-  <testcase name="verifyPaymentPendingBucket" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="8.326"/>
-  <testcase name="verifyWorkInProgressBucket" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="2.448"/>
-  <testcase name="verifyCaseAppearingInTotalCaseSentList" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="2.723"/>
-  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="16.017"/>
-  <testcase name="verifyInsufficientDocsQcAllocator" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="48.494"/>
-  <testcase name="verifyInsufficientDocsQuality" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="118.689"/>
-  <testcase name="verifyInsufficientAllocator" classname="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" time="12.624"/>
+  <testcase name="verifysubmittedForVerificationBucket" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="submittedCasesTrackerWipCases" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

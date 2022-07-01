@@ -4,18 +4,24 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge12(failed)">
+  <test thread-count="1" verbose="0" name="iBridge16(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01">
+      <class name="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01">
         <methods>
-          <include name="verifyInitiateViaCandidateCaseWithdraw"/>
+          <include name="verifyPendingCaseSubmissionVerification"/>
+          <include name="searchClientArsNoCaseList"/>
+          <include name="verifyEnpAdminLoginAccount"/>
+          <include name="verifyCandidateFullfillAllFormDetails"/>
           <include name="setup"/>
-          <include name="verifyCandidateNameInWithdrawnBucket"/>
-          <include name="verifyFormNotSubmittedCaseWithdraw"/>
-          <include name="verifyclosedByClientBucket"/>
+          <include name="verifyInitiateNewCaseForIvc"/>
+          <include name="verifyPrepaidPaymentPendingCases"/>
+          <include name="candidateEmailVerification"/>
+          <include name="verifyPrepaidAmountPayableValue"/>
+          <include name="verifysubmittedForVerificationBucket"/>
+          <include name="submittedCasesTrackerWipCases"/>
         </methods>
-      </class> <!-- com.iBridge.sme.testcases.TC_WithdrawSmeCase_01 -->
+      </class> <!-- com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01 -->
     </classes>
-  </test> <!-- iBridge12(failed) -->
+  </test> <!-- iBridge16(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

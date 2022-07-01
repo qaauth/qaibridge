@@ -48,11 +48,11 @@
 	<!-- Prepaid Client Enp Admin Test Cases iBridge SME Client MOTHER DAIRY 
 		FRUIT & VEGETABLE PRIVATE LIMITED -->
 		
-	<test name="iBridge10"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge10"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_InitiateSelfCaseSmeExtended_01" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 		
-	<test name="iBridge11"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge11"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_InsufficientBridgeSme_01" 
 		/> </classes> </test>
 
@@ -62,7 +62,7 @@
 
 	<test name="iBridge13"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 
 	<!-- <test name="iBridge14"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" 
@@ -74,9 +74,9 @@
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidEnpAdmin_01" /> </classes> 
 		</test> -->
 		
-	<!-- <test name="iBridge16"> <parameter name="browser" value="chrome" /> 
+	<test name="iBridge16"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" 
-		/> </classes> </test> -->
+		/> </classes> </test>
 
 	<!-- <test name="iBridge17"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" 

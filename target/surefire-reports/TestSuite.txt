@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 45, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1,490.797 sec <<< FAILURE! - in TestSuite
-verifyInitiateViaCandidateCaseWithdraw(com.iBridge.sme.testcases.TC_WithdrawSmeCase_01)  Time elapsed: 250.053 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (47547ead93de11a26165cf094174501a)] -> xpath: //div[contains(text(),'Dashboard')]] (tried for 60 second(s) with 500 milliseconds interval)
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 376.652 sec <<< FAILURE! - in TestSuite
+verifyPrepaidAmountPayableValue(com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01)  Time elapsed: 190.21 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]' (tried for 120 second(s) with 500 milliseconds interval)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -26,6 +26,6 @@ org.openqa.selenium.TimeoutException: Expected condition failed: waiting for vis
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.iBridge.sme.pageobject.CandidateSubmitProfileSme.clickOnSmeDashboardModule(CandidateSubmitProfileSme.java:1172)
-	at com.iBridge.sme.testcases.TC_WithdrawSmeCase_01.verifyInitiateViaCandidateCaseWithdraw(TC_WithdrawSmeCase_01.java:205)
+	at com.iBridge.pageobject.PrepaidCandidateFulfillInformation.prepaidPaymentPendingCases(PrepaidCandidateFulfillInformation.java:1599)
+	at com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue(TC_PrepaidInitiateCaseIndividuallyExtended_01.java:203)
 

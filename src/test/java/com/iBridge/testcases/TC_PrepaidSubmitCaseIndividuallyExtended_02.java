@@ -66,31 +66,31 @@ public class TC_PrepaidSubmitCaseIndividuallyExtended_02 extends BaseClass {
 		logger.info("Candidate Additional Information Setup Successfully!");
 
 		// ADDRESS--Step 3 - Candidate Summary
-		submitCaseIndividually.prepaidCandidateAddress("23", "Mayur Vihar", "04-04-1991", "323233", "hi", "Delhi",
-				"Mayur Vihar", "1234", "Mayur Vihar", "01-01-2022", "323233", "hi", "Delhi", "Mayur Vihar",
-				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
-		logger.info("Candidate Address setup successfully!");
-		// Education Details--Step 3 - Candidate Summary
-		submitCaseIndividually.prepaidEducationInformation("Bund");
-		logger.info("Prepaid Candidate Education details Setup successfully!");
-		// Employment(Current Employment Details)--Step 3 - Candidate Summary
-		submitCaseIndividually.prepaidCurrentEmploymentDetails("Authbridge");
-		logger.info("Candidate Current Employment details Setup successfully!");
-		submitCaseIndividually.prepaidPreviousEmploymentDetails("Agami");
-		logger.info("Candidate Previous Employment details Setup successfully!");
-		logger.info("Filled Employment/Education To Employment Gap and clicked On Submit Button!");
-		// PROFESSIONAL REFERENCE--Professional Reference Check
-		submitCaseIndividually.prepaidProfessionalReferenceCheck();
-		logger.info("Professional Reference1 and Reference2 has Setup Successfully!");
-
-		if (submitCaseIndividually.verifyInitiatedCaseThankYouMessage().contains("THANK YOU!")) {
-			Assert.assertTrue(true);
-			logger.info("Initiate Case Individually Extended has Verified successfully!");
-		} else {
-			logger.info("Initiate Case Individually Extended has not Verified successfully!!");
-			captureScreen(driver, "verifyInitiatedCaseThankYouMessage");
-			Assert.assertTrue(false);
-		}
+//		submitCaseIndividually.prepaidCandidateAddress("23", "Mayur Vihar", "04-04-1991", "323233", "hi", "Delhi",
+//				"Mayur Vihar", "1234", "Mayur Vihar", "01-01-2022", "323233", "hi", "Delhi", "Mayur Vihar",
+//				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
+//		logger.info("Candidate Address setup successfully!");
+//		// Education Details--Step 3 - Candidate Summary
+//		submitCaseIndividually.prepaidEducationInformation("Bund");
+//		logger.info("Prepaid Candidate Education details Setup successfully!");
+//		// Employment(Current Employment Details)--Step 3 - Candidate Summary
+//		submitCaseIndividually.prepaidCurrentEmploymentDetails("Authbridge");
+//		logger.info("Candidate Current Employment details Setup successfully!");
+//		submitCaseIndividually.prepaidPreviousEmploymentDetails("Agami");
+//		logger.info("Candidate Previous Employment details Setup successfully!");
+//		logger.info("Filled Employment/Education To Employment Gap and clicked On Submit Button!");
+//		// PROFESSIONAL REFERENCE--Professional Reference Check
+//		submitCaseIndividually.prepaidProfessionalReferenceCheck();
+//		logger.info("Professional Reference1 and Reference2 has Setup Successfully!");
+//
+//		if (submitCaseIndividually.verifyInitiatedCaseThankYouMessage().contains("THANK YOU!")) {
+//			Assert.assertTrue(true);
+//			logger.info("Initiate Case Individually Extended has Verified successfully!");
+//		} else {
+//			logger.info("Initiate Case Individually Extended has not Verified successfully!!");
+//			captureScreen(driver, "verifyInitiatedCaseThankYouMessage");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Verify Payment Amount Payable
@@ -101,14 +101,14 @@ public class TC_PrepaidSubmitCaseIndividuallyExtended_02 extends BaseClass {
 		verifyPaymentPendingCase.prepaidPaymentPendingCases();
 		logger.info("Payment Pending Case has verified Successfully!");
 
-		if (verifyPaymentPendingCase.verifyAmountPayableValue().contains("6124.2")) {
-			Assert.assertTrue(true);
-			logger.info("Initiate Case Individually has Amount Payable Verified successfully!");
-		} else {
-			logger.info("Initiate Case Individually has Not Amount Payable Verified successfully!");
-			captureScreen(driver, "verifyAmountPayableValue");
-			Assert.assertTrue(false);
-		}
+//		if (verifyPaymentPendingCase.verifyAmountPayableValue().contains("6124.2")) {
+//			Assert.assertTrue(true);
+//			logger.info("Initiate Case Individually has Amount Payable Verified successfully!");
+//		} else {
+//			logger.info("Initiate Case Individually has Not Amount Payable Verified successfully!");
+//			captureScreen(driver, "verifyAmountPayableValue");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Verify Payment Pending Cases Bucket
@@ -137,14 +137,14 @@ public class TC_PrepaidSubmitCaseIndividuallyExtended_02 extends BaseClass {
 				driver);
 		verifySubmittedVerification.submittedForVerificationBucket();
 		logger.info("Submitted For Verification Bucket Has Verified Successfully!");
-		if (verifySubmittedVerification.verifyPrepaidCandidateName().contains(firstName)) {
-			Assert.assertTrue(true);
-			logger.info("IVC Submitted For Verification Bucket First Name has Verified successfully!");
-		} else {
-			logger.info("IVC Submitted For Verification Bucket First Name has Not Verified successfully!");
-			captureScreen(driver, "verifyPaymentCompletedMessage");
-			Assert.assertTrue(false);
-		}
+//		if (verifySubmittedVerification.verifyPrepaidCandidateName().contains(firstName)) {
+//			Assert.assertTrue(true);
+//			logger.info("IVC Submitted For Verification Bucket First Name has Verified successfully!");
+//		} else {
+//			logger.info("IVC Submitted For Verification Bucket First Name has Not Verified successfully!");
+//			captureScreen(driver, "verifyPaymentCompletedMessage");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Verify WIP Cases in Submitted Case(s) Tracker

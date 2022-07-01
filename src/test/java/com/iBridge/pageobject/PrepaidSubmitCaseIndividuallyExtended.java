@@ -160,6 +160,22 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	@FindBy(xpath = "//button[@id='profileSubmitForm']")
 	@CacheLookup
 	WebElement clickOnProfileSubmitFormBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Ignore Duplicate(s)']")
+	WebElement ignoreDuplicate;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='profileSubmitForm']")
+	WebElement saveAndContinueButton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='pacakgeSubmitForm']")
+	WebElement submit;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Ok']")
+	WebElement okButton;
 
 	// Candidate information saved successfully
 	@FindBy(xpath = "//div[contains(text(),'Candidate information saved successfully')]")
@@ -974,6 +990,10 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]/span[1]")
 	@CacheLookup
 	WebElement clickOnSubmissionSummaryModule;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@title='Submitted for Verification']")
+	WebElement submittedForVerification;
 
 	@FindBy(xpath = "//a[contains(text(),'Submitted for Verification')]")
 	@CacheLookup
@@ -1116,6 +1136,11 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnProfileSubmitFormBtn, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
+		ignoreDuplicate.click();
+		saveAndContinueButton.click();
+		submit.click();
+		Thread.sleep(2000);
+		okButton.click();
 	}
 
 	// ADDRESS(Current Address Details)--Step 3 - Candidate Summary
@@ -1123,6 +1148,7 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 			String city, String station, String houseNo, String locality, String residingFormDate, String pinCodePer,
 			String statePer, String cityPer, String policeStation, String AddressProof)
 			throws InterruptedException, ParseException {
+		Thread.sleep(2000);
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
 		selectWithinIndia.click();
@@ -1185,6 +1211,7 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 
 	// Education Details--Step 3 - Candidate Summary
 	public void prepaidEducationInformation(String instituteName) throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(selectCampusHireYes));
 		JavaScriptManuplator.selectOptionFromDropDown(selectCampusHireYes, "Yes");
@@ -1192,6 +1219,7 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		JavaScriptManuplator.javaScriptExecutor(clickOnCampusContinueBtn, "arguments[0].click()", ldriver);
 
 		// Education Details 1 (Enter your highest education details)
+		
 		JavaScriptManuplator.waitForElementPresent(ldriver, selectQualification, 120);
 		JavaScriptManuplator.selectOptionFromDropDown(selectQualification, "Graduate");
 		JavaScriptManuplator.javaScriptExecutor(selectCourseName, "arguments[0].value='Computer Science & Engineering'",
@@ -1228,6 +1256,7 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		Thread.sleep(2000);
 
 		// Education Details 2 (Enter your second highest education details)
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifySecondHighestEduDetails));
 		JavaScriptManuplator.selectOptionFromDropDown(selectsecondQualificationName, "Senior Secondary (10+2)");
@@ -1262,7 +1291,9 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		wait.until(ExpectedConditions.visibilityOf(clickWillSecondProvideDocLater));
 		JavaScriptManuplator.javaScriptExecutor(clickWillSecondProvideDocLater, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
+		
 		// Education Details 3 -------
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyEducationDetails));
 		JavaScriptManuplator.selectOptionFromDropDown(selectThreeQualification, "Secondary (10th)");
@@ -1591,7 +1622,7 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	public String verifyAmountPayableValue() {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyAmountPayable));
-		System.out.println("verifyAmountPayable===" + verifyAmountPayable);
+//		System.out.println("verifyAmountPayable===" + verifyAmountPayable);
 		return verifyAmountPayable.getText();
 	}
 
@@ -1618,15 +1649,10 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickMenuExpandBar));
 		JavaScriptManuplator.javaScriptExecutor(clickMenuExpandBar, "arguments[0].click()", ldriver);
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnSubmissionSummaryModule));
-		JavaScriptManuplator.javaScriptExecutor(clickOnSubmissionSummaryModule, "arguments[0].click()", ldriver);
-		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Submitted for Verification')]"));
-		Actions actions = new Actions(ldriver);
-		actions.moveToElement(element).click().perform();
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(verifyCaseCandidateName));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
+		clickOnSubmissionSummaryModule.click();
+		Thread.sleep(2000);
+		JavaScriptManuplator.javaScriptExecutor(submittedForVerification, "arguments[0].click()", ldriver);
 	}
 
 	// Submitted For Verification Bucket-- Candidate Name

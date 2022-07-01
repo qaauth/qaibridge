@@ -1546,13 +1546,13 @@ public class InitiateSelfCaseSme {
 		walletIcon.click();
 		beforeDeductionActualAmount = walletAmount.getText().trim();
 		String [] value1 = beforeDeductionActualAmount.split(",");
-		String splittedAmount = "";
+		String aftersplittedAmount = "";
 		for(int itr=0; itr < value1.length; itr++)
 		{
-			splittedAmount = splittedAmount + value1[itr];
+			aftersplittedAmount = aftersplittedAmount + value1[itr];
 		}
-		System.out.println("==="+splittedAmount+"======"+afterDeductionExpectedAmount+"===");
-//		Assert.assertEquals(splittedAmount, afterDeductionExpectedAmount);
+		System.out.println("==="+aftersplittedAmount+"======"+afterDeductionExpectedAmount+"===");
+		Assert.assertEquals(aftersplittedAmount, afterDeductionExpectedAmount);
 		ldriver.navigate().back();
 		
 		wait = new WebDriverWait(ldriver, 120);

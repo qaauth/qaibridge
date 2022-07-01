@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>iBridge16</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/9</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/4</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 21 23:05:00 IST 2022</td>
+<td>Started on:</td><td>Fri Jul 01 17:56:27 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11153 ms)</td>
+<tr><td>Total time:</td><td>375 seconds (375994 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,44 +75,46 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyEnpAdminLoginAccount()'><b>verifyEnpAdminLoginAccount</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue()'><b>verifyPrepaidAmountPayableValue</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: /html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]&apos; (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.iBridge.pageobject.PrepaidCandidateFulfillInformation.prepaidPaymentPendingCases(PrepaidCandidateFulfillInformation.java:1599)
+	at com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue(TC_PrepaidInitiateCaseIndividuallyExtended_01.java:203)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]&quot;}
   (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.27.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;1.8.0_312&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.HqdFkF}, goog:chromeOptions: {debuggerAddress: localhost:44075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b4cdfb2617f66515c73d95afeb99839
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.SqmICS}, goog:chromeOptions: {debuggerAddress: localhost:40253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a268e6e26965f7c2bceb2003effbd85c
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyEnpAdminLoginAccount(TC_PrepaidInitiateCaseIndividuallyExtended_01.java:28)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1204296383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1204296383'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=101.0.4951.54)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.27.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;1.8.0_312&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.HqdFkF}, goog:chromeOptions: {debuggerAddress: localhost:44075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b4cdfb2617f66515c73d95afeb99839
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyEnpAdminLoginAccount(TC_PrepaidInitiateCaseIndividuallyExtended_01.java:28)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 30 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace358019805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace358019805'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: /html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]&apos; (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.iBridge.pageobject.PrepaidCandidateFulfillInformation.prepaidPaymentPendingCases(PrepaidCandidateFulfillInformation.java:1599)
+	at com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue(TC_PrepaidInitiateCaseIndividuallyExtended_01.java:203)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,8 +143,73 @@ Session ID: 5b4cdfb2617f66515c73d95afeb99839
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.SqmICS}, goog:chromeOptions: {debuggerAddress: localhost:40253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a268e6e26965f7c2bceb2003effbd85c
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/nav[1]/div[1]/a[1]/div[1]/div[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 30 more
 </pre></div></td>
-<td>0</td>
+<td>190</td>
+<td>com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.candidateEmailVerification()'><b>candidateEmailVerification</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
+<td></td>
+<td>9</td>
+<td>com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyCandidateFullfillAllFormDetails()'><b>verifyCandidateFullfillAllFormDetails</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
+<td></td>
+<td>79</td>
+<td>com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyEnpAdminLoginAccount()'><b>verifyEnpAdminLoginAccount</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
+<td></td>
+<td>12</td>
+<td>com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyInitiateNewCaseForIvc()'><b>verifyInitiateNewCaseForIvc</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
+<td></td>
+<td>62</td>
+<td>com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPendingCaseSubmissionVerification()'><b>verifyPendingCaseSubmissionVerification</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
+<td></td>
+<td>5</td>
 <td>com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -153,39 +220,10 @@ Session ID: 5b4cdfb2617f66515c73d95afeb99839
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.candidateEmailVerification()'><b>candidateEmailVerification</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.candidateEmailVerification()[pri:3, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1281025083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1281025083'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.candidateEmailVerification()[pri:3, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
 <td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()'><b>searchClientArsNoCaseList</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()[pri:9, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace136157810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace136157810'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()[pri:9, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998882269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1998882269'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()[pri:9, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -213,124 +251,8 @@ Session ID: 5b4cdfb2617f66515c73d95afeb99839
 <tr>
 <td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()'><b>submittedCasesTrackerWipCases</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()[pri:8, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace193388045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace193388045'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()[pri:8, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyCandidateFullfillAllFormDetails()'><b>verifyCandidateFullfillAllFormDetails</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyCandidateFullfillAllFormDetails()[pri:4, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace40170008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace40170008'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyCandidateFullfillAllFormDetails()[pri:4, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyInitiateNewCaseForIvc()'><b>verifyInitiateNewCaseForIvc</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyInitiateNewCaseForIvc()[pri:2, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace485845532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace485845532'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyInitiateNewCaseForIvc()[pri:2, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPendingCaseSubmissionVerification()'><b>verifyPendingCaseSubmissionVerification</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPendingCaseSubmissionVerification()[pri:2, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace871790326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace871790326'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPendingCaseSubmissionVerification()[pri:2, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue()'><b>verifyPrepaidAmountPayableValue</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue()[pri:5, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace896982466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace896982466'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidAmountPayableValue()[pri:5, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1801422599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1801422599'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()[pri:8, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -358,8 +280,8 @@ Session ID: 5b4cdfb2617f66515c73d95afeb99839
 <tr>
 <td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidPaymentPendingCases()'><b>verifyPrepaidPaymentPendingCases</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidPaymentPendingCases()[pri:6, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901205084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace901205084'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidPaymentPendingCases()[pri:6, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace103118806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103118806'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifyPrepaidPaymentPendingCases()[pri:6, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -387,8 +309,8 @@ Session ID: 5b4cdfb2617f66515c73d95afeb99839
 <tr>
 <td title='com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01.verifysubmittedForVerificationBucket()'><b>verifysubmittedForVerificationBucket</b><br>Test class: com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifysubmittedForVerificationBucket()[pri:7, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777457133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace777457133'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifysubmittedForVerificationBucket()[pri:7, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1237144823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1237144823'><pre>java.lang.Throwable: Method TC_PrepaidInitiateCaseIndividuallyExtended_01.verifysubmittedForVerificationBucket()[pri:7, instance:com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
