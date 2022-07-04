@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>iBridge3</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/6</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 10 13:34:05 IST 2022</td>
+<td>Started on:</td><td>Mon Jul 04 18:24:16 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>489 seconds (489228 ms)</td>
+<tr><td>Total time:</td><td>325 seconds (325942 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,46 +75,53 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.submittedForVerification()'><b>submittedForVerification</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h3[contains(text(),&apos;Case Submission Summary&apos;)]&apos; (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.iBridge.pageobject.LoginPage.verifyDashboardCaseSubmissionSummaryText(LoginPage.java:56)
-	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.submittedForVerification(TC_InitiateCaseIndividuallyExtended_01.java:235)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[contains(text(),&apos;Case Submission Summary&apos;)]&quot;}
-  (Session info: chrome=101.0.4951.41)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount()'><b>candidateLoginAccount</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=101.0.4951.54)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARS-NBT-LAP-250&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;1.8.0_312&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.zYAyEo}, goog:chromeOptions: {debuggerAddress: localhost:37213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b7c93fbca257901db419496338d3274
-*** Element info: {Using=xpath, value=//h3[contains(text(),&apos;Case Submission Summary&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.flSrBZ}, goog:chromeOptions: {debuggerAddress: localhost:39159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b1e0c1df6c8ff96ba677fc15fb1b9d
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 30 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2081751971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2081751971'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h3[contains(text(),&apos;Case Submission Summary&apos;)]&apos; (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at com.iBridge.pageobject.LoginPage.verifyDashboardCaseSubmissionSummaryText(LoginPage.java:56)
-	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.submittedForVerification(TC_InitiateCaseIndividuallyExtended_01.java:235)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at com.iBridge.pageobject.InitiateCaseIndividuallyExtended.professionalReference(InitiateCaseIndividuallyExtended.java:349)
+	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount(TC_InitiateCaseIndividuallyExtended_01.java:208)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1067155425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1067155425'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=101.0.4951.54)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.flSrBZ}, goog:chromeOptions: {debuggerAddress: localhost:39159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b1e0c1df6c8ff96ba677fc15fb1b9d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at com.iBridge.pageobject.InitiateCaseIndividuallyExtended.professionalReference(InitiateCaseIndividuallyExtended.java:349)
+	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount(TC_InitiateCaseIndividuallyExtended_01.java:208)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,41 +150,9 @@ Session ID: 0b7c93fbca257901db419496338d3274
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[contains(text(),&apos;Case Submission Summary&apos;)]&quot;}
-  (Session info: chrome=101.0.4951.41)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARS-NBT-LAP-250&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;1.8.0_312&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.zYAyEo}, goog:chromeOptions: {debuggerAddress: localhost:37213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b7c93fbca257901db419496338d3274
-*** Element info: {Using=xpath, value=//h3[contains(text(),&apos;Case Submission Summary&apos;)]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 30 more
 </pre></div></td>
-<td>182</td>
-<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f</td></tr>
+<td>244</td>
+<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -189,23 +164,18 @@ Session ID: 0b7c93fbca257901db419496338d3274
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateEmailVerification()'><b>candidateEmailVerification</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
 <td></td>
-<td>3</td>
-<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount()'><b>candidateLoginAccount</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
-<td></td>
-<td>213</td>
-<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f</td></tr>
+<td>9</td>
+<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.initiateCaseIndividuallyExtended()'><b>initiateCaseIndividuallyExtended</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
 <td></td>
-<td>79</td>
-<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f</td></tr>
+<td>55</td>
+<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.pendingCaseSubmissionVerification()'><b>pendingCaseSubmissionVerification</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
 <td></td>
-<td>4</td>
-<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f</td></tr>
+<td>10</td>
+<td>com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -216,9 +186,9 @@ Session ID: 0b7c93fbca257901db419496338d3274
 </tr>
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()'><b>searchClientArsNoCaseList</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()[pri:7, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace705602706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace705602706'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()[pri:7, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()[pri:7, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1317746045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1317746045'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.searchClientArsNoCaseList()[pri:7, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -245,9 +215,38 @@ Session ID: 0b7c93fbca257901db419496338d3274
 <td>null</td></tr>
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()'><b>submittedCasesTrackerWipCases</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()[pri:6, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1205817409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1205817409'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()[pri:6, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()[pri:6, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace713765818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace713765818'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.submittedCasesTrackerWipCases()[pri:6, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.submittedForVerification()'><b>submittedForVerification</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
+<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.submittedForVerification()[pri:5, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1608509647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1608509647'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.submittedForVerification()[pri:5, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -274,9 +273,9 @@ Session ID: 0b7c93fbca257901db419496338d3274
 <td>null</td></tr>
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientAllocator()'><b>verifyInsufficientAllocator</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientAllocator()[pri:10, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1065713160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1065713160'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientAllocator()[pri:10, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientAllocator()[pri:10, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101493838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101493838'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientAllocator()[pri:10, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -303,9 +302,9 @@ Session ID: 0b7c93fbca257901db419496338d3274
 <td>null</td></tr>
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQcAllocator()'><b>verifyInsufficientDocsQcAllocator</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQcAllocator()[pri:8, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2119344747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2119344747'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQcAllocator()[pri:8, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQcAllocator()[pri:8, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace773765215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace773765215'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQcAllocator()[pri:8, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -332,9 +331,9 @@ Session ID: 0b7c93fbca257901db419496338d3274
 <td>null</td></tr>
 <tr>
 <td title='com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQuality()'><b>verifyInsufficientDocsQuality</b><br>Test class: com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQuality()[pri:9, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48589645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace48589645'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQuality()[pri:9, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@79b4d0f] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQuality()[pri:9, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245867715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace245867715'><pre>java.lang.Throwable: Method TC_InitiateCaseIndividuallyExtended_01.verifyInsufficientDocsQuality()[pri:9, instance:com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)

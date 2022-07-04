@@ -16,6 +16,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.iBridge.utilities.JavaScriptManuplator;
+
 public class CasesSubmissionSummary {
 	WebDriver ldriver;
 	WebDriverWait wait;
@@ -110,6 +112,30 @@ public class CasesSubmissionSummary {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id=\"sidebar-expand-collapse-btn\"]/div/div/div")
 	WebElement clickOnSidebarExpandVerification;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[1]/div/div/ul/li[4]/ul/li[3]/div/a")
+	WebElement pendingSignOff;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[1]/div/div/div/div[1]/div/div[2]/a[2]")
+	WebElement submit;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div[1]/div[1]/h4/div[1]/label/input")
+	WebElement clickCheckBox;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[7]/a")
+	WebElement confirmSubmit;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[6]/div[2]/div/div/div/div/div/div/div/div[4]/button[1]")
+	WebElement okButton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[1]/div/div/ul/li[4]/ul/li[4]/div/a")
+	WebElement clickOnsubmitForVerification;
 
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Case(s) Submission Summary')]")
@@ -294,14 +320,26 @@ public class CasesSubmissionSummary {
 
 	public void submittedForVerification() throws InterruptedException {
 		clickOnSidebarExpandVerification.click();
+		Thread.sleep(1000);
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmissionSubmitted));
 		clickOnSubmissionSubmitted.click();
+		pendingSignOff.click();
 		Thread.sleep(1000);
-		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Submitted for Verification')]"));
-		Actions actions = new Actions(ldriver);
-		actions.moveToElement(element).click().perform();
+		submit.click();
+		Thread.sleep(2000);
+		clickCheckBox.click();
+		confirmSubmit.click();
 		Thread.sleep(1000);
+		okButton.click();
+		Thread.sleep(1000);
+		JavaScriptManuplator.javaScriptExecutor(clickOnsubmitForVerification, "arguments[0].click()", ldriver);
+//		clickOnsubmitForVerification.click();
+		Thread.sleep(1000);
+//		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Submitted for Verification')]"));
+//		Actions actions = new Actions(ldriver);
+//		actions.moveToElement(element).click().perform();
+//		Thread.sleep(1000);
 		ldriver.navigate().refresh();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(copyCandidateMailId));

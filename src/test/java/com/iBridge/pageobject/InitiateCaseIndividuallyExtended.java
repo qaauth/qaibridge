@@ -345,6 +345,7 @@ public class InitiateCaseIndividuallyExtended {
 		// Add Reference(s)--1
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(txtCompanyName));
+		Thread.sleep(2000);
 		txtCompanyName.sendKeys(companyName);
 		clickOnRadioReferenceLevelSenior.click();
 		txtReferenceName.clear();

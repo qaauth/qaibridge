@@ -497,6 +497,11 @@ public class InsufficientBridgeSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//button[@id='complete_search']")
 	WebElement clickOnCompleteSearchBtn;
+	
+	// By sapna
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[1]/div[1]/h4[2]/a")
+	WebElement loadResult;
 
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[12]/a[1]")
@@ -651,7 +656,7 @@ public class InsufficientBridgeSme {
 	WebElement txtInsuffComments;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//input[@id='insuff_comment']")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table/thead/tr[3]/td/input")
 	WebElement txtInsuffCost;
 
 	@CacheLookup
@@ -713,9 +718,10 @@ public class InsufficientBridgeSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//textarea[@id='insuff_comment']")
 	WebElement txtInsuffComment;
-
+	
+	// Sapna
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//input[@id='insuff_comment']")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table/thead/tr[3]/td/input")
 	WebElement txtInsuffCostValue;
 
 	@CacheLookup
@@ -1144,10 +1150,10 @@ public class InsufficientBridgeSme {
 
 		// Confirmation Alert-- There are 1 overlapping tenures between employment
 		// checks.
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnOkUnderstoodBtn));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnOkUnderstoodBtn);
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnOkUnderstoodBtn));
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnOkUnderstoodBtn);
 
 		Select seniorLevel = new Select(selectSeniorLevel);
 		seniorLevel.selectByIndex(3);
@@ -1196,9 +1202,9 @@ public class InsufficientBridgeSme {
 
 		// Confirmation- Alert There are 1 overlapping tenures between employment
 		// checks.
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnOkIUnderstoodBtn));
-		clickOnOkIUnderstoodBtn.click();
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnOkIUnderstoodBtn));
+//		clickOnOkIUnderstoodBtn.click();
 		Thread.sleep(1000);
 		Select seniorCaseLevel = new Select(selectSeniorCaseLevel);
 		seniorCaseLevel.selectByIndex(3);
@@ -1245,7 +1251,7 @@ public class InsufficientBridgeSme {
 		assignToVerifierName.selectByIndex(1);
 
 		Select teamMemberName = new Select(selectTeamMemberName);
-		teamMemberName.selectByIndex(6);
+		teamMemberName.selectByIndex(7);
 		txtCheckComments.sendKeys(checkComments);
 		Thread.sleep(1000);
 		clickOnGoAllocatorBtn.click();

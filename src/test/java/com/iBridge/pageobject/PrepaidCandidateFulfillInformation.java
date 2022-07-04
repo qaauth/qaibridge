@@ -64,6 +64,10 @@ public class PrepaidCandidateFulfillInformation {
 	@FindBy(xpath = "//*[@id=\"mCSB_1_container\"]/div/div/div[4]/div/div/div[1]/label/span")
 	@CacheLookup
 	WebElement verifyText;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[1]/div[2]/div/div/div[1]/button")
+	WebElement fillBackgroundVerificationForm;
 
 	@FindBy(id = "concentcheck")
 	@CacheLookup
@@ -80,6 +84,10 @@ public class PrepaidCandidateFulfillInformation {
 	@FindBy(name = "continue")
 	@CacheLookup
 	WebElement clickOnContinueBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='pacakgeSubmitForm']")
+	WebElement submitButton;
 
 	// NATIONAL IDENTITY--Step 3 - Candidate Summary
 	@FindBy(xpath = "//*[@id='no_pan_card']")
@@ -941,8 +949,12 @@ public class PrepaidCandidateFulfillInformation {
 	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]/span[1]")
 	@CacheLookup
 	WebElement clickOnSubmissionSummary;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@title='Pending Submission']")
+	WebElement pendingSubmission;
 
-	@FindBy(xpath = "//a[contains(text(),'Pending Payment')]")
+	@FindBy(xpath = "/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/ul/li[3]/a")
 	@CacheLookup
 	WebElement clickOnPendingPayment;
 
@@ -981,6 +993,10 @@ public class PrepaidCandidateFulfillInformation {
 	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]/span[1]")
 	@CacheLookup
 	WebElement clickOnSubmissionSummaryModule;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@title='Submitted for Verification']")
+	WebElement submittedForVerification;
 
 	@FindBy(xpath = "//a[contains(text(),'Submitted for Verification')]")
 	@CacheLookup
@@ -1026,12 +1042,7 @@ public class PrepaidCandidateFulfillInformation {
 		txtUserName.sendKeys(uname);
 		txtPassword.sendKeys(pwd);
 		btnLogin.click();
-		try {
-			Thread.sleep(2000);
-			clickOnInstructionPopupCrossBtn.click();
-		} catch (Exception e) {
-
-		}
+		
 	}
 
 	public String verifyDashboardCandidateSummaryText() {
@@ -1042,9 +1053,13 @@ public class PrepaidCandidateFulfillInformation {
 
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
+		
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
-		wait = new WebDriverWait(ldriver, 60);
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(clickOnInstructionPopupCrossBtn));
+		clickOnInstructionPopupCrossBtn.click();
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(checkConcentCheckBox));
 		checkConcentCheckBox.click();
 		checkAgreeCheckBox.click();
@@ -1057,6 +1072,7 @@ public class PrepaidCandidateFulfillInformation {
 		Thread.sleep(1000);
 		clickOnContinueBtn.click();
 		Thread.sleep(1000);
+
 	}
 
 	// National Identity--Step 3 - Candidate Summary
@@ -1095,6 +1111,14 @@ public class PrepaidCandidateFulfillInformation {
 		txtFatherName.sendKeys(fatherName);
 		clickOnProfileContinueBtn.click();
 		Thread.sleep(1000);
+		submitButton.click();
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnProfile));
+//		Thread.sleep(1000);
+//		clickOnProfile.click();
+//		Thread.sleep(1000);
+//		clickOnPrepaidCandidateLogoutBtn.click();
+//		Thread.sleep(1000);
 	}
 
 	// ADDRESS(Current Address Details)--Step 3 - Candidate Summary
@@ -1619,15 +1643,10 @@ public class PrepaidCandidateFulfillInformation {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickMenuExpandBar));
 		JavaScriptManuplator.javaScriptExecutor(clickMenuExpandBar, "arguments[0].click()", ldriver);
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnSubmissionSummaryModule));
-		JavaScriptManuplator.javaScriptExecutor(clickOnSubmissionSummaryModule, "arguments[0].click()", ldriver);
-		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Submitted for Verification')]"));
-		Actions actions = new Actions(ldriver);
-		actions.moveToElement(element).click().perform();
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(verifyCaseCandidateName));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
+		clickOnSubmissionSummaryModule.click();
+		Thread.sleep(2000);
+		JavaScriptManuplator.javaScriptExecutor(submittedForVerification, "arguments[0].click()", ldriver);
 	}
 
 	// Submitted For Verification Bucket-- Candidate Name

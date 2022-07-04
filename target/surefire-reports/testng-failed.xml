@@ -10,7 +10,6 @@
       <class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01">
         <methods>
           <include name="searchClientArsNoCaseList"/>
-          <include name="tearDown"/>
           <include name="pendingCaseSubmissionVerification"/>
           <include name="verifyInsufficientAllocator"/>
           <include name="setup"/>

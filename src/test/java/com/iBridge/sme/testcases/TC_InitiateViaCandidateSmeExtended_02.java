@@ -26,6 +26,7 @@ public class TC_InitiateViaCandidateSmeExtended_02 extends BaseClass {
 	// Initiate Via Candidate SME --New Case
 	@Test(enabled = true, testName = "Verify Initiate Via Candidate SME New Case", priority = 1)
 	public void initiateViaCandidateCaseSme() throws InterruptedException, IOException {
+		Thread.sleep(2000);
 		driver.get(baseURL);
 		logger.info("iBridge Url is opened");
 		LoginPage loginPage = new LoginPage(driver);
@@ -102,7 +103,7 @@ public class TC_InitiateViaCandidateSmeExtended_02 extends BaseClass {
 		logger.info("Mailinator Mail URL has Successfully!");
 		CandidateEmailVeificationSme verificationSme = new CandidateEmailVeificationSme(driver);
 		if (verificationSme.verifyMailinatorSmeMailSubject().contains(
-				"Pre-Joining Formalities for MOTHER DAIRY FRUIT & VEGETABLE PRIVATE LIMITED")) {
+				"Pre-Joining Formalities for Flipkart.com")) {
 			Assert.assertTrue(true);
 			logger.info("Mailinator Mail Subject has got successfully!");
 		} else {

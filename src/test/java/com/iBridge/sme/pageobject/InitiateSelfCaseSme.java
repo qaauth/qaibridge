@@ -15,11 +15,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class InitiateSelfCaseSme {
 	WebDriver ldriver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
+	String beforeDeductionExpectedAmount;
+	float afterDeductionExpectedAmount;
+
+	String beforeDeductionActualAmount;
+	double afterDeductionActualAmount;
 
 	public InitiateSelfCaseSme(WebDriver rdriver) {
 		this.ldriver = rdriver;
@@ -484,7 +490,7 @@ public class InitiateSelfCaseSme {
 	WebElement txtGapEmploymentDetail;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[14]/div[1]/div[7]/div[1]/label[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[1]/div/form/div[14]/div/div[8]/div/label")
 	WebElement clickOnProvideDocumentLaterRadioBtn;
 
 	@CacheLookup
@@ -640,7 +646,7 @@ public class InitiateSelfCaseSme {
 	WebElement txtPreviousGapEmp;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/form[1]/div[14]/div[1]/div[7]/div[1]/label[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[3]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/form/div[14]/div/div[8]/div/label")
 	WebElement clickOnPreviousDocumentLaterCheckBox;
 
 	@CacheLookup
@@ -905,9 +911,69 @@ public class InitiateSelfCaseSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//td[contains(text(),'No Record Found!')]")
 	WebElement verifyNoRecordFoundMessage;
+	
+	// Search Ars Number
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//a[@href='#searchModal']")
+	WebElement search;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@name='ars_number']")
+	WebElement arsNumber;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/div/div/div/div/div/div[1]/div/form/div/div[3]/button")
+	WebElement searcButton;
+	
+	// Advanced Search
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@href='#searchModal']")
+	WebElement searchAdvanced;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Advanced Search']")
+	WebElement advancedSearch;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='first-name']")
+	WebElement firstName;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='client-name']")
+	WebElement selectProcess;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@value='Search']")
+	WebElement searchAdvancedButton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='menu-wallet-icon']")
+	WebElement walletIcon;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='mg-b0']")
+	WebElement walletAmount;
+	
 
 	// Initiate Self --Initiate new case
 	public void initiateNewCase() throws InterruptedException {
+		Thread.sleep(4000);
+		walletIcon.click();
+		beforeDeductionExpectedAmount = walletAmount.getText().trim();
+		System.out.println(beforeDeductionExpectedAmount);
+		String [] val = beforeDeductionExpectedAmount.split(",");
+		String splittedAmount = "";
+		for(int itr=0; itr < val.length; itr++)
+		{
+			splittedAmount = splittedAmount + val[itr];
+			
+		}
+		System.out.println(splittedAmount);
+		afterDeductionExpectedAmount = (float) (Float.parseFloat(splittedAmount)-7919334.00);
+		System.out.println(afterDeductionExpectedAmount);
+		ldriver.navigate().back();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInitiateNewCase));
 		clickOnInitiateNewCase.click();
@@ -916,7 +982,7 @@ public class InitiateSelfCaseSme {
 		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Initiate Self')]"));
 		Actions actions = new Actions(ldriver);
 		actions.moveToElement(element).click().perform();
-		Thread.sleep(1000);
+		Thread.sleep(1000);		
 	}
 
 	// Step 1-Package Selection-- Buy Checks - Packages
@@ -1436,12 +1502,12 @@ public class InitiateSelfCaseSme {
 		js.executeScript("arguments[0].click()", clickOnAuthorizeSubmitBtn);
 
 		// Payment --Continue to pay-- Verify Candidate profile for background
-		wait = new WebDriverWait(ldriver, 60);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnContinueToPayBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnContinueToPayBtn);
 
-		wait = new WebDriverWait(ldriver, 60);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnClickToPayForCaseInitiationBtn));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnClickToPayForCaseInitiationBtn);
@@ -1464,17 +1530,31 @@ public class InitiateSelfCaseSme {
 	// Thank you for completing payment- Case(s) initiated for background
 	// verification.
 	public String verifyThankYouCompletingPaymentSuccessMsg() {
-		wait = new WebDriverWait(ldriver, 120);
+		
+		wait = new WebDriverWait(ldriver, 160);
 		wait.until(ExpectedConditions.visibilityOf(verifyCompletingPaymentText));
 		return verifyCompletingPaymentText.getText();
 	}
 
 	// iBridge Dashboard -- Work In Progress Case
-	public void dashboardWorkInProgressCases() throws InterruptedException {
+	public void dashboardWorkInProgressCases(String arsNumberValue, String firstNameValue) throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnDashboardModule));
 		clickOnDashboardModule.click();
-
+		
+		walletIcon.click();
+		beforeDeductionActualAmount = walletAmount.getText().trim();
+		String [] value1 = beforeDeductionActualAmount.split(",");
+		String aftersplittedAmount = "";
+		for(int itr=0; itr < value1.length; itr++)
+		{
+			aftersplittedAmount = aftersplittedAmount + value1[itr];
+		}
+		System.out.println("==="+aftersplittedAmount+"======"+afterDeductionExpectedAmount+"===");
+		Assert.assertEquals(aftersplittedAmount, afterDeductionExpectedAmount);
+		ldriver.navigate().back();
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnWipCountNumberBucket));
 		clickOnWipCountNumberBucket.click();
@@ -1491,6 +1571,22 @@ public class InitiateSelfCaseSme {
 		} catch (Exception e) {
 			// e.printStackTrace();
 		}
+		ldriver.navigate().back();
+		search.click();
+		Thread.sleep(3000);
+		System.out.println(arsNumberValue);
+		arsNumber.sendKeys(arsNumberValue);
+		searcButton.click();
+		
+		ldriver.navigate().back();
+		searchAdvanced.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(advancedSearch));
+		advancedSearch.click();
+		firstName.sendKeys(firstNameValue);
+		Select location = new Select(selectProcess);
+		location.selectByVisibleText("CheckWise");
+		searchAdvancedButton.click();
 	}
 
 	public String verifyInitiateSelfCaseCandidateName() {
@@ -1551,4 +1647,57 @@ public class InitiateSelfCaseSme {
 		System.out.println("RAJU============" + verifyNoRecordFoundMessage.getText());
 		return verifyNoRecordFoundMessage.getText();
 	}
+	
+	// Get Ars Number
+	public String getArsNumber()
+	{
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(getArsNumberIntiateSelfCase));
+		return getArsNumberIntiateSelfCase.getText();
+	}
+	
+	// Verify Ars Number
+	public void arsNumberSearch(String arsNumberValue) throws InterruptedException
+	{
+		Thread.sleep(2000);
+		ldriver.navigate().back();
+		clickOnDashboardModule.click();
+		search.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(arsNumber));
+		arsNumber.sendKeys(arsNumberValue);
+		System.out.println(arsNumberValue);
+		searcButton.click();
+	}
+	
+	// Advanced Search
+	public void advancedSearch(String firstNameValue)
+	{
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(search));
+		search.click();
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(advancedSearch));
+		advancedSearch.click();
+		firstName.sendKeys(firstNameValue);
+		Select location = new Select(selectProcess);
+		location.selectByVisibleText("CheckWise");
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(searchAdvancedButton));
+		searchAdvancedButton.click();
+	}
+	
+	// Wallet Amount
+	public String getamount() throws InterruptedException
+	{
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(walletIcon));
+		walletIcon.click();
+		String val = walletAmount.getText().trim();
+		System.out.println(val);
+		return val;
+		
+	}
+	
+	
 }

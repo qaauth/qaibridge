@@ -23,6 +23,7 @@ public class TC_WithdrawSmeCase_01 extends BaseClass {
 	// Form Not Submitted case marking withdrawn
 	@Test(enabled = true, testName = "Verify Form Not Submitted case making withdrawn", priority = 1)
 	public void verifyFormNotSubmittedCaseWithdraw() throws IOException, InterruptedException {
+		Thread.sleep(2000);
 		driver.get(baseURL);
 		logger.info("iBridge Url is opened");
 		LoginPage loginPage = new LoginPage(driver);
@@ -209,7 +210,7 @@ public class TC_WithdrawSmeCase_01 extends BaseClass {
 		WithdrawnSmeCase withdrawWorkInProgress = new WithdrawnSmeCase(driver);
 		withdrawWorkInProgress.withdrawWorkInProgressBucket();
 		logger.info("Ivc Sme case has withdrawn successfully!");
-
+		
 		if (withdrawWorkInProgress.verifySuccessfullyUpdatedMsg().contains("Case has been successfully Updated.")) {
 			Assert.assertTrue(true);
 			logger.info("Case has been successfully Updated.!");
@@ -235,6 +236,6 @@ public class TC_WithdrawSmeCase_01 extends BaseClass {
 			logger.info("Candidate name has Not been verified successfully!");
 			captureScreen(driver, "verifyClosedByClientCandidateFullName");
 			Assert.assertTrue(false);
-		}
+		}	
 	}
 }

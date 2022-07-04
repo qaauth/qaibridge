@@ -269,10 +269,11 @@ public class InsufficientiBridgeSme {
 		return verifyCaseStatusInsuffArsNumber.getText();
 	}
 
-	public String verifyInsufficienciesCountNumber() {
-		wait = new WebDriverWait(ldriver, 60);
+	public String verifyInsufficienciesCountNumber() throws InterruptedException {
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyInsufficienciesCountNo));
 		return verifyInsufficienciesCountNo.getText();
+		
 	}
 
 	// Action Required-- Insufficient-- iBridge SME Portal
@@ -342,8 +343,8 @@ public class InsufficientiBridgeSme {
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnApprovalRequiredCountNumber);
 		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(verifyArsNumber));
-		verifyArsNumber.getText();
+//		wait.until(ExpectedConditions.visibilityOf(verifyArsNumber));
+//		verifyArsNumber.getText();
 		// Approval Required
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnApprovalBtn);

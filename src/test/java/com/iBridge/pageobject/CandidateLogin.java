@@ -447,7 +447,7 @@ public class CandidateLogin {
 	WebElement txtHrEmail;
 
 	// Add Document(s)
-	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[8]/div[1]/div[1]/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[7]/div/div/div[9]/div/div/label/input[2]")
 	@CacheLookup
 	WebElement checkHrdocumentLater;
 
@@ -614,7 +614,7 @@ public class CandidateLogin {
 	WebElement txtHrEmailId;
 
 	// Add Document(s)
-	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/div[8]/div[1]/div[1]/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[7]/div/div/div[9]/div/div/label/input[2]")
 	@CacheLookup
 	WebElement checkDocumentLater;
 
@@ -872,11 +872,11 @@ public class CandidateLogin {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(employedInCompany));
 		JavaScriptManuplator.javaScriptExecutor(employedInCompany, "arguments[0].click()", ldriver);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(checkOnPayroll, "arguments[0].click()", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Agami Technologies'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtDesignation, "arguments[0].value='Quality Analyst'", ldriver);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(txtLocation, "arguments[0].value='Greater Noida'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtCompanyMobileNo, "arguments[0].value='8009744341'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtAddressoftheCompany, "arguments[0].value='Greater Noida'", ldriver);
@@ -885,6 +885,7 @@ public class CandidateLogin {
 		JavaScriptManuplator.selectOptionFromDropDown(selectNatureOfEmployment, "Full Time");
 		JavaScriptManuplator.javaScriptExecutor(txtCorporateEmailId, "arguments[0].value='raju.yadav@authbridge.com'",
 				ldriver);
+		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(txtDepartment, "arguments[0].value='Information Technologies'",
 				ldriver);
 		JavaScriptManuplator.javaScriptExecutor(clickOnTillDate, "arguments[0].scrollIntoView(true);", ldriver);
@@ -901,6 +902,7 @@ public class CandidateLogin {
 		JavaScriptManuplator.selectOptionFromDropDown(selectSalaryCurrency, "India Rupee");
 		JavaScriptManuplator.selectOptionFromDropDown(selectSalaryCycle, "Per Annum");
 		JavaScriptManuplator.javaScriptExecutor(txtSalaryCTC, "arguments[0].value='600000'", ldriver);
+		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(txtEmaployeeCode, "arguments[0].value='Agm0035'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtGradeBond, "arguments[0].value='A'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtReasonForLeaving, "arguments[0].value='Personal and Career Growth'",

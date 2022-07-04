@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="483.937" tests="10" errors="0" skipped="5" failures="1">
+<testsuite name="TestSuite" time="319.524" tests="10" errors="0" skipped="6" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.312-b07"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/raju.yadav/eclipse-workspace/ibridge"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/sapna.chaudhary/eclipse-workspace/ibridge"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/raju.yadav/eclipse-workspace/ibridge"/>
+    <property name="user.dir" value="/home/sapna.chaudhary/eclipse-workspace/ibridge"/>
     <property name="java.runtime.version" value="1.8.0_312-8u312-b07-0ubuntu1~20.04-b07"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -24,20 +24,20 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/raju.yadav/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8222049893325524200.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf187198453538910157.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.13.0-40-generic"/>
-    <property name="user.home" value="/home/raju.yadav"/>
+    <property name="os.version" value="5.13.0-51-generic"/>
+    <property name="user.home" value="/home/sapna.chaudhary"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="user.name" value="raju.yadav"/>
-    <property name="java.class.path" value="/home/raju.yadav/Documents/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="sapna.chaudhary"/>
+    <property name="java.class.path" value="/snap/eclipse/48/plugins/org.eclipse.m2e.maven.runtime_1.14.0.20191209-1923/jars/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
@@ -51,7 +51,7 @@
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="java.vendor" value="Private Build"/>
-    <property name="maven.home" value="/home/raju.yadav/eclipse-workspace/ibridge/EMBEDDED"/>
+    <property name="maven.home" value="/home/sapna.chaudhary/eclipse-workspace/ibridge/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -59,12 +59,17 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="initiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="79.408"/>
-  <testcase name="pendingCaseSubmissionVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="4.446"/>
-  <testcase name="candidateEmailVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="3.346"/>
-  <testcase name="candidateLoginAccount" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="213.831"/>
-  <testcase name="submittedForVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="182.906">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h3[contains(text(),&apos;Case Submission Summary&apos;)]&apos; (tried for 120 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[contains(text(),'Case Submission Summary')]' (tried for 120 second(s) with 500 milliseconds interval)
+  <testcase name="initiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="55.557"/>
+  <testcase name="pendingCaseSubmissionVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="10.08"/>
+  <testcase name="candidateEmailVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="9.262"/>
+  <testcase name="candidateLoginAccount" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="244.625">
+    <failure message="element not interactable&#10;  (Session info: headless chrome=101.0.4951.54)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.flSrBZ}, goog:chromeOptions: {debuggerAddress: localhost:39159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 65b1e0c1df6c8ff96ba677fc15fb1b9d" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=101.0.4951.54)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.flSrBZ}, goog:chromeOptions: {debuggerAddress: localhost:39159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b1e0c1df6c8ff96ba677fc15fb1b9d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -75,24 +80,33 @@
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.iBridge.pageobject.LoginPage.verifyDashboardCaseSubmissionSummaryText(LoginPage.java:56)
-	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.submittedForVerification(TC_InitiateCaseIndividuallyExtended_01.java:235)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at com.iBridge.pageobject.InitiateCaseIndividuallyExtended.professionalReference(InitiateCaseIndividuallyExtended.java:349)
+	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount(TC_InitiateCaseIndividuallyExtended_01.java:208)
 </failure>
-    <system-out><![CDATA[ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:231)- iBridge Url is opened
- INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:234)- BT Candidate Account has logged Successfully !
+    <system-out><![CDATA[ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:143)- iBridge Url is opened
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:146)- Candidate Login iBridge portal Url is opened
+SJZ_8263_9723_77624===2Pj2QINzfa
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:152)- Entered User Id and Password!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:155)- Step 3 - Candidate Summary Text has Verified successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:164)- Digital signature successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:168)- Candidate Profile Details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:173)- Candidate National Identity Details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:179)- Candidate Address details Setup Successfully!!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:184)- Candidate Education details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:192)- Candidate Current Employment details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:201)- Candidate Previous Employment details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:205)- Filled Education To Employment Gap and clicked On Submit Button!
 ]]></system-out>
+  </testcase>
+  <testcase name="submittedForVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
+    <skipped/>
   </testcase>
   <testcase name="submittedCasesTrackerWipCases" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>

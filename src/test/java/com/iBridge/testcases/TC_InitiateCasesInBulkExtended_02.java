@@ -399,7 +399,19 @@ public class TC_InitiateCasesInBulkExtended_02 extends BaseClass {
 		String arsNumber[] = data.split(" ");
 		pendingForFulfilment.pendingForFulfilmentInsufficient(arsNumber[2], "Comments added successfully");
 		logger.info("Pending For Fulfilment Insufficient has Added successfully!");
-
+		
+		/*
+		 * pendingForFulfilment.addComment();
+		 * 
+		 * InitiateCasesInBulk iCasesInBulk = new InitiateCasesInBulk(driver); // Drag &
+		 * Drop file here or browse file to upload iCasesInBulk.browseFileToUpload(
+		 * (System.getProperty("user.dir") +
+		 * "/src/test/java/com/iBridge/testdata/bulk_upload_format .xls"));
+		 * logger.info("Xls spreadsheet document has uploaded successfully!");
+		 * 
+		 * pendingForFulfilment.clickOnIDontHaveDocumentCheckBox();
+		 */
+		
 		if (pendingForFulfilment.verifySubmittedTextMsg().contains("Submitted")) {
 			Assert.assertTrue(true);
 			logger.info("Insufficient details have Submitted successfully.");

@@ -88,13 +88,6 @@ public class InsufficientBridge {
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Yes')]")
 	WebElement clickOnActionConfAlertYesBtn;
 	
-	
-	
-	
-	
-	
-	
-	
 	// Client Portal Count-- Get Total Records - 185 
 	@FindBy(xpath = "//h4[contains(text(),'Client Portal Count')]")
 	@CacheLookup
@@ -104,11 +97,6 @@ public class InsufficientBridge {
 	@CacheLookup
 	WebElement getCasesTotalRecords;
 	
-	
-	
-	
-	
-
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[contains(text(),'All selected cases were successfully allocated to QC Team Member.')]")
 	WebElement verifyCaseSuccessfullyAllocated;
@@ -769,10 +757,12 @@ public class InsufficientBridge {
 		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
-		Thread.sleep(1000);
-		wait = new WebDriverWait(ldriver, 360);
-		wait.until(ExpectedConditions.visibilityOf(clickOnLoadResultLink));
-		JavaScriptManuplator.javaScriptExecutor(clickOnLoadResultLink, "arguments[0].click()", ldriver);
+		Thread.sleep(3000);
+//		wait = new WebDriverWait(ldriver, 360);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnLoadResultLink));
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", clickOnLoadResultLink);
+//		clickOnLoadResultLink.click();
 		wait = new WebDriverWait(ldriver, 360);
 		wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 		JavaScriptManuplator.javaScriptExecutor(clickOniBridgeCountAllNo, "arguments[0].click()", ldriver);
@@ -795,7 +785,7 @@ public class InsufficientBridge {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectDdlCasesAssignedTo));
 		Select ddlCasesAssignedTo = new Select(selectDdlCasesAssignedTo);
-		ddlCasesAssignedTo.selectByIndex(4);
+		ddlCasesAssignedTo.selectByVisibleText("Shariq Abbas");
 		clickOnGoBtn.click();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnActionConfAlertYesBtn));
@@ -803,17 +793,19 @@ public class InsufficientBridge {
 		Thread.sleep(1000);
 	}
 	
-	// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal
+	// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal sapna
 		public void superSmeAdminDocsQcAllocator() throws InterruptedException, IOException {
 			wait = new WebDriverWait(ldriver, 120);
 			wait.until(ExpectedConditions.visibilityOf(selectDocsQcAllocator));
 			JavaScriptManuplator.selectOptionFromDropDown(selectDocsQcAllocator, "Docs QC Allocator");
 			//Select docsQCAllocator = new Select(selectDocsQcAllocator);
 			//docsQCAllocator.selectByIndex(24);
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
 			wait = new WebDriverWait(ldriver, 360);
+			Thread.sleep(4000);
+			clickOnLoadResultLink.click();
 			wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 			clickOniBridgeCountAllNo.click();
 			
@@ -836,7 +828,7 @@ public class InsufficientBridge {
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(selectDdlCasesAssignedTo));
 			Select ddlCasesAssignedTo = new Select(selectDdlCasesAssignedTo);
-			ddlCasesAssignedTo.selectByIndex(4);
+			ddlCasesAssignedTo.selectByVisibleText("Shariq Abbas");
 			clickOnGoBtn.click();
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(clickOnActionConfAlertYesBtn));
@@ -844,7 +836,7 @@ public class InsufficientBridge {
 			Thread.sleep(1000);
 		}
 		
-		// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal
+		// Verify Docs Qc Allocator-- For Sme Portal, Bridge Portal sapna
 		public void superCandidateSmeAdminDocsQcAllocator() throws InterruptedException, IOException {
 			wait = new WebDriverWait(ldriver, 120);
 			wait.until(ExpectedConditions.visibilityOf(selectDocsQcAllocator));
@@ -855,6 +847,8 @@ public class InsufficientBridge {
 			Thread.sleep(3000);
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
+			Thread.sleep(2000);
+			clickOnLoadResultLink.click();
 			wait = new WebDriverWait(ldriver, 360);
 			wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 			clickOniBridgeCountAllNo.click();
@@ -878,7 +872,7 @@ public class InsufficientBridge {
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(selectDdlCasesAssignedTo));
 			Select ddlCasesAssignedTo = new Select(selectDdlCasesAssignedTo);
-			ddlCasesAssignedTo.selectByIndex(4);
+			ddlCasesAssignedTo.selectByVisibleText("Shariq Abbas");
 			clickOnGoBtn.click();
 			wait = new WebDriverWait(ldriver, 60);
 			wait.until(ExpectedConditions.visibilityOf(clickOnActionConfAlertYesBtn));
@@ -1331,7 +1325,7 @@ public class InsufficientBridge {
 		assignToVerifierName.selectByIndex(1);
 
 		Select teamMemberName = new Select(selectTeamMemberName);
-		teamMemberName.selectByIndex(6);
+		teamMemberName.selectByIndex(7);
 		txtCheckComments.sendKeys(checkComments);
 		Thread.sleep(1000);
 		clickOnGoAllocatorBtn.click();

@@ -19,7 +19,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class InsufficientiBridge {
+import com.iBridge.testcases.BaseClass;
+
+public class InsufficientiBridge extends BaseClass{
 	WebDriver ldriver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
@@ -70,9 +72,24 @@ public class InsufficientiBridge {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div/div[4]/div/a")
 	WebElement clickOnIndianDatabaseInsuffCaseSubmitBtn;
-
+	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//label[contains(text(),'Submitted')]")
+	@FindBy(how = How.XPATH, using = "//*[@placeholder=\"Add Comments\"]")
+	WebElement  Addcomment;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id=\"upload_input\"]")
+	WebElement  Dragdropmultiplefile1;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id=\"upload_input\"]")
+	WebElement Dragdropmultiplefile2;
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id='insuffcheckboxDocument_1455842']")
+	WebElement IDontHaveDocumentCheckbox;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@id=\"fullfil_btn_1455862\"]")
 	WebElement verifySubmittedText;
 
 	// INSUFFICIENT CASES-- Verify--Present or not.
@@ -235,6 +252,14 @@ public class InsufficientiBridge {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Logout')]")
 	WebElement clickOnRouteToCandidateLogoutBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//body[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[7]/a[4]")
+	WebElement clickOnUploadDocumet1;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
+	WebElement browseFileToUpload;
 
 	// Route To candidate has filled by all insuff details.
 	// INSUFFICIENT CASE SUMMARY
@@ -248,7 +273,6 @@ public class InsufficientiBridge {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmittedCasesTracker));
 		clickOnSubmittedCasesTracker.click();
-
 		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Insuffficient Cases')]"));
 		Actions actions = new Actions(ldriver);
 		actions.moveToElement(element).click().perform();
@@ -264,6 +288,13 @@ public class InsufficientiBridge {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(txtAddComments));
 		txtAddComments.sendKeys(addComments);
+		Thread.sleep(1000);
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(clickOnUploadDocumet1));
+		clickOnUploadDocumet1.click();
+		Thread.sleep(1000);
+		browseFileToUpload.sendKeys(System.getProperty("user.dir") + "/documents/ARN.pdf");
+		Thread.sleep(2000);
 		clickOnInsuffCaseSubmitBtn.click();
 		Thread.sleep(1000);
 	}
@@ -318,6 +349,31 @@ public class InsufficientiBridge {
 		// clickOnInsuffCaseSubmitBtn.click();
 		clickOnIndianDatabaseInsuffCaseSubmitBtn.click();
 		Thread.sleep(1000);
+	}
+	
+	/**
+	 * @author sapna.chaudhary
+	 */
+	// Add comment
+	/*
+	 * public void addComment() { Addcomment.sendKeys("upload the file"); }
+	 */
+	
+	/*
+	 * // Drag & Drop file here or browse file to upload public void
+	 * browseFileToUpload(String fileUpload) throws InterruptedException { //
+	 * clickOnDownloadTemplate.click(); Dragdropmultiplefile1.sendKeys(fileUpload);
+	 * Thread.sleep(5000);}
+	 */
+		
+	//Click I don't have document CheckBox
+	public void clickOnIDontHaveDocumentCheckBox()
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(IDontHaveDocumentCheckbox));
+		//IDontHaveDocumentCheckbox.click();
+		js.executeScript("arguments[0].click();", IDontHaveDocumentCheckbox);
 	}
 
 	// Verify Candidate Submitted text message successfully.

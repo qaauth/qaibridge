@@ -325,8 +325,9 @@ public class CandidateSubmitProfileSme {
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[13]/div[2]/div[1]/div[1]/input[1]")
 	WebElement txtGapEmploymentDetail;
 
+	// Sapna
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[14]/div[1]/div[7]/div[1]/label[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div/form/div[14]/div/div[8]/div/label")
 	WebElement clickOnProvideDocumentLaterRadioBtn;
 
 	@CacheLookup
@@ -481,8 +482,9 @@ public class CandidateSubmitProfileSme {
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/form[1]/div[13]/div[2]/div[1]/div[1]/input[1]")
 	WebElement txtPreviousGapEmp;
 
+	// sapna
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/form[1]/div[14]/div[1]/div[7]/div[1]/label[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[2]/div/div[2]/div[2]/div[2]/div/form/div[14]/div/div[8]/div/label")
 	WebElement clickOnPreviousDocumentLaterCheckBox;
 
 	@CacheLookup

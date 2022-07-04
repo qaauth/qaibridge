@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -135,6 +136,11 @@ public class PrepaidInitiateNewCase {
 	@FindBy(xpath = "//div[contains(text(),'Candidate information saved successfully')]")
 	@CacheLookup
 	WebElement verifyCandidateInfoSuccessfully;
+	
+	// By Sapna
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@onclick='ignoreDuplicacy()']")
+	WebElement ignoreDuplicacy;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]")
 	@CacheLookup
@@ -273,7 +279,9 @@ public class PrepaidInitiateNewCase {
 			}
 		}
 		// Candidate information saved successfully
-		wait = new WebDriverWait(ldriver, 120);
+		Thread.sleep(2000);
+		ignoreDuplicacy.click();
+		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyCandidateInfoSuccessfully));
 		Thread.sleep(1000);
 		clickOnCandidateName.click();
