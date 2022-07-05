@@ -1847,6 +1847,7 @@ public class InsufficientBridge {
 				js.executeScript("arguments[0].scrollIntoView(true);", clickOnFullFillInsuffBtn);
 				wait = new WebDriverWait(ldriver, 60);
 				wait.until(ExpectedConditions.visibilityOf(selectInsufficiencyIndianDatabaseFulfillmentAction));
+				selectInsufficiencyIndianDatabaseFulfillmentAction.click();
 				Select insufficiencyFulfillmentAction = new Select(selectInsufficiencyIndianDatabaseFulfillmentAction);
 				insufficiencyFulfillmentAction.selectByIndex(3);
 				// txtInsuffComment.sendKeys(insuffComment);

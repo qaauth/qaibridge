@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.text.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -293,9 +294,13 @@ public class CandidateLogin {
 	@CacheLookup
 	WebElement checkOnPayroll;
 
-	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[1]/div/input[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[1]/div/span[1]/span[1]/span")
 	@CacheLookup
 	WebElement txtCompanyName;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='select2-search__field']")
+	WebElement inputCompanyName;
 
 	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[2]/div/input")
 	@CacheLookup
@@ -460,7 +465,7 @@ public class CandidateLogin {
 	@CacheLookup
 	WebElement checkRadioPayrollBtn;
 
-	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[3]/div[1]/div/input[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[3]/div[1]/div/span[1]/span[1]/span")
 	@CacheLookup
 	WebElement txtPreviousCompName;
 
@@ -659,6 +664,7 @@ public class CandidateLogin {
 
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
+		Thread.sleep(1000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
 		wait = new WebDriverWait(ldriver, 60);
@@ -874,7 +880,17 @@ public class CandidateLogin {
 		JavaScriptManuplator.javaScriptExecutor(employedInCompany, "arguments[0].click()", ldriver);
 		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(checkOnPayroll, "arguments[0].click()", ldriver);
-		JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Agami Technologies'", ldriver);
+		Thread.sleep(1000);
+//		JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Agami Technologies'", ldriver);
+		txtCompanyName.click();
+		inputCompanyName.sendKeys(compName);
+		Thread.sleep(1000);
+		inputCompanyName.click();
+//		inputCompanyName.sendKeys(AgamiTechnologies);
+		Thread.sleep(1000);
+//	    JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Agami Technologies'", ldriver);
+		
+		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(txtDesignation, "arguments[0].value='Quality Analyst'", ldriver);
 		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(txtLocation, "arguments[0].value='Greater Noida'", ldriver);
@@ -907,7 +923,8 @@ public class CandidateLogin {
 		JavaScriptManuplator.javaScriptExecutor(txtGradeBond, "arguments[0].value='A'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtReasonForLeaving, "arguments[0].value='Personal and Career Growth'",
 				ldriver);
-		JavaScriptManuplator.javaScriptExecutor(txtUanNumber, "arguments[0].value='152745675'", ldriver);
+//		JavaScriptManuplator.javaScriptExecutor(txtUanNumber, "arguments[0].value='152745675567'", ldriver);
+		txtUanNumber.sendKeys("152745675567");
 		Thread.sleep(4000);
 		// Other Information--REPORTING MANAGER DETAILS
 		JavaScriptManuplator.javaScriptExecutor(txtFirstName, "arguments[0].scrollIntoView(true);", ldriver);
@@ -958,7 +975,10 @@ public class CandidateLogin {
 		JavaScriptManuplator.javaScriptExecutor(checkEmployedRadioBtn, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(checkRadioPayrollBtn, "arguments[0].click()", ldriver);
-		JavaScriptManuplator.javaScriptExecutor(txtPreviousCompName, "arguments[0].value='HCL Technologies'", ldriver);
+//		JavaScriptManuplator.javaScriptExecutor(txtPreviousCompName, "arguments[0].value='HCL Technologies'", ldriver);
+		txtPreviousCompName.click();
+		Thread.sleep(1000);
+//		inputCompanyName.sendKeys(hcl);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousDesignation, "arguments[0].value='Quality Analyst'",
 				ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousCity, "arguments[0].value='Noida'", ldriver);
@@ -991,12 +1011,16 @@ public class CandidateLogin {
 		JavaScriptManuplator.selectOptionFromDropDown(selectPreviousSalaryCurrency, "India Rupee");
 		Thread.sleep(1000);
 		JavaScriptManuplator.selectOptionFromDropDown(selectPreviousSalaryCycle, "Per Annum");
+		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousSalaryCtc, "arguments[0].value='480000'", ldriver);
+		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousEmpCode, "arguments[0].value='Hcl210'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousGrade, "arguments[0].value='A'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousReasonLeaving,
 				"arguments[0].value='Personal and Career Growth'", ldriver);
-		JavaScriptManuplator.javaScriptExecutor(txtPreviousUanNo, "arguments[0].value='15289730832'", ldriver);
+		Thread.sleep(1000);
+//		JavaScriptManuplator.javaScriptExecutor(txtPreviousUanNo, "arguments[0].value='152897308323'", ldriver);
+		txtPreviousUanNo.sendKeys("152897308322");
 		Thread.sleep(4000);
 
 		// Other Information--REPORTING MANAGER DETAIL
@@ -1050,4 +1074,5 @@ public class CandidateLogin {
 		clickOnPreviewSubmitBtn.click();
 		Thread.sleep(1000);
 	}
+	
 }

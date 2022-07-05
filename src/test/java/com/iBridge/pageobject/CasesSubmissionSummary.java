@@ -334,12 +334,7 @@ public class CasesSubmissionSummary {
 		okButton.click();
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnsubmitForVerification, "arguments[0].click()", ldriver);
-//		clickOnsubmitForVerification.click();
 		Thread.sleep(1000);
-//		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Submitted for Verification')]"));
-//		Actions actions = new Actions(ldriver);
-//		actions.moveToElement(element).click().perform();
-//		Thread.sleep(1000);
 		ldriver.navigate().refresh();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(copyCandidateMailId));

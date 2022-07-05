@@ -254,9 +254,16 @@ public class InsufficientiBridge extends BaseClass{
 	WebElement clickOnRouteToCandidateLogoutBtn;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//body[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[7]/a[4]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[3]/div[1]/div[1]/div/div/input")
 	WebElement clickOnUploadDocumet1;
 	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[3]/input")
+	WebElement idontHaveDocument;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[4]/div/a")
+	WebElement submit;
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")
 	WebElement browseFileToUpload;
@@ -290,10 +297,10 @@ public class InsufficientiBridge extends BaseClass{
 		txtAddComments.sendKeys(addComments);
 		Thread.sleep(1000);
 		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnUploadDocumet1));
-		clickOnUploadDocumet1.click();
+		wait.until(ExpectedConditions.visibilityOf(idontHaveDocument));
+		idontHaveDocument.click();
 		Thread.sleep(1000);
-		browseFileToUpload.sendKeys(System.getProperty("user.dir") + "/documents/ARN.pdf");
+//		browseFileToUpload.sendKeys(System.getProperty("user.dir") + "/documents/ARN.pdf");
 		Thread.sleep(2000);
 		clickOnInsuffCaseSubmitBtn.click();
 		Thread.sleep(1000);

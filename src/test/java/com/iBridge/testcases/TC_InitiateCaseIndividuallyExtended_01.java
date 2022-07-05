@@ -168,7 +168,7 @@ public class TC_InitiateCaseIndividuallyExtended_01 extends BaseClass {
 		logger.info("Candidate Profile Details Setup successfully!");
 		
 		caseInExtended.nationalIdentity((System.getProperty("user.dir") + "/documents/PanCard.pdf"), "Raju Yadav",
-				"Raju123", (System.getProperty("user.dir") + "/documents/ARN.pdf"),
+				"Bropc2345P", (System.getProperty("user.dir") + "/documents/ARN.pdf"),
 				(System.getProperty("user.dir") + "/documents/ARN.pdf"), "Raju Yadav", "123456");
 		logger.info("Candidate National Identity Details Setup successfully!");
 

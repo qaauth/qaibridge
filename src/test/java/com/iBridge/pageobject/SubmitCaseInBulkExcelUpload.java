@@ -16,6 +16,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.iBridge.utilities.JavaScriptManuplator;
+
 public class SubmitCaseInBulkExcelUpload {
 	WebDriver ldriver;
 	WebDriverWait wait;
@@ -135,6 +137,11 @@ public class SubmitCaseInBulkExcelUpload {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Case(s) Submission Summary')]")
 	WebElement clickOnSubmissionSubmitted;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[1]/div/div/ul/li[4]/ul/li[4]/div/a")
+	WebElement clickOnsubmitForVerification;
+
 
 	// Submitted For Verification Candidate First Name
 	@CacheLookup
@@ -255,15 +262,17 @@ public class SubmitCaseInBulkExcelUpload {
 	}
 
 	public void submittedForVerification() throws InterruptedException {
+		
 		clickOnSidebarExpandVerification.click();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmissionSubmitted));
 		clickOnSubmissionSubmitted.click();
 		Thread.sleep(1000);
-		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Submitted for Verification')]"));
-		Actions actions = new Actions(ldriver);
-		actions.moveToElement(element).click().perform();
-		Thread.sleep(1000);
+		JavaScriptManuplator.javaScriptExecutor(clickOnsubmitForVerification, "arguments[0].click()", ldriver);
+//		WebElement element = ldriver.findElement(By.xpath("//a[contains(text(),'Submitted for Verification')]"));
+//		Actions actions = new Actions(ldriver);
+//		actions.moveToElement(element).click().perform();
+//		Thread.sleep(1000);
 		ldriver.navigate().refresh();
 	}
 

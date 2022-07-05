@@ -450,7 +450,7 @@ public class CandidateBulkLogin {
 	WebElement txtHrEmail;
 
 	// Add Document(s)
-	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[8]/div[1]/div[1]/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[7]/div/div/div[9]/div/div/label/input[2]")
 	@CacheLookup
 	WebElement checkHrdocumentLater;
 
