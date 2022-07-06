@@ -225,14 +225,14 @@ public class SubmitCaseInBulkExcelUpload {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnUploadDocuments1));
 		clickOnUploadDocuments1.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		clickOnBrowseFileToUpload1.sendKeys(browseFileToUpload1);
 		wait = new WebDriverWait(ldriver, 180);
 		wait.until(ExpectedConditions.visibilityOf(verifyCompletedText));
 		Thread.sleep(1000);
 		ldriver.navigate().refresh();
 		// clickOnCrossBtn1.click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		// clickOnArrowBtn.click();
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", clickOnUploadDocuments2);

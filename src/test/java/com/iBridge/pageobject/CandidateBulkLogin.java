@@ -4,6 +4,7 @@ import java.text.ParseException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -300,9 +301,17 @@ public class CandidateBulkLogin {
 	@CacheLookup
 	WebElement checkOnPayroll;
 
-	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[1]/div/input[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[1]/div/span/span[1]/span")
 	@CacheLookup
 	WebElement txtCompanyName;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='select2-search__field']")
+	WebElement currentEmployeSearchField;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Other']")
+	WebElement clickOnOtherName;
 
 	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[2]/div/input")
 	@CacheLookup
@@ -463,9 +472,17 @@ public class CandidateBulkLogin {
 	@CacheLookup
 	WebElement checkRadioPayrollBtn;
 
-	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[3]/div[1]/div/input[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[3]/div[1]/div/span/span[1]/span")
 	@CacheLookup
 	WebElement txtPreviousCompName;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='select2-search__field']")
+	WebElement searchField;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='select2-results__option select2-results__option--highlighted']")
+	WebElement otherField;
 
 	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div/input")
 	@CacheLookup
@@ -613,7 +630,7 @@ public class CandidateBulkLogin {
 	WebElement txtHrEmailId;
 
 	// Add Document(s)
-	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/div[8]/div[1]/div[1]/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[7]/div/div/div[9]/div/div/label/input[2]")
 	@CacheLookup
 	WebElement checkDocumentLater;
 
@@ -659,6 +676,7 @@ public class CandidateBulkLogin {
 	public void candidateAuthorization() throws InterruptedException {
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
+		Thread.sleep(3000);
 		checkConcentCheckBox.click();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(checkAgreeCheckBox));
@@ -852,8 +870,16 @@ public class CandidateBulkLogin {
 		wait.until(ExpectedConditions.visibilityOf(employedInCompany));
 		employedInCompany.click();
 		checkOnPayroll.click();
-		txtCompanyName.clear();
-		txtCompanyName.sendKeys(compName);
+//		txtCompanyName.clear();
+//		txtCompanyName.sendKeys(compName);
+//		JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Aga'", ldriver);
+//		txtCompanyName.sendKeys(Keys.SPACE);
+		Thread.sleep(1000);
+		txtCompanyName.click();
+		Thread.sleep(1000);
+		currentEmployeSearchField.sendKeys(compName);
+		Thread.sleep(2000);
+		clickOnOtherName.click();
 		txtDesignation.clear();
 		txtDesignation.sendKeys(designation);
 		txtLocation.clear();
@@ -972,8 +998,11 @@ public class CandidateBulkLogin {
 		wait.until(ExpectedConditions.visibilityOf(checkEmployedRadioBtn));
 		checkEmployedRadioBtn.click();
 		checkRadioPayrollBtn.click();
-		txtPreviousCompName.clear();
-		txtPreviousCompName.sendKeys(preComp);
+		txtPreviousCompName.click();
+		Thread.sleep(1000);
+		searchField.sendKeys(preComp);
+		Thread.sleep(2000);
+		otherField.click();
 		txtPreviousDesignation.clear();
 		txtPreviousDesignation.sendKeys(designation);
 		txtPreviousCity.clear();

@@ -19,9 +19,9 @@
 		<class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01"/> 
 		</classes> </test>
 
-	<!-- <test name="iBridge4"> <parameter name="browser" value="chrome" /> 
+	<test name="iBridge4"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_InsufficientBridge_01" /> 
-		</classes> </test> -->
+		</classes> </test>
 
 	<!-- <test name="iBridge5"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CostApproval_01" /> </classes> 

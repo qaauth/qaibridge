@@ -183,9 +183,10 @@ public class SubmitCaseInFolderSubmit {
 		Thread.sleep(1000);
 		browseFileToUpload.sendKeys(zipFolderUpload);
 		clickOnSubmit.click();
+		Thread.sleep(2000);
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnConfirmBtn));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		// Confirm--We have received 1 case(s). Do you wish to CONTINUE?
 		clickOnConfirmBtn.click();
 		wait = new WebDriverWait(ldriver, 120);
@@ -194,8 +195,23 @@ public class SubmitCaseInFolderSubmit {
 		clickOnContinueBtn.click();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnConfirmOkBtn));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		clickOnConfirmOkBtn.click();
+		Thread.sleep(1000);
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(selectPackageName));
+		selectPackageName.click();
+		txtPackageName.sendKeys(check);
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(clickOnCheckWise));
+		clickOnCheckWise.click();
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(clickOnLocation));
+		clickOnLocation.click();
+		wait = new WebDriverWait(ldriver, 60);
+		wait.until(ExpectedConditions.visibilityOf(txtLocation));
+		txtLocation.sendKeys(bangalore);
+		clickOnLocationName.click();
 		Thread.sleep(1000);
 	}
 

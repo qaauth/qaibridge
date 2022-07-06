@@ -217,27 +217,31 @@ public class InsufficientiBridge extends BaseClass{
 	WebElement verifyProfilePreview;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[2]/div/textarea")
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[2]/div/textarea")
 	WebElement txtAddCommentsInsuff;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[4]/div/a")
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[3]/input")
 	WebElement clickOnPanNoSubmitBtn;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//label[contains(text(),'Submitted')]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[4]/div/a")
 	WebElement verifySubmitedText;
 
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//label[contains(text(),'Pending - Referred Back')]")
 	WebElement clickOnPendingReferredBackText;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[1]/h4/a")
+	WebElement indianDatabaseVerification;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[3]/form/div[2]/div/div[1]/div[2]/div/textarea")
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[2]/div/textarea")
 	WebElement txtAddCommentsIndianDb;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[3]/form/div[2]/div/div[1]/div[4]/div/a")
+	@FindBy(how = How.XPATH, using = "//*[@class='submit-btn fullfillbtn']")
 	WebElement clickOnIndianDbSubmitBtn;
 
 	@CacheLookup
@@ -645,7 +649,8 @@ public class InsufficientiBridge extends BaseClass{
 		wait = new WebDriverWait(ldriver, 180);
 		wait.until(ExpectedConditions.visibilityOf(verifySubmitedText));
 		Thread.sleep(2000);
-		clickOnPendingReferredBackText.click();
+//		clickOnPendingReferredBackText.click();
+		indianDatabaseVerification.click();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(txtAddCommentsIndianDb));
 		Thread.sleep(1000);

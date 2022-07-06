@@ -203,7 +203,7 @@ public class SubmitCaseIndividuallyExtended {
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].value='Raju'", txtNameAsPerDocument1);
 		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].value='Raju123'", txtDocumentNumber1);
+		js.executeScript("arguments[0].value='BROPC3435P'", txtDocumentNumber1);
 		Thread.sleep(2000);
 		clickOnNationalCountinueBtn.click();
 		Thread.sleep(1000);

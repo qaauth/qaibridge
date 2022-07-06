@@ -675,7 +675,7 @@ public class SubmitCaseIndividually {
 	WebElement uploadExpLetter;
 	
 	//Add Document(s)
-	@FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[8]/div[1]/div[1]/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[4]/div/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[7]/div/div/div[9]/div/div/label/input[2]")
 	@CacheLookup
 	WebElement checkHrdocumentLater;
 	
@@ -877,7 +877,7 @@ public class SubmitCaseIndividually {
 	WebElement uploadExperienceLetterPrevious;
 
 	//Add Document(s)
-	@FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/div[8]/div[1]/div[1]/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[4]/div/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[7]/div/div/div[9]/div/div/label/input[2]")
 	@CacheLookup
 	WebElement checkDocumentLater;
 	
@@ -1322,7 +1322,7 @@ public class SubmitCaseIndividually {
 		JavaScriptManuplator.javaScriptExecutor(txtEmaployeeCode, "arguments[0].value='Agm0035'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtGradeBond, "arguments[0].value='A'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtReasonForLeaving, "arguments[0].value='Personal and Career Growth'", ldriver);
-		JavaScriptManuplator.javaScriptExecutor(txtUanNumber, "arguments[0].value='152745675'", ldriver);
+		JavaScriptManuplator.javaScriptExecutor(txtUanNumber, "arguments[0].value='152745675234'", ldriver);
 		Thread.sleep(4000);
 	
 	    //Other Information--REPORTING MANAGER DETAILS
@@ -1440,7 +1440,7 @@ public class SubmitCaseIndividually {
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousEmpCode, "arguments[0].value='Hcl210'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousGrade, "arguments[0].value='A'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousReasonLeaving, "arguments[0].value='Personal and Career Growth'", ldriver);
-		JavaScriptManuplator.javaScriptExecutor(txtPreviousUanNo, "arguments[0].value='15289730832'", ldriver);
+		JavaScriptManuplator.javaScriptExecutor(txtPreviousUanNo, "arguments[0].value='152897308325'", ldriver);
 		Thread.sleep(4000);
 		
 		//Other Information--REPORTING MANAGER DETAILS

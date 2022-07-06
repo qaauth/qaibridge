@@ -294,13 +294,17 @@ public class CandidateLogin {
 	@CacheLookup
 	WebElement checkOnPayroll;
 
-	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[1]/div/span[1]/span[1]/span")
+	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[1]/div/span/span[1]/span")
 	@CacheLookup
 	WebElement txtCompanyName;
 	
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@class='select2-search__field']")
 	WebElement inputCompanyName;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='select2-results__option select2-results__option--highlighted']")
+	WebElement companyNameOther;
 
 	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[3]/div[2]/div/input")
 	@CacheLookup
@@ -468,6 +472,14 @@ public class CandidateLogin {
 	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[3]/div[1]/div/span[1]/span[1]/span")
 	@CacheLookup
 	WebElement txtPreviousCompName;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='select2-results__option select2-results__option--highlighted']")
+	WebElement preOtherButton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='select2-search__field']")
+	WebElement preSearchField;
 
 	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[2]/div[3]/div[2]/div/input")
 	@CacheLookup
@@ -664,10 +676,11 @@ public class CandidateLogin {
 
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
-		wait = new WebDriverWait(ldriver, 60);
+		Thread.sleep(2000);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(checkConcentCheckBox));
 		JavaScriptManuplator.javaScriptExecutor(checkConcentCheckBox, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
@@ -680,7 +693,7 @@ public class CandidateLogin {
 				.clickAndHold().moveByOffset(-50, 60).moveByOffset(-60, -70).moveByOffset(150, 60)
 				.moveByOffset(-60, -70).doubleClick().build();
 		drawAction.perform();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		clickOnContinueBtn.click();
 		Thread.sleep(1000);
 	}
@@ -881,15 +894,10 @@ public class CandidateLogin {
 		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(checkOnPayroll, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
-//		JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Agami Technologies'", ldriver);
 		txtCompanyName.click();
 		inputCompanyName.sendKeys(compName);
-		Thread.sleep(1000);
-		inputCompanyName.click();
-//		inputCompanyName.sendKeys(AgamiTechnologies);
-		Thread.sleep(1000);
-//	    JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Agami Technologies'", ldriver);
-		
+		Thread.sleep(2000);
+		companyNameOther.click();
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(txtDesignation, "arguments[0].value='Quality Analyst'", ldriver);
 		Thread.sleep(2000);
@@ -978,7 +986,10 @@ public class CandidateLogin {
 //		JavaScriptManuplator.javaScriptExecutor(txtPreviousCompName, "arguments[0].value='HCL Technologies'", ldriver);
 		txtPreviousCompName.click();
 		Thread.sleep(1000);
-//		inputCompanyName.sendKeys(hcl);
+		preSearchField.sendKeys(preComp);
+		Thread.sleep(2000);
+		preOtherButton.click();
+//		preSearchField.sendKeys(Keys.ENTER);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousDesignation, "arguments[0].value='Quality Analyst'",
 				ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousCity, "arguments[0].value='Noida'", ldriver);

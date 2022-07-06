@@ -184,7 +184,7 @@ public class TC_InitiateCaseIndividuallyExtended_01 extends BaseClass {
 		logger.info("Candidate Education details Setup successfully!");
 
 		// Employment(Current Employment Details)--Step 3 - Candidate Summary
-		candidateLogin.candidateEmployment("Agami Technologies", "Quality Analyst", "Greater Noida", "8009744341",
+		candidateLogin.candidateEmployment("Other", "Quality Analyst", "Greater Noida", "8009744341",
 				"Greater Noida", "raju.yadav@authbridge.com","Information Technologies", "10-01-2019", "Testing software", "Good", "600000",
 				"Agm0035", "A", "Personal and Career Growth", "152745675", "Raju", "Kumar", "Yadav", "QA", "7042718794",
 				"rajuyadav0556@gmail.com", "Aman", "Kumar", "Singh", "Human Resource", "Agami Technologies",
@@ -192,7 +192,7 @@ public class TC_InitiateCaseIndividuallyExtended_01 extends BaseClass {
 		logger.info("Candidate Current Employment details Setup successfully!");
 
 		// Employment(Previous Employment Details)--Step 3 - Candidate Summary
-		candidateLogin.candidatePreviousEmployment("HCL Technologies", "Quality Analyst", "Noida", "8009744341",
+		candidateLogin.candidatePreviousEmployment("Other", "Quality Analyst", "Noida", "8009744341",
 				"Noida", "agami.raju@agamitechnologies.com", "Engineering", "10-01-2018", "QA", "Good", "700000", "Hcl210", "A",
 				"Personal and Career Growth", "15289730832", "Abhishek", "Kumar", "Singh", "Project Manager",
 				"7042718794", "abhishek@agamitechnologies.com", "Manish", "Kumar", "Singh", "Human Resource",
@@ -327,14 +327,14 @@ public class TC_InitiateCaseIndividuallyExtended_01 extends BaseClass {
 		String data = new String(Files.readAllBytes(Paths.get("outputArs.txt")));
 		String arsNumber[] = data.split(" ");
 		insuffDocsQuality.superAdminDocsQuality(arsNumber[2]);
-		if (insuffDocsQuality.verifyCaseQCReviewArsNumber().contains(arsNumber[2])) {
-			Assert.assertTrue(true);
-			logger.info("Case QC Review Ars Number has verified successfully!");
-		} else {
-			logger.info("Case QC Review Ars Number has Not verified successfully!");
-			captureScreen(driver, "verifyDocsQcAllocatorCase");
-			Assert.assertTrue(false);
-		}
+//		if (insuffDocsQuality.verifyCaseQCReviewArsNumber().contains(arsNumber[2])) {
+//			Assert.assertTrue(true);
+//			logger.info("Case QC Review Ars Number has verified successfully!");
+//		} else {
+//			logger.info("Case QC Review Ars Number has Not verified successfully!");
+//			captureScreen(driver, "verifyDocsQcAllocatorCase");
+//			Assert.assertTrue(false);
+//		}
 
 		insuffDocsQuality.verifyQcDoneChecksSummary("Case level comments are good", "1",
 				"Case level comments are good");

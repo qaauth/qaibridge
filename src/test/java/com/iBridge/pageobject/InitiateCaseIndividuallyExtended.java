@@ -277,6 +277,7 @@ public class InitiateCaseIndividuallyExtended {
 
 	// Step 3 - Candidate Summary (Add Candidate Information)
 	public void additionFieldInfo(String uploadCvDoc) throws InterruptedException {
+		Thread.sleep(2000);
 		uploadCvDocuments.sendKeys(uploadCvDoc);
 		Thread.sleep(1000);
 	}

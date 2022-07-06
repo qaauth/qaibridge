@@ -722,15 +722,15 @@ public class InsufficientBridge {
 
 	// For Indian Database Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/form[1]/table[2]/tbody[1]/tr[4]/td[1]/div[3]/div[1]/select[1]")
+	@FindBy(how = How.XPATH, using = "//*[@id='CaseChecks']")
 	WebElement selectInsufficiencyIndianDatabaseFulfillmentAction;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[2]/form/table[2]/tbody/tr[1]/td/div[3]/textarea")
+	@FindBy(how = How.XPATH, using = "//*[@class='insuff-comment-box']")
 	WebElement txtInsuffComment;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/form[1]/table[2]/tbody[1]/tr[4]/td[1]/div[3]/textarea[1]")
+	@FindBy(how = How.XPATH, using = "//*[@class='insuff-comment-box']")
 	WebElement txtIndianDatabaseInsuffComment;
 
 	@CacheLookup
@@ -918,7 +918,7 @@ public class InsufficientBridge {
 			if (clientName.contains("British Telecom")) {
 
 				WebElement element = ldriver.findElement(
-						By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[" + r + "]/td[3]/a[1]"));
+						By.xpath("(//*[text()='British Telecom']//following::a)[1]"));
 				element.click();
 				break;
 			}
@@ -1845,8 +1845,9 @@ public class InsufficientBridge {
 
 				js = (JavascriptExecutor) ldriver;
 				js.executeScript("arguments[0].scrollIntoView(true);", clickOnFullFillInsuffBtn);
-				wait = new WebDriverWait(ldriver, 60);
-				wait.until(ExpectedConditions.visibilityOf(selectInsufficiencyIndianDatabaseFulfillmentAction));
+				Thread.sleep(2000);
+//				wait = new WebDriverWait(ldriver, 60);
+//				wait.until(ExpectedConditions.visibilityOf(selectInsufficiencyIndianDatabaseFulfillmentAction));
 				selectInsufficiencyIndianDatabaseFulfillmentAction.click();
 				Select insufficiencyFulfillmentAction = new Select(selectInsufficiencyIndianDatabaseFulfillmentAction);
 				insufficiencyFulfillmentAction.selectByIndex(3);

@@ -4,24 +4,31 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge3(failed)">
+  <test thread-count="1" verbose="0" name="iBridge4(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01">
+      <class name="com.iBridge.testcases.TC_InsufficientBridge_01">
         <methods>
-          <include name="searchClientArsNoCaseList"/>
-          <include name="pendingCaseSubmissionVerification"/>
-          <include name="verifyInsufficientAllocator"/>
+          <include name="verifyRoutedToCandidate"/>
+          <include name="verifyRouteToCandidateDetails"/>
+          <include name="verifyInsufficiencyFulfillment"/>
+          <include name="verifyInsufficiencyRejectedFulfillment"/>
+          <include name="verifyGetRouteToCandidateUserNameAndPassword"/>
+          <include name="verifyInsufficiencyPartiallyApproveFulfillment"/>
+          <include name="verifyInsufficientVerifierPanCheck"/>
+          <include name="verifyInsufficientVerifierIndianDatabaseCheck"/>
+          <include name="verifyClientAcknowledgeMail"/>
+          <include name="verifyRouteToCandidatefullfilInsuffBucket"/>
+          <include name="verifyInsufficientVerifier"/>
+          <include name="verifyInsufficientpendingForIndianDatabaseFulfilment"/>
           <include name="setup"/>
-          <include name="verifyInsufficientDocsQcAllocator"/>
-          <include name="candidateEmailVerification"/>
-          <include name="initiateCaseIndividuallyExtended"/>
-          <include name="candidateLoginAccount"/>
-          <include name="submittedCasesTrackerWipCases"/>
-          <include name="verifyInsufficientDocsQuality"/>
-          <include name="submittedForVerification"/>
+          <include name="verifyInsufficientpendingForFulfilment"/>
+          <include name="verifyInsufficientpendingForPanNumberFulfilment"/>
+          <include name="verifyInsufficientCasesPresentOrNot"/>
+          <include name="verifyInsufficientRejectedCasesPresentOrNot"/>
+          <include name="verifyInsufficientPartiallyApproveCasesPresentOrNot"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01 -->
+      </class> <!-- com.iBridge.testcases.TC_InsufficientBridge_01 -->
     </classes>
-  </test> <!-- iBridge3(failed) -->
+  </test> <!-- iBridge4(failed) -->
 </suite> <!-- Failed suite [iBridge] -->
