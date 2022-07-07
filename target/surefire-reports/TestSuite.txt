@@ -1,9 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 27, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 954.667 sec <<< FAILURE! - in TestSuite
-verifyRouteToCandidateDetails(com.iBridge.testcases.TC_InsufficientBridge_01)  Time elapsed: 186.461 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[3]/form/div[2]/div/div[1]/div[2]/div/textarea' (tried for 60 second(s) with 500 milliseconds interval)
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 276.811 sec <<< FAILURE! - in TestSuite
+submitCaseIndividuallyExtended(com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03)  Time elapsed: 265.794 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@value="Senior"])[1]"}
+  (Session info: headless chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.EYslkR}, goog:chromeOptions: {debuggerAddress: localhost:33581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc521e838143e498481337dec99eb41e
+*** Element info: {Using=xpath, value=(//*[@value="Senior"])[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -20,12 +28,17 @@ org.openqa.selenium.TimeoutException: Expected condition failed: waiting for vis
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.iBridge.pageobject.InsufficientiBridge.fullfilInsuffRouteToCandidate(InsufficientiBridge.java:650)
-	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyRouteToCandidateDetails(TC_InsufficientBridge_01.java:354)
+	at com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+	at com.iBridge.utilities.JavaScriptManuplator.javaScriptExecutor(JavaScriptManuplator.java:43)
+	at com.iBridge.pageobject.SubmitCaseIndividuallyExtended.professionalReference(SubmitCaseIndividuallyExtended.java:228)
+	at com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03.submitCaseIndividuallyExtended(TC_SubmitCaseIndividuallyExtended_03.java:126)
 

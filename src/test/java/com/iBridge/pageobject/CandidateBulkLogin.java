@@ -886,6 +886,7 @@ public class CandidateBulkLogin {
 		txtLocation.sendKeys(location);
 		txtCompanyMobileNo.clear();
 		txtCompanyMobileNo.sendKeys(compMobileNo);
+		Thread.sleep(2000);
 		txtAddressoftheCompany.clear();
 		txtAddressoftheCompany.sendKeys(addressComp);
 		Select employmentType = new Select(selectEmploymentType);

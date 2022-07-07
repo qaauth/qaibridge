@@ -830,6 +830,7 @@ public class CandidateLogin {
 	public void candidateEducation(String qualification, String university, String intitu, String instituteLocation,
 			String enrollmentNo, String paercentage, String batchStartDate, String clkOnEndYear, String remark)
 			throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(selectQualificationDegree));
 		Select degree = new Select(selectQualificationDegree);
@@ -931,8 +932,8 @@ public class CandidateLogin {
 		JavaScriptManuplator.javaScriptExecutor(txtGradeBond, "arguments[0].value='A'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtReasonForLeaving, "arguments[0].value='Personal and Career Growth'",
 				ldriver);
-//		JavaScriptManuplator.javaScriptExecutor(txtUanNumber, "arguments[0].value='152745675567'", ldriver);
-		txtUanNumber.sendKeys("152745675567");
+		JavaScriptManuplator.javaScriptExecutor(txtUanNumber, "arguments[0].value='152745675567'", ldriver);
+//		txtUanNumber.sendKeys("152745675567");
 		Thread.sleep(4000);
 		// Other Information--REPORTING MANAGER DETAILS
 		JavaScriptManuplator.javaScriptExecutor(txtFirstName, "arguments[0].scrollIntoView(true);", ldriver);
@@ -1068,7 +1069,7 @@ public class CandidateLogin {
 		JavaScriptManuplator.javaScriptExecutor(checkDocumentLater, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnEmploymentBtn, "arguments[0].click()", ldriver);
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		try {
 			txtGapReason.clear();
 			txtGapReason.sendKeys(gapReason);

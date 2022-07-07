@@ -1119,6 +1119,7 @@ public class SubmitCaseIndividually {
 	public void candidateAddress(String flat, String colony,String residingForm, String pinCode,String state,String city, String station, String houseNo,
 			String locality,String residingFormDate, String pinCodePer,String statePer,String cityPer, String policeStation, String AddressProof)
 			throws InterruptedException, ParseException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
 		selectWithinIndia.click();
@@ -1137,8 +1138,9 @@ public class SubmitCaseIndividually {
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(txtStateName, "arguments[0].value='Delhi'", ldriver);
 		Thread.sleep(1000);
-		txtPoliceStation.clear(); 
-		txtPoliceStation.sendKeys(station);
+//		txtPoliceStation.clear(); 
+		JavaScriptManuplator.javaScriptExecutor(txtPoliceStation, "arguments[0].value='station'", ldriver);
+//		txtPoliceStation.sendKeys(station);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", checkWithinIndiaRadioBtn);
 		// Add Documents
@@ -1296,8 +1298,8 @@ public class SubmitCaseIndividually {
 		JavaScriptManuplator.javaScriptExecutor(txtLocation, "arguments[0].value='Greater Noida'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtCompanyMobileNo, "arguments[0].value='8009744341'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtAddressoftheCompany, "arguments[0].value='Greater Noida'", ldriver);
-		wait = new WebDriverWait(ldriver,60);
-		wait.until(ExpectedConditions.visibilityOf(selectEmploymentType));
+//		wait = new WebDriverWait(ldriver,120);
+//		wait.until(ExpectedConditions.visibilityOf(selectEmploymentType));
 		JavaScriptManuplator.selectOptionFromDropDown(selectEmploymentType, "Permanent");
 		Thread.sleep(2000);
 		JavaScriptManuplator.selectOptionFromDropDown(selectNatureOfEmployment, "Full Time");

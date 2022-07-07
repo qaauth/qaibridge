@@ -29,28 +29,28 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		CaseCompletionSme checksSummaryClosedByClient = new CaseCompletionSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
 		String arsNumber[] = data.split(" ");
-//		checksSummaryClosedByClient.userAdminChecksSummaryClosedByClient(arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
-//				"Close By Client comment is good");
-//		logger.info("Check is successfully marked as Closed by Client.!");
-//
-//		if (checksSummaryClosedByClient.verifyProfessionalReferenceCheckClosedByClientMsg()
-//				.contains("Professional Reference Check ( Closed by Client )")) {
-//			Assert.assertTrue(true);
-//			logger.info("All Checks Summary are successfully marked as Closed by Client.!");
-//		} else {
-//			logger.info("All Checks Summary are not successfully marked as Closed by Client.!");
-//			captureScreen(driver, "verifySuccessfullyMarkedAsClosedByClientMsg");
-//			Assert.assertTrue(false);
-//		}
+		checksSummaryClosedByClient.userAdminChecksSummaryClosedByClient(arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good", arsNumber[0], "Close By Client comment is good", arsNumber[0],
+				"Close By Client comment is good");
+		logger.info("Check is successfully marked as Closed by Client.!");
+
+		if (checksSummaryClosedByClient.verifyProfessionalReferenceCheckClosedByClientMsg()
+				.contains("Professional Reference Check ( Closed by Client )")) {
+			Assert.assertTrue(true);
+			logger.info("All Checks Summary are successfully marked as Closed by Client.!");
+		} else {
+			logger.info("All Checks Summary are not successfully marked as Closed by Client.!");
+			captureScreen(driver, "verifySuccessfullyMarkedAsClosedByClientMsg");
+			Assert.assertTrue(false);
+		}
 
 		checksSummaryClosedByClient.bridgeAccountLoggedOut();
 		logger.info("Bridge Account Logged Out has Successfully!");

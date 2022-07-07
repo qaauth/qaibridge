@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="941.388" tests="27" errors="0" skipped="2" failures="1">
+<testsuite name="TestSuite" time="265.794" tests="5" errors="0" skipped="4" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5405354633283282206.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7786507531511464997.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,32 +59,16 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="initiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="59.679"/>
-  <testcase name="pendingCaseSubmissionVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="12.457"/>
-  <testcase name="candidateEmailVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="5.121"/>
-  <testcase name="candidateLoginAccount" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="218.488"/>
-  <testcase name="submittedForVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="32.465"/>
-  <testcase name="submittedCasesTrackerWipCases" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="5.999"/>
-  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="13.733"/>
-  <testcase name="verifyInsufficientDocsQcAllocator" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="49.134"/>
-  <testcase name="verifyInsufficientDocsQuality" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="112.872"/>
-  <testcase name="verifyInsufficientAllocator" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="16.377"/>
-  <testcase name="verifyInsufficientVerifier" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="34.914"/>
-  <testcase name="verifyInsufficientpendingForFulfilment" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="25.172"/>
-  <testcase name="verifyInsufficiencyFulfillment" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="14.283"/>
-  <testcase name="verifyInsufficientCasesPresentOrNot" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="10.572"/>
-  <testcase name="verifyInsufficientVerifierPanCheck" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="29.596"/>
-  <testcase name="verifyInsufficientpendingForPanNumberFulfilment" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="11.998"/>
-  <testcase name="verifyInsufficiencyPartiallyApproveFulfillment" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="13.3"/>
-  <testcase name="verifyInsufficientPartiallyApproveCasesPresentOrNot" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="10.362"/>
-  <testcase name="verifyInsufficientVerifierIndianDatabaseCheck" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="22.117"/>
-  <testcase name="verifyInsufficientpendingForIndianDatabaseFulfilment" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="12.742"/>
-  <testcase name="verifyInsufficiencyRejectedFulfillment" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="14.848"/>
-  <testcase name="verifyInsufficientRejectedCasesPresentOrNot" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="11.981"/>
-  <testcase name="verifyRoutedToCandidate" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="12.359"/>
-  <testcase name="verifyGetRouteToCandidateUserNameAndPassword" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="4.358"/>
-  <testcase name="verifyRouteToCandidateDetails" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="186.461">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: /html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[3]/form/div[2]/div/div[1]/div[2]/div/textarea&apos; (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[3]/form/div[2]/div/div[1]/div[2]/div/textarea' (tried for 60 second(s) with 500 milliseconds interval)
+  <testcase name="submitCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03" time="265.794">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@value=&quot;Senior&quot;])[1]&quot;}&#10;  (Session info: headless chrome=101.0.4951.54)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.EYslkR}, goog:chromeOptions: {debuggerAddress: localhost:33581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cc521e838143e498481337dec99eb41e&#10;*** Element info: {Using=xpath, value=(//*[@value=&quot;Senior&quot;])[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@value="Senior"])[1]"}
+  (Session info: headless chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.EYslkR}, goog:chromeOptions: {debuggerAddress: localhost:33581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc521e838143e498481337dec99eb41e
+*** Element info: {Using=xpath, value=(//*[@value="Senior"])[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,26 +85,61 @@
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at com.iBridge.pageobject.InsufficientiBridge.fullfilInsuffRouteToCandidate(InsufficientiBridge.java:650)
-	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyRouteToCandidateDetails(TC_InsufficientBridge_01.java:354)
+	at com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+	at com.iBridge.utilities.JavaScriptManuplator.javaScriptExecutor(JavaScriptManuplator.java:43)
+	at com.iBridge.pageobject.SubmitCaseIndividuallyExtended.professionalReference(SubmitCaseIndividuallyExtended.java:228)
+	at com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03.submitCaseIndividuallyExtended(TC_SubmitCaseIndividuallyExtended_03.java:126)
 </failure>
-    <system-out><![CDATA[ INFO [main] (TC_InsufficientBridge_01.java:346)- Candidate Login iBridge portal Url is opened
-JGI_5229_9878_67698===7u3B6e8S09
- INFO [main] (TC_InsufficientBridge_01.java:352)- Route To Candidate has logged in Successully!
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+...
+... TestNG 6.14.3 by Cédric Beust (cedric@beust.com)
+...
+
 enp.admin@authbridge.com
 Auth@123
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:30)- iBridge Url is opened
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:34)- Entered Username and password!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:39)- BT Client has logged Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:49)- Clicked on Side bar expand
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:53)- Clicked on Initiate Via Candidate
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:56)- Upload Individual's Authorization Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:72)- Candidate Information Setup Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:75)- Cv has been Uploaded Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:80)- Candidate Additional Information Setup Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:85)- Candidate National Identity Details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:91)- Candidate Address setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:96)- Candidate Education details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:109)- Candidate Current Employment details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:119)- Candidate Previous Employment details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:123)- Filled Education To Employment Gap and clicked On Submit Button!
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 2064
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 08, 2022 12:23:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
   </testcase>
-  <testcase name="verifyRouteToCandidatefullfilInsuffBucket" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="0">
+  <testcase name="submittedForVerification" classname="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyClientAcknowledgeMail" classname="com.iBridge.testcases.TC_InsufficientBridge_01" time="0">
+  <testcase name="submittedCasesTrackerWipCases" classname="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyStopCaseCloseByClient" classname="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03" time="0">
     <skipped/>
   </testcase>
 </testsuite>

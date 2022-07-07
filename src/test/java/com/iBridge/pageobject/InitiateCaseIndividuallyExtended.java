@@ -1,7 +1,10 @@
 package com.iBridge.pageobject;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -140,7 +143,7 @@ public class InitiateCaseIndividuallyExtended {
 	WebElement txtDocumentNumber2;
 
 	@CacheLookup
-	@FindBy(how = How.NAME, using = "continue")
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[3]/button")
 	WebElement clickOnContinueBtn;
 
 	// Education to Employment Gap
@@ -154,12 +157,16 @@ public class InitiateCaseIndividuallyExtended {
 
 	// Professional Reference Check--Step 3 - Candidate Summary
 	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//small[contains(text(),'(Note : You may provide professional references of')]")
+	WebElement verifyProfessionalRef;
+	
+	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div[2]/div/div/input")
 	WebElement txtCompanyName;
 	
 	// Add Reference(s)--1
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div[3]/div/div/div[2]/div[1]/div/label[2]/span")
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/span[1]")
 	WebElement clickOnRadioReferenceLevelSenior;
 
 	@CacheLookup
@@ -324,7 +331,7 @@ public class InitiateCaseIndividuallyExtended {
 		Thread.sleep(1000);
 		txtNameAsPerDocument2.sendKeys(nameAsDoc);
 		txtDocumentNumber2.sendKeys(docNo);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		clickOnContinueBtn.click();
 		Thread.sleep(1000);
 	}
@@ -343,16 +350,43 @@ public class InitiateCaseIndividuallyExtended {
 	// PROFESSIONAL REFERENCE--Step 3 - Candidate Summary
 	public void professionalReference(String companyName,String referenceName, String refDesignation, String refMobileNo, String refEmail,
 			String nameRef, String desigRef, String mobileRefNo, String emailRef) throws InterruptedException {
-		// Professional Reference Check--Step 3 - Candidate Summary
-		// Add Reference(s)--1
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(txtCompanyName));
-		Thread.sleep(2000);
-		txtCompanyName.sendKeys(companyName);
+		//Professional Reference Check--Step 3 - Candidate Summary
+		//Add Reference(s)--1
+		//JavaScriptManuplator.waitForElementPresent(ldriver, verifyProfessionalRef, 120);	
+         Thread.sleep(2000);
+//         txtCompanyName.sendKeys(Keys.TAB);
+//         txtCompanyName.sendKeys(Keys.ENTER);
+		JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Authbridge pvt'", ldriver);
+		//txtCompanyName.sendKeys(companyName);
+		JavaScriptManuplator.waitForElementPresent(ldriver, clickOnRadioReferenceLevelSenior, 120);	
+		//wait = new WebDriverWait(ldriver, 120);
+		//wait.until(ExpectedConditions.visibilityOf(clickOnRadioReferenceLevelSenior));
+		
+		
+		  // ADD TO QUEUE List<WebElement> tag =
+		/*
+		 * ldriver.findElements(By.tagName("input")); for (int i = 0; i < input.size();
+		 * i++) { System.out.println(input.get(i).getAttribute("id")); if
+		 * (input.get(i).getAttribute("id").equals("check-data-88547-data-1-128-senior")
+		 * ) { input.get(i).click(); JavascriptExecutor executor = (JavascriptExecutor)
+		 * ldriver; executor.executeScript("arguments[0].click();", input.get(i));
+		 * break; } }
+		 */
+		 
 		clickOnRadioReferenceLevelSenior.click();
-		txtReferenceName.clear();
-		txtReferenceName.sendKeys(referenceName);
+//		JavascriptExecutor js=(JavascriptExecutor)ldriver;
+//		((JavaScriptManuplator) js).javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
+		Thread.sleep(2000);
+		//txtReferenceName.clear();
+		//JavaScriptManuplator.javaScriptExecutor(txtReferenceName, "arguments[0].value='referenceName'", ldriver);		
+		//txtReferenceName.sendKeys(referenceName);
+//		txtReferenceName.sendKeys(Keys.TAB);
+//		txtReferenceName.sendKeys(Keys.ENTER);
+		Actions performAct = new Actions(ldriver); 
+		performAct.sendKeys(txtReferenceName, "Krishna Kumar").build().perform();
+//		JavaScriptManuplator.javaScriptExecutor(txtReferenceName, "arguments[0].value='Raju Yadav'", ldriver);
 		txtReferenceDesignation.clear();
+		JavaScriptManuplator.javaScriptExecutor(txtReferenceDesignation, "arguments[0].value='refDesignation'", ldriver);		
 		txtReferenceDesignation.sendKeys(refDesignation);
 		txtReferenceMobileNo.clear();
 		txtReferenceMobileNo.sendKeys(refMobileNo);

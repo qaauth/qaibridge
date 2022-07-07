@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.iBridge.utilities.JavaScriptManuplator;
+
 public class SubmitCaseIndividuallyExtended {
 	WebDriver ldriver;
 	WebDriverWait wait;
@@ -99,7 +101,7 @@ public class SubmitCaseIndividuallyExtended {
 	WebElement txtReferenceCompanyName;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div[3]/div/div/div[2]/div[1]/div/label[2]/input")
+	@FindBy(how = How.XPATH, using = "(//*[@value=\"Senior\"])[1]")
 	WebElement clickOnRadioReferenceLevelSenior;
 
 	@CacheLookup
@@ -219,12 +221,13 @@ public class SubmitCaseIndividuallyExtended {
 			String nameRef, String desigRef, String mobileRefNo, String emailRef) throws InterruptedException {
 		// Professional Reference Check
 		// Add Reference(s)--1
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(txtReferenceCompanyName));
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(txtReferenceCompanyName));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].value='AuthBridge Reaserch Pvt Ltd'", txtReferenceCompanyName);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
 		clickOnRadioReferenceLevelSenior.click();
-		txtReferenceName.clear();
+//		txtReferenceName.clear();
 		txtReferenceName.sendKeys(referenceName);
 		txtReferenceDesignation.clear();
 		txtReferenceDesignation.sendKeys(refDesignation);

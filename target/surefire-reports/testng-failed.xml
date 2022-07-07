@@ -4,31 +4,19 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge4(failed)">
+  <test thread-count="1" verbose="0" name="iBridge8(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_InsufficientBridge_01">
+      <class name="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03">
         <methods>
-          <include name="verifyRoutedToCandidate"/>
-          <include name="verifyRouteToCandidateDetails"/>
-          <include name="verifyInsufficiencyFulfillment"/>
-          <include name="verifyInsufficiencyRejectedFulfillment"/>
-          <include name="verifyGetRouteToCandidateUserNameAndPassword"/>
-          <include name="verifyInsufficiencyPartiallyApproveFulfillment"/>
-          <include name="verifyInsufficientVerifierPanCheck"/>
-          <include name="verifyInsufficientVerifierIndianDatabaseCheck"/>
-          <include name="verifyClientAcknowledgeMail"/>
-          <include name="verifyRouteToCandidatefullfilInsuffBucket"/>
-          <include name="verifyInsufficientVerifier"/>
-          <include name="verifyInsufficientpendingForIndianDatabaseFulfilment"/>
+          <include name="submittedCasesTrackerWipCases"/>
+          <include name="searchClientArsNoCaseList"/>
           <include name="setup"/>
-          <include name="verifyInsufficientpendingForFulfilment"/>
-          <include name="verifyInsufficientpendingForPanNumberFulfilment"/>
-          <include name="verifyInsufficientCasesPresentOrNot"/>
-          <include name="verifyInsufficientRejectedCasesPresentOrNot"/>
-          <include name="verifyInsufficientPartiallyApproveCasesPresentOrNot"/>
+          <include name="submitCaseIndividuallyExtended"/>
+          <include name="verifyStopCaseCloseByClient"/>
+          <include name="submittedForVerification"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_InsufficientBridge_01 -->
+      </class> <!-- com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03 -->
     </classes>
-  </test> <!-- iBridge4(failed) -->
+  </test> <!-- iBridge8(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

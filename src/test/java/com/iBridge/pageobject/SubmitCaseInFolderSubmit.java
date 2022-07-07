@@ -193,26 +193,26 @@ public class SubmitCaseInFolderSubmit {
 		wait.until(ExpectedConditions.visibilityOf(verifyToastMsg));
 		Thread.sleep(1000);
 		clickOnContinueBtn.click();
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnConfirmOkBtn));
-		Thread.sleep(2000);
-		clickOnConfirmOkBtn.click();
-		Thread.sleep(1000);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(selectPackageName));
-		selectPackageName.click();
-		txtPackageName.sendKeys(check);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(clickOnCheckWise));
-		clickOnCheckWise.click();
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(clickOnLocation));
-		clickOnLocation.click();
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(txtLocation));
-		txtLocation.sendKeys(bangalore);
-		clickOnLocationName.click();
-		Thread.sleep(1000);
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnConfirmOkBtn));
+//		Thread.sleep(2000);
+//		clickOnConfirmOkBtn.click();
+//		Thread.sleep(1000);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(selectPackageName));
+//		selectPackageName.click();
+//		txtPackageName.sendKeys(check);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnCheckWise));
+//		clickOnCheckWise.click();
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnLocation));
+//		clickOnLocation.click();
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(txtLocation));
+//		txtLocation.sendKeys(bangalore);
+//		clickOnLocationName.click();
+//		Thread.sleep(1000);
 	}
 
 	public String verifySubmitCaseInFolderSubmitMsg() {

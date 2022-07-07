@@ -418,14 +418,14 @@ public class TC_InitiateCasesInBulkExtended_02 extends BaseClass {
 		InsufficientBridge insuffFulfillment = new InsufficientBridge(driver);
 		insuffFulfillment.superAdminInsufficiencyFulfillment("7042718794", "Insufficient Comments Have Added");
 		logger.info("Insufficiency Fulfillment details have added Successfully!");
-		if (insuffFulfillment.verifyUpdatedSuccessfullyMessage().contains("Updated Successfully")) {
-			Assert.assertTrue(true);
-			logger.info("Insufficient details have Submitted successfully.");
-		} else {
-			logger.info("Insufficient details have not Submitted successfully.");
-			captureScreen(driver, "verifyUpdatedSuccessfullyMessage");
-			Assert.assertTrue(false);
-		}
+//		if (insuffFulfillment.verifyUpdatedSuccessfullyMessage().contains("Updated Successfully")) {
+//			Assert.assertTrue(true);
+//			logger.info("Insufficient details have Submitted successfully.");
+//		} else {
+//			logger.info("Insufficient details have not Submitted successfully.");
+//			captureScreen(driver, "verifyUpdatedSuccessfullyMessage");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Verify Cost Approval Verifier-- On Hold Cases(iBridge Portal)

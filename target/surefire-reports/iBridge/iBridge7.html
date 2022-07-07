@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/7</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 06 17:36:19 IST 2022</td>
+<td>Started on:</td><td>Thu Jul 07 20:56:46 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>87 seconds (87705 ms)</td>
+<tr><td>Total time:</td><td>220 seconds (220737 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,44 +76,20 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.checksSummaryClosedByClient()'><b>checksSummaryClosedByClient</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[5]/a[1]&quot;}
-  (Session info: chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.JjTzI0}, goog:chromeOptions: {debuggerAddress: localhost:44983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[5]/a[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.CaseCompletion.userAdminChecksSummaryClosedByClient(CaseCompletion.java:970)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //select[@id=&apos;CaseCheckCOMMENTCATEGORY&apos;]&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.iBridge.pageobject.CaseCompletion.userAdminChecksSummaryClosedByClient(CaseCompletion.java:989)
 	at com.iBridge.testcases.TC_CaseCompletion_01.checksSummaryClosedByClient(TC_CaseCompletion_01.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1513867245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1513867245'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[5]/a[1]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;CaseCheckCOMMENTCATEGORY&apos;]&quot;}
   (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.JjTzI0}, goog:chromeOptions: {debuggerAddress: localhost:44983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/form[1]/table[1]/tbody[1]/tr[1]/td[5]/a[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.5KrYV9}, goog:chromeOptions: {debuggerAddress: localhost:33127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6230bc181fd7cba5ffe9906392b11ca
+*** Element info: {Using=xpath, value=//select[@id=&apos;CaseCheckCOMMENTCATEGORY&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -126,8 +102,18 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.CaseCompletion.userAdminChecksSummaryClosedByClient(CaseCompletion.java:970)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 30 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace240630125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace240630125'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //select[@id=&apos;CaseCheckCOMMENTCATEGORY&apos;]&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.iBridge.pageobject.CaseCompletion.userAdminChecksSummaryClosedByClient(CaseCompletion.java:989)
 	at com.iBridge.testcases.TC_CaseCompletion_01.checksSummaryClosedByClient(TC_CaseCompletion_01.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -157,8 +143,40 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;CaseCheckCOMMENTCATEGORY&apos;]&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.5KrYV9}, goog:chromeOptions: {debuggerAddress: localhost:33127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6230bc181fd7cba5ffe9906392b11ca
+*** Element info: {Using=xpath, value=//select[@id=&apos;CaseCheckCOMMENTCATEGORY&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 30 more
 </pre></div></td>
-<td>80</td>
+<td>192</td>
 <td>com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -171,8 +189,8 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.educationWCheckCloseVerification()'><b>educationWCheckCloseVerification</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CaseCompletion_01.educationWCheckCloseVerification()[pri:2, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace400064818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace400064818'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.educationWCheckCloseVerification()[pri:2, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace909282611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace909282611'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.educationWCheckCloseVerification()[pri:2, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -200,8 +218,8 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.generateCaseReportPdf()'><b>generateCaseReportPdf</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CaseCompletion_01.generateCaseReportPdf()[pri:5, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1593165620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1593165620'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.generateCaseReportPdf()[pri:5, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415289182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415289182'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.generateCaseReportPdf()[pri:5, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -229,8 +247,8 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.reOpenCompletedCase()'><b>reOpenCompletedCase</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CaseCompletion_01.reOpenCompletedCase()[pri:7, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917768476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace917768476'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.reOpenCompletedCase()[pri:7, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1380924218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1380924218'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.reOpenCompletedCase()[pri:7, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -258,8 +276,8 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.verificationQualityAllocator()'><b>verificationQualityAllocator</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verificationQualityAllocator()[pri:3, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574749319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1574749319'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verificationQualityAllocator()[pri:3, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace46453164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace46453164'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verificationQualityAllocator()[pri:3, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -287,8 +305,8 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.verifyCompletedCasePresentOrNot()'><b>verifyCompletedCasePresentOrNot</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyCompletedCasePresentOrNot()[pri:6, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225909961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace225909961'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyCompletedCasePresentOrNot()[pri:6, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1990385139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1990385139'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyCompletedCasePresentOrNot()[pri:6, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -316,8 +334,8 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.verifyReOpenedCaseInWip()'><b>verifyReOpenedCaseInWip</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyReOpenedCaseInWip()[pri:8, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181815135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1181815135'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyReOpenedCaseInWip()[pri:8, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1105628551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1105628551'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyReOpenedCaseInWip()[pri:8, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -345,8 +363,8 @@ Session ID: 3b7ed84f3cdf3cc3e64da364c3c64524
 <tr>
 <td title='com.iBridge.testcases.TC_CaseCompletion_01.verifyReportsManager()'><b>verifyReportsManager</b><br>Test class: com.iBridge.testcases.TC_CaseCompletion_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyReportsManager()[pri:4, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384617262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace384617262'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyReportsManager()[pri:4, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2131597042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2131597042'><pre>java.lang.Throwable: Method TC_CaseCompletion_01.verifyReportsManager()[pri:4, instance:com.iBridge.testcases.TC_CaseCompletion_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
