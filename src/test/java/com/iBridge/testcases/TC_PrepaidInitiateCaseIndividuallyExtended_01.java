@@ -159,10 +159,10 @@ public class TC_PrepaidInitiateCaseIndividuallyExtended_01 extends BaseClass {
 		logger.info("Prepaid Candidate Profile Details Setup successfully!");
 
 //		// ADDRESS--Step 3 - Candidate Summary
-//		candidateFulfillDetails.candidateAddress("23", "Mayur Vihar", "01-01-2022", "323233", "hi", "Delhi",
-//				"Mayur Vihar", "Delhi", "1234", "Mayur Vihar", "04-04-2020", "323233", "hi", "Delhi", "Mayur Vihar",
-//				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
-//		logger.info("Prepaid Candidate Address details Setup Successfully!!");
+		candidateFulfillDetails.candidateAddress("23", "Mayur Vihar", "01-01-2022", "323233", "hi", "Delhi",
+				"Mayur Vihar", "Delhi", "1234", "Mayur Vihar", "04-04-2020", "323233", "hi", "Delhi", "Mayur Vihar",
+				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
+		logger.info("Prepaid Candidate Address details Setup Successfully!!");
 //
 //		// Education Details--Step 3 - Candidate Summary
 //		candidateFulfillDetails.prepaidEducationInformation("Bund");
@@ -194,11 +194,11 @@ public class TC_PrepaidInitiateCaseIndividuallyExtended_01 extends BaseClass {
 	@Test(enabled = true, testName = "Verify Payment Amount Payable", priority = 5, dependsOnMethods = {
 			"verifyCandidateFullfillAllFormDetails" })
 	public void verifyPrepaidAmountPayableValue() throws InterruptedException, IOException {
-		driver.get(EnpAdminURL);
-		logger.info("Prepaid Enp Admin Url has opened Successfully!");
-		PrepaidEnpAdmin enpAdminLogin = new PrepaidEnpAdmin(driver);
-		enpAdminLogin.loginEnpAdminAccount(candidateUsername, candidatePrePassword);
-		logger.info("Prepaid Candidate account has Logged successfully!");
+//		driver.get(EnpAdminURL);
+//		logger.info("Prepaid Enp Admin Url has opened Successfully!");
+//		PrepaidEnpAdmin enpAdminLogin = new PrepaidEnpAdmin(driver);
+//		enpAdminLogin.loginEnpAdminAccount(candidateUsername, candidatePrePassword);
+//		logger.info("Prepaid Candidate account has Logged successfully!");
 		PrepaidCandidateFulfillInformation verifyPaymentPendingCase = new PrepaidCandidateFulfillInformation(driver);
 		verifyPaymentPendingCase.prepaidPaymentPendingCases();
 		logger.info("Payment Pending Case has verified Successfully!");

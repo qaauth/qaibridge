@@ -4,19 +4,21 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge8(failed)">
+  <test thread-count="1" verbose="0" name="iBridge17(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03">
+      <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02">
         <methods>
-          <include name="submittedCasesTrackerWipCases"/>
-          <include name="searchClientArsNoCaseList"/>
+          <include name="verifyPrepaidPaymentPendingCases"/>
           <include name="setup"/>
-          <include name="submitCaseIndividuallyExtended"/>
-          <include name="verifyStopCaseCloseByClient"/>
-          <include name="submittedForVerification"/>
+          <include name="verifyPrepaidAmountPayableValue"/>
+          <include name="submittedCasesTrackerWipCases"/>
+          <include name="verifyPrepaidInitiateSubmitCaseIndividually"/>
+          <include name="verifyEnpAdminLoginAccount"/>
+          <include name="verifysubmittedForVerificationBucket"/>
+          <include name="searchClientArsNoCaseList"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03 -->
+      </class> <!-- com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02 -->
     </classes>
-  </test> <!-- iBridge8(failed) -->
+  </test> <!-- iBridge17(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

@@ -887,8 +887,10 @@ public class CandidateBulkLogin {
 		txtCompanyMobileNo.clear();
 		txtCompanyMobileNo.sendKeys(compMobileNo);
 		Thread.sleep(2000);
-		txtAddressoftheCompany.clear();
-		txtAddressoftheCompany.sendKeys(addressComp);
+//		txtAddressoftheCompany.clear();
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].value='addressComp'", txtAddressoftheCompany);
+//		txtAddressoftheCompany.sendKeys(addressComp);
 		Select employmentType = new Select(selectEmploymentType);
 		employmentType.selectByIndex(2);
 		Select natureOfEmployment = new Select(selectNatureOfEmployment);

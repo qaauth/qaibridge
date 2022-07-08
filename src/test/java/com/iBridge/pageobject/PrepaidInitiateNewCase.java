@@ -208,8 +208,8 @@ public class PrepaidInitiateNewCase {
 		Thread.sleep(2000);
 		clickOnCheckWiseName.click();
 		Thread.sleep(2000);
-		JavaScriptManuplator.javaScriptExecutor(clickOnSelectCheckWise, "arguments[0].click()", ldriver);
-		wait = new WebDriverWait(ldriver, 60);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnSelectCheckWise, "arguments[0].click()", ldriver);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnPacakgeSubmitFormBtn));
 		JavaScriptManuplator.javaScriptExecutor(clickOnPacakgeSubmitFormBtn, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);

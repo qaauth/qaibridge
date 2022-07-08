@@ -1,44 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 276.811 sec <<< FAILURE! - in TestSuite
-submitCaseIndividuallyExtended(com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03)  Time elapsed: 265.794 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@value="Senior"])[1]"}
-  (Session info: headless chrome=101.0.4951.54)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.EYslkR}, goog:chromeOptions: {debuggerAddress: localhost:33581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cc521e838143e498481337dec99eb41e
-*** Element info: {Using=xpath, value=(//*[@value="Senior"])[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
-	at com.iBridge.utilities.JavaScriptManuplator.javaScriptExecutor(JavaScriptManuplator.java:43)
-	at com.iBridge.pageobject.SubmitCaseIndividuallyExtended.professionalReference(SubmitCaseIndividuallyExtended.java:228)
-	at com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03.submitCaseIndividuallyExtended(TC_SubmitCaseIndividuallyExtended_03.java:126)
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 9,075.8 sec <<< FAILURE! - in TestSuite
+verifyPrepaidInitiateSubmitCaseIndividually(com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02)  Time elapsed: 9,061.944 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Must provide a location for a move action.
+	at org.openqa.selenium.interactions.MoveMouseAction.<init>(MoveMouseAction.java:38)
+	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:387)
+	at com.iBridge.pageobject.PrepaidSubmitCaseIndividuallyExtended.prepaidCandidateAddress(PrepaidSubmitCaseIndividuallyExtended.java:1213)
+	at com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02.verifyPrepaidInitiateSubmitCaseIndividually(TC_PrepaidSubmitCaseIndividuallyExtended_02.java:69)
 

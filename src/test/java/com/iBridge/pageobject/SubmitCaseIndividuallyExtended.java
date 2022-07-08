@@ -101,7 +101,7 @@ public class SubmitCaseIndividuallyExtended {
 	WebElement txtReferenceCompanyName;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "(//*[@value=\"Senior\"])[1]")
+	@FindBy(how = How.XPATH, using = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div/div[3]/div/div/div[2]/div[1]/div/label[2]/input")
 	WebElement clickOnRadioReferenceLevelSenior;
 
 	@CacheLookup
@@ -225,8 +225,8 @@ public class SubmitCaseIndividuallyExtended {
 //		wait.until(ExpectedConditions.visibilityOf(txtReferenceCompanyName));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].value='AuthBridge Reaserch Pvt Ltd'", txtReferenceCompanyName);
-//		JavaScriptManuplator.javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
-		clickOnRadioReferenceLevelSenior.click();
+		JavaScriptManuplator.javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
+//		clickOnRadioReferenceLevelSenior.click();
 //		txtReferenceName.clear();
 		txtReferenceName.sendKeys(referenceName);
 		txtReferenceDesignation.clear();

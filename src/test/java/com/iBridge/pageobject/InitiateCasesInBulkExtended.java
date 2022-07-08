@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.iBridge.utilities.JavaScriptManuplator;
+
 public class InitiateCasesInBulkExtended {
 	WebDriver ldriver;
 	WebDriverWait wait;
@@ -212,7 +214,8 @@ public class InitiateCasesInBulkExtended {
 		js.executeScript("arguments[0].scrollIntoView(true);", checkBoxNoPanCard);
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(checkBoxNoPanCard));
-		checkBoxNoPanCard.click();
+		JavaScriptManuplator.javaScriptExecutor(checkBoxNoPanCard, "arguments[0].click()", ldriver);
+//		checkBoxNoPanCard.click();
 		WebElement element = ldriver.findElement(By.xpath("//button[contains(text(),'Ok')]"));
 		Actions actions = new Actions(ldriver);
 		actions.moveToElement(element).click().perform();

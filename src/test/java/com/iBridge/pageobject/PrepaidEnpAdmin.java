@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -37,6 +38,14 @@ public class PrepaidEnpAdmin {
 	@FindBy(xpath = "//*[@id=\"submitBtn\"]")
 	@CacheLookup
 	WebElement btnLogin;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/nav/div[2]/div/ul/li[4]/a/span")
+	WebElement profileClick;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/nav/div[2]/div/ul/li[4]/ul/li[5]/a")
+	WebElement logout;
 
 	@FindBy(xpath = "//span[contains(text(),'Client Listing')]")
 	@CacheLookup
@@ -52,7 +61,7 @@ public class PrepaidEnpAdmin {
 	@CacheLookup
 	WebElement clickOnProfile;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/nav[1]/div[2]/div[1]/ul[1]/li[4]/ul[1]/li[3]/a[1]")
+	@FindBy(xpath = "/html/body/div[1]/div/nav/div[2]/div/ul/li[4]/ul/li[5]/a")
 	@CacheLookup
 	WebElement clickOnPrepaidCandidateLogoutBtn;
 
@@ -171,16 +180,17 @@ public class PrepaidEnpAdmin {
 	@CacheLookup
 	WebElement clickOnUserProfileName;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/nav[1]/div[2]/div[1]/ul[1]/li[4]/ul[1]/li[3]/a[1]")
+	@FindBy(xpath = "/html/body/div[1]/div/nav/div[2]/div/ul/li[4]/ul/li[5]/a")
 	@CacheLookup
 	WebElement clickOnUserLogoutBtn;
 
-	public void loginEnpAdminAccount(String enpAdminUsername, String enpAdminPassword) {
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(txtUserName));
+	public void loginEnpAdminAccount(String enpAdminUsername, String enpAdminPassword) throws InterruptedException {
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(txtUserName));
 		txtUserName.sendKeys(enpAdminUsername);
 		txtPassword.sendKeys(enpAdminPassword);
 		btnLogin.click();
+		
 	}
 
 	public String verifyClientListingText() {
@@ -330,9 +340,9 @@ public class PrepaidEnpAdmin {
 	public void userLogoutAccount() throws InterruptedException {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnUserProfileName));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnUserLogoutBtn, "arguments[0].click()", ldriver);
-		//clickOnUserLogoutBtn.click();
+//		clickOnUserLogoutBtn.click();
 		Thread.sleep(1000);
 	}
 

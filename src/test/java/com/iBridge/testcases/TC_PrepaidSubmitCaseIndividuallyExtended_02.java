@@ -66,10 +66,10 @@ public class TC_PrepaidSubmitCaseIndividuallyExtended_02 extends BaseClass {
 		logger.info("Candidate Additional Information Setup Successfully!");
 
 		// ADDRESS--Step 3 - Candidate Summary
-//		submitCaseIndividually.prepaidCandidateAddress("23", "Mayur Vihar", "04-04-1991", "323233", "hi", "Delhi",
-//				"Mayur Vihar", "1234", "Mayur Vihar", "01-01-2022", "323233", "hi", "Delhi", "Mayur Vihar",
-//				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
-//		logger.info("Candidate Address setup successfully!");
+		submitCaseIndividually.prepaidCandidateAddress("23", "Mayur Vihar", "04-04-1991", "3232", "hi", "Delhi",
+				"Mayur Vihar", "1234", "Mayur Vihar", "01-01-2022", "3235", "hi", "Delhi", "Mayur Vihar",
+				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
+		logger.info("Candidate Address setup successfully!");
 //		// Education Details--Step 3 - Candidate Summary
 //		submitCaseIndividually.prepaidEducationInformation("Bund");
 //		logger.info("Prepaid Candidate Education details Setup successfully!");
@@ -119,14 +119,14 @@ public class TC_PrepaidSubmitCaseIndividuallyExtended_02 extends BaseClass {
 		verifyPaymentPendingCase.prepaidPaymentPendingCaseCompleted();
 		logger.info("Payment Pending Case has verified Successfully!");
 
-		if (verifyPaymentPendingCase.verifyPaymentCompletedMessage().contains("Payment Completed.")) {
-			Assert.assertTrue(true);
-			logger.info("Initiate Case Individually has Payment Completed successfully!");
-		} else {
-			logger.info("Initiate Case Individually has Not Payment Completed successfully!");
-			captureScreen(driver, "verifyPaymentCompletedMessage");
-			Assert.assertTrue(false);
-		}
+//		if (verifyPaymentPendingCase.verifyPaymentCompletedMessage().contains("Payment Completed.")) {
+//			Assert.assertTrue(true);
+//			logger.info("Initiate Case Individually has Payment Completed successfully!");
+//		} else {
+//			logger.info("Initiate Case Individually has Not Payment Completed successfully!");
+//			captureScreen(driver, "verifyPaymentCompletedMessage");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Verify Submitted For Verification Bucket

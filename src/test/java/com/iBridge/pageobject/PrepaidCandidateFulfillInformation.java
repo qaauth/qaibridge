@@ -179,6 +179,10 @@ public class PrepaidCandidateFulfillInformation {
 	@FindBy(xpath = "/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[4]/div[3]/div/input[1]")
 	@CacheLookup
 	WebElement txtCityName;
+	
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[4]/div[3]/div/ul/li[1]/div")
+	WebElement txtCityNameField;
+	
 
 	@FindBy(xpath = "/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[1]/div[4]/div[4]/div/input")
 	@CacheLookup
@@ -1111,7 +1115,7 @@ public class PrepaidCandidateFulfillInformation {
 		txtFatherName.sendKeys(fatherName);
 		clickOnProfileContinueBtn.click();
 		Thread.sleep(1000);
-		submitButton.click();
+//		submitButton.click();
 //		wait = new WebDriverWait(ldriver, 60);
 //		wait.until(ExpectedConditions.visibilityOf(clickOnProfile));
 //		Thread.sleep(1000);
@@ -1128,79 +1132,88 @@ public class PrepaidCandidateFulfillInformation {
 			throws InterruptedException, ParseException {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
-		try {
-			selectWithinIndia.click();
-		} catch (StaleElementReferenceException e) {
-			selectWithinIndia.click();
-		}
+//		try {
+//			selectWithinIndia.click();
+//		} catch (StaleElementReferenceException e) {
+//			selectWithinIndia.click();
+//		}
+		JavaScriptManuplator.javaScriptExecutor(selectWithinIndia, "arguments[0].click()", ldriver);
+		selectWithinIndia.click();
 		wait.until(ExpectedConditions.visibilityOf(txtFlat_House));
-		txtFlat_House.clear();
+//		txtFlat_House.clear();
 		txtFlat_House.sendKeys(flat);
-		JavaScriptManuplator.javaScriptExecutor(txtColonyName, "arguments[0].value='Mayur Vihar'", ldriver);
 		Thread.sleep(1000);
+		txtColonyName.sendKeys("Mayur Vihar");
+		JavaScriptManuplator.javaScriptExecutor(txtColonyName, "arguments[0].value='Mayur Vihar'", ldriver);
+		Thread.sleep(2000);
+		js = (JavascriptExecutor) ldriver;
 		JavaScriptManuplator.javaScriptExecutor(clickOnResidingForm, "arguments[0].removeAttribute('readonly')",
 				ldriver);
-		JavaScriptManuplator.javaScriptExecutor(clickOnResidingForm, "arguments[0].value='01-01-2022'", ldriver);
+		clickOnResidingForm.sendKeys("01-01-2022");
 		checkBoxTillDate.click();
 		Thread.sleep(1000);
+		txtPinCode.sendKeys("323233");
 		JavaScriptManuplator.javaScriptExecutor(txtPinCode, "arguments[0].value='323233'", ldriver);
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(txtCityName, "arguments[0].value='Delhi'", ldriver);
-		Thread.sleep(1000);
+		txtCityName.sendKeys("Delhi");
 		JavaScriptManuplator.javaScriptExecutor(txtStateName, "arguments[0].value='Delhi'", ldriver);
 		Thread.sleep(1000);
-		txtPoliceStation.clear();
+		txtStateName.sendKeys("Delhi");
+//		Select prefixName = new Select(txtCityName);
+//		txtCityNameField.click();
+//		txtPoliceStation.clear();
 		txtPoliceStation.sendKeys(station);
 		// Address Details 1
 		// Permanent Address Details
 		// Address Details 2
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", checkWithinIndiaRadioBtn);
-		// Add Documents
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(checkWithinIndiaRadioBtn));
-		// Is your current address or any of the above mentioned address same as
-		// Permanent Address
-		// addressSameasPermanentAddress.click();
-		// Permanent Address Details
-		try {
-			Thread.sleep(1000);
-			checkWithinIndiaRadioBtn.click();
-		} catch (StaleElementReferenceException e) {
-			selectWithinIndia.click();
-		}
-		txtHouseNo.clear();
-		txtHouseNo.sendKeys(houseNo);
-		txtLocality.clear();
-		txtLocality.sendKeys(locality);
-		Thread.sleep(1000);
-		JavaScriptManuplator.javaScriptExecutor(clickOnResidingFormDate, "arguments[0].removeAttribute('readonly')",
-				ldriver);
-		JavaScriptManuplator.javaScriptExecutor(clickOnResidingFormDate, "arguments[0].value='01-01-2013'", ldriver);
-		JavaScriptManuplator.javaScriptExecutor(clickOnResidingtoDate, "arguments[0].removeAttribute('readonly')",
-				ldriver);
-		JavaScriptManuplator.javaScriptExecutor(clickOnResidingtoDate, "arguments[0].value='01-01-2021'", ldriver);
-		txtPinCodePer.clear();
-		txtPinCodePer.sendKeys(pinCode);
-		txtCityNamePer.sendKeys(cityPer);
-		Thread.sleep(2000);
-		// Adding headless code
-		WebElement xWL1 = ldriver.findElement(By.xpath(
-				"/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[4]/div[2]/div/input[1]"));
-		Actions xAct1 = new Actions(ldriver);
-		xAct1.moveToElement(xWL1).build().perform();
-		Thread.sleep(2000);
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].value='Del'", txtStateNamePer);
-		Thread.sleep(2000);
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].value='Delhi'", txtCityNamePer);
-		txtCityNamePer.clear();
-		txtCityNamePer.sendKeys(cityPer);
-		txtPoStation.clear();
-		txtPoStation.sendKeys(policeStation);
-		clickOnAddressContinueBtn.click();
-		Thread.sleep(1000);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", checkWithinIndiaRadioBtn);
+//		 Add Documents
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(checkWithinIndiaRadioBtn));
+//		 Is your current address or any of the above mentioned address same as
+//		 Permanent Address
+//		 addressSameasPermanentAddress.click();
+//		 Permanent Address Details
+//		try {
+//			Thread.sleep(1000);
+//			checkWithinIndiaRadioBtn.click();
+//		} catch (StaleElementReferenceException e) {
+//			selectWithinIndia.click();
+//		}
+//		txtHouseNo.clear();
+//		txtHouseNo.sendKeys(houseNo);
+//		txtLocality.clear();
+//		txtLocality.sendKeys(locality);
+//		Thread.sleep(1000);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnResidingFormDate, "arguments[0].removeAttribute('readonly')",
+//				ldriver);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnResidingFormDate, "arguments[0].value='01-01-2013'", ldriver);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnResidingtoDate, "arguments[0].removeAttribute('readonly')",
+//				ldriver);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnResidingtoDate, "arguments[0].value='01-01-2021'", ldriver);
+//		txtPinCodePer.clear();
+//		txtPinCodePer.sendKeys(pinCode);
+//		txtCityNamePer.sendKeys(cityPer);
+//		Thread.sleep(2000);
+//		// Adding headless code
+//		WebElement xWL1 = ldriver.findElement(By.xpath(
+//				"/html/body/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[4]/div[2]/div/input[1]"));
+//		Actions xAct1 = new Actions(ldriver);
+//		xAct1.moveToElement(xWL1).build().perform();
+//		Thread.sleep(2000);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].value='Del'", txtStateNamePer);
+//		Thread.sleep(2000);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].value='Delhi'", txtCityNamePer);
+//		txtCityNamePer.clear();
+//		txtCityNamePer.sendKeys(cityPer);
+//		txtPoStation.clear();
+//		txtPoStation.sendKeys(policeStation);
+//		clickOnAddressContinueBtn.click();
+//		Thread.sleep(1000);
 	}
 
 	// Education Details--Step 3 - Candidate Summary

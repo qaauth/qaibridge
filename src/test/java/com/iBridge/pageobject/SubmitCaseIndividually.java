@@ -1423,8 +1423,8 @@ public class SubmitCaseIndividually {
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousCorporateEmail, "arguments[0].value='raju.yadav@agamitechnologies.com'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(txtPreviousDepartment, "arguments[0].value='Engineering'", ldriver);
 		JavaScriptManuplator.javaScriptExecutor(clickOnPreviousJoining, "arguments[0].scrollIntoView(true);", ldriver);
-		wait = new WebDriverWait(ldriver,50);
-		wait.until(ExpectedConditions.visibilityOf(clickOnPreviousJoining));
+//		wait = new WebDriverWait(ldriver,50);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnPreviousJoining));
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnPreviousJoining, "arguments[0].removeAttribute('readonly')",
 				ldriver);

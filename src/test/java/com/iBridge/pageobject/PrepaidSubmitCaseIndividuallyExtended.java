@@ -183,7 +183,7 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	WebElement verifyToastMsg;
 
 	// ADDRESS (Current Address Details)--Step 3 - Candidate Summary
-	@FindBy(xpath = "//*[@id='57']/div[2]/div/div/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[2]/div/div/label[1]/input")
 	@CacheLookup
 	WebElement selectWithinIndia;
 
@@ -199,7 +199,7 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	@CacheLookup
 	WebElement clickOnResidingForm;
 
-	@FindBy(xpath = "//*[@id='57']/div[3]/div[4]/div/div[2]/div/label/span")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[3]/div[4]/div/div[2]/div/label/input[2]")
 	@CacheLookup
 	WebElement checkBoxTillDate;
 
@@ -239,15 +239,15 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	@CacheLookup
 	WebElement checkWithinIndiaRadioBtn;
 
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[3]/div[1]/div/input")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[3]/div[1]/div/input")
 	@CacheLookup
 	WebElement txtHouseNo;
 
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[3]/div[2]/div/input")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[3]/div[2]/div/input")
 	@CacheLookup
 	WebElement txtLocality;
 
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[3]/div[3]/div/input")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[3]/div[3]/div/input")
 	@CacheLookup
 	WebElement clickOnResidingFormDate;
 
@@ -259,15 +259,15 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	@CacheLookup
 	WebElement selectTillDate;
 
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[4]/div[1]/div/input")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[4]/div[1]/div/input")
 	@CacheLookup
 	WebElement txtPinCodePer;
 
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[4]/div[2]/div/input[1]")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[4]/div[2]/div/input[1]")
 	@CacheLookup
 	WebElement txtStateNamePer;
 
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[4]/div[3]/div/input[1]")
+	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div[4]/div[3]/div/input[1]")
 	@CacheLookup
 	WebElement txtCityNamePer;
 
@@ -279,9 +279,17 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 	@CacheLookup
 	WebElement uploadAddressProofPermanent;
 
-	@FindBy(name = "continue")
+	@FindBy(name = "//*[@name='continue']")
 	@CacheLookup
 	WebElement clickOnAddressContinueBtn;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@value='Continue']")
+	WebElement submitButton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Ok']")
+	WebElement okButtonClick;
 
 	// Education Details--Step 3 - Candidate Summary
 	// Are you a Fresher?
@@ -1138,9 +1146,9 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		Thread.sleep(1000);
 		ignoreDuplicate.click();
 		saveAndContinueButton.click();
-		submit.click();
+//		submit.click();
 		Thread.sleep(2000);
-		okButton.click();
+//		okButton.click();
 	}
 
 	// ADDRESS(Current Address Details)--Step 3 - Candidate Summary
@@ -1149,41 +1157,44 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 			String statePer, String cityPer, String policeStation, String AddressProof)
 			throws InterruptedException, ParseException {
 		Thread.sleep(2000);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
-		selectWithinIndia.click();
-		txtFlat_House.clear();
-		txtFlat_House.sendKeys(flat);
-		txtColonyName.clear();
-		txtColonyName.sendKeys(colony);
-
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].removeAttribute('readonly')", clickOnResidingForm);
-		clickOnResidingForm.sendKeys(residingForm);
-		Thread.sleep(1000);
-		checkBoxTillDate.click();
-		txtPinCode.clear();
-		JavaScriptManuplator.javaScriptExecutor(txtPinCode, "arguments[0].value='323233'", ldriver);
-		Thread.sleep(1000);
-		JavaScriptManuplator.javaScriptExecutor(txtStateName, "arguments[0].value='Delhi'", ldriver);
-		Thread.sleep(1000);
-		JavaScriptManuplator.javaScriptExecutor(txtCityName, "arguments[0].value='Delhi'", ldriver);
-		Thread.sleep(1000);
-		txtPoliceStation.sendKeys(station);
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", checkWithinIndiaRadioBtn);
-		// Add Documents
-		// Is your current address or any of the above mentioned address same as
-		// Permanent Address
-		// Permanent Address Details
-		try {
-			checkWithinIndiaRadioBtn.click();
-		} catch (StaleElementReferenceException e) {
-			selectWithinIndia.click();
-		}
-		txtHouseNo.clear();
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
+//		JavaScriptManuplator.javaScriptExecutor(selectWithinIndia, "arguments[0].click()", ldriver);
+//     	selectWithinIndia.click();
+//		txtFlat_House.clear();
+//		txtFlat_House.sendKeys(flat);
+//		txtColonyName.clear();
+//		txtColonyName.sendKeys(colony);
+//
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].removeAttribute('readonly')", clickOnResidingForm);
+//		clickOnResidingForm.sendKeys(residingForm);
+//		Thread.sleep(1000);
+//		checkBoxTillDate.click();
+//		txtPinCode.clear();
+//		JavaScriptManuplator.javaScriptExecutor(txtPinCode, "arguments[0].value='323233'", ldriver);
+//		Thread.sleep(1000);
+//		JavaScriptManuplator.javaScriptExecutor(txtStateName, "arguments[0].value='Delhi'", ldriver);
+//		Thread.sleep(1000);
+//		JavaScriptManuplator.javaScriptExecutor(txtCityName, "arguments[0].value='Delhi'", ldriver);
+//		Thread.sleep(1000);
+//		txtPoliceStation.sendKeys(station);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", checkWithinIndiaRadioBtn);
+//		// Add Documents
+//		// Is your current address or any of the above mentioned address same as
+//		// Permanent Address
+//		// Permanent Address Details
+//		try {
+//			checkWithinIndiaRadioBtn.click();
+//		} catch (StaleElementReferenceException e) {
+//			selectWithinIndia.click();
+//		}
+		
+		JavaScriptManuplator.javaScriptExecutor(selectWithinIndia, "arguments[0].click()", ldriver);
+//		txtHouseNo.clear();
 		txtHouseNo.sendKeys(houseNo);
-		txtLocality.clear();
+//		txtLocality.clear();
 		txtLocality.sendKeys(locality);
 
 		js = (JavascriptExecutor) ldriver;
@@ -1191,8 +1202,10 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		clickOnResidingFormDate.sendKeys(residingFormDate);
 		Thread.sleep(1000);
 		selectTillDate.click();
-		JavaScriptManuplator.javaScriptExecutor(txtPinCodePer, "arguments[0].value='323233'", ldriver);
+		JavaScriptManuplator.javaScriptExecutor(txtPinCodePer, "arguments[0].value='32'", ldriver);
+		txtPinCodePer.sendKeys("32");
 		JavaScriptManuplator.javaScriptExecutor(txtCityNamePer, "arguments[0].value='Delhi'", ldriver);
+		txtCityNamePer.sendKeys("Delhi");
 		// Adding headless code
 		WebElement xWL = ldriver.findElement(By.xpath(
 				"/html/body/div[4]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div/div/div[2]/div/div/div[1]/div/div/div[3]/div[4]/div[2]/div/input[1]"));
@@ -1204,9 +1217,11 @@ public class PrepaidSubmitCaseIndividuallyExtended {
 		JavaScriptManuplator.javaScriptExecutor(txtCityNamePer, "arguments[0].value='Delhi'", ldriver);
 		txtPoStation.clear();
 		txtPoStation.sendKeys(policeStation);
-		// uploadAddressProofPermanent.sendKeys(AddressProof);
+		 uploadAddressProofPermanent.sendKeys(AddressProof);
 		clickOnAddressContinueBtn.click();
-		Thread.sleep(1000);
+		submitButton.click();
+		Thread.sleep(3000);
+		okButtonClick.click();
 	}
 
 	// Education Details--Step 3 - Candidate Summary

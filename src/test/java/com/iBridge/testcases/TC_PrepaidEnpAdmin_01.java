@@ -78,6 +78,7 @@ public class TC_PrepaidEnpAdmin_01 extends BaseClass {
 			"verifyUserPrepaidConfigurationTagCheck" })
 	public void verifyEnpAdminPrepaidClientConfiguration() throws InterruptedException, IOException {
 		driver.get(EnpAdminURL);
+//		driver.close();
 		logger.info("Prepaid Enp Admin Url has opened Successfully!");
 		PrepaidEnpAdmin enpAdminLogin = new PrepaidEnpAdmin(driver);
 		enpAdminLogin.loginEnpAdminAccount(enpAdminUsername, enpAdminPassword);
