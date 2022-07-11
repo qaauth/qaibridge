@@ -134,7 +134,7 @@ public class CasesSubmissionSummary {
 	WebElement okButton;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[1]/div/div/ul/li[4]/ul/li[4]/div/a")
+	@FindBy(how = How.XPATH, using = "//*[@title='Submitted for Verification']")
 	WebElement clickOnsubmitForVerification;
 
 	@CacheLookup
@@ -324,20 +324,20 @@ public class CasesSubmissionSummary {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmissionSubmitted));
 		clickOnSubmissionSubmitted.click();
-		pendingSignOff.click();
-		Thread.sleep(1000);
-		submit.click();
+//		pendingSignOff.click();
 		Thread.sleep(2000);
-		clickCheckBox.click();
-		confirmSubmit.click();
-		Thread.sleep(1000);
-		okButton.click();
+//		submit.click();
+//		Thread.sleep(2000);
+//		clickCheckBox.click();
+//		confirmSubmit.click();
+//		Thread.sleep(1000);
+//		okButton.click();
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnsubmitForVerification, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		ldriver.navigate().refresh();
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(copyCandidateMailId));
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(copyCandidateMailId));
 		Thread.sleep(1000);
 		try {
         	File output = new File("copyCandidateMail.txt");

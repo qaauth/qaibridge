@@ -1123,7 +1123,8 @@ public class SubmitCaseIndividually {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
 		selectWithinIndia.click();
-		txtFlat_House.clear();
+//		txtFlat_House.clear();
+		Thread.sleep(1000);
 		txtFlat_House.sendKeys(flat);
 		JavaScriptManuplator.javaScriptExecutor(txtColonyName, "arguments[0].value='Mayur Vihar'", ldriver);
 		Thread.sleep(1000);

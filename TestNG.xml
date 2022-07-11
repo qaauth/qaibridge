@@ -9,9 +9,9 @@
 
 	<!-- <test name="iBridge1"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_LoginTest_01" /> </classes> 
-		</test>
+		</test> -->
 
-	<test name="iBridge2"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge2"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CasesPendingInitiation_01" 
 		/> </classes> </test> -->
 

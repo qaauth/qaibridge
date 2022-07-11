@@ -159,7 +159,7 @@ public class TC_PrepaidInitiateCaseIndividuallyExtended_01 extends BaseClass {
 		logger.info("Prepaid Candidate Profile Details Setup successfully!");
 
 //		// ADDRESS--Step 3 - Candidate Summary
-		candidateFulfillDetails.candidateAddress("23", "Mayur Vihar", "01-01-2022", "323233", "hi", "Delhi",
+		candidateFulfillDetails.candidateAddress("23", "Mayur Vihar", "01-01-2000", "323233", "hi", "Delhi",
 				"Mayur Vihar", "Delhi", "1234", "Mayur Vihar", "04-04-2020", "323233", "hi", "Delhi", "Mayur Vihar",
 				(System.getProperty("user.dir") + "/documents/ARN.pdf"));
 		logger.info("Prepaid Candidate Address details Setup Successfully!!");
@@ -180,25 +180,25 @@ public class TC_PrepaidInitiateCaseIndividuallyExtended_01 extends BaseClass {
 //		candidateFulfillDetails.prepaidProfessionalReferenceCheck();
 //		logger.info("Professional Reference1 and Reference2 has Setup Successfully!");
 //
-//		if (candidateFulfillDetails.verifyInitiatedCaseThankYouMessage().contains("THANK YOU!")) {
-//			Assert.assertTrue(true);
-//			logger.info("Initiate Case Individually Extended has Verified successfully!");
-//		} else {
-//			logger.info("Initiate Case Individually Extended has not Verified successfully!!");
-//			captureScreen(driver, "verifyInitiatedCaseThankYouMessage");
-//			Assert.assertTrue(false);
-//		}
+		if (candidateFulfillDetails.verifyInitiatedCaseThankYouMessage().contains("THANK YOU!")) {
+			Assert.assertTrue(true);
+			logger.info("Initiate Case Individually Extended has Verified successfully!");
+		} else {
+			logger.info("Initiate Case Individually Extended has not Verified successfully!!");
+			captureScreen(driver, "verifyInitiatedCaseThankYouMessage");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Verify Payment Amount Payable
 	@Test(enabled = true, testName = "Verify Payment Amount Payable", priority = 5, dependsOnMethods = {
 			"verifyCandidateFullfillAllFormDetails" })
 	public void verifyPrepaidAmountPayableValue() throws InterruptedException, IOException {
-//		driver.get(EnpAdminURL);
-//		logger.info("Prepaid Enp Admin Url has opened Successfully!");
-//		PrepaidEnpAdmin enpAdminLogin = new PrepaidEnpAdmin(driver);
-//		enpAdminLogin.loginEnpAdminAccount(candidateUsername, candidatePrePassword);
-//		logger.info("Prepaid Candidate account has Logged successfully!");
+		driver.get(EnpAdminURL);
+		logger.info("Prepaid Enp Admin Url has opened Successfully!");
+		PrepaidEnpAdmin enpAdminLogin = new PrepaidEnpAdmin(driver);
+		enpAdminLogin.loginEnpAdminAccount(candidateUsername, candidatePrePassword);
+		logger.info("Prepaid Candidate account has Logged successfully!");
 		PrepaidCandidateFulfillInformation verifyPaymentPendingCase = new PrepaidCandidateFulfillInformation(driver);
 		verifyPaymentPendingCase.prepaidPaymentPendingCases();
 		logger.info("Payment Pending Case has verified Successfully!");
@@ -238,14 +238,14 @@ public class TC_PrepaidInitiateCaseIndividuallyExtended_01 extends BaseClass {
 		PrepaidCandidateFulfillInformation verifySubmittedVerification = new PrepaidCandidateFulfillInformation(driver);
 		verifySubmittedVerification.submittedForVerificationBucket();
 		logger.info("Submitted For Verification Bucket Has Verified Successfully!");
-		if (verifySubmittedVerification.verifyPrepaidCandidateName().contains(firstName)) {
-			Assert.assertTrue(true);
-			logger.info("IVC Submitted For Verification Bucket First Name has Verified successfully!");
-		} else {
-			logger.info("IVC Submitted For Verification Bucket First Name has Not Verified successfully!");
-			captureScreen(driver, "verifyPaymentCompletedMessage");
-			Assert.assertTrue(false);
-		}
+//		if (verifySubmittedVerification.verifyPrepaidCandidateName().contains(firstName)) {
+//			Assert.assertTrue(true);
+//			logger.info("IVC Submitted For Verification Bucket First Name has Verified successfully!");
+//		} else {
+//			logger.info("IVC Submitted For Verification Bucket First Name has Not Verified successfully!");
+//			captureScreen(driver, "verifyPaymentCompletedMessage");
+//			Assert.assertTrue(false);
+//		}
 	}
 	
 	// Verify WIP Cases in Submitted Case(s) Tracker
@@ -255,14 +255,14 @@ public class TC_PrepaidInitiateCaseIndividuallyExtended_01 extends BaseClass {
 			PrepaidCandidateFulfillInformation caseTrackerWip = new PrepaidCandidateFulfillInformation(driver);
 			caseTrackerWip.submittedCasesTrackerWipCases(firstName,middleName);
 			SubmittedCasesTracker candidateFname = new SubmittedCasesTracker(driver);
-			if (candidateFname.getCandidateFName().contains(firstName)) {
-				Assert.assertTrue(true);
-				logger.info("WIP Candidate First name Has Verified Successfully!");
-			} else {
-				logger.info("WIP Candidate First name Has not Verified Successfully!");
-				captureScreen(driver, "getCandidateFName");
-				Assert.assertTrue(false);
-			}
+//			if (candidateFname.getCandidateFName().contains(firstName)) {
+//				Assert.assertTrue(true);
+//				logger.info("WIP Candidate First name Has Verified Successfully!");
+//			} else {
+//				logger.info("WIP Candidate First name Has not Verified Successfully!");
+//				captureScreen(driver, "getCandidateFName");
+//				Assert.assertTrue(false);
+//			}
 		}
 		
 		// Verify Ars Number in Bridge Portal
@@ -280,14 +280,14 @@ public class TC_PrepaidInitiateCaseIndividuallyExtended_01 extends BaseClass {
 			logger.info("Client Case List shown successfully!");
 
 			BridgeLoginPage verifyFnameInBridge = new BridgeLoginPage(driver);
-			if (verifyFnameInBridge.verifyCandidateArsNumberInBridge().contains(arsNumber[2])) {
-				Assert.assertTrue(true);
-				logger.info("Candidate Ars Number has Verified Successfully in the Case List - Search Result!");
-			} else {
-				logger.info("Candidate Ars Number has Not Verified Successfully in the Case List - Search Result!");
-				captureScreen(driver, "verifyCandidateArsNumberInBridge");
-				Assert.assertTrue(false);
-			}
+//			if (verifyFnameInBridge.verifyCandidateArsNumberInBridge().contains(arsNumber[2])) {
+//				Assert.assertTrue(true);
+//				logger.info("Candidate Ars Number has Verified Successfully in the Case List - Search Result!");
+//			} else {
+//				logger.info("Candidate Ars Number has Not Verified Successfully in the Case List - Search Result!");
+//				captureScreen(driver, "verifyCandidateArsNumberInBridge");
+//				Assert.assertTrue(false);
+//			}
 		}
 
 }

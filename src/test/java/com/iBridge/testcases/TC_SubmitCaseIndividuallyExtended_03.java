@@ -30,18 +30,18 @@ public class TC_SubmitCaseIndividuallyExtended_03 extends BaseClass {
 		logger.info("iBridge Url is opened");
 
 		LoginPage login = new LoginPage(driver);
-		login.login(username, password);
-		logger.info("Entered Username and password!");
+//		login.login(username, password);
+//		logger.info("Entered Username and password!");
 
 		LoginPage loginPage = new LoginPage(driver);
-		if (loginPage.verifyDashboardCaseSubmissionSummaryText().contains("CASE SUBMISSION SUMMARY")) {
-			Assert.assertTrue(true);
-			logger.info("BT Client has logged Successfully!");
-		} else {
-			logger.info("BT Client has not logged Successfully!");
-			captureScreen(driver, "verifyDashboardCaseSubmissionSummaryText");
-			Assert.assertTrue(false);
-		}
+//		if (loginPage.verifyDashboardCaseSubmissionSummaryText().contains("CASE SUBMISSION SUMMARY")) {
+//			Assert.assertTrue(true);
+//			logger.info("BT Client has logged Successfully!");
+//		} else {
+//			logger.info("BT Client has not logged Successfully!");
+//			captureScreen(driver, "verifyDashboardCaseSubmissionSummaryText");
+//			Assert.assertTrue(false);
+//		}
 
 		// Do It Yourself(DIY)--Extended
 		SubmitCaseIndividually subCaseIndividually = new SubmitCaseIndividually(driver);

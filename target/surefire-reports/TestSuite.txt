@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 9,075.8 sec <<< FAILURE! - in TestSuite
-verifyPrepaidInitiateSubmitCaseIndividually(com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02)  Time elapsed: 9,061.944 sec  <<< FAILURE!
-java.lang.IllegalArgumentException: Must provide a location for a move action.
-	at org.openqa.selenium.interactions.MoveMouseAction.<init>(MoveMouseAction.java:38)
-	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:387)
-	at com.iBridge.pageobject.PrepaidSubmitCaseIndividuallyExtended.prepaidCandidateAddress(PrepaidSubmitCaseIndividuallyExtended.java:1213)
-	at com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02.verifyPrepaidInitiateSubmitCaseIndividually(TC_PrepaidSubmitCaseIndividuallyExtended_02.java:69)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 159.463 sec - in TestSuite

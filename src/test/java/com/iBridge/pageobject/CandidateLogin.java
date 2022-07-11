@@ -676,10 +676,10 @@ public class CandidateLogin {
 
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(checkConcentCheckBox));
 		JavaScriptManuplator.javaScriptExecutor(checkConcentCheckBox, "arguments[0].click()", ldriver);
@@ -831,8 +831,8 @@ public class CandidateLogin {
 			String enrollmentNo, String paercentage, String batchStartDate, String clkOnEndYear, String remark)
 			throws InterruptedException {
 		
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(selectQualificationDegree));
+//		wait = new WebDriverWait(ldriver, 120);
+//		wait.until(ExpectedConditions.visibilityOf(selectQualificationDegree));
 		Select degree = new Select(selectQualificationDegree);
 		degree.selectByIndex(2);
 		txtQualification.clear();

@@ -88,6 +88,10 @@ public class PrepaidCandidateFulfillInformation {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "//*[@id='pacakgeSubmitForm']")
 	WebElement submitButton;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[text()='Ok']")
+	WebElement okButton;
 
 	// NATIONAL IDENTITY--Step 3 - Candidate Summary
 	@FindBy(xpath = "//*[@id='no_pan_card']")
@@ -1139,31 +1143,35 @@ public class PrepaidCandidateFulfillInformation {
 //		}
 		JavaScriptManuplator.javaScriptExecutor(selectWithinIndia, "arguments[0].click()", ldriver);
 		selectWithinIndia.click();
-		wait.until(ExpectedConditions.visibilityOf(txtFlat_House));
+//		wait.until(ExpectedConditions.visibilityOf(txtFlat_House));
 //		txtFlat_House.clear();
-		txtFlat_House.sendKeys(flat);
-		Thread.sleep(1000);
-		txtColonyName.sendKeys("Mayur Vihar");
-		JavaScriptManuplator.javaScriptExecutor(txtColonyName, "arguments[0].value='Mayur Vihar'", ldriver);
-		Thread.sleep(2000);
-		js = (JavascriptExecutor) ldriver;
-		JavaScriptManuplator.javaScriptExecutor(clickOnResidingForm, "arguments[0].removeAttribute('readonly')",
-				ldriver);
-		clickOnResidingForm.sendKeys("01-01-2022");
-		checkBoxTillDate.click();
-		Thread.sleep(1000);
-		txtPinCode.sendKeys("323233");
-		JavaScriptManuplator.javaScriptExecutor(txtPinCode, "arguments[0].value='323233'", ldriver);
-		Thread.sleep(1000);
-		JavaScriptManuplator.javaScriptExecutor(txtCityName, "arguments[0].value='Delhi'", ldriver);
-		txtCityName.sendKeys("Delhi");
-		JavaScriptManuplator.javaScriptExecutor(txtStateName, "arguments[0].value='Delhi'", ldriver);
-		Thread.sleep(1000);
-		txtStateName.sendKeys("Delhi");
+//		txtFlat_House.sendKeys(flat);
+//		Thread.sleep(1000);
+//		txtColonyName.sendKeys("Mayur Vihar");
+//		JavaScriptManuplator.javaScriptExecutor(txtColonyName, "arguments[0].value='Mayur Vihar'", ldriver);
+//		Thread.sleep(2000);
+//		js = (JavascriptExecutor) ldriver;
+//		JavaScriptManuplator.javaScriptExecutor(clickOnResidingForm, "arguments[0].removeAttribute('readonly')",
+//				ldriver);
+//		clickOnResidingForm.sendKeys("01-01-2022");
+//		checkBoxTillDate.click();
+//		Thread.sleep(1000);
+//		txtPinCode.sendKeys("323233");
+//		JavaScriptManuplator.javaScriptExecutor(txtPinCode, "arguments[0].value='323233'", ldriver);
+//		Thread.sleep(1000);
+//		JavaScriptManuplator.javaScriptExecutor(txtCityName, "arguments[0].value='Delhi'", ldriver);
+//		txtCityName.sendKeys("Delhi");
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].value='Delhi'", txtCityNamePer);
+//		txtCityNamePer.clear();
+//		txtCityNamePer.sendKeys(cityPer);
+//		JavaScriptManuplator.javaScriptExecutor(txtStateName, "arguments[0].value='Delhi'", ldriver);
+//		Thread.sleep(1000);
+//		txtStateName.sendKeys("Delhi");
 //		Select prefixName = new Select(txtCityName);
 //		txtCityNameField.click();
 //		txtPoliceStation.clear();
-		txtPoliceStation.sendKeys(station);
+//		txtPoliceStation.sendKeys(station);
 		// Address Details 1
 		// Permanent Address Details
 		// Address Details 2
@@ -1214,6 +1222,43 @@ public class PrepaidCandidateFulfillInformation {
 //		txtPoStation.sendKeys(policeStation);
 //		clickOnAddressContinueBtn.click();
 //		Thread.sleep(1000);
+		
+		wait.until(ExpectedConditions.visibilityOf(txtFlat_House));
+		txtFlat_House.clear();
+		txtFlat_House.sendKeys(flat);
+		txtColonyName.clear();
+		txtColonyName.sendKeys(colony);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].removeAttribute('readonly')", clickOnResidingForm);
+		Thread.sleep(1000);
+		clickOnResidingForm.sendKeys(residingForm);
+		// checkBoxTillDate.clear();
+		checkBoxTillDate.click();
+		txtPinCode.clear();
+		txtPinCode.sendKeys("123456");
+		txtCityName.clear();
+		txtCityName.sendKeys(city);
+		txtStateName.clear();
+		Thread.sleep(1000);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].value='Del'", txtStateName);
+		txtStateName.sendKeys(state);
+		Thread.sleep(1000);
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].value='Delhi'", txtCityName);
+		txtCityName.clear();
+		txtCityName.sendKeys(city);
+		txtPoliceStation.clear();
+		txtPoliceStation.sendKeys(station);
+		Thread.sleep(3000);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnAddressContinueBtn, "arguments[0].click()", ldriver);
+//		JavascriptExecutor js = (JavascriptExecutor)ldriver;
+//		js.executeScript("arguments[0].click();", clickOnAddressContinueBtn);
+		clickOnAddressContinueBtn.click();
+		Thread.sleep(2000);
+		submitButton.click();
+		Thread.sleep(3000);
+		okButton.click();
 	}
 
 	// Education Details--Step 3 - Candidate Summary

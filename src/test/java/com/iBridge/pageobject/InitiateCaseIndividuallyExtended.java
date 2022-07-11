@@ -373,9 +373,11 @@ public class InitiateCaseIndividuallyExtended {
 		 * break; } }
 		 */
 		 
-		clickOnRadioReferenceLevelSenior.click();
+		
 //		JavascriptExecutor js=(JavascriptExecutor)ldriver;
 //		((JavaScriptManuplator) js).javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
+//		JavaScriptManuplator.javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
+		clickOnRadioReferenceLevelSenior.click();
 		Thread.sleep(2000);
 		//txtReferenceName.clear();
 		//JavaScriptManuplator.javaScriptExecutor(txtReferenceName, "arguments[0].value='referenceName'", ldriver);		
