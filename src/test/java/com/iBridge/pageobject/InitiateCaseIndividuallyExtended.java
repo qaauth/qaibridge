@@ -347,93 +347,189 @@ public class InitiateCaseIndividuallyExtended {
 	}
 
 	// Professional Reference Check
-	// PROFESSIONAL REFERENCE--Step 3 - Candidate Summary
-	public void professionalReference(String companyName,String referenceName, String refDesignation, String refMobileNo, String refEmail,
-			String nameRef, String desigRef, String mobileRefNo, String emailRef) throws InterruptedException {
-		//Professional Reference Check--Step 3 - Candidate Summary
-		//Add Reference(s)--1
-		//JavaScriptManuplator.waitForElementPresent(ldriver, verifyProfessionalRef, 120);	
-         Thread.sleep(2000);
-//         txtCompanyName.sendKeys(Keys.TAB);
-//         txtCompanyName.sendKeys(Keys.ENTER);
-		JavaScriptManuplator.javaScriptExecutor(txtCompanyName, "arguments[0].value='Authbridge pvt'", ldriver);
-		//txtCompanyName.sendKeys(companyName);
-		JavaScriptManuplator.waitForElementPresent(ldriver, clickOnRadioReferenceLevelSenior, 120);	
-		//wait = new WebDriverWait(ldriver, 120);
-		//wait.until(ExpectedConditions.visibilityOf(clickOnRadioReferenceLevelSenior));
-		
-		
-		  // ADD TO QUEUE List<WebElement> tag =
-		/*
-		 * ldriver.findElements(By.tagName("input")); for (int i = 0; i < input.size();
-		 * i++) { System.out.println(input.get(i).getAttribute("id")); if
-		 * (input.get(i).getAttribute("id").equals("check-data-88547-data-1-128-senior")
-		 * ) { input.get(i).click(); JavascriptExecutor executor = (JavascriptExecutor)
-		 * ldriver; executor.executeScript("arguments[0].click();", input.get(i));
-		 * break; } }
-		 */
-		 
-		
-//		JavascriptExecutor js=(JavascriptExecutor)ldriver;
-//		((JavaScriptManuplator) js).javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
-//		JavaScriptManuplator.javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
-		clickOnRadioReferenceLevelSenior.click();
-		Thread.sleep(2000);
-		//txtReferenceName.clear();
-		//JavaScriptManuplator.javaScriptExecutor(txtReferenceName, "arguments[0].value='referenceName'", ldriver);		
-		//txtReferenceName.sendKeys(referenceName);
-//		txtReferenceName.sendKeys(Keys.TAB);
-//		txtReferenceName.sendKeys(Keys.ENTER);
-		Actions performAct = new Actions(ldriver); 
-		performAct.sendKeys(txtReferenceName, "Krishna Kumar").build().perform();
-//		JavaScriptManuplator.javaScriptExecutor(txtReferenceName, "arguments[0].value='Raju Yadav'", ldriver);
-		txtReferenceDesignation.clear();
-		JavaScriptManuplator.javaScriptExecutor(txtReferenceDesignation, "arguments[0].value='refDesignation'", ldriver);		
-		txtReferenceDesignation.sendKeys(refDesignation);
-		txtReferenceMobileNo.clear();
-		txtReferenceMobileNo.sendKeys(refMobileNo);
-		Thread.sleep(2000);
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", verifyReferenceTwo);
-		Thread.sleep(1000);
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].value='krishnaKant@gmail.com'", txtReferenceEmailId);
-		//txtReferenceEmailId.clear();
-		//txtReferenceEmailId.sendKeys(refEmail);
+		// PROFESSIONAL REFERENCE--Step 3 - Candidate Summary
+		public void professionalReference(String companyName,String referenceName, String refDesignation, String refMobileNo, String refEmail,
+				String nameRef, String desigRef, String mobileRefNo, String emailRef) throws InterruptedException {
+			//Professional Reference Check--Step 3 - Candidate Summary
+			//Add Reference(s)--1
+			//wait = new WebDriverWait(ldriver, 60);
+			//wait.until(ExpectedConditions.visibilityOf(verifyProfessionalRef));
+	         Thread.sleep(10000);
+			//txtCompanyName.sendKeys(companyName);
+			//JavaScriptManuplator.waitForElementPresent(ldriver, clickOnRadioReferenceLevelSenior, 120);	
+			//wait = new WebDriverWait(ldriver, 120);
+			//wait.until(ExpectedConditions.visibilityOf(clickOnRadioReferenceLevelSenior));
+			
+			// ADD TO QUEUE
+			List<WebElement> tag = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag.size(); i++) {
+				if (tag.get(i).getAttribute("type").equals("radio")) {
+					JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+					executor.executeScript("arguments[0].click();", tag.get(i));
+					System.out.println("hiiii");
+					break;
+				}
+			}	 
+			 
+			//clickOnRadioReferenceLevelSenior.click();
+//			JavascriptExecutor js=(JavascriptExecutor)ldriver;
+//			((JavaScriptManuplator) js).javaScriptExecutor(clickOnRadioReferenceLevelSenior, "arguments[0].click()", ldriver);
+			Thread.sleep(2000);
+			//txtReferenceName.clear();	
+			//txtReferenceName.sendKeys(referenceName);
+			// ADD TO QUEUE
+					List<WebElement> tag1 = ldriver.findElements(By.tagName("input"));
+					for (int i = 0; i < tag1.size(); i++) {
+						if (tag1.get(i).getAttribute("id").equals("check-data-91594-data-1-129")) {
+							JavaScriptManuplator.javaScriptExecutor(tag1.get(i), "arguments[0].value='Raju Yadav'", ldriver);
+							System.out.println("hi");
+							break;
+						}
+					}	
+				
+			//JavaScriptManuplator.javaScriptExecutor(txtReferenceName, "arguments[0].value='Raju Yadav'", ldriver);
+			//txtReferenceDesignation.clear();
+					List<WebElement> tag2 = ldriver.findElements(By.tagName("input"));
+					for (int i = 0; i < tag2.size(); i++) {
+						if (tag2.get(i).getAttribute("id").equals("check-data-91594-data-1-130")) {
+							JavaScriptManuplator.javaScriptExecutor(tag2.get(i), "arguments[0].value='qa'", ldriver);	
+							System.out.println("hgeuu");
+							break;
+							
+						}
+					}	 
+					
+					
+			//JavaScriptManuplator.javaScriptExecutor(txtReferenceDesignation, "arguments[0].value='qa'", ldriver);		
+			//txtReferenceDesignation.sendKeys(refDesignation);
+			//txtReferenceMobileNo.clear();
+					List<WebElement> tag4 = ldriver.findElements(By.tagName("input"));
+					for (int i = 0; i < tag4.size(); i++) {
+						if (tag4.get(i).getAttribute("id").equals("check-data-91594-data-1-131")) {
+							JavaScriptManuplator.javaScriptExecutor(tag4.get(i), "arguments[0].value='7042718794'", ldriver);
+							System.out.println("hgufru");
+							break;
+						}
+					}	
+					
+			//JavaScriptManuplator.javaScriptExecutor(txtReferenceMobileNo, "arguments[0].value='7042718794'", ldriver);
+			//txtReferenceMobileNo.sendKeys(refMobileNo);
+			Thread.sleep(2000);
+			//js = (JavascriptExecutor) ldriver;
+			//js.executeScript("arguments[0].scrollIntoView(true);", verifyReferenceTwo);
+			Thread.sleep(1000);
+			List<WebElement> tag5 = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag5.size(); i++) {
+				if (tag5.get(i).getAttribute("id").equals("check-data-91594-data-1-132")) {
+					JavaScriptManuplator.javaScriptExecutor(tag5.get(i), "arguments[0].value='krishnaKant@gmail.com'", ldriver);
+					System.out.println("hguf");
+					break;
+				}
+			}	 
+			
+			///js = (JavascriptExecutor) ldriver;
+			//js.executeScript("arguments[0].value='krishnaKant@gmail.com'", txtReferenceEmailId);
+			//txtReferenceEmailId.clear();
+			//txtReferenceEmailId.sendKeys(refEmail);
 
-		// Add Reference(s) REFERENCE-- 2
-		clickOnPeerRadioBtn.click();
-		txtNameReference.clear();
-		txtNameReference.sendKeys(nameRef);
-		txtDesignationReference.clear();
-		txtDesignationReference.sendKeys(desigRef);
-		txtReferenceMobileNumber.clear();
-		txtReferenceMobileNumber.sendKeys(mobileRefNo);
-		txtEmailIdReference.sendKeys(emailRef);
-		clickOnReferenceContinueBtn.click();
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnCasePreviewSubmitBtn));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
-		Thread.sleep(2000);
-		// Confirm- alert Ok Button
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnConfirmAlertOkBtn);
-		Thread.sleep(1000);
+			// Add Reference(s) REFERENCE-- 2
+			List<WebElement> tag6 = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag6.size(); i++) {
+				if (tag6.get(i).getAttribute("id").equals("check-data-90742-data-2-128-peer")) {
+					JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+					executor.executeScript("arguments[0].click();", tag6.get(i));
+					System.out.println("hgufru");
+					break;
+				}
+			}	
+			
+			//clickOnPeerRadioBtn.click();
+			//txtNameReference.clear();
+			List<WebElement> tag7 = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag7.size(); i++) {
+				if (tag7.get(i).getAttribute("id").equals("check-data-91594-data-2-129")) {
+					JavaScriptManuplator.javaScriptExecutor(tag7.get(i), "arguments[0].value='Sunil'", ldriver);
+					System.out.println("hgufru");
+					break;
+				}
+			}	
+			
+			//txtNameReference.sendKeys(nameRef);
+			//txtDesignationReference.clear();
+			List<WebElement> tag8 = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag8.size(); i++) {
+				if (tag8.get(i).getAttribute("id").equals("check-data-91594-data-2-130")) {
+					JavaScriptManuplator.javaScriptExecutor(tag8.get(i), "arguments[0].value='Quality Analyst'", ldriver);
+					System.out.println("hgufru");
+					break;
+				}
+			}
+			
+			//txtDesignationReference.sendKeys(desigRef);
+			//txtReferenceMobileNumber.clear();
+			List<WebElement> tag9 = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag9.size(); i++) {
+				if (tag9.get(i).getAttribute("id").equals("check-data-91594-data-2-131")) {
+					JavaScriptManuplator.javaScriptExecutor(tag9.get(i), "arguments[0].value='7007299642'", ldriver);
+					System.out.println("hgufru");
+					break;
+				}
+			}	 
+			
+			//txtReferenceMobileNumber.sendKeys(mobileRefNo);
+			List<WebElement> tag10 = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag10.size(); i++) {
+				if (tag10.get(i).getAttribute("id").equals("check-data-91594-data-2-132")) {
+					JavaScriptManuplator.javaScriptExecutor(tag10.get(i), "arguments[0].value='sunil.kumar@gmail.com'", ldriver);
+					System.out.println("hgufru");
+					break;
+				}
+			}	 
+			//txtEmailIdReference.sendKeys(emailRef);
+			List<WebElement> tag11 = ldriver.findElements(By.tagName("input"));
+			for (int i = 0; i < tag11.size(); i++) {
+				if (tag11.get(i).getAttribute("name").equals("continue")) {
+					JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+					executor.executeScript("arguments[0].click();", tag11.get(i));
+					System.out.println("hgufru");
+					break;
+				}
+			}	
+			
+			//clickOnReferenceContinueBtn.click();
+			wait = new WebDriverWait(ldriver, 120);
+			wait.until(ExpectedConditions.visibilityOf(clickOnCasePreviewSubmitBtn));
+			js = (JavascriptExecutor) ldriver;
+			js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
+			Thread.sleep(2000);
+			// Confirm- alert Ok Button
+			List<WebElement> tag12 = ldriver.findElements(By.tagName("button"));
+			for (int i = 0; i < tag12.size(); i++) {
+				if (tag12.get(i).getAttribute("type").equals("button")) {
+					JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+					executor.executeScript("arguments[0].click();", tag12.get(i));
+					break;
+				}
+			}	 
+			
+			//clickOnConfirmAlertOkBtn.click();
+			//js = (JavascriptExecutor) ldriver;
+			//js.executeScript("arguments[0].click()", clickOnConfirmAlertOkBtn);
+			Thread.sleep(1000);
+		}
+
+		public void CandidteLogout() throws InterruptedException {
+			// Candidate Logout
+			clickOnCandidateName.click();
+			wait = new WebDriverWait(ldriver, 120);
+			wait.until(ExpectedConditions.visibilityOf(clickOnLogoutBtn));
+			clickOnLogoutBtn.click();
+		}
+
+		public String verifyInitiateCaseThankYouMsg() {
+			wait = new WebDriverWait(ldriver, 120);
+			wait.until(ExpectedConditions.visibilityOf(verifyCaseThankYouMsg));
+			return verifyCaseThankYouMsg.getText();
+		}
+
 	}
-
-	public void CandidteLogout() {
-		// Candidate Logout
-		clickOnCandidateName.click();
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(clickOnLogoutBtn));
-		clickOnLogoutBtn.click();
-	}
-
-	public String verifyInitiateCaseThankYouMsg() {
-		wait = new WebDriverWait(ldriver, 120);
-		wait.until(ExpectedConditions.visibilityOf(verifyCaseThankYouMsg));
-		return verifyCaseThankYouMsg.getText();
-	}
-
-}

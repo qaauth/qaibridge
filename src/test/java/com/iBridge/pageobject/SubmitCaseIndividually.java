@@ -909,6 +909,7 @@ public class SubmitCaseIndividually {
 
 	// Do It Yourself(DIY)
 	public void sidebarExpandBtn() throws InterruptedException {
+		Thread.sleep(2000);
 		clickOnSidebarExpand.click();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInitiateNewCase));
@@ -1124,7 +1125,7 @@ public class SubmitCaseIndividually {
 		wait.until(ExpectedConditions.visibilityOf(selectWithinIndia));
 		selectWithinIndia.click();
 //		txtFlat_House.clear();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		txtFlat_House.sendKeys(flat);
 		JavaScriptManuplator.javaScriptExecutor(txtColonyName, "arguments[0].value='Mayur Vihar'", ldriver);
 		Thread.sleep(1000);

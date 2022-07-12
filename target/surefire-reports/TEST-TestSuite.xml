@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="152.803" tests="7" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="12,153.963" tests="20" errors="0" skipped="14" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5321877655394581079.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5746269824224298619.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,11 +59,97 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyEnpAdminLoginAccount" classname="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" time="5.33"/>
-  <testcase name="verifyPrepaidInitiateSubmitCaseIndividually" classname="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" time="45.551"/>
-  <testcase name="verifyPrepaidAmountPayableValue" classname="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" time="6.209"/>
-  <testcase name="verifyPrepaidPaymentPendingCases" classname="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" time="7.101"/>
-  <testcase name="verifysubmittedForVerificationBucket" classname="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" time="7.274"/>
-  <testcase name="submittedCasesTrackerWipCases" classname="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" time="65.906"/>
-  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" time="15.432"/>
+  <testcase name="verifyiBridgeCatLoginDetails" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="7.453"/>
+  <testcase name="verifyBritishClientSignOffApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="10.297"/>
+  <testcase name="verifyInitiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="302.431"/>
+  <testcase name="verifyPendingSignOffBucket" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="18.965"/>
+  <testcase name="verifyBritishClientSignOffApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="13.201"/>
+  <testcase name="submitCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="11,801.616">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=101.0.4951.54)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.121.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.fSL6wT}, goog:chromeOptions: {debuggerAddress: localhost:45905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5f89bb1201eb4120e0414236a3a784ba&#10;*** Element info: {Using=tag name, value=input}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=101.0.4951.54)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.121.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.fSL6wT}, goog:chromeOptions: {debuggerAddress: localhost:45905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f89bb1201eb4120e0414236a3a784ba
+*** Element info: {Using=tag name, value=input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByTagName(RemoteWebDriver.java:396)
+	at org.openqa.selenium.By$ByTagName.findElements(By.java:312)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at com.iBridge.pageobject.SubmitCaseIndividuallyExtended.professionalReference(SubmitCaseIndividuallyExtended.java:253)
+	at com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03.submitCaseIndividuallyExtended(TC_SubmitCaseIndividuallyExtended_03.java:126)
+	at com.iBridge.testcases.TC_CatSignOffApplicable_01.submitCaseIndividuallyExtended(TC_CatSignOffApplicable_01.java:147)
+</failure>
+    <system-out><![CDATA[ INFO [main] (TC_CatSignOffApplicable_01.java:142)- iBridge Url is opened
+ INFO [main] (TC_CatSignOffApplicable_01.java:145)- Email and Password has Entered Successfully!
+enp.admin@authbridge.com
+Auth@123
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:30)- iBridge Url is opened
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:49)- Clicked on Side bar expand
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:53)- Clicked on Initiate Via Candidate
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:56)- Upload Individual's Authorization Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:72)- Candidate Information Setup Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:75)- Cv has been Uploaded Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:80)- Candidate Additional Information Setup Successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:85)- Candidate National Identity Details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:91)- Candidate Address setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:96)- Candidate Education details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:109)- Candidate Current Employment details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:119)- Candidate Previous Employment details Setup successfully!
+ INFO [main] (TC_SubmitCaseIndividuallyExtended_03.java:123)- Filled Education To Employment Gap and clicked On Submit Button!
+]]></system-out>
+  </testcase>
+  <testcase name="verifyBritishClientRouteToCandidateApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="candidateInitiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="routeToCandidateRaiseInsuffAndFulfil" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyrouteToCandidateApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyrouteToCandidateButtonPresentOrNot" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyBritishClientNidPassport" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNidPassportDropDown" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyBritishClientNidPassportAndPanCard" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNidVoterIdAndDrivingLicenseDropDown" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGapReasonApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGapReasonApplicableFormNotPresent" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGapReasonApplicableFormPresent" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEnpAdminLoginAccount" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGapReasonApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

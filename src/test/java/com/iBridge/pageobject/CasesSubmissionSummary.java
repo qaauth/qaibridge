@@ -325,7 +325,6 @@ public class CasesSubmissionSummary {
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmissionSubmitted));
 		clickOnSubmissionSubmitted.click();
 //		pendingSignOff.click();
-		Thread.sleep(2000);
 //		submit.click();
 //		Thread.sleep(2000);
 //		clickCheckBox.click();

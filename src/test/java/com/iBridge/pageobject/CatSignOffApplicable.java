@@ -286,8 +286,8 @@ public class CatSignOffApplicable {
 	
 
 	public void ibridgeCatLoginDetails(String username, String password) throws InterruptedException {
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(txtUserName));
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(txtUserName));
 		txtUserName.sendKeys(username);
 		txtPassword.sendKeys(password);
 		Thread.sleep(1000);

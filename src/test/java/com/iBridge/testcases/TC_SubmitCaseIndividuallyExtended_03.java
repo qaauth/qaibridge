@@ -123,7 +123,7 @@ public class TC_SubmitCaseIndividuallyExtended_03 extends BaseClass {
 		logger.info("Filled Education To Employment Gap and clicked On Submit Button!");
 
 		// PROFESSIONAL REFERENCE--Professional Reference Check
-		submitCaseInExtended.professionalReference("Krishna Kumar", "Senior QA", "8009744341", "krishnaKant@gmail.com",
+		submitCaseInExtended.professionalReference("Authbridge Private Limited","Krishna Kumar", "Senior QA", "8009744341", "krishnaKant@gmail.com",
 				"Abhishek Kumar", "Project Manager", "7042718794", "abhishekKumar@gmail.com");
 		logger.info("Professional Reference1 and Reference2 has Setup Successfully!");
 

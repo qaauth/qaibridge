@@ -831,8 +831,8 @@ public class CandidateLogin {
 			String enrollmentNo, String paercentage, String batchStartDate, String clkOnEndYear, String remark)
 			throws InterruptedException {
 		
-//		wait = new WebDriverWait(ldriver, 120);
-//		wait.until(ExpectedConditions.visibilityOf(selectQualificationDegree));
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(selectQualificationDegree));
 		Select degree = new Select(selectQualificationDegree);
 		degree.selectByIndex(2);
 		txtQualification.clear();
