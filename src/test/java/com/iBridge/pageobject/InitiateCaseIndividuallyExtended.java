@@ -251,8 +251,8 @@ public class InitiateCaseIndividuallyExtended {
 	public void clickUnCheckWiseSelect(String professionalRefe, String empCount, String indianDatabase,
 			String criminalRecord, String nationalIdentity, String educationVerify, String indianCourtLaw,
 			String creditDefault) throws InterruptedException {
-		txtProfessionalReferenceCheck.clear();
-		txtProfessionalReferenceCheck.sendKeys(professionalRefe);
+		//txtProfessionalReferenceCheck.clear();
+		//txtProfessionalReferenceCheck.sendKeys(professionalRefe);
 		txtPreviousEmploymentVerificationCount.clear();
 		txtPreviousEmploymentVerificationCount.sendKeys(empCount);
 		txtIndianDatabaseVerification.clear();
@@ -344,6 +344,9 @@ public class InitiateCaseIndividuallyExtended {
 		txtGapReason.sendKeys(gapReason);
 		clickOnSubmitGapBtn.click();
 		Thread.sleep(1000);
+		
+		//clickOnReferenceContinueBtn.click();
+		
 	}
 
 	// Professional Reference Check
@@ -502,6 +505,7 @@ public class InitiateCaseIndividuallyExtended {
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
 			Thread.sleep(2000);
+			
 			// Confirm- alert Ok Button
 			List<WebElement> tag12 = ldriver.findElements(By.tagName("button"));
 			for (int i = 0; i < tag12.size(); i++) {

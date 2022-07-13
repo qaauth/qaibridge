@@ -29,9 +29,9 @@ public class TC_SubmitCaseIndividuallyExtended_03 extends BaseClass {
 		driver.get(baseURL);
 		logger.info("iBridge Url is opened");
 
-		LoginPage login = new LoginPage(driver);
+//		LoginPage login = new LoginPage(driver);
 //		login.login(username, password);
-//		logger.info("Entered Username and password!");
+		logger.info("Entered Username and password!");
 
 		LoginPage loginPage = new LoginPage(driver);
 //		if (loginPage.verifyDashboardCaseSubmissionSummaryText().contains("CASE SUBMISSION SUMMARY")) {
@@ -123,9 +123,14 @@ public class TC_SubmitCaseIndividuallyExtended_03 extends BaseClass {
 		logger.info("Filled Education To Employment Gap and clicked On Submit Button!");
 
 		// PROFESSIONAL REFERENCE--Professional Reference Check
-		submitCaseInExtended.professionalReference("Authbridge Private Limited","Krishna Kumar", "Senior QA", "8009744341", "krishnaKant@gmail.com",
-				"Abhishek Kumar", "Project Manager", "7042718794", "abhishekKumar@gmail.com");
-		logger.info("Professional Reference1 and Reference2 has Setup Successfully!");
+		/*
+		 * submitCaseInExtended.professionalReference("Authbridge Private Limited"
+		 * ,"Krishna Kumar", "Senior QA", "8009744341", "krishnaKant@gmail.com",
+		 * "Abhishek Kumar", "Project Manager", "7042718794",
+		 * "abhishekKumar@gmail.com");
+		 * logger.info("Professional Reference1 and Reference2 has Setup Successfully!"
+		 * );
+		 */
 
 		if (submitCaseInExtended.verifyInitiateCaseThankYouMsg().contains("THANK YOU!")) {
 			Assert.assertTrue(true);

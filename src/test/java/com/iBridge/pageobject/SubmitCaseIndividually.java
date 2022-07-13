@@ -885,6 +885,16 @@ public class SubmitCaseIndividually {
 	@CacheLookup
 	WebElement clickOnEmploymentBtn;
 	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//button[@id='pacakgeSubmitForm']")
+	WebElement clickOnCasePreviewSubmitBtn;
+	
+	// Confirm--  All the details will be submitted and you will not be able to make changes later. Please review your form and submit
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Ok')]")
+	WebElement clickOnConfirmAlertOkBtn;
+
+	
 	//Education to Employment Gap
 	@FindBy(xpath = "/html/body/div[4]/div/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/div/div/form/div[3]/div/div/div/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div/div[2]/textarea")
 	@CacheLookup
@@ -1485,6 +1495,33 @@ public class SubmitCaseIndividually {
 		JavaScriptManuplator.javaScriptExecutor(clickOnEmploymentBtn, "arguments[0].click()",
 				ldriver);
 		Thread.sleep(2000);
+		
+		js = (JavascriptExecutor) ldriver;
+		js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
+		System.out.println("radhe");
+		
+//		List<WebElement> tag13 = ldriver.findElements(By.tagName("button"));
+//		for (int j = 0; j < tag13.size(); j++) {
+//			if (tag13.get(j).getAttribute("type").equals("submit")) {
+//				System.out.println("he");
+//				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+//				executor.executeScript("arguments[0].click();", tag13.get(j));
+//				System.out.println("hi");
+//				break;
+//			}}
+		
+		// Confirm- alert Ok Button
+		
+				List<WebElement> tag12 = ldriver.findElements(By.tagName("button"));
+				for (int i = 0; i < tag12.size(); i++) {
+					if (tag12.get(i).getAttribute("class").equals("btn btn-default")) {
+						System.out.println("hello");
+						JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+						executor.executeScript("arguments[0].click();", tag12.get(i));
+						System.out.println("hii");
+						break;
+					}
+				}
 		try {
 			txtGapReason.clear();
 			txtGapReason.sendKeys(gapReason);

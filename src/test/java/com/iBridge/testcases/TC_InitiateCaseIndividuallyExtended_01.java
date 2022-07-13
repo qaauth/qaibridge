@@ -204,9 +204,9 @@ public class TC_InitiateCaseIndividuallyExtended_01 extends BaseClass {
 		logger.info("Filled Education To Employment Gap and clicked On Submit Button!");
 
 		// PROFESSIONAL REFERENCE--Professional Reference Check
-		caseInExtended.professionalReference("Authbridge Private Limited", "Krishna Kumar", "Senior QA", "8009744341", "krishnaKant@gmail.com",
+		/*caseInExtended.professionalReference("Authbridge Private Limited", "Krishna Kumar", "Senior QA", "8009744341", "krishnaKant@gmail.com",
 				"Abhishek Kumar", "Project Manager", "7042718794", "abhishekKumar@gmail.com");
-		logger.info("Professional Reference1 and Reference2 has Setup Successfully!");
+		logger.info("Professional Reference1 and Reference2 has Setup Successfully!");*/
 
 		InitiateCaseIndividuallyExtended thankYouMsg = new InitiateCaseIndividuallyExtended(driver);
 //		if (thankYouMsg.verifyInitiateCaseThankYouMsg().contains("THANK YOU!")) {
@@ -218,7 +218,7 @@ public class TC_InitiateCaseIndividuallyExtended_01 extends BaseClass {
 //			Assert.assertTrue(false);
 //		}
 
-		caseInExtended.CandidteLogout();
+//		caseInExtended.CandidteLogout();
 		logger.info("Candidate logout Successfully!");
 	}
 

@@ -44,8 +44,8 @@ public class LoginPage {
 
 	// Action Methods for the Login
 	public void login(String uname, String pwd) {
-//		wait = new WebDriverWait(ldriver, 120);
-//		wait.until(ExpectedConditions.visibilityOf(txtUserName));
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(txtUserName));
 		txtUserName.sendKeys(uname);
 		txtPassword.sendKeys(pwd);
 		btnLogin.click();

@@ -71,7 +71,7 @@ public class TC_CandidateLogin_04 extends BaseClass {
 				"Preparation for the entrance examination");
 		logger.info("Candidate Previous Employment details Setup successfully!");
 
-		candidateLogin.candidateCasePreview();
+		//candidateLogin.candidateCasePreview();
 		if (driver.getPageSource().contains("Thank you.")) {
 			Assert.assertTrue(true);
 			logger.info("Candidate Case Preview details Verify successfully!");
