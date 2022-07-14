@@ -647,7 +647,7 @@ public class CandidateLogin {
 	
 	// Confirm--  All the details will be submitted and you will not be able to make changes later. Please review your form and submit
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Ok')]")
+	@FindBy(how = How.XPATH, using = "(//*[@class='btn btn-default'])[1]")
 	WebElement clickOnConfirmAlertOkBtn;
 
 	// Education to Employment Gap
@@ -687,7 +687,9 @@ public class CandidateLogin {
 
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
-		Thread.sleep(2000);
+		
+		WebDriverWait wait =new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(verifyText));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
 		Thread.sleep(5000);
@@ -801,7 +803,7 @@ public class CandidateLogin {
 		} catch (StaleElementReferenceException e) {
 			selectWithinIndia.click();
 		}
-		txtHouseNo.clear();
+//		txtHouseNo.clear();
 		txtHouseNo.sendKeys(houseNo);
 		txtLocality.clear();
 		txtLocality.sendKeys(locality);
@@ -1080,7 +1082,8 @@ public class CandidateLogin {
 		JavaScriptManuplator.javaScriptExecutor(checkDocumentLater, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnEmploymentBtn, "arguments[0].click()", ldriver);
-		Thread.sleep(5000);
+		System.out.println("employement button click");
+		Thread.sleep(3000);
 //		try {
 //			JavaScriptManuplator.javaScriptExecutor(clickOnCasePreviewSubmitBtn, "arguments[0].scrollIntoView(true);", ldriver);
 //			wait = new WebDriverWait(ldriver,60);
@@ -1111,7 +1114,7 @@ public class CandidateLogin {
 		List<WebElement> tag13 = ldriver.findElements(By.tagName("button"));
 		for (int j = 0; j < tag13.size(); j++) {
 			if (tag13.get(j).getAttribute("name").equals("continue")) {
-				System.out.println("he");
+				System.out.println("J inde is being printed here:"+ j);
 				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
 				executor.executeScript("arguments[0].click();", tag13.get(j));
 				System.out.println("hi");
@@ -1119,24 +1122,44 @@ public class CandidateLogin {
 			}}
 		
 		// Confirm- alert Ok Button
+//		Thread.sleep(4000);
+//		System.out.println("ok start");
+//		ldriver.findElement(By.cssSelector("clickOnConfirmAlertOkBtn");
+//		System.out.println("ok end");
 		
+		Thread.sleep(5000);
 		List<WebElement> tag14 = ldriver.findElements(By.tagName("button"));
-		for (int i = 0; i < tag14.size(); i++) {
+		tag14.get(15).click();
+		//JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+		//executor.executeScript("arguments[0].click();", tag14.get(15));
+		System.out.println("alert box has been click");
+		/*for (int i = 0; i < tag14.size(); i++) {
 			if (tag14.get(i).getAttribute("class").equals("btn btn-default")) {
-				System.out.println("hello");
+				System.out.println("Index for I :"+i);
 				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
 				executor.executeScript("arguments[0].click();", tag14.get(i));
 				System.out.println("hii");
 				break;
-			}
-		}
-
+//				if (tag14.get(i).getText().contentEquals("Ok")) {
+//				
+//				}
+			} 
+		}*/
+		
+//		Thread.sleep(3000);
 //		clickOnConfirmAlertOkBtn.click();
+//		System.out.println("okbutton");
 //		JavascriptExecutor js =(JavascriptExecutor)ldriver;
 //		js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
 //		System.out.println("fgi");
 //		JavaScriptManuplator.javaScriptExecutor(clickOnConfirmAlertOkBtn, "arguments[0].click()", ldriver);
 		
+//		System.out.println("Action start");
+//		Actions action = new Actions(ldriver);
+//		//action.contextClick(clickOnConfirmAlertOkBtn).build().perform();
+//		action.click(clickOnConfirmAlertOkBtn).build().perform();
+//		//action.moveToElement(clickOnConfirmAlertOkBtn).click().perform();
+//		System.out.println("Action end");
 		
 //		try {
 //			txtGapReason.clear();

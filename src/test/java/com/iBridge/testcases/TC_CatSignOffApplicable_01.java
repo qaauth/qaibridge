@@ -208,8 +208,8 @@ public class TC_CatSignOffApplicable_01 extends BaseClass {
 			throws InterruptedException, IOException, ParseException, AWTException {
 		driver.get(baseURL);
 		logger.info("iBridge Url is opened");
-		LoginPage loginPage = new LoginPage(driver);
-		loginPage.login(username, password);
+//		LoginPage loginPage = new LoginPage(driver);
+//		loginPage.login(username, password);
 		logger.info("Email and Password has Entered Successfully!");
 		TC_InitiateCaseIndividuallyExtended_01 caseIndividuallyExtended = new TC_InitiateCaseIndividuallyExtended_01();
 		caseIndividuallyExtended.initiateCaseIndividuallyExtended();

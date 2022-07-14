@@ -526,6 +526,7 @@ public class InsufficientiBridge extends BaseClass{
 
 	// Verify Cost Approval Case Present Or Not in On Hold Bucket.
 	public void verifyCostApprovalCasePresentOrNot(String arsNumber) throws InterruptedException {
+		
 		clickOnSidebarExpandSub.click();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmittedCasesTracker));
@@ -543,6 +544,7 @@ public class InsufficientiBridge extends BaseClass{
 
 	// Verify Cost Approval Case Present Or Not in On Hold Bucket.
 	public void verifyOnHoldCasePresentOrNot(String arsNumber) throws InterruptedException {
+		
 		clickOnSidebarExpandSub.click();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmittedCasesTracker));
@@ -559,6 +561,7 @@ public class InsufficientiBridge extends BaseClass{
 	}
 
 	public String verifyOnHoldCaseApprovedMsg() {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyTosatApprovedMsg));
 		return verifyTosatApprovedMsg.getText();
@@ -566,6 +569,7 @@ public class InsufficientiBridge extends BaseClass{
 
 	// Check(s) Routed to the candidate
 	public void checkRoutedToCandidate() throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnRouteToCandidateBtn));
 		js = (JavascriptExecutor) ldriver;
@@ -593,6 +597,7 @@ public class InsufficientiBridge extends BaseClass{
 
 	// Check(s) routed to the candidate successfully.
 	public String verifyRoutedSuccessfulyMsg() {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyRoutedSuccessfulyMessage));
 		return verifyRoutedSuccessfulyMessage.getText();
@@ -600,6 +605,7 @@ public class InsufficientiBridge extends BaseClass{
 
 	// Enter Public Mailinator Inbox - Using Mailinator fulfill Insufficient.
 	public void verifyMailinatorMailSubjectName() throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnBackgroundCheckForBritishTelecomBtn));
 		js = (JavascriptExecutor) ldriver;
@@ -608,12 +614,14 @@ public class InsufficientiBridge extends BaseClass{
 	}
 
 	public String verifyMailinatorMailSubject() {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyBackgroundCheckForBritishTelecomBtn));
 		return verifyBackgroundCheckForBritishTelecomBtn.getText();
 	}
 
 	public void getRouteToCandidateUserNameAndPassword() {
+		
 		ldriver.switchTo().frame(ldriver.findElement(By.tagName("iframe")));
 		List<WebElement> lst = ldriver.findElements(By.tagName("p"));
 		String[] usernameAndPassword = new String[2];
@@ -641,6 +649,7 @@ public class InsufficientiBridge extends BaseClass{
 	// INSUFF DETAILS -- Profile Preview
 	public void fullfilInsuffRouteToCandidate(String insuffComments, String insuffCommentsDb)
 			throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyProfilePreview));
 		txtAddCommentsInsuff.sendKeys(insuffComments);
@@ -653,7 +662,7 @@ public class InsufficientiBridge extends BaseClass{
 		indianDatabaseVerification.click();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(txtAddCommentsIndianDb));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		txtAddCommentsIndianDb.sendKeys(insuffCommentsDb);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", clickOnIndianDbSubmitBtn);
@@ -672,6 +681,7 @@ public class InsufficientiBridge extends BaseClass{
 	}
 
 	public String verifyWelcomePleaseLoginText() {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyWelcomePleaseLoginText));
 		return verifyWelcomePleaseLoginText.getText();
@@ -679,6 +689,7 @@ public class InsufficientiBridge extends BaseClass{
 
 	// Route To candidate has filled by all insuff details.
 	public String verifyPanNoVerificationSubmit() {
+		
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyPanNoVerificationSubmitText));
 		return verifyPanNoVerificationSubmitText.getText();

@@ -1204,19 +1204,19 @@ public class InsufficientBridge {
 		js.executeScript("arguments[0].click()", clickOnPreviousEmploymentAsDQCDone);
 
 		// Professional Reference Check --Checks Summary
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", clickOnProfessionalRefQcDoneImg);
-		wait = new WebDriverWait(ldriver, 360);
-		wait.until(ExpectedConditions.visibilityOf(clickOnProfessionalRefQcDoneImg));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnProfessionalRefQcDoneImg);
-
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", clickOnProfessionalRefAsDQCDone);
-		wait = new WebDriverWait(ldriver, 360);
-		wait.until(ExpectedConditions.visibilityOf(clickOnProfessionalRefAsDQCDone));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnProfessionalRefAsDQCDone);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnProfessionalRefQcDoneImg);
+//		wait = new WebDriverWait(ldriver, 360);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnProfessionalRefQcDoneImg));
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnProfessionalRefQcDoneImg);
+//
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnProfessionalRefAsDQCDone);
+//		wait = new WebDriverWait(ldriver, 360);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnProfessionalRefAsDQCDone));
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnProfessionalRefAsDQCDone);
 
 		// Case QC - Review --Checks Summary-- Case level Comments (if any)
 		js = (JavascriptExecutor) ldriver;

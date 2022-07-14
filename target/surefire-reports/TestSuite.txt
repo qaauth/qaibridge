@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 1, Errors: 0, Skipped: 14, Time elapsed: 570.944 sec <<< FAILURE! - in TestSuite
-submitCaseIndividuallyExtended(com.iBridge.testcases.TC_CatSignOffApplicable_01)  Time elapsed: 287.425 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[1]/div/div/div/div[1]/div/div[2]/a[2]"}
+Tests run: 20, Failures: 1, Errors: 0, Skipped: 11, Time elapsed: 1,251.161 sec <<< FAILURE! - in TestSuite
+routeToCandidateRaiseInsuffAndFulfil(com.iBridge.testcases.TC_CatSignOffApplicable_01)  Time elapsed: 269.888 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[2]/div/textarea"}
   (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.77.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.30.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.uXDtUB}, goog:chromeOptions: {debuggerAddress: localhost:38595}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 176a5bdfc53a6b7d7680573a5f2df16f
-*** Element info: {Using=xpath, value=/html/body/div[4]/div[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[3]/div/div[2]/div/div[1]/div/div/div/div[1]/div/div[2]/a[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.dEfyxF}, goog:chromeOptions: {debuggerAddress: localhost:37385}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ae92ae074556aa675857f52033711f81
+*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[2]/div/div[1]/div[2]/div/textarea}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -28,8 +28,8 @@ Session ID: 176a5bdfc53a6b7d7680573a5f2df16f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.CasesSubmissionSummary.submittedForVerification(CasesSubmissionSummary.java:328)
-	at com.iBridge.testcases.TC_SubmitCaseIndividuallyExtended_03.submittedForVerification(TC_SubmitCaseIndividuallyExtended_03.java:151)
-	at com.iBridge.testcases.TC_CatSignOffApplicable_01.submitCaseIndividuallyExtended(TC_CatSignOffApplicable_01.java:150)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at com.iBridge.pageobject.InsufficientiBridge.fullfilInsuffRouteToCandidate(InsufficientiBridge.java:655)
+	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyRouteToCandidateDetails(TC_InsufficientBridge_01.java:354)
+	at com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil(TC_CatSignOffApplicable_01.java:265)
 
