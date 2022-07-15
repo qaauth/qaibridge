@@ -911,7 +911,8 @@ public class SubmitCaseIndividually {
 
 
 	// Action Methods for the Login
-	public void login(String uname, String pwd) {
+	public void login(String uname, String pwd) throws InterruptedException {
+		Thread.sleep(2000);
 		txtUserName.sendKeys(uname);
 		txtPassword.sendKeys(pwd);
 		btnLogin.click();

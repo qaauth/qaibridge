@@ -4,34 +4,21 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge18(failed)">
+  <test thread-count="1" verbose="0" name="iBridge17(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01">
+      <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02">
         <methods>
-          <include name="verifyBritishClientNidPassportAndPanCard"/>
-          <include name="verifyEnpAdminLoginAccount"/>
-          <include name="verifyGapReasonApplicableNo"/>
-          <include name="verifyNidVoterIdAndDrivingLicenseDropDown"/>
-          <include name="verifyPendingSignOffBucket"/>
-          <include name="verifyiBridgeCatLoginDetails"/>
-          <include name="submitCaseIndividuallyExtended"/>
-          <include name="verifyBritishClientSignOffApplicableYes"/>
-          <include name="verifyBritishClientSignOffApplicableNo"/>
-          <include name="verifyInitiateCaseIndividuallyExtended"/>
-          <include name="verifyGapReasonApplicableFormPresent"/>
-          <include name="routeToCandidateRaiseInsuffAndFulfil"/>
-          <include name="verifyrouteToCandidateApplicableNo"/>
-          <include name="candidateInitiateCaseIndividuallyExtended"/>
-          <include name="verifyGapReasonApplicableYes"/>
-          <include name="verifyGapReasonApplicableFormNotPresent"/>
+          <include name="verifyPrepaidPaymentPendingCases"/>
           <include name="setup"/>
-          <include name="verifyBritishClientNidPassport"/>
-          <include name="verifyBritishClientRouteToCandidateApplicableYes"/>
-          <include name="verifyrouteToCandidateButtonPresentOrNot"/>
-          <include name="verifyNidPassportDropDown"/>
+          <include name="verifyPrepaidAmountPayableValue"/>
+          <include name="submittedCasesTrackerWipCases"/>
+          <include name="verifyPrepaidInitiateSubmitCaseIndividually"/>
+          <include name="verifyEnpAdminLoginAccount"/>
+          <include name="verifysubmittedForVerificationBucket"/>
+          <include name="searchClientArsNoCaseList"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_CatSignOffApplicable_01 -->
+      </class> <!-- com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02 -->
     </classes>
-  </test> <!-- iBridge18(failed) -->
+  </test> <!-- iBridge17(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

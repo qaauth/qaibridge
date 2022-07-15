@@ -139,7 +139,7 @@ public class SubmitCaseInBulkExcelUpload {
 	WebElement clickOnSubmissionSubmitted;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[1]/div/div/ul/li[4]/ul/li[4]/div/a")
+	@FindBy(how = How.XPATH, using = "//*[@title='Submitted for Verification']")
 	WebElement clickOnsubmitForVerification;
 
 

@@ -1118,3 +1118,1686 @@
 2022-07-14 18:14:49,973 [main] INFO iBridge - Background Check for British Telecom Additional information required has successfully.
 2022-07-14 18:14:51,209 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
 2022-07-14 18:15:53,672 [main] INFO iBridge - Route To Candidate has logged in Successully!
+2022-07-14 22:23:27,589 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:23:30,178 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-14 22:23:43,181 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-14 22:24:04,350 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-14 22:24:04,406 [main] INFO iBridge - Client updated has Successfully!
+2022-07-14 22:24:10,195 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-14 22:24:12,027 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:24:12,472 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 22:24:48,334 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-14 22:25:00,234 [main] INFO iBridge - Clicked on bar expand
+2022-07-14 22:25:08,555 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-14 22:25:11,558 [main] INFO iBridge - Entered Candidated information!
+2022-07-14 22:25:15,634 [main] INFO iBridge - Uploaded cv document!
+2022-07-14 22:25:31,841 [main] INFO iBridge - Entered Additional Informations!
+2022-07-14 22:26:06,162 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-14 22:26:07,003 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-14 22:26:07,004 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-14 22:26:40,173 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-14 22:26:44,173 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-14 22:26:45,273 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-14 22:27:14,838 [main] INFO iBridge - Get Username and Password!
+2022-07-14 22:27:14,838 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-14 22:27:31,220 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:27:55,488 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-14 22:28:31,039 [main] INFO iBridge - Entered User Id and Password!
+2022-07-14 22:28:31,095 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-14 22:28:54,260 [main] INFO iBridge - Digital signature successfully!
+2022-07-14 22:28:56,165 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-14 22:32:31,391 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:32:33,785 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-14 22:33:23,420 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-14 22:33:36,709 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-14 22:33:36,760 [main] INFO iBridge - Client updated has Successfully!
+2022-07-14 22:33:43,412 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-14 22:33:45,546 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:33:45,992 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 22:34:49,404 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-14 22:35:00,432 [main] INFO iBridge - Clicked on bar expand
+2022-07-14 22:35:11,737 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-14 22:35:14,731 [main] INFO iBridge - Entered Candidated information!
+2022-07-14 22:35:18,786 [main] INFO iBridge - Uploaded cv document!
+2022-07-14 22:35:35,152 [main] INFO iBridge - Entered Additional Informations!
+2022-07-14 22:36:05,174 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-14 22:36:06,005 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-14 22:36:06,007 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-14 22:36:13,146 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-14 22:36:15,185 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-14 22:36:16,271 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-14 22:36:17,124 [main] INFO iBridge - Get Username and Password!
+2022-07-14 22:36:17,124 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-14 22:36:24,327 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:36:28,465 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-14 22:36:34,016 [main] INFO iBridge - Entered User Id and Password!
+2022-07-14 22:36:34,115 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-14 22:36:51,320 [main] INFO iBridge - Digital signature successfully!
+2022-07-14 22:36:53,115 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-14 22:38:03,662 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-14 22:38:29,020 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-14 22:38:45,620 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-14 22:39:11,816 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-14 22:40:09,818 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-14 22:40:09,819 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-14 22:40:09,820 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-14 22:40:09,820 [main] INFO iBridge - Candidate account Login and full Fill all details of the candidate of the case.
+2022-07-14 22:40:11,007 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:40:16,489 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 22:40:51,484 [main] INFO iBridge - Pending Sign-Off Bucket has verified Successfully!
+2022-07-14 22:40:51,545 [main] INFO iBridge - Candidate First Name 'Pending Sign-Off' has Verified Successfully!
+2022-07-14 22:40:59,072 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-14 22:41:01,077 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:41:03,403 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-14 22:41:11,736 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-14 22:41:11,787 [main] INFO iBridge - Client updated has Successfully!
+2022-07-14 22:41:17,133 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-14 22:41:19,089 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:41:19,400 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 22:41:26,018 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:41:26,018 [main] INFO iBridge - Entered Username and password!
+2022-07-14 22:41:40,198 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-14 22:41:43,245 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-14 22:42:41,346 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-14 22:42:44,911 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-14 22:42:45,961 [main] INFO iBridge - Cv has been Uploaded Successfully!
+2022-07-14 22:42:53,385 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-14 22:45:23,352 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-14 22:45:52,775 [main] INFO iBridge - Candidate Address setup successfully!
+2022-07-14 22:46:00,023 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-14 22:47:36,101 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-14 22:49:32,326 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-14 22:49:32,326 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-14 22:49:32,428 [main] INFO iBridge - Candidate profile has been submitted for verification.!
+2022-07-14 22:49:32,428 [main] INFO iBridge - Submit Case Individually Initiated has Successfully!
+2022-07-14 22:49:46,540 [main] INFO iBridge - Candidate First Name 'Case Submitted For Verification list' has Verified Successfully!
+2022-07-14 22:49:49,250 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-14 22:49:50,170 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:49:52,565 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-14 22:50:02,102 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-14 22:50:02,153 [main] INFO iBridge - Client updated has Successfully!
+2022-07-14 22:50:07,072 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-14 22:50:08,785 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:50:11,132 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-14 22:50:20,218 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-14 22:50:20,290 [main] INFO iBridge - Client updated has Successfully!
+2022-07-14 22:50:25,033 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-14 22:50:26,217 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:50:26,218 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 22:50:27,671 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:50:28,022 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 22:50:35,020 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-14 22:50:40,917 [main] INFO iBridge - Clicked on bar expand
+2022-07-14 22:50:48,826 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-14 22:50:51,758 [main] INFO iBridge - Entered Candidated information!
+2022-07-14 22:50:55,813 [main] INFO iBridge - Uploaded cv document!
+2022-07-14 22:51:11,902 [main] INFO iBridge - Entered Additional Informations!
+2022-07-14 22:51:48,622 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-14 22:51:49,383 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-14 22:51:49,384 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-14 22:52:08,710 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-14 22:52:08,711 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-14 22:52:10,491 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-14 22:52:13,935 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-14 22:52:15,020 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-14 22:52:15,778 [main] INFO iBridge - Get Username and Password!
+2022-07-14 22:52:15,778 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-14 22:52:24,104 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:52:29,609 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-14 22:52:32,986 [main] INFO iBridge - Entered User Id and Password!
+2022-07-14 22:52:33,044 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-14 22:52:50,182 [main] INFO iBridge - Digital signature successfully!
+2022-07-14 22:52:52,055 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-14 22:54:50,321 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-14 22:55:10,347 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-14 22:55:23,843 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-14 22:55:49,972 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-14 22:57:28,964 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-14 22:57:28,964 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-14 22:57:28,965 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-14 22:57:28,966 [main] INFO iBridge - Initiate Case Individually Extended has Verified successfully!
+2022-07-14 22:57:30,920 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 22:57:36,248 [main] INFO iBridge - BT Candidate Account has logged Successfully !
+2022-07-14 22:57:42,837 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-14 22:58:06,686 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-14 22:58:06,687 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-14 23:00:45,211 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 23:00:47,603 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-14 23:00:58,084 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-14 23:01:05,437 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-14 23:01:05,492 [main] INFO iBridge - Client updated has Successfully!
+2022-07-14 23:01:11,480 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-14 23:01:14,943 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 23:01:15,373 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 23:02:05,287 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-14 23:02:16,778 [main] INFO iBridge - Clicked on bar expand
+2022-07-14 23:02:27,014 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-14 23:02:30,001 [main] INFO iBridge - Entered Candidated information!
+2022-07-14 23:02:34,056 [main] INFO iBridge - Uploaded cv document!
+2022-07-14 23:02:50,200 [main] INFO iBridge - Entered Additional Informations!
+2022-07-14 23:03:15,044 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-14 23:03:15,876 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-14 23:03:15,877 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-14 23:03:33,148 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-14 23:03:35,894 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-14 23:03:36,992 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-14 23:03:37,851 [main] INFO iBridge - Get Username and Password!
+2022-07-14 23:03:37,851 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-14 23:03:45,133 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 23:03:48,688 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-14 23:03:53,459 [main] INFO iBridge - Entered User Id and Password!
+2022-07-14 23:03:53,511 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-14 23:04:10,249 [main] INFO iBridge - Digital signature successfully!
+2022-07-14 23:04:12,025 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-14 23:05:12,262 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-14 23:05:31,468 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-14 23:05:45,885 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-14 23:06:12,121 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-14 23:07:07,721 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-14 23:07:07,721 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-14 23:07:07,722 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-14 23:07:07,723 [main] INFO iBridge - Candidate account Login and full Fill all details of the candidate of the case.
+2022-07-14 23:07:09,199 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 23:07:14,408 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 23:07:44,113 [main] INFO iBridge - Pending Sign-Off Bucket has verified Successfully!
+2022-07-14 23:07:44,164 [main] INFO iBridge - Candidate First Name 'Pending Sign-Off' has Verified Successfully!
+2022-07-14 23:07:48,102 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-14 23:07:50,171 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 23:07:53,139 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-14 23:08:03,747 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-14 23:08:03,797 [main] INFO iBridge - Client updated has Successfully!
+2022-07-14 23:08:09,238 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-14 23:08:11,112 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 23:08:11,430 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-14 23:08:16,922 [main] INFO iBridge - iBridge Url is opened
+2022-07-14 23:08:16,923 [main] INFO iBridge - Entered Username and password!
+2022-07-14 23:08:30,087 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-14 23:08:33,287 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-14 23:09:07,447 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-14 23:09:10,778 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-14 23:09:11,825 [main] INFO iBridge - Cv has been Uploaded Successfully!
+2022-07-14 23:09:21,305 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-14 23:10:32,372 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-14 23:10:55,504 [main] INFO iBridge - Candidate Address setup successfully!
+2022-07-14 23:11:02,526 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 09:17:55,633 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:17:58,137 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:18:00,122 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 09:18:04,833 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:18:04,881 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:18:09,379 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:18:10,255 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:18:10,778 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:18:16,594 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 09:18:21,305 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 09:18:26,716 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 09:18:29,807 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 09:18:33,862 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 09:18:50,543 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 09:19:07,677 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 09:19:08,464 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 09:19:08,466 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 09:19:11,202 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 09:19:11,924 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 09:19:13,098 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 09:19:14,047 [main] INFO iBridge - Get Username and Password!
+2022-07-15 09:19:14,048 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 09:19:18,039 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:19:21,151 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 09:19:23,846 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 09:19:23,917 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 09:19:38,283 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 09:19:40,137 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 09:20:07,800 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 09:20:25,279 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 09:20:34,051 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 09:21:00,338 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 09:21:47,499 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 09:21:47,501 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 09:21:47,503 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 09:21:47,504 [main] INFO iBridge - Candidate account Login and full Fill all details of the candidate of the case.
+2022-07-15 09:21:48,177 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:21:52,203 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:22:03,473 [main] INFO iBridge - Pending Sign-Off Bucket has verified Successfully!
+2022-07-15 09:22:03,523 [main] INFO iBridge - Candidate First Name 'Pending Sign-Off' has Verified Successfully!
+2022-07-15 09:22:05,829 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 09:22:06,721 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:22:09,139 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:22:14,292 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:22:14,344 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:22:18,737 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:22:19,940 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:22:20,355 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:22:24,228 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:22:24,229 [main] INFO iBridge - Entered Username and password!
+2022-07-15 09:22:29,927 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-15 09:22:33,118 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 09:22:48,206 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 09:22:51,977 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 09:22:53,028 [main] INFO iBridge - Cv has been Uploaded Successfully!
+2022-07-15 09:23:00,720 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-15 09:23:30,028 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 09:23:47,400 [main] INFO iBridge - Candidate Address setup successfully!
+2022-07-15 09:23:59,191 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 09:24:25,627 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 09:26:06,016 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 09:26:06,016 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 09:26:06,116 [main] INFO iBridge - Candidate profile has been submitted for verification.!
+2022-07-15 09:26:06,120 [main] INFO iBridge - Submit Case Individually Initiated has Successfully!
+2022-07-15 09:26:15,286 [main] INFO iBridge - Candidate First Name 'Case Submitted For Verification list' has Verified Successfully!
+2022-07-15 09:26:18,168 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 09:26:19,156 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:26:21,486 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:26:26,259 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:26:26,311 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:26:31,249 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:26:32,191 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:26:34,520 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:26:39,264 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:26:39,317 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:26:44,208 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:26:45,115 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:26:45,115 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:26:46,234 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:26:46,614 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:26:49,723 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 09:26:55,183 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 09:27:00,213 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 09:27:03,046 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 09:27:07,098 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 09:27:25,310 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 09:27:38,692 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 09:27:39,470 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 09:27:39,471 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 09:27:47,610 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 09:27:47,611 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 09:27:49,239 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 09:27:50,120 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 09:27:51,209 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 09:27:51,915 [main] INFO iBridge - Get Username and Password!
+2022-07-15 09:27:51,915 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 09:27:54,689 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:27:59,238 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 09:28:08,044 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 09:28:08,086 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 09:28:23,189 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 09:28:24,875 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 09:30:59,367 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:31:02,067 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:31:03,680 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 09:31:08,388 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:31:08,436 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:31:12,938 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:31:14,283 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:31:14,707 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:31:21,416 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 09:31:25,316 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 09:31:30,764 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 09:31:34,084 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 09:31:38,146 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 09:31:54,955 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 09:32:12,488 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 09:32:13,387 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 09:32:13,389 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 09:32:15,371 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 09:32:16,200 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 09:32:17,325 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 09:32:18,220 [main] INFO iBridge - Get Username and Password!
+2022-07-15 09:32:18,220 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 09:32:21,345 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:32:24,156 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 09:32:26,295 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 09:32:26,404 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 09:32:41,053 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 09:32:43,084 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 09:33:10,540 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 09:33:28,123 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 09:33:38,041 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 09:34:04,334 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 09:34:50,486 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 09:34:50,486 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 09:34:50,489 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 09:34:50,489 [main] INFO iBridge - Candidate account Login and full Fill all details of the candidate of the case.
+2022-07-15 09:34:51,366 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:34:55,286 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:35:08,469 [main] INFO iBridge - Pending Sign-Off Bucket has verified Successfully!
+2022-07-15 09:35:08,531 [main] INFO iBridge - Candidate First Name 'Pending Sign-Off' has Verified Successfully!
+2022-07-15 09:35:10,725 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 09:35:11,732 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:35:14,133 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:35:19,263 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:35:19,310 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:35:23,748 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:35:24,625 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:35:25,068 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:35:28,787 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:35:28,788 [main] INFO iBridge - Entered Username and password!
+2022-07-15 09:35:33,333 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-15 09:35:36,677 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 09:35:50,873 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 09:35:54,585 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 09:35:55,633 [main] INFO iBridge - Cv has been Uploaded Successfully!
+2022-07-15 09:36:03,486 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-15 09:36:28,797 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 09:36:46,061 [main] INFO iBridge - Candidate Address setup successfully!
+2022-07-15 09:36:57,566 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 09:37:24,015 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 09:39:03,778 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 09:39:03,778 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 09:39:03,873 [main] INFO iBridge - Candidate profile has been submitted for verification.!
+2022-07-15 09:39:03,874 [main] INFO iBridge - Submit Case Individually Initiated has Successfully!
+2022-07-15 09:39:14,040 [main] INFO iBridge - Candidate First Name 'Case Submitted For Verification list' has Verified Successfully!
+2022-07-15 09:39:16,451 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 09:39:17,461 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:39:19,882 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:39:24,763 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:39:24,814 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:39:29,182 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:39:30,425 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:39:33,244 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 09:39:38,931 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 09:39:38,980 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 09:39:43,396 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 09:39:44,170 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:39:44,170 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:39:44,898 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:39:45,297 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 09:39:48,935 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 09:39:52,208 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 09:40:07,909 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 09:40:11,157 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 09:40:15,227 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 09:40:31,123 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 09:40:45,860 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 09:40:46,610 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 09:40:46,611 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 09:40:55,538 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 09:40:55,538 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 09:40:56,593 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 09:40:57,133 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 09:40:58,228 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 09:40:59,051 [main] INFO iBridge - Get Username and Password!
+2022-07-15 09:40:59,051 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 09:41:02,230 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:41:05,259 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 09:41:07,681 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 09:41:07,730 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 09:41:22,535 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 09:41:24,253 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 09:41:51,892 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 09:42:09,403 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 09:42:19,948 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 09:42:46,258 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 09:43:34,255 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 09:43:34,256 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 09:43:34,256 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 09:43:34,257 [main] INFO iBridge - Initiate Case Individually Extended has Verified successfully!
+2022-07-15 09:43:34,975 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:43:39,211 [main] INFO iBridge - BT Candidate Account has logged Successfully !
+2022-07-15 09:43:43,145 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 09:43:52,380 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 09:43:52,381 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 09:43:58,194 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 09:43:58,194 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 09:44:00,974 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 09:44:01,351 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 09:44:12,455 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 09:44:12,501 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 09:44:12,502 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 09:45:00,127 [main] INFO iBridge - Select Docs Qc Allocator has Successfully!
+2022-07-15 09:45:00,127 [main] INFO iBridge - Super admin have done Docs Qc Allocator Successfully!
+2022-07-15 09:45:00,178 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 09:45:00,178 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 09:46:36,778 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 09:46:36,779 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 09:46:52,223 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 09:46:52,223 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 09:46:53,590 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 09:47:20,590 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 09:47:20,591 [main] INFO iBridge - Check is successfully marked as Insufficient.!
+2022-07-15 09:47:25,716 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:47:25,717 [main] INFO iBridge - Entered Username and password!
+2022-07-15 09:47:34,056 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 09:47:34,057 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 09:47:35,148 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 09:47:35,149 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 09:47:47,156 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 09:47:47,157 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 09:47:50,442 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:47:50,442 [main] INFO iBridge - Entered Username and password!
+2022-07-15 09:47:58,133 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 09:47:58,133 [main] INFO iBridge - Pending - Referred Back text has verified successfully.
+2022-07-15 09:47:59,331 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 09:48:18,558 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 09:48:18,558 [main] INFO iBridge - Check is successfully marked as Insufficient.!
+2022-07-15 09:48:22,049 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:48:22,050 [main] INFO iBridge - Entered Username and password!
+2022-07-15 09:48:31,144 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 09:48:31,144 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 09:48:32,324 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 09:48:32,324 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 09:48:46,066 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 09:48:46,066 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 09:48:49,227 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:48:49,228 [main] INFO iBridge - Entered Username and password!
+2022-07-15 09:48:58,383 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 09:48:58,383 [main] INFO iBridge - Fulfilled - Referred Back text has got successfully.
+2022-07-15 09:49:02,957 [main] INFO iBridge - Check(s) Routed to the candidate!
+2022-07-15 09:49:09,734 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 09:49:11,770 [main] INFO iBridge - BT account has logged out successfully!
+2022-07-15 09:49:11,771 [main] INFO iBridge - Check(s) routed to the candidate has successfully.
+2022-07-15 09:49:13,384 [main] INFO iBridge - Mailinator Mail Url is opened Successfully!
+2022-07-15 09:49:16,095 [main] INFO iBridge - Candidate malinator mail, Username and Password has verified Successfully!
+2022-07-15 09:49:16,620 [main] INFO iBridge - Route To candidate userName and password has got successfully!
+2022-07-15 09:49:16,620 [main] INFO iBridge - Background Check for British Telecom Additional information required has successfully.
+2022-07-15 09:49:17,731 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 09:50:20,307 [main] INFO iBridge - Route To Candidate has logged in Successully!
+2022-07-15 09:51:01,260 [main] INFO iBridge - Route to candidate insuff details have filled Successfully!
+2022-07-15 09:51:01,260 [main] INFO iBridge - Welcome! Please login to your account has got successfully!
+2022-07-15 10:41:36,422 [main] INFO iBridge - Url is opened
+2022-07-15 10:41:37,369 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:41:45,994 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 10:42:25,520 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:42:26,165 [main] INFO iBridge - Entered email and Password!
+2022-07-15 10:42:37,576 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 10:42:42,555 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 10:42:48,839 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 10:42:50,775 [main] INFO iBridge - Added Candidate information mobile number and Date of Birth!
+2022-07-15 10:42:51,020 [main] INFO iBridge - Entered condidated information!
+2022-07-15 10:42:55,082 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 10:43:11,747 [main] INFO iBridge - Entered Additional Informations has successfully!
+2022-07-15 10:43:16,132 [main] INFO iBridge - Clicked on add to Queue Button has Successfully!
+2022-07-15 10:43:16,188 [main] INFO iBridge - Clicked on Save Later button has Successfully!
+2022-07-15 10:43:24,714 [main] INFO iBridge - Pending Case Initiation has verified list successfully!
+2022-07-15 10:43:24,847 [main] INFO iBridge - Case Pending Initiation Candidate First name Has Verified Successfully!
+2022-07-15 10:43:34,709 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:43:35,140 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 10:43:45,061 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 10:43:50,291 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 10:43:55,382 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 10:43:58,541 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 10:44:02,600 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 10:44:19,367 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 10:44:33,754 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 10:44:34,575 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 10:44:42,035 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 10:44:43,309 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 10:44:44,153 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 10:44:45,313 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 10:44:46,171 [main] INFO iBridge - Get Username and Password!
+2022-07-15 10:44:50,207 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:44:54,601 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 10:44:57,509 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 10:44:57,576 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 10:45:12,388 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 10:45:14,413 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 10:45:43,050 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 10:46:00,972 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 10:46:11,948 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 10:46:38,205 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 10:47:29,258 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 10:47:29,259 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 10:47:29,261 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 10:47:30,140 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:47:34,244 [main] INFO iBridge - BT Candidate Account has logged Successfully !
+2022-07-15 10:47:40,262 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 10:47:52,831 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 10:47:58,880 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 10:48:01,251 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:48:01,621 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 10:48:12,124 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 10:48:12,171 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 10:49:00,589 [main] INFO iBridge - Select Docs Qc Allocator has Successfully!
+2022-07-15 10:49:00,589 [main] INFO iBridge - Super admin have done Docs Qc Allocator Successfully!
+2022-07-15 10:49:00,651 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 10:52:12,594 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 10:52:39,243 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 10:53:35,588 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:53:36,017 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 10:54:14,460 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 10:54:15,914 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:54:16,413 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:54:40,436 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 10:54:41,731 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:54:41,732 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 10:54:54,792 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 10:54:58,484 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:54:58,485 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:55:04,739 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 10:55:06,326 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:55:30,475 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 10:55:33,888 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:55:33,889 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:55:42,926 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 10:55:44,114 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:55:44,115 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 10:55:56,131 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 10:55:59,726 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:55:59,726 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:56:06,540 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 10:56:07,661 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:56:28,132 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 10:56:31,562 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:56:31,562 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:56:40,722 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 10:56:41,796 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:56:41,796 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 10:56:55,389 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 10:56:58,393 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:56:58,394 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:57:07,331 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 10:57:12,361 [main] INFO iBridge - Check(s) Routed to the candidate!
+2022-07-15 10:57:18,289 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:57:20,171 [main] INFO iBridge - BT account has logged out successfully!
+2022-07-15 10:57:21,367 [main] INFO iBridge - Mailinator Mail Url is opened Successfully!
+2022-07-15 10:57:23,719 [main] INFO iBridge - Candidate malinator mail, Username and Password has verified Successfully!
+2022-07-15 10:57:24,206 [main] INFO iBridge - Route To candidate userName and password has got successfully!
+2022-07-15 10:57:25,123 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 10:58:27,412 [main] INFO iBridge - Route To Candidate has logged in Successully!
+2022-07-15 10:58:43,939 [main] INFO iBridge - Route to candidate insuff details have filled Successfully!
+2022-07-15 10:58:44,853 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 10:58:45,396 [main] INFO iBridge - Entered Username and password!
+2022-07-15 10:58:58,444 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 10:59:44,663 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 10:59:45,284 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:01:04,906 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:01:05,354 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:05:05,339 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:05:05,814 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:09:39,126 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:09:39,589 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:09:58,951 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:14:03,678 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:14:04,159 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:14:04,196 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:15:48,958 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:15:49,422 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:16:00,124 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:18:42,032 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:18:42,477 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:18:42,513 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:20:22,081 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:20:22,613 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:20:22,656 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:20:24,435 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 11:20:24,914 [main] INFO iBridge - Entered Username and password!
+2022-07-15 11:20:37,953 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:24:09,559 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:24:10,007 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:24:10,041 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:26:34,219 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:26:34,661 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:26:34,693 [main] INFO iBridge - Mark Insufficiency Cost Approval Required has filled Successfully!
+2022-07-15 11:29:23,489 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 11:29:23,960 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 11:34:26,717 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 11:34:27,263 [main] INFO iBridge - Entered Username and password!
+2022-07-15 11:34:33,441 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 11:34:36,950 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 11:34:41,631 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 11:34:42,070 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 11:34:47,141 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 11:34:47,255 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 11:34:51,895 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 11:35:03,972 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 11:35:09,523 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 11:35:11,338 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 11:35:18,385 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 11:35:19,474 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 11:35:20,444 [main] INFO iBridge - Get Username and Password!
+2022-07-15 11:35:25,261 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 11:35:27,891 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 11:35:28,842 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 11:35:32,668 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 11:35:32,756 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 11:35:42,106 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 11:35:43,787 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 11:36:02,578 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 11:36:17,693 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 11:36:25,310 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 11:40:31,580 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 11:40:32,189 [main] INFO iBridge - Entered Username and password!
+2022-07-15 11:40:40,733 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 11:40:44,957 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 11:40:50,255 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 11:40:50,629 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 11:40:55,749 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 11:40:55,804 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 11:41:00,232 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 11:41:12,014 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 11:41:28,434 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 11:41:33,057 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 11:41:35,312 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 11:41:36,475 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 11:41:37,425 [main] INFO iBridge - Get Username and Password!
+2022-07-15 11:41:41,618 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 11:41:49,122 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 11:41:50,044 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 11:41:54,612 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 11:41:54,672 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 11:42:03,605 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 11:42:05,335 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 11:42:25,024 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 11:42:39,672 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 11:42:47,407 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 11:43:07,564 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 11:43:31,451 [main] INFO iBridge - Candidate Previous Employment details has Setup successfully!
+2022-07-15 11:43:31,451 [main] INFO iBridge - Filled 'Education To Employment Gap', and clicked On Submit Button!
+2022-07-15 11:47:14,123 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 11:47:14,720 [main] INFO iBridge - Entered Username and password!
+2022-07-15 11:47:33,592 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 11:47:39,588 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 11:47:44,675 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 11:47:45,058 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 11:47:50,181 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 11:47:50,282 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 11:47:55,472 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 11:48:08,779 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 11:48:11,439 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 11:48:13,764 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 11:48:23,996 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 11:48:25,159 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 11:48:26,085 [main] INFO iBridge - Get Username and Password!
+2022-07-15 11:48:29,656 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 11:48:31,363 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 11:48:32,183 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 11:48:35,627 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 11:48:35,736 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 11:48:46,060 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 11:48:47,773 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 12:24:28,672 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:24:29,595 [main] INFO iBridge - Entered Username and password!
+2022-07-15 12:24:39,810 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 12:24:46,520 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 12:24:52,779 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 12:24:53,310 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 12:24:58,458 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 12:24:58,514 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 12:25:03,592 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 12:25:19,497 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 12:25:25,087 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 12:25:42,405 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 12:25:45,720 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 12:25:46,875 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 12:25:48,172 [main] INFO iBridge - Get Username and Password!
+2022-07-15 12:25:56,885 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:26:00,048 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 12:26:01,375 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 12:26:06,407 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 12:26:06,570 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 12:28:04,649 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:28:05,463 [main] INFO iBridge - Entered Username and password!
+2022-07-15 12:28:21,931 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 12:28:28,637 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 12:28:39,870 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 12:28:40,524 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 12:28:45,683 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 12:28:48,917 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 12:28:55,232 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 12:29:08,590 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 12:29:12,351 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 12:29:39,227 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 12:29:41,629 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 12:29:42,846 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 12:29:44,254 [main] INFO iBridge - Get Username and Password!
+2022-07-15 12:29:48,401 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:29:50,421 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 12:29:51,285 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 12:29:55,982 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 12:29:56,132 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 12:30:05,958 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 12:30:07,957 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 12:30:27,430 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 12:30:44,538 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 12:30:57,399 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 12:31:19,979 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 12:32:38,849 [main] INFO iBridge - Candidate Previous Employment details has Setup successfully!
+2022-07-15 12:32:38,850 [main] INFO iBridge - Filled 'Education To Employment Gap', and clicked On Submit Button!
+2022-07-15 12:49:57,071 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:49:57,641 [main] INFO iBridge - Entered Username and password!
+2022-07-15 12:50:05,254 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 12:50:09,064 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 12:50:13,719 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 12:50:14,071 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 12:50:19,158 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 12:50:19,260 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 12:50:23,774 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 12:50:35,811 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 12:50:37,679 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 12:50:39,428 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 12:50:50,044 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 12:50:51,132 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 12:50:52,059 [main] INFO iBridge - Get Username and Password!
+2022-07-15 12:50:55,830 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:50:59,276 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 12:51:00,164 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 12:51:03,433 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 12:51:03,535 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 12:51:12,379 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 12:51:14,045 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 12:51:34,979 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 12:51:50,003 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 12:51:57,537 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 12:52:17,557 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 12:52:41,498 [main] INFO iBridge - Candidate Previous Employment details has Setup successfully!
+2022-07-15 12:52:41,498 [main] INFO iBridge - Filled 'Education To Employment Gap', and clicked On Submit Button!
+2022-07-15 12:52:42,740 [main] INFO iBridge - Candidate Account has logged Out Successfully!
+2022-07-15 12:52:43,499 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:52:43,882 [main] INFO iBridge - Entered email and Password ,and logged account Successfully!
+2022-07-15 12:52:47,676 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 12:52:58,024 [main] INFO iBridge - Candidate Bulk First name 'Submitted For Verification' has not Verified Successfully!
+2022-07-15 12:54:19,893 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:54:20,481 [main] INFO iBridge - Entered Username and password!
+2022-07-15 12:54:27,286 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 12:54:32,090 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 12:54:37,730 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 12:54:38,116 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 12:54:43,197 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 12:54:43,328 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 12:54:47,684 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 12:54:59,747 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 12:55:01,894 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 12:55:03,578 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 12:55:13,256 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 12:55:14,430 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 12:55:15,600 [main] INFO iBridge - Get Username and Password!
+2022-07-15 12:55:19,835 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:55:22,784 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 12:55:23,691 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 12:55:27,131 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 12:55:27,243 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 12:55:36,589 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 12:55:38,461 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 12:56:02,612 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 12:56:18,342 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 12:56:26,623 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 12:56:47,683 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 12:57:13,379 [main] INFO iBridge - Candidate Previous Employment details has Setup successfully!
+2022-07-15 12:57:13,380 [main] INFO iBridge - Filled 'Education To Employment Gap', and clicked On Submit Button!
+2022-07-15 12:57:14,759 [main] INFO iBridge - Candidate Account has logged Out Successfully!
+2022-07-15 12:57:15,534 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 12:57:16,158 [main] INFO iBridge - Entered email and Password ,and logged account Successfully!
+2022-07-15 12:57:29,203 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 12:57:40,765 [main] INFO iBridge - Candidate Bulk First name 'Submitted For Verification' has not Verified Successfully!
+2022-07-15 13:02:19,379 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:02:19,942 [main] INFO iBridge - Entered Username and password!
+2022-07-15 13:02:27,273 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:02:30,870 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 13:02:35,331 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 13:02:35,708 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 13:02:40,777 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 13:02:40,849 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 13:02:45,389 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 13:02:57,403 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 13:02:59,856 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 13:03:01,420 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 13:03:11,393 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 13:03:12,483 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 13:03:13,460 [main] INFO iBridge - Get Username and Password!
+2022-07-15 13:03:19,304 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:03:21,468 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 13:03:22,494 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 13:03:27,357 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 13:03:27,485 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 13:03:36,639 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 13:03:38,521 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 13:04:00,504 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 13:04:15,812 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 13:04:24,576 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 13:06:48,142 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:06:48,746 [main] INFO iBridge - Entered Username and password!
+2022-07-15 13:06:55,414 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:07:00,937 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 13:07:05,904 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 13:07:06,256 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 13:07:11,343 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 13:07:11,471 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 13:07:16,106 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 13:07:27,910 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 13:07:29,676 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 13:07:31,565 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 13:07:42,866 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 13:07:44,016 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 13:07:45,196 [main] INFO iBridge - Get Username and Password!
+2022-07-15 13:07:49,112 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:07:51,302 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 13:07:52,223 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 13:07:55,847 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 13:07:55,942 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 13:08:04,948 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 13:08:06,715 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 13:08:28,503 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 13:08:43,590 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 13:08:51,482 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 13:09:11,495 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 13:12:50,814 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:12:51,361 [main] INFO iBridge - Entered Username and password!
+2022-07-15 13:13:15,716 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:13:20,958 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 13:13:25,961 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 13:13:26,329 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 13:13:31,400 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 13:13:48,711 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 13:13:53,827 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 13:14:06,857 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 13:14:09,671 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 13:14:11,718 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 13:14:21,118 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 13:14:22,269 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 13:14:23,219 [main] INFO iBridge - Get Username and Password!
+2022-07-15 13:14:26,766 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:14:28,846 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 13:14:29,851 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 13:14:33,557 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 13:14:33,627 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 13:14:42,516 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 13:14:44,220 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 13:15:07,475 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 13:15:22,478 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 13:15:30,999 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 13:16:26,739 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 13:17:10,378 [main] INFO iBridge - Candidate Previous Employment details has Setup successfully!
+2022-07-15 13:17:11,604 [main] INFO iBridge - Candidate Account has logged Out Successfully!
+2022-07-15 13:17:12,480 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:17:12,910 [main] INFO iBridge - Entered email and Password ,and logged account Successfully!
+2022-07-15 13:17:17,400 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:17:28,409 [main] INFO iBridge - Candidate Bulk First name 'Submitted For Verification' has Verified Successfully!
+2022-07-15 13:17:34,562 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 13:17:38,866 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 13:17:39,233 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 13:17:52,180 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 13:17:52,264 [main] INFO iBridge - Candidate Bulk Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 13:18:39,840 [main] INFO iBridge - Select Docs Qc Allocator has Successfully!
+2022-07-15 13:18:39,892 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 13:19:00,608 [main] INFO iBridge - Case QC Review Ars Number has verified successfully!
+2022-07-15 13:23:15,618 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:23:16,236 [main] INFO iBridge - Entered Username and password!
+2022-07-15 13:23:29,491 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:25:34,749 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 13:25:38,120 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 13:25:38,492 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 13:31:00,650 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:31:01,313 [main] INFO iBridge - Entered Username and password!
+2022-07-15 13:31:16,570 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:31:22,934 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 13:31:28,569 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 13:31:28,923 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 13:31:33,994 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 13:31:34,106 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 13:31:38,791 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 13:31:50,171 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 13:31:52,244 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 13:31:54,859 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 13:32:05,120 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 13:32:06,219 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 13:32:07,190 [main] INFO iBridge - Get Username and Password!
+2022-07-15 13:32:11,335 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:32:14,050 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 13:32:15,134 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 13:32:19,603 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 13:32:19,679 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 13:32:29,275 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 13:32:31,125 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 13:32:51,169 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 13:33:05,770 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 13:33:13,475 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 13:35:39,384 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:35:39,960 [main] INFO iBridge - Entered Username and password!
+2022-07-15 13:36:08,266 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:36:19,034 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 13:36:24,700 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 13:36:25,095 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 13:36:30,165 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 13:36:30,216 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 13:36:39,441 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 13:36:57,787 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 13:37:02,684 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 13:37:06,097 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 13:37:12,362 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 13:37:13,452 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 13:37:14,400 [main] INFO iBridge - Get Username and Password!
+2022-07-15 13:37:18,335 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:37:20,245 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 13:37:21,131 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 13:37:24,760 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 13:37:24,837 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 13:37:34,147 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 13:37:35,942 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 13:37:57,985 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 13:38:14,760 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 13:38:25,308 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 13:42:16,493 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:42:17,255 [main] INFO iBridge - Entered Username and password!
+2022-07-15 13:42:23,706 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:42:27,901 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 13:42:32,883 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 13:42:33,315 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 13:42:38,380 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 13:42:38,483 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 13:42:43,925 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 13:42:55,875 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 13:42:58,119 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 13:43:00,049 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 13:43:09,588 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 13:43:10,764 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 13:43:11,832 [main] INFO iBridge - Get Username and Password!
+2022-07-15 13:43:16,494 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:43:18,734 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 13:43:19,761 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 13:43:24,918 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 13:43:24,980 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 13:43:34,024 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 13:43:35,840 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 13:43:55,582 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 13:44:10,180 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 13:44:17,818 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 13:44:39,540 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 13:45:25,755 [main] INFO iBridge - Candidate Previous Employment details has Setup successfully!
+2022-07-15 13:45:26,946 [main] INFO iBridge - Candidate Account has logged Out Successfully!
+2022-07-15 13:45:27,695 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:45:28,117 [main] INFO iBridge - Entered email and Password ,and logged account Successfully!
+2022-07-15 13:45:32,370 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 13:45:42,318 [main] INFO iBridge - Candidate Bulk First name 'Submitted For Verification' has Verified Successfully!
+2022-07-15 13:45:48,187 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 13:45:51,070 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 13:45:51,412 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 13:46:02,299 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 13:46:02,358 [main] INFO iBridge - Candidate Bulk Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 13:46:51,429 [main] INFO iBridge - Select Docs Qc Allocator has Successfully!
+2022-07-15 13:46:51,481 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 13:47:12,152 [main] INFO iBridge - Case QC Review Ars Number has verified successfully!
+2022-07-15 13:48:35,572 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 13:48:50,173 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 13:49:12,073 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 13:49:12,174 [main] INFO iBridge - Check is successfully marked as Insufficient.!
+2022-07-15 13:49:17,526 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 13:49:32,528 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 13:49:33,968 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 13:49:46,978 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 13:53:18,698 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 13:53:19,487 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 14:03:01,962 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:03:01,967 [main] INFO iBridge - Entered Username and password!
+2022-07-15 14:04:55,335 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:04:55,340 [main] INFO iBridge - Entered Username and password!
+2022-07-15 14:08:19,638 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:08:19,657 [main] INFO iBridge - Entered Username and password!
+2022-07-15 14:09:49,117 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:09:49,823 [main] INFO iBridge - Entered Username and password!
+2022-07-15 14:10:02,631 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-15 14:10:06,128 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 14:10:23,388 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 14:10:27,385 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 14:10:28,437 [main] INFO iBridge - Cv has been Uploaded Successfully!
+2022-07-15 14:10:37,024 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-15 14:11:11,443 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 14:11:28,616 [main] INFO iBridge - Candidate Address setup successfully!
+2022-07-15 14:11:39,849 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 14:12:06,478 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 14:13:46,725 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 14:13:46,725 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 14:13:46,821 [main] INFO iBridge - Candidate profile has been submitted for verification.!
+2022-07-15 14:14:02,180 [main] INFO iBridge - ARS number print successfully
+2022-07-15 14:14:02,223 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 14:14:04,856 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:14:05,204 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 14:14:15,448 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 14:14:15,496 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 14:14:18,708 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:14:18,708 [main] INFO iBridge - iBridge account Logged successfully!
+2022-07-15 14:14:24,865 [main] INFO iBridge - Candidate name had shown Successfully!
+2022-07-15 14:14:31,828 [main] INFO iBridge - Stop Case has been done by Close By Client Successfully
+2022-07-15 14:14:31,906 [main] INFO iBridge - The case has been successfully marked as Closed By!
+2022-07-15 14:14:33,724 [main] INFO iBridge - Candidate Case has been Stopped Sucessfully!
+2022-07-15 14:14:33,820 [main] INFO iBridge - Current Status: Closed by Client has shown Successfully!
+2022-07-15 14:16:20,321 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:16:21,015 [main] INFO iBridge - Entered email and Password!
+2022-07-15 14:16:30,206 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 14:16:31,148 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 14:16:34,116 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-15 14:16:50,994 [main] INFO iBridge - Bulk Candidate records Excel sheet have been Uploaded Successfully!
+2022-07-15 14:17:19,397 [main] INFO iBridge - Upload Documents Successfully!
+2022-07-15 14:17:19,455 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 14:22:36,595 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:22:37,247 [main] INFO iBridge - Entered email and Password!
+2022-07-15 14:22:43,359 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 14:22:44,375 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 14:22:47,148 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-15 14:23:03,969 [main] INFO iBridge - Bulk Candidate records Excel sheet have been Uploaded Successfully!
+2022-07-15 14:23:25,701 [main] INFO iBridge - Upload Documents Successfully!
+2022-07-15 14:23:25,756 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 14:23:31,935 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 14:23:38,199 [main] INFO iBridge - Entered Fistname and Middle name Successfully!
+2022-07-15 14:23:38,252 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 14:23:40,203 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:23:40,659 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 14:23:59,745 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 14:23:59,795 [main] INFO iBridge - Candidate Bulk Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 14:24:03,316 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:24:08,712 [main] INFO iBridge - Clicked on Side bar expand button
+2022-07-15 14:24:09,353 [main] INFO iBridge - Entered Candidate information!
+2022-07-15 14:24:15,397 [main] INFO iBridge - Fill all the details of the candidate and Additional details!
+2022-07-15 14:24:29,275 [main] INFO iBridge - Browse Document Uploaded Successfully!!
+2022-07-15 14:24:29,322 [main] INFO iBridge - 1 case(s) have been initiated successfully.
+2022-07-15 14:24:44,641 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 14:24:45,929 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:24:47,542 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 14:24:47,600 [main] INFO iBridge - Candidate Bulk Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 14:24:48,731 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:24:59,774 [main] INFO iBridge - Document Processor Index has selected Successfully!
+2022-07-15 14:24:59,846 [main] INFO iBridge - British Telecom New Cases Count Number have Verified successfully!
+2022-07-15 14:25:03,245 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:25:08,116 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 14:25:17,661 [main] INFO iBridge - Folder Case Submit Successfuly!
+2022-07-15 14:25:18,935 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:25:27,678 [main] INFO iBridge - Document Processor Index has selected Successfully!
+2022-07-15 14:25:27,728 [main] INFO iBridge - British Telecom New Cases Count Number have Not Verified successfully!
+2022-07-15 14:26:59,334 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:27:00,074 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 14:30:11,835 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:30:12,481 [main] INFO iBridge - Entered Username and password!
+2022-07-15 14:30:20,331 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 14:30:24,468 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 14:30:29,835 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 14:30:30,205 [main] INFO iBridge - Candidate First, Middle name, and email id have updated successfully of the Xls sheet!.
+2022-07-15 14:30:35,291 [main] INFO iBridge - Xls spreadsheet document has uploaded successfully!
+2022-07-15 14:30:35,340 [main] INFO iBridge - The toast message has verified successfully 'Uploaded sheet data saved successfully.'
+2022-07-15 14:30:40,690 [main] INFO iBridge - Clicked on countinue button,and Uploaded sheet data saved successfully
+2022-07-15 14:30:53,160 [main] INFO iBridge - Candidate have uploaded Cv Document successfully!
+2022-07-15 14:30:55,963 [main] INFO iBridge - 2 case(s) initiated for candidate(s) successfully.
+2022-07-15 14:30:57,477 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 14:31:07,077 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 14:31:08,225 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 14:31:09,230 [main] INFO iBridge - Get Username and Password!
+2022-07-15 14:31:16,205 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:31:18,285 [main] INFO iBridge - Bt Five account has logged out successfully!
+2022-07-15 14:31:19,355 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 14:31:39,107 [main] INFO iBridge - UserName and Password have Entered Succesfully!
+2022-07-15 14:31:39,165 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 14:31:48,237 [main] INFO iBridge - Digital signature has Passed successfully!
+2022-07-15 14:31:50,057 [main] INFO iBridge - Candidate Profile Details has Setup successfully!
+2022-07-15 14:32:10,392 [main] INFO iBridge - Candidate National Identity Details has Setup successfully!
+2022-07-15 14:32:25,531 [main] INFO iBridge - Candidate Address has setup successfully!
+2022-07-15 14:32:33,524 [main] INFO iBridge - Candidate Education details has Setup successfully!
+2022-07-15 14:32:54,825 [main] INFO iBridge - Candidate Employment details has Setup successfully!
+2022-07-15 14:33:39,679 [main] INFO iBridge - Candidate Previous Employment details has Setup successfully!
+2022-07-15 14:33:41,542 [main] INFO iBridge - Candidate Account has logged Out Successfully!
+2022-07-15 14:33:42,374 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:33:42,770 [main] INFO iBridge - Entered email and Password ,and logged account Successfully!
+2022-07-15 14:33:48,966 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 14:33:58,777 [main] INFO iBridge - Candidate Bulk First name 'Submitted For Verification' has Verified Successfully!
+2022-07-15 14:34:05,002 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 14:34:08,059 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:34:08,445 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 14:34:19,582 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 14:34:19,638 [main] INFO iBridge - Candidate Bulk Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 14:35:08,072 [main] INFO iBridge - Select Docs Qc Allocator has Successfully!
+2022-07-15 14:35:08,120 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 14:35:28,613 [main] INFO iBridge - Case QC Review Ars Number has verified successfully!
+2022-07-15 14:39:31,860 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:39:34,377 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 14:39:36,556 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 14:39:41,628 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 14:39:41,678 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 14:39:46,169 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 14:39:47,082 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:39:47,599 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 14:40:00,567 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 14:40:06,221 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 14:40:11,615 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 14:40:14,709 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 14:40:18,766 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 14:40:35,589 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 14:40:50,816 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 14:40:51,642 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 14:40:51,644 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 14:40:53,298 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 14:40:54,301 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 14:40:55,388 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 14:40:56,276 [main] INFO iBridge - Get Username and Password!
+2022-07-15 14:40:56,277 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 14:41:00,116 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:41:02,623 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 14:41:05,806 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 14:41:05,890 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 14:41:20,998 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 14:41:22,948 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 14:41:53,169 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 14:42:12,301 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 14:42:22,583 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 14:42:48,906 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 14:44:17,633 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 14:44:17,634 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 14:44:17,635 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 14:44:17,635 [main] INFO iBridge - Candidate account Login and full Fill all details of the candidate of the case.
+2022-07-15 14:44:18,345 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:44:22,923 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 14:45:19,384 [main] INFO iBridge - Pending Sign-Off Bucket has verified Successfully!
+2022-07-15 14:45:19,438 [main] INFO iBridge - Candidate First Name 'Pending Sign-Off' has Verified Successfully!
+2022-07-15 14:45:22,000 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 14:45:22,927 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:45:25,348 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 14:46:14,996 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 14:46:15,051 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 14:46:19,510 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 14:46:20,391 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:46:20,821 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 14:46:25,991 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:47:11,966 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-15 14:47:15,166 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 14:47:31,558 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 14:47:35,384 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 14:47:36,433 [main] INFO iBridge - Cv has been Uploaded Successfully!
+2022-07-15 14:47:44,224 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-15 14:48:11,185 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 14:48:28,078 [main] INFO iBridge - Candidate Address setup successfully!
+2022-07-15 14:49:39,570 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 14:50:05,911 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 14:51:49,302 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 14:51:49,302 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 14:51:49,399 [main] INFO iBridge - Candidate profile has been submitted for verification.!
+2022-07-15 14:51:49,399 [main] INFO iBridge - Submit Case Individually Initiated has Successfully!
+2022-07-15 14:52:00,309 [main] INFO iBridge - Candidate First Name 'Case Submitted For Verification list' has Verified Successfully!
+2022-07-15 14:52:03,902 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 14:52:06,169 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:52:08,600 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 14:52:14,512 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 14:52:14,567 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 14:52:18,912 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 14:52:19,897 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:52:22,366 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 14:52:27,993 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 14:52:28,047 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 14:52:32,466 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 14:52:33,308 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:52:33,308 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 14:52:34,149 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:52:34,540 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 14:52:40,195 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 14:52:44,326 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 14:52:49,283 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 14:52:52,307 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 14:52:56,359 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 14:53:12,815 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 14:53:27,635 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 14:53:28,389 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 14:53:28,390 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 14:53:34,569 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 14:53:34,569 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 14:53:35,884 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 14:53:36,772 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 14:53:37,907 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 14:53:38,753 [main] INFO iBridge - Get Username and Password!
+2022-07-15 14:53:38,753 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 14:53:42,368 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:53:44,867 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 14:53:47,051 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 14:53:47,112 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 14:54:02,081 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 14:54:04,098 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 14:54:33,496 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 14:54:50,816 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 14:54:59,753 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 14:55:25,927 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 14:56:14,558 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 14:56:14,559 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 14:56:14,559 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 14:56:14,559 [main] INFO iBridge - Initiate Case Individually Extended has Verified successfully!
+2022-07-15 14:56:15,276 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 14:56:19,476 [main] INFO iBridge - BT Candidate Account has logged Successfully !
+2022-07-15 14:56:23,196 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 14:56:33,156 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 14:56:33,156 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 14:56:39,243 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 14:56:39,244 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 14:56:41,339 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 14:56:41,620 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 14:56:51,928 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 14:56:51,974 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 14:56:51,974 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 14:57:39,008 [main] INFO iBridge - Select Docs Qc Allocator has Successfully!
+2022-07-15 14:57:39,009 [main] INFO iBridge - Super admin have done Docs Qc Allocator Successfully!
+2022-07-15 14:57:39,064 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 14:57:39,065 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 14:59:24,548 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 14:59:24,548 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 14:59:40,834 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 14:59:40,835 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 14:59:42,648 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 15:00:22,750 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 15:00:22,750 [main] INFO iBridge - Check is successfully marked as Insufficient.!
+2022-07-15 15:00:28,919 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 15:00:28,919 [main] INFO iBridge - Entered Username and password!
+2022-07-15 15:00:44,408 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 15:00:44,409 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 15:00:52,466 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 15:00:52,467 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 15:01:13,450 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 15:01:13,450 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 15:01:16,905 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 15:01:16,905 [main] INFO iBridge - Entered Username and password!
+2022-07-15 15:01:24,261 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 15:01:24,263 [main] INFO iBridge - Pending - Referred Back text has verified successfully.
+2022-07-15 15:01:25,483 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 15:01:51,192 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 15:01:51,193 [main] INFO iBridge - Check is successfully marked as Insufficient.!
+2022-07-15 15:02:06,431 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 15:02:06,431 [main] INFO iBridge - Entered Username and password!
+2022-07-15 15:02:18,185 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 15:02:18,185 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 15:02:20,081 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 15:02:20,081 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 15:59:58,253 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:00:00,753 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:00:02,681 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 16:00:07,466 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:00:07,518 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:00:12,067 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:00:12,902 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:00:13,411 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:00:19,341 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:00:22,851 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:00:27,880 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:00:30,892 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:00:34,952 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:00:51,842 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:01:08,389 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:01:09,218 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:01:09,220 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 16:01:13,651 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:01:14,928 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:01:16,079 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:01:17,464 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:01:17,464 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 16:01:20,768 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:01:23,364 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:01:26,110 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:01:26,229 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:02:10,174 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:02:12,641 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:02:16,492 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 16:02:21,354 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:02:21,409 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:02:25,889 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:02:26,929 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:02:27,403 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:02:36,207 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:02:40,371 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:02:45,592 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:02:48,706 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:02:52,760 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:03:09,651 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:03:23,715 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:03:24,536 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:03:24,537 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 16:03:27,145 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:03:27,855 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:03:28,968 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:03:29,857 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:03:29,857 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 16:03:33,287 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:03:35,666 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:03:38,608 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:03:38,718 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:05:56,085 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:05:58,623 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:06:00,845 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 16:06:05,778 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:06:05,829 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:06:10,131 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:06:11,039 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:06:11,587 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:06:18,772 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:06:23,008 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:06:28,239 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:06:31,304 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:06:35,364 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:06:52,371 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:07:05,721 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:07:06,538 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:07:06,539 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 16:07:08,826 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:07:10,445 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:07:11,545 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:07:12,504 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:07:12,504 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 16:07:16,770 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:07:19,309 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:07:21,668 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:07:21,738 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:08:19,851 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:08:22,339 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:08:24,404 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 16:08:29,764 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:08:29,818 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:08:34,297 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:08:35,593 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:08:36,112 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:08:47,406 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:08:51,457 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:08:56,910 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:08:59,958 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:09:04,016 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:09:21,086 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:09:35,439 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:09:36,251 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:09:36,254 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 16:09:38,765 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:09:40,264 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:09:41,365 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:09:42,347 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:09:42,347 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 16:09:46,139 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:09:48,747 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:09:51,147 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:09:51,210 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:10:05,736 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 16:10:07,982 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 16:10:35,785 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 16:11:31,710 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 16:11:42,795 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 16:12:47,847 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 16:16:32,361 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:16:34,865 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:16:36,926 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 16:16:42,346 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:16:42,398 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:16:47,314 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:16:48,273 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:16:48,857 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:16:57,218 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:17:00,716 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:17:46,261 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:17:49,350 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:17:53,425 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:18:10,436 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:19:20,046 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:19:20,950 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:19:20,951 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 16:19:29,254 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:19:30,080 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:19:31,177 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:19:33,478 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:19:33,479 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 16:19:37,026 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:19:39,890 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:19:42,809 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:19:42,884 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:19:57,938 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 16:20:01,496 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 16:20:30,283 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 16:20:48,309 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 16:20:57,918 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 16:21:24,362 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 16:23:12,323 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 16:23:12,324 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 16:23:12,325 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 16:23:12,325 [main] INFO iBridge - Candidate account Login and full Fill all details of the candidate of the case.
+2022-07-15 16:23:13,835 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:23:14,285 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:23:29,742 [main] INFO iBridge - Pending Sign-Off Bucket has verified Successfully!
+2022-07-15 16:23:29,794 [main] INFO iBridge - Candidate First Name 'Pending Sign-Off' has Verified Successfully!
+2022-07-15 16:23:32,013 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 16:23:33,443 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:23:35,863 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:23:41,355 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:23:41,404 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:23:45,723 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:23:46,590 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:23:47,107 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:23:50,614 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:23:55,305 [main] INFO iBridge - Clicked on Side bar expand
+2022-07-15 16:23:58,538 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:24:13,512 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 16:24:17,405 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 16:24:18,460 [main] INFO iBridge - Cv has been Uploaded Successfully!
+2022-07-15 16:24:26,633 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-15 16:24:54,139 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 16:25:11,193 [main] INFO iBridge - Candidate Address setup successfully!
+2022-07-15 16:25:22,001 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 16:25:48,475 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 16:27:29,696 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 16:27:29,696 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 16:27:29,790 [main] INFO iBridge - Candidate profile has been submitted for verification.!
+2022-07-15 16:27:29,790 [main] INFO iBridge - Submit Case Individually Initiated has Successfully!
+2022-07-15 16:27:41,890 [main] INFO iBridge - Candidate First Name 'Case Submitted For Verification list' has Verified Successfully!
+2022-07-15 16:27:44,382 [main] INFO iBridge - British Telecom Account Has Logged Out Successfully!
+2022-07-15 16:27:45,244 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:27:47,744 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:27:54,296 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:27:54,339 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:27:58,828 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:27:59,886 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:28:02,355 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:28:07,815 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:28:07,869 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:28:12,332 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:28:13,260 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:28:13,261 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:28:14,595 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:28:15,011 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:28:19,975 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:28:24,117 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:28:29,698 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:28:32,756 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:28:36,821 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:28:53,777 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:29:07,364 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:29:08,140 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:29:08,140 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:29:14,814 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 16:29:14,814 [main] INFO iBridge - Candidate First Name 'Pending Submission list' has verified Successfully!
+2022-07-15 16:29:16,090 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:29:16,713 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:29:17,829 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:29:18,680 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:29:18,680 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:29:22,179 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:29:24,825 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:29:27,739 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:29:27,795 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:29:42,936 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 16:29:44,820 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 16:30:13,319 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 16:30:31,216 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 16:30:41,231 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 16:31:07,675 [main] INFO iBridge - Candidate Current Employment details Setup successfully!
+2022-07-15 16:33:35,090 [main] INFO iBridge - Candidate Previous Employment details Setup successfully!
+2022-07-15 16:33:35,091 [main] INFO iBridge - Filled Education To Employment Gap and clicked On Submit Button!
+2022-07-15 16:33:35,091 [main] INFO iBridge - Candidate logout Successfully!
+2022-07-15 16:33:35,091 [main] INFO iBridge - Initiate Case Individually Extended has Verified successfully!
+2022-07-15 16:33:36,107 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:33:36,528 [main] INFO iBridge - BT Candidate Account has logged Successfully !
+2022-07-15 16:33:40,742 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:33:51,389 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 16:33:51,389 [main] INFO iBridge - Case Submitted For Verification' list has Verified Successfully!
+2022-07-15 16:33:57,710 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 16:33:57,710 [main] INFO iBridge - WIP Candidate First name Has Verified Successfully!
+2022-07-15 16:34:00,636 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 16:34:00,969 [main] INFO iBridge - Bridge account Logged successfully!
+2022-07-15 16:34:12,228 [main] INFO iBridge - Client Case List shown successfully!
+2022-07-15 16:34:12,275 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 16:34:12,275 [main] INFO iBridge - Candidate Ars Number has Verified Successfully in the Case List - Search Result!
+2022-07-15 16:35:00,776 [main] INFO iBridge - Select Docs Qc Allocator has Successfully!
+2022-07-15 16:35:00,777 [main] INFO iBridge - Super admin have done Docs Qc Allocator Successfully!
+2022-07-15 16:35:00,831 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 16:35:00,831 [main] INFO iBridge - All selected cases were successfully allocated to QC Team Member.!
+2022-07-15 16:36:46,649 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 16:36:46,649 [main] INFO iBridge - The Case was successfully released for Verification.!
+2022-07-15 16:37:01,302 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 16:37:01,303 [main] INFO iBridge - Checks are successfully allocated to Shariq Abbas!
+2022-07-15 16:37:02,416 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 16:37:27,663 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 16:37:27,663 [main] INFO iBridge - Check is successfully marked as Insufficient.!
+2022-07-15 16:37:33,538 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:37:33,539 [main] INFO iBridge - Entered Username and password!
+2022-07-15 16:37:42,839 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 16:37:42,839 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 16:37:44,190 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 16:37:44,191 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 16:37:57,066 [main] INFO iBridge - Insufficiency Fulfillment details have added Successfully!
+2022-07-15 16:37:57,067 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 16:38:01,454 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:38:01,454 [main] INFO iBridge - Entered Username and password!
+2022-07-15 16:38:08,250 [main] INFO iBridge - Ars Number has been Searched Successfully!
+2022-07-15 16:38:08,250 [main] INFO iBridge - Pending - Referred Back text has verified successfully.
+2022-07-15 16:38:09,431 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 16:38:31,679 [main] INFO iBridge - Antecedents to Verify all Records have filled Successfully!
+2022-07-15 16:38:31,680 [main] INFO iBridge - Check is successfully marked as Insufficient.!
+2022-07-15 16:38:35,053 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:38:35,054 [main] INFO iBridge - Entered Username and password!
+2022-07-15 16:38:43,549 [main] INFO iBridge - Pending For Fulfilment Insufficient has Added successfully!
+2022-07-15 16:38:43,550 [main] INFO iBridge - Insufficient details have Submitted successfully.
+2022-07-15 16:38:44,611 [main] INFO iBridge - Bridge Url is opened
+2022-07-15 16:38:44,612 [main] INFO iBridge - Bridge account has Logged successfully!
+2022-07-15 16:43:18,697 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:43:21,170 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:43:27,835 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 16:43:32,828 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:43:32,877 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:43:59,586 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:44:00,830 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:44:01,296 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:44:08,101 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:44:13,467 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:44:20,470 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:44:23,530 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:44:27,588 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:44:44,656 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:45:02,216 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:45:03,051 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:45:03,053 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 16:45:04,597 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:45:05,424 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:45:06,532 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:45:07,466 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:45:07,466 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 16:45:11,405 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:45:14,083 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:45:16,436 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:45:16,501 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:45:31,350 [main] INFO iBridge - Digital signature successfully!
+2022-07-15 16:45:33,301 [main] INFO iBridge - Candidate Profile Details Setup successfully!
+2022-07-15 16:46:02,546 [main] INFO iBridge - Candidate National Identity Details Setup successfully!
+2022-07-15 16:46:20,266 [main] INFO iBridge - Candidate Address details Setup Successfully!!
+2022-07-15 16:46:31,202 [main] INFO iBridge - Candidate Education details Setup successfully!
+2022-07-15 16:52:06,184 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:52:08,766 [main] INFO iBridge - iBridge Cat account has Logged successfully!
+2022-07-15 16:52:10,733 [main] INFO iBridge - iBridge Cat Account has Logged In Successfully!
+2022-07-15 16:52:15,462 [main] INFO iBridge - SignOff Applicable Yes has configured Successfully!
+2022-07-15 16:52:15,514 [main] INFO iBridge - Client updated has Successfully!
+2022-07-15 16:52:19,833 [main] INFO iBridge - iBridge Cat Account has logged Successfully!
+2022-07-15 16:52:20,689 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:52:21,216 [main] INFO iBridge - Email and Password has Entered Successfully!
+2022-07-15 16:52:28,005 [main] INFO iBridge - BT Client has logged Successfully!
+2022-07-15 16:52:31,325 [main] INFO iBridge - Clicked on bar expand
+2022-07-15 16:52:36,590 [main] INFO iBridge - Clicked on Initiate Via Candidate
+2022-07-15 16:52:39,692 [main] INFO iBridge - Entered Candidated information!
+2022-07-15 16:52:43,749 [main] INFO iBridge - Uploaded cv document!
+2022-07-15 16:53:00,830 [main] INFO iBridge - Entered Additional Informations!
+2022-07-15 16:53:15,660 [main] INFO iBridge - Initiated for candidate(s) successfully!
+2022-07-15 16:53:16,531 [main] INFO iBridge - 1 case(s) Initiated for candidate(s) successfully
+2022-07-15 16:53:16,533 [main] INFO iBridge - Initiate Case Individually Initiated has Successfully!
+2022-07-15 16:53:18,134 [main] INFO iBridge - Mailinator Mail URL has Successfully!
+2022-07-15 16:53:18,989 [main] INFO iBridge - Mailinator Mail Subject has got successfully!
+2022-07-15 16:53:20,097 [main] INFO iBridge - Mailinator Mail has Verified Successfully!
+2022-07-15 16:53:21,004 [main] INFO iBridge - Get Username and Password!
+2022-07-15 16:53:21,004 [main] INFO iBridge - Mailinator Mail URL has Successfully and Get Username and Password!
+2022-07-15 16:53:24,426 [main] INFO iBridge - iBridge Url is opened
+2022-07-15 16:53:27,333 [main] INFO iBridge - Candidate Login iBridge portal Url is opened
+2022-07-15 16:53:29,764 [main] INFO iBridge - Entered User Id and Password!
+2022-07-15 16:53:29,821 [main] INFO iBridge - Step 3 - Candidate Summary Text has Verified successfully!
+2022-07-15 16:57:13,140 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 16:57:29,062 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 16:58:13,766 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 16:58:14,273 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 16:58:17,059 [main] INFO iBridge - Client Listing Name has Verified Successfully!
+2022-07-15 16:58:23,451 [main] INFO iBridge - Verify Prepaid Client Configuration Successfully!
+2022-07-15 16:58:29,057 [main] INFO iBridge - Package Updated has Verified Successfully!
+2022-07-15 16:58:33,681 [main] INFO iBridge - Enp Admin Account Has Logged Out Successfully!
+2022-07-15 16:58:34,531 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 16:58:35,036 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 16:58:43,044 [main] INFO iBridge - Verify Prepaid Tag Check Count Successfully!
+2022-07-15 16:58:54,357 [main] INFO iBridge - Selection CheckWise Package has Successfully!
+2022-07-15 16:58:58,520 [main] INFO iBridge - User Account Has Logged Out Successfully!
+2022-07-15 16:58:59,386 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 16:58:59,839 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 16:59:07,166 [main] INFO iBridge - Verify Prepaid Client Configuration Successfully!
+2022-07-15 16:59:13,401 [main] INFO iBridge - Package Updated has Verified Successfully!
+2022-07-15 16:59:17,594 [main] INFO iBridge - Enp Admin Account Has Logged Out Successfully!
+2022-07-15 16:59:23,562 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 16:59:24,030 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 16:59:33,052 [main] INFO iBridge - Initiate new case for Ivc has successfully!
+2022-07-15 16:59:45,425 [main] INFO iBridge - Select the package or check(s) to initiate case(s) has successfully!
+2022-07-15 17:14:49,298 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:14:49,776 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:14:52,301 [main] INFO iBridge - Client Listing Name has Verified Successfully!
+2022-07-15 17:14:58,875 [main] INFO iBridge - Verify Prepaid Client Configuration Successfully!
+2022-07-15 17:15:04,259 [main] INFO iBridge - Package Updated has Verified Successfully!
+2022-07-15 17:15:08,536 [main] INFO iBridge - Enp Admin Account Has Logged Out Successfully!
+2022-07-15 17:15:09,439 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:15:09,899 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:15:18,228 [main] INFO iBridge - Verify Prepaid Tag Check Count Successfully!
+2022-07-15 17:15:29,606 [main] INFO iBridge - Selection CheckWise Package has Successfully!
+2022-07-15 17:15:33,836 [main] INFO iBridge - User Account Has Logged Out Successfully!
+2022-07-15 17:15:34,739 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:15:35,286 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:15:44,737 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:15:50,231 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:16:12,823 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:16:13,359 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:16:18,540 [main] INFO iBridge - Case Submission Summary Name has Verified Successfully!
+2022-07-15 17:16:22,843 [main] INFO iBridge - Initial submit case individually has successfully!
+2022-07-15 17:16:37,846 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 17:16:41,675 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 17:16:56,880 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-15 17:18:48,060 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:18:48,621 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:18:50,804 [main] INFO iBridge - Client Listing Name has Verified Successfully!
+2022-07-15 17:18:57,128 [main] INFO iBridge - Verify Prepaid Client Configuration Successfully!
+2022-07-15 17:19:02,233 [main] INFO iBridge - Package Updated has Verified Successfully!
+2022-07-15 17:19:06,633 [main] INFO iBridge - Enp Admin Account Has Logged Out Successfully!
+2022-07-15 17:19:07,699 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:19:08,213 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:19:15,433 [main] INFO iBridge - Verify Prepaid Tag Check Count Successfully!
+2022-07-15 17:19:26,829 [main] INFO iBridge - Selection CheckWise Package has Successfully!
+2022-07-15 17:19:30,882 [main] INFO iBridge - User Account Has Logged Out Successfully!
+2022-07-15 17:19:31,613 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:19:32,020 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:19:39,136 [main] INFO iBridge - Verify Prepaid Client Configuration Successfully!
+2022-07-15 17:19:45,637 [main] INFO iBridge - Package Updated has Verified Successfully!
+2022-07-15 17:19:50,066 [main] INFO iBridge - Enp Admin Account Has Logged Out Successfully!
+2022-07-15 17:24:28,724 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:24:29,362 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:24:38,737 [main] INFO iBridge - Initiate new case for Ivc has successfully!
+2022-07-15 17:24:51,149 [main] INFO iBridge - Select the package or check(s) to initiate case(s) has successfully!
+2022-07-15 17:29:16,271 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:29:16,855 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:29:21,208 [main] INFO iBridge - Client Listing Name has Verified Successfully!
+2022-07-15 17:29:27,458 [main] INFO iBridge - Verify Prepaid Client Configuration Successfully!
+2022-07-15 17:29:33,012 [main] INFO iBridge - Package Updated has Verified Successfully!
+2022-07-15 17:29:37,447 [main] INFO iBridge - Enp Admin Account Has Logged Out Successfully!
+2022-07-15 17:29:38,303 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:29:38,770 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:29:48,823 [main] INFO iBridge - Verify Prepaid Tag Check Count Successfully!
+2022-07-15 17:30:00,086 [main] INFO iBridge - Selection CheckWise Package has Successfully!
+2022-07-15 17:30:04,452 [main] INFO iBridge - User Account Has Logged Out Successfully!
+2022-07-15 17:30:05,226 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:30:05,643 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:30:17,932 [main] INFO iBridge - Verify Prepaid Client Configuration Successfully!
+2022-07-15 17:30:24,186 [main] INFO iBridge - Package Updated has Verified Successfully!
+2022-07-15 17:30:28,299 [main] INFO iBridge - Enp Admin Account Has Logged Out Successfully!
+2022-07-15 17:35:31,205 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:35:31,694 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:35:38,412 [main] INFO iBridge - Case Submission Summary Name has Verified Successfully!
+2022-07-15 17:35:43,148 [main] INFO iBridge - Initial submit case individually has successfully!
+2022-07-15 17:36:36,333 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 17:36:40,081 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 17:36:53,638 [main] INFO iBridge - Candidate Additional Information Setup Successfully!
+2022-07-15 17:38:34,370 [main] INFO iBridge - Prepaid Enp Admin Url has opened Successfully!
+2022-07-15 17:38:34,793 [main] INFO iBridge - Prepaid Enp Admin account has Logged successfully!
+2022-07-15 17:38:39,901 [main] INFO iBridge - Case Submission Summary Name has Verified Successfully!
+2022-07-15 17:38:44,066 [main] INFO iBridge - Initial submit case individually has successfully!
+2022-07-15 17:39:37,974 [main] INFO iBridge - Upload Individual's Authorization Successfully!
+2022-07-15 17:39:41,828 [main] INFO iBridge - Candidate Information Setup Successfully!
+2022-07-15 17:39:57,835 [main] INFO iBridge - Candidate Additional Information Setup Successfully!

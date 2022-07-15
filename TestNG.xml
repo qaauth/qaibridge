@@ -13,9 +13,9 @@
 
 	<!-- <test name="iBridge2"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CasesPendingInitiation_01" 
-		/> </classes> </test> -->
+		/> </classes> </test>
 
-	<!-- <test name="iBridge3"> <parameter name="browser" value="chrome"/> <classes> 
+	<test name="iBridge3"> <parameter name="browser" value="chrome"/> <classes> 
 		<class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01"/> 
 		</classes> </test> -->
 
@@ -29,9 +29,9 @@
 
 	<!-- <test name="iBridge6"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02" 
-		/> </classes> </test> -->
+		/> </classes> </test>
 		
-	<!-- <test name="iBridge7"> <parameter name="browser" value="chrome" /> 
+	<test name="iBridge7"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CaseCompletion_01" /> </classes> 
 		</test> -->
 
@@ -73,19 +73,19 @@
 
 	<!-- <test name="iBridge15"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidEnpAdmin_01" /> </classes> 
-		</test>
+		</test> -->
 		
-	<test name="iBridge16"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge16"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 
 	<test name="iBridge17"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" 
-		/> </classes> </test> -->
-
-	<test name="iBridge18"> <parameter name="browser" value="chrome" /> 
-		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
 		/> </classes> </test>
+
+	<!-- <test name="iBridge18"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
+		/> </classes> </test> -->
 
 	<!-- SignDrive Test Cases -->
 	

@@ -1297,40 +1297,40 @@ public class CaseCompletion {
 		clickOnPreviousEmploymentClosedByClientBtn.click();
 
 		// Professional Reference Check --Checks Summary -- Case Summary Details--13
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(verifyProfessionalReferenceClosedByClientSuccessfullyMsg));
-		txtProfessionalReferenceSearchNo.sendKeys(professionalArsNo);
-		clickOnProfessionalReferenceSearchBtn.click();
-		clickOnProfessionalReferenceArsNumber.click();
-
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", clickOnProfessionalReferenceCheck);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(clickOnProfessionalReferenceCheck));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnProfessionalReferenceCheck);
-
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", selectProfessionalReferenceCloseByClient);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(selectProfessionalReferenceCloseByClient));
-		JavaScriptManuplator.selectOptionFromDropDown(selectProfessionalReferenceCloseByClient, "Close By Client");
-		Thread.sleep(1000);
-
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(selectProfessionalReferenceCategory));
-		JavaScriptManuplator.selectOptionFromDropDown(selectProfessionalReferenceCategory, "As per client instruction");
-		Thread.sleep(1000);
-		txtProfessionalReferenceSpecialComments.sendKeys(professionalComments);
-		clickOnProfessionalReferenceClosedByClientBtn.click();
-		Thread.sleep(1000);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(verifyProfessionalReferenceClosedByClientSuccessfullyMsg));
+//		txtProfessionalReferenceSearchNo.sendKeys(professionalArsNo);
+//		clickOnProfessionalReferenceSearchBtn.click();
+//		clickOnProfessionalReferenceArsNumber.click();
+//
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnProfessionalReferenceCheck);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnProfessionalReferenceCheck));
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnProfessionalReferenceCheck);
+//
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", selectProfessionalReferenceCloseByClient);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(selectProfessionalReferenceCloseByClient));
+//		JavaScriptManuplator.selectOptionFromDropDown(selectProfessionalReferenceCloseByClient, "Close By Client");
+//		Thread.sleep(1000);
+//
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(selectProfessionalReferenceCategory));
+//		JavaScriptManuplator.selectOptionFromDropDown(selectProfessionalReferenceCategory, "As per client instruction");
+//		Thread.sleep(1000);
+//		txtProfessionalReferenceSpecialComments.sendKeys(professionalComments);
+//		clickOnProfessionalReferenceClosedByClientBtn.click();
+//		Thread.sleep(1000);
 	}
-
+//
 	public String verifyProfessionalReferenceCheckClosedByClientMsg() {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyProfessionalReferenceCheckClosedbyClient));
 		return verifyProfessionalReferenceCheckClosedbyClient.getText();
-	}
+   }
 
 	public void bridgeAccountLoggedOut() throws InterruptedException {
 		Thread.sleep(2000);

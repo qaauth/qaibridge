@@ -1,6 +1,7 @@
 package com.iBridge.pageobject;
 
 import java.text.ParseException;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -674,6 +675,9 @@ public class CandidateBulkLogin {
 
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
+		
+		WebDriverWait wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.invisibilityOf(verifyText));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
 		Thread.sleep(3000);
@@ -967,7 +971,8 @@ public class CandidateBulkLogin {
 		wait.until(ExpectedConditions.visibilityOf(txtHrFistName));
 		txtHrFistName.clear();
 		txtHrFistName.sendKeys(hrFirstName);
-		txtHrMiddleName.clear();
+//		txtHrMiddleName.clear();
+		Thread.sleep(1000);
 		txtHrMiddleName.sendKeys(hrMiddleName);
 		txtHrLastName.clear();
 		txtHrLastName.sendKeys(hrLastName);
@@ -1140,7 +1145,7 @@ public class CandidateBulkLogin {
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnEmploymentBtn));
 		clickOnEmploymentBtn.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		try {
 			txtGapReason.clear();
 			txtGapReason.sendKeys(gapReason);
@@ -1148,6 +1153,22 @@ public class CandidateBulkLogin {
 		} catch (Exception e) {
 			//System.out.println("Entered in to the catch block");
 		}
+		
+		List<WebElement> tag13 = ldriver.findElements(By.tagName("button"));
+		for (int j = 0; j < tag13.size(); j++) {
+			if (tag13.get(j).getAttribute("name").equals("continue")) {
+				System.out.println("J inde is being printed here:"+ j);
+				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+				executor.executeScript("arguments[0].click();", tag13.get(j));
+				System.out.println("hi");
+				break;
+			}}
+		
+		// click on ok Button
+		
+				Thread.sleep(5000);
+				List<WebElement> tag14 = ldriver.findElements(By.tagName("button"));
+				tag14.get(15).click();
 	}
 
 	// Education to Employment Gap

@@ -31,7 +31,7 @@ public class TC_SubmitCaseIndividuallyExtended_03 extends BaseClass {
 
 //		LoginPage login = new LoginPage(driver);
 //		login.login(username, password);
-		logger.info("Entered Username and password!");
+//		logger.info("Entered Username and password!");
 
 		LoginPage loginPage = new LoginPage(driver);
 //		if (loginPage.verifyDashboardCaseSubmissionSummaryText().contains("CASE SUBMISSION SUMMARY")) {

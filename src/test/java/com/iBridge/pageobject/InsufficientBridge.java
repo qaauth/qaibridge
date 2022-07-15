@@ -1433,6 +1433,7 @@ public class InsufficientBridge {
 	// Mark Insufficiency Cost Approval Required (ProfessionalReferenceCheck)
 	public void superAdminVerifierCostApproval(String pasteArsNo, String refereeName, String costApproval, String cost)
 			throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectSuperAdminVerifier));
 		JavaScriptManuplator.selectOptionFromDropDown(selectSuperAdminVerifier, "Verifier");
@@ -1478,8 +1479,7 @@ public class InsufficientBridge {
 		wait.until(ExpectedConditions.visibilityOf(selectRaiseInsuffAtionName));
 		Select raiseInsuffAtionName = new Select(selectRaiseInsuffAtionName);
 		raiseInsuffAtionName.selectByIndex(5);
-
-		wait = new WebDriverWait(ldriver, 120);
+    	wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(selectReasonForInsufficiency));
 		Select costApprovalReasonForInsuff = new Select(selectReasonForInsufficiency);
 		costApprovalReasonForInsuff.selectByIndex(2);
@@ -1497,6 +1497,7 @@ public class InsufficientBridge {
 	// Mark Insufficiency -- Pan Number Check (Pan Number Check)
 	public void superAdminVerifierPanNumberCheck(String pasteArsNo, String dateVerification, String timeVerification,
 			String panaNumber, String comments) throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);// ,int index
 		wait.until(ExpectedConditions.visibilityOf(selectSuperAdminVerifier));
 		JavaScriptManuplator.selectOptionFromDropDown(selectSuperAdminVerifier, "Verifier");
@@ -1556,6 +1557,7 @@ public class InsufficientBridge {
 
 	// Mark Insufficiency -- Indian Database Check (Indian Database Verification)
 	public void superAdminVerifierIndianDatabaseCheck(String pasteArsNo, String comments) throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectSuperAdminVerifier));
 		JavaScriptManuplator.selectOptionFromDropDown(selectSuperAdminVerifier, "Verifier");
@@ -1609,6 +1611,7 @@ public class InsufficientBridge {
 			String executiveName, String timeofVerification, String gateOfColor, String colorOfBuilding,
 			String periodofStay, String newAddress, String insufficientComment, String comment, String costInsuff)
 			throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);// ,int index
 		wait.until(ExpectedConditions.visibilityOf(selectSuperAdminVerifier));
 		JavaScriptManuplator.selectOptionFromDropDown(selectSuperAdminVerifier, "Verifier");
@@ -1705,6 +1708,7 @@ public class InsufficientBridge {
 
 	// Insufficiency Fulfillment--Approve -- Super Admin
 	public void superAdminInsufficiencyFulfillment(String mobileNo, String insuffComment) throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectUserInsuffFulfillment));
 		JavaScriptManuplator.selectOptionFromDropDown(selectUserInsuffFulfillment, "Insufficiency Fulfilment");
@@ -1756,6 +1760,7 @@ public class InsufficientBridge {
 	// Insufficiency Fulfillment--Partially Approve -- Super Admin
 	public void superAdminInsufficiencyPartiallyApproveFulfillment(String mobileNo, String insuffComment)
 			throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectUserInsuffFulfillment));
 		JavaScriptManuplator.selectOptionFromDropDown(selectUserInsuffFulfillment, "Insufficiency Fulfilment");
@@ -1807,6 +1812,7 @@ public class InsufficientBridge {
 	// Insufficiency Fulfillment--Rejected -- Super Admin
 	public void superAdminInsufficiencyRejectFulfillment(String mobileNo, String insuffComment)
 			throws InterruptedException {
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(selectUserInsuffFulfillment));
 		JavaScriptManuplator.selectOptionFromDropDown(selectUserInsuffFulfillment, "Insufficiency Fulfilment");
@@ -1846,8 +1852,8 @@ public class InsufficientBridge {
 				js = (JavascriptExecutor) ldriver;
 				js.executeScript("arguments[0].scrollIntoView(true);", clickOnFullFillInsuffBtn);
 				Thread.sleep(2000);
-//				wait = new WebDriverWait(ldriver, 60);
-//				wait.until(ExpectedConditions.visibilityOf(selectInsufficiencyIndianDatabaseFulfillmentAction));
+				wait = new WebDriverWait(ldriver, 60);
+				wait.until(ExpectedConditions.visibilityOf(selectInsufficiencyIndianDatabaseFulfillmentAction));
 				selectInsufficiencyIndianDatabaseFulfillmentAction.click();
 				Select insufficiencyFulfillmentAction = new Select(selectInsufficiencyIndianDatabaseFulfillmentAction);
 				insufficiencyFulfillmentAction.selectByIndex(3);

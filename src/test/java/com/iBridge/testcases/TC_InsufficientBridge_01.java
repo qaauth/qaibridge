@@ -32,14 +32,14 @@ public class TC_InsufficientBridge_01 extends BaseClass {
 				"Till Date", "Gurgaon", "Insufficient comment is good");
 		logger.info("Antecedents to Verify all Records have filled Successfully!");
 
-//		if (insuffVerifier.verifyMarkedAsInsufficientMsg().contains("Check is successfully marked as Insufficient.")) {
-//			Assert.assertTrue(true);
-//			logger.info("Check is successfully marked as Insufficient.!");
-//		} else {
-//			logger.info("Check is not successfully marked as Insufficient.!");
-//			captureScreen(driver, "verifyChecksSuccessfullyMsg");
-//			Assert.assertTrue(false);
-//		}
+		if (insuffVerifier.verifyMarkedAsInsufficientMsg().contains("Check is successfully marked as Insufficient.")) {
+			Assert.assertTrue(true);
+			logger.info("Check is successfully marked as Insufficient.!");
+		} else {
+			logger.info("Check is not successfully marked as Insufficient.!");
+			captureScreen(driver, "verifyChecksSuccessfullyMsg");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Verify raised Insufficient on iBridge under Insufficient bucket and fulfilling Insufficient--(iBridge Portal)
@@ -57,14 +57,14 @@ public class TC_InsufficientBridge_01 extends BaseClass {
 		pendingForFulfilment.pendingForFulfilmentInsufficient(arsNumber[2], "Comments added successfully");
 		logger.info("Pending For Fulfilment Insufficient has Added successfully!");
 
-//		if (pendingForFulfilment.verifySubmittedTextMsg().contains("Submitted")) {
-//			Assert.assertTrue(true);
-//			logger.info("Insufficient details have Submitted successfully.");
-//		} else {
-//			logger.info("Insufficient details have Not Submitted successfully.");
-//			captureScreen(driver, "verifySubmittedTextMsg");
-//			Assert.assertTrue(false);
-//		}
+		if (pendingForFulfilment.verifySubmittedTextMsg().contains("Submitted")) {
+			Assert.assertTrue(true);
+			logger.info("Insufficient details have Submitted successfully.");
+		} else {
+			logger.info("Insufficient details have Not Submitted successfully.");
+			captureScreen(driver, "verifySubmittedTextMsg");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Verify fulfilled Insufficient on bridge and approving it--Bridge
@@ -78,14 +78,14 @@ public class TC_InsufficientBridge_01 extends BaseClass {
 		InsufficientBridge insuffFulfillment = new InsufficientBridge(driver);
 		insuffFulfillment.superAdminInsufficiencyFulfillment("7042718794", "Insufficient Comments Have Added");
 		logger.info("Insufficiency Fulfillment details have added Successfully!");
-//		if (insuffFulfillment.verifyUpdatedSuccessfullyMessage().contains("Updated Successfully")) {
-//			Assert.assertTrue(true);
-//			logger.info("Insufficient details have Submitted successfully.");
-//		} else {
-//			logger.info("Insufficient details have not Submitted successfully.");
-//			captureScreen(driver, "verifyUpdatedSuccessfullyMessage");
-//			Assert.assertTrue(false);
-//		}
+		if (insuffFulfillment.verifyUpdatedSuccessfullyMessage().contains("Updated Successfully")) {
+			Assert.assertTrue(true);
+			logger.info("Insufficient details have Submitted successfully.");
+		} else {
+			logger.info("Insufficient details have not Submitted successfully.");
+			captureScreen(driver, "verifyUpdatedSuccessfullyMessage");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Verify whether case got removed once Insufficient fulfilled--iBridge Portal
@@ -216,14 +216,14 @@ public class TC_InsufficientBridge_01 extends BaseClass {
 		insuffVerifier.superAdminVerifierIndianDatabaseCheck(arsNumber[2], "Insufficient comments are good");
 		logger.info("Antecedents to Verify all Records have filled Successfully!");
 
-//		if (insuffVerifier.verifyMarkedAsInsufficientMsg().contains("Check is successfully marked as Insufficient.")) {
-//			Assert.assertTrue(true);
-//			logger.info("Check is successfully marked as Insufficient.!");
-//		} else {
-//			logger.info("Check is not successfully marked as Insufficient.!");
-//			captureScreen(driver, "verifyChecksSuccessfullyMsg");
-//			Assert.assertTrue(false);
-//		}
+		if (insuffVerifier.verifyMarkedAsInsufficientMsg().contains("Check is successfully marked as Insufficient.")) {
+			Assert.assertTrue(true);
+			logger.info("Check is successfully marked as Insufficient.!");
+		} else {
+			logger.info("Check is not successfully marked as Insufficient.!");
+			captureScreen(driver, "verifyChecksSuccessfullyMsg");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Verify raised Insufficient on iBridge under Insufficient bucket and fulfilling Insufficient--(iBridge Portal)

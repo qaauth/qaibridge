@@ -688,7 +688,7 @@ public class CandidateLogin {
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
 		
-		WebDriverWait wait =new WebDriverWait(ldriver, 120);
+		WebDriverWait wait =new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.invisibilityOf(verifyText));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);
@@ -1082,34 +1082,9 @@ public class CandidateLogin {
 		JavaScriptManuplator.javaScriptExecutor(checkDocumentLater, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnEmploymentBtn, "arguments[0].click()", ldriver);
-		System.out.println("employement button click");
-		Thread.sleep(3000);
-//		try {
-//			JavaScriptManuplator.javaScriptExecutor(clickOnCasePreviewSubmitBtn, "arguments[0].scrollIntoView(true);", ldriver);
-//			wait = new WebDriverWait(ldriver,60);
-//			wait.until(ExpectedConditions.visibilityOf(clickOnCasePreviewSubmitBtn));
-//			
-//			js = (JavascriptExecutor) ldriver;
-//			js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
-//		} catch (org.openqa.selenium.NoSuchElementException e) {
-//			// TODO Auto-generated catch block
-//			
-//		}
-//		Thread.sleep(2000);
-//		// Confirm- alert Ok Button
-//		try {
-//			wait = new WebDriverWait(ldriver,60);
-//			wait.until(ExpectedConditions.visibilityOf(clickOnConfirmAlertOkBtn));
-//			js = (JavascriptExecutor) ldriver;
-//			js.executeScript("arguments[0].click()", clickOnConfirmAlertOkBtn);
-//		} catch (org.openqa.selenium.TimeoutException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-	
-//		js = (JavascriptExecutor) ldriver;
-//		js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
-//		System.out.println("radhe");
+		Thread.sleep(5000);
+
+		// Submit Button Click
 		
 		List<WebElement> tag13 = ldriver.findElements(By.tagName("button"));
 		for (int j = 0; j < tag13.size(); j++) {
@@ -1122,60 +1097,37 @@ public class CandidateLogin {
 			}}
 		
 		// Confirm- alert Ok Button
-//		Thread.sleep(4000);
-//		System.out.println("ok start");
-//		ldriver.findElement(By.cssSelector("clickOnConfirmAlertOkBtn");
-//		System.out.println("ok end");
 		
 		Thread.sleep(5000);
 		List<WebElement> tag14 = ldriver.findElements(By.tagName("button"));
 		tag14.get(15).click();
-		//JavascriptExecutor executor = (JavascriptExecutor) ldriver;
-		//executor.executeScript("arguments[0].click();", tag14.get(15));
 		System.out.println("alert box has been click");
-		/*for (int i = 0; i < tag14.size(); i++) {
-			if (tag14.get(i).getAttribute("class").equals("btn btn-default")) {
-				System.out.println("Index for I :"+i);
-				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
-				executor.executeScript("arguments[0].click();", tag14.get(i));
-				System.out.println("hii");
-				break;
-//				if (tag14.get(i).getText().contentEquals("Ok")) {
-//				
-//				}
-			} 
-		}*/
 		
-//		Thread.sleep(3000);
-//		clickOnConfirmAlertOkBtn.click();
-//		System.out.println("okbutton");
-//		JavascriptExecutor js =(JavascriptExecutor)ldriver;
-//		js.executeScript("arguments[0].click()", clickOnCasePreviewSubmitBtn);
-//		System.out.println("fgi");
-//		JavaScriptManuplator.javaScriptExecutor(clickOnConfirmAlertOkBtn, "arguments[0].click()", ldriver);
-		
-//		System.out.println("Action start");
-//		Actions action = new Actions(ldriver);
-//		//action.contextClick(clickOnConfirmAlertOkBtn).build().perform();
-//		action.click(clickOnConfirmAlertOkBtn).build().perform();
-//		//action.moveToElement(clickOnConfirmAlertOkBtn).click().perform();
-//		System.out.println("Action end");
-		
-//		try {
-//			txtGapReason.clear();
-//			txtGapReason.sendKeys(gapReason);
-//			clickOnSubmitGapBtn.click();
-//		} catch (Exception e) {
-//			// System.out.println("Entered in to the catch block");
+//		for (int i = 0; i < tag14.size(); i++) {
+//			if (tag14.get(i).getAttribute("class").equals("btn btn-default")) {
+//				System.out.println("Index for I :"+i);
+//				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+//				executor.executeScript("arguments[0].click();", tag14.get(i));
+//				System.out.println("hii");
+//				break;
+//			} 
+//		
 //		}
-	}
+		try {
+			txtGapReason.clear();
+			txtGapReason.sendKeys(gapReason);
+			clickOnSubmitGapBtn.click();
+		} catch (Exception e) {
+			// System.out.println("Entered in to the catch block");
+		}
+		}
 
 	// Education to Employment Gap
-//	public void candidateCasePreview() throws InterruptedException {
-//		wait = new WebDriverWait(ldriver, 120);
-//		wait.until(ExpectedConditions.visibilityOf(clickOnPreviewSubmitBtn));
-//		clickOnPreviewSubmitBtn.click();
-//		Thread.sleep(1000);
-//	}
+	public void candidateCasePreview() throws InterruptedException {
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(clickOnPreviewSubmitBtn));
+		clickOnPreviewSubmitBtn.click();
+		Thread.sleep(1000);
+	}
 	
 }
