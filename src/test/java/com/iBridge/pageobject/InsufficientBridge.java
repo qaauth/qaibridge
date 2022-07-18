@@ -722,7 +722,7 @@ public class InsufficientBridge {
 
 	// For Indian Database Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//*[@id='CaseChecks']")
+	@FindBy(how = How.XPATH, using = "//select[@id='CaseChecks']")
 	WebElement selectInsufficiencyIndianDatabaseFulfillmentAction;
 
 	@CacheLookup
@@ -1852,7 +1852,7 @@ public class InsufficientBridge {
 				js = (JavascriptExecutor) ldriver;
 				js.executeScript("arguments[0].scrollIntoView(true);", clickOnFullFillInsuffBtn);
 				Thread.sleep(2000);
-				wait = new WebDriverWait(ldriver, 60);
+				wait = new WebDriverWait(ldriver, 120);
 				wait.until(ExpectedConditions.visibilityOf(selectInsufficiencyIndianDatabaseFulfillmentAction));
 				selectInsufficiencyIndianDatabaseFulfillmentAction.click();
 				Select insufficiencyFulfillmentAction = new Select(selectInsufficiencyIndianDatabaseFulfillmentAction);

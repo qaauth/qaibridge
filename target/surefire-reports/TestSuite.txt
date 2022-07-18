@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 129.034 sec <<< FAILURE! - in TestSuite
-verifyPrepaidInitiateSubmitCaseIndividually(com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02)  Time elapsed: 89.782 sec  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" name="continue" value="Continue" class="new-continue-btn pull-right" id="profileSubmitForm">...</button> is not clickable at point (866, 537). Other element would receive the click: <div class="loader_div" style="">...</div>
+Tests run: 20, Failures: 1, Errors: 0, Skipped: 11, Time elapsed: 1,161.029 sec <<< FAILURE! - in TestSuite
+routeToCandidateRaiseInsuffAndFulfil(com.iBridge.testcases.TC_CatSignOffApplicable_01)  Time elapsed: 108.767 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select name="Checks[9598643][INSUFF_FULFILL_ACTION]" id="CaseChecks">...</select> is not clickable at point (467, 10). Other element would receive the click: <a href="javascript:void(0);">...</a>
   (Session info: chrome=101.0.4951.54)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.223.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.79.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.zU09kD}, goog:chromeOptions: {debuggerAddress: localhost:42143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 94d82f15b69aab8e99f5496605b40f6d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.c1xdzQ}, goog:chromeOptions: {debuggerAddress: localhost:33303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 631ae516c0d4a832bc55ac3c2bb7989b
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -22,12 +22,12 @@ Session ID: 94d82f15b69aab8e99f5496605b40f6d
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.PrepaidSubmitCaseIndividuallyExtended.prepaidCandidateAddress(PrepaidSubmitCaseIndividuallyExtended.java:1339)
-	at com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02.verifyPrepaidInitiateSubmitCaseIndividually(TC_PrepaidSubmitCaseIndividuallyExtended_02.java:69)
+	at com.iBridge.pageobject.InsufficientBridge.superAdminInsufficiencyRejectFulfillment(InsufficientBridge.java:1857)
+	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyInsufficiencyRejectedFulfillment(TC_InsufficientBridge_01.java:260)
+	at com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil(TC_CatSignOffApplicable_01.java:257)
 

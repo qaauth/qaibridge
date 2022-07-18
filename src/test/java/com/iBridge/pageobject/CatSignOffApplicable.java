@@ -286,8 +286,8 @@ public class CatSignOffApplicable {
 	
 
 	public void ibridgeCatLoginDetails(String username, String password) throws InterruptedException {
-//		wait = new WebDriverWait(ldriver, 60);
-//		wait.until(ExpectedConditions.visibilityOf(txtUserName));
+		wait = new WebDriverWait(ldriver, 120);
+		wait.until(ExpectedConditions.visibilityOf(txtUserName));
 		txtUserName.sendKeys(username);
 		txtPassword.sendKeys(password);
 		Thread.sleep(1000);
@@ -597,10 +597,10 @@ public class CatSignOffApplicable {
 	}
 
 	public void voterIdAndDrivingLicenseNidInDropdownList() {
-		String arr[] = { "--Select--", "VOTER ID", "DRIVING LICENSE" };
+		String arr[] = { "--Select--", "VOTER ID", "DRIVING LICENSE", "PASSPORT"};
 		Select select = new Select(selectDocumentType);
 		List<WebElement> allOptions = select.getOptions();
-		System.out.println("Dropdown List=="+allOptions.size());
+//		System.out.println("Dropdown List=="+allOptions.size());
 		for (int i = 0; i < allOptions.size(); i++) {
 			Assert.assertEquals(arr[i], allOptions.get(i).getText());
 		}

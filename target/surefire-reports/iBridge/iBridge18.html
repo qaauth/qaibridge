@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>iBridge18</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/17</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/11</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 15 16:51:58 IST 2022</td>
+<td>Started on:</td><td>Mon Jul 18 17:44:22 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>103 seconds (103578 ms)</td>
+<tr><td>Total time:</td><td>1160 seconds (1160260 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyInitiateCaseIndividuallyExtended()'><b>verifyInitiateCaseIndividuallyExtended</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; name=&quot;continue&quot; value=&quot;Continue&quot; class=&quot;new-continue-btn pull-right&quot; id=&quot;pacakgeSubmitForm&quot;&gt;...&lt;/button&gt; is not clickable at point (1153, 541). Other element would receive the click: &lt;div class=&quot;modal fade new-modal-popup checks-count-popup in&quot; id=&quot;instruction-popup&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; data-backdrop=&quot;static&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil()'><b>routeToCandidateRaiseInsuffAndFulfil</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select name=&quot;Checks[9598643][INSUFF_FULFILL_ACTION]&quot; id=&quot;CaseChecks&quot;&gt;...&lt;/select&gt; is not clickable at point (467, 10). Other element would receive the click: &lt;a href=&quot;javascript:void(0);&quot;&gt;...&lt;/a&gt;
   (Session info: chrome=101.0.4951.54)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.223.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.79.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.EbGsaO}, goog:chromeOptions: {debuggerAddress: localhost:38847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93c507d54f292635b9909d18b318ed2d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.c1xdzQ}, goog:chromeOptions: {debuggerAddress: localhost:33303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 631ae516c0d4a832bc55ac3c2bb7989b
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -93,17 +93,17 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.CandidateLogin.candidateAuthorization(CandidateLogin.java:710)
-	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount(TC_InitiateCaseIndividuallyExtended_01.java:163)
-	at com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyInitiateCaseIndividuallyExtended(TC_CatSignOffApplicable_01.java:80)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316205906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1316205906'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; name=&quot;continue&quot; value=&quot;Continue&quot; class=&quot;new-continue-btn pull-right&quot; id=&quot;pacakgeSubmitForm&quot;&gt;...&lt;/button&gt; is not clickable at point (1153, 541). Other element would receive the click: &lt;div class=&quot;modal fade new-modal-popup checks-count-popup in&quot; id=&quot;instruction-popup&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; data-backdrop=&quot;static&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+	at com.iBridge.pageobject.InsufficientBridge.superAdminInsufficiencyRejectFulfillment(InsufficientBridge.java:1857)
+	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyInsufficiencyRejectedFulfillment(TC_InsufficientBridge_01.java:260)
+	at com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil(TC_CatSignOffApplicable_01.java:257)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1284944245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1284944245'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select name=&quot;Checks[9598643][INSUFF_FULFILL_ACTION]&quot; id=&quot;CaseChecks&quot;&gt;...&lt;/select&gt; is not clickable at point (467, 10). Other element would receive the click: &lt;a href=&quot;javascript:void(0);&quot;&gt;...&lt;/a&gt;
   (Session info: chrome=101.0.4951.54)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.223.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
+System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.79.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.EbGsaO}, goog:chromeOptions: {debuggerAddress: localhost:38847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93c507d54f292635b9909d18b318ed2d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.c1xdzQ}, goog:chromeOptions: {debuggerAddress: localhost:33303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 631ae516c0d4a832bc55ac3c2bb7989b
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -121,9 +121,9 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.CandidateLogin.candidateAuthorization(CandidateLogin.java:710)
-	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount(TC_InitiateCaseIndividuallyExtended_01.java:163)
-	at com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyInitiateCaseIndividuallyExtended(TC_CatSignOffApplicable_01.java:80)
+	at com.iBridge.pageobject.InsufficientBridge.superAdminInsufficiencyRejectFulfillment(InsufficientBridge.java:1857)
+	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyInsufficiencyRejectedFulfillment(TC_InsufficientBridge_01.java:260)
+	at com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil(TC_CatSignOffApplicable_01.java:257)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,7 +153,7 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>82</td>
+<td>108</td>
 <td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -164,9 +164,39 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.candidateInitiateCaseIndividuallyExtended()'><b>candidateInitiateCaseIndividuallyExtended</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
+<td></td>
+<td>460</td>
+<td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.submitCaseIndividuallyExtended()'><b>submitCaseIndividuallyExtended</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
+<td></td>
+<td>247</td>
+<td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyBritishClientRouteToCandidateApplicableYes()'><b>verifyBritishClientRouteToCandidateApplicableYes</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
+<td></td>
+<td>13</td>
+<td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyBritishClientSignOffApplicableNo()'><b>verifyBritishClientSignOffApplicableNo</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
+<td></td>
+<td>14</td>
+<td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
+<tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyBritishClientSignOffApplicableYes()'><b>verifyBritishClientSignOffApplicableYes</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td></td>
 <td>9</td>
+<td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyInitiateCaseIndividuallyExtended()'><b>verifyInitiateCaseIndividuallyExtended</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
+<td></td>
+<td>276</td>
+<td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
+<tr>
+<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyPendingSignOffBucket()'><b>verifyPendingSignOffBucket</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
+<td></td>
+<td>16</td>
 <td>com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447</td></tr>
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyiBridgeCatLoginDetails()'><b>verifyiBridgeCatLoginDetails</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
@@ -182,97 +212,10 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.candidateInitiateCaseIndividuallyExtended()'><b>candidateInitiateCaseIndividuallyExtended</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.candidateInitiateCaseIndividuallyExtended()[pri:8, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace604990529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace604990529'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.candidateInitiateCaseIndividuallyExtended()[pri:8, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil()'><b>routeToCandidateRaiseInsuffAndFulfil</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil()[pri:9, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911857585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace911857585'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil()[pri:9, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.submitCaseIndividuallyExtended()'><b>submitCaseIndividuallyExtended</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.submitCaseIndividuallyExtended()[pri:6, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace605440398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace605440398'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.submitCaseIndividuallyExtended()[pri:6, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyBritishClientNidPassport()'><b>verifyBritishClientNidPassport</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientNidPassport()[pri:12, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1684615718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1684615718'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientNidPassport()[pri:12, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1891047080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1891047080'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientNidPassport()[pri:12, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -300,66 +243,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyBritishClientNidPassportAndPanCard()'><b>verifyBritishClientNidPassportAndPanCard</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientNidPassportAndPanCard()[pri:14, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace293326812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace293326812'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientNidPassportAndPanCard()[pri:14, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyBritishClientRouteToCandidateApplicableYes()'><b>verifyBritishClientRouteToCandidateApplicableYes</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientRouteToCandidateApplicableYes()[pri:7, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798180728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1798180728'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientRouteToCandidateApplicableYes()[pri:7, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyBritishClientSignOffApplicableNo()'><b>verifyBritishClientSignOffApplicableNo</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientSignOffApplicableNo()[pri:5, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998371610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1998371610'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientSignOffApplicableNo()[pri:5, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace773491738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace773491738'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyBritishClientNidPassportAndPanCard()[pri:14, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -387,8 +272,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyEnpAdminLoginAccount()'><b>verifyEnpAdminLoginAccount</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyEnpAdminLoginAccount()[pri:18, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589931229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1589931229'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyEnpAdminLoginAccount()[pri:18, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace953909385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace953909385'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyEnpAdminLoginAccount()[pri:18, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -416,8 +301,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormNotPresent()'><b>verifyGapReasonApplicableFormNotPresent</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormNotPresent()[pri:17, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1847301137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1847301137'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormNotPresent()[pri:17, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152175709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1152175709'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormNotPresent()[pri:17, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -445,8 +330,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormPresent()'><b>verifyGapReasonApplicableFormPresent</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormPresent()[pri:17, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace567391009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace567391009'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormPresent()[pri:17, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051521166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051521166'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableFormPresent()[pri:17, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -474,8 +359,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyGapReasonApplicableNo()'><b>verifyGapReasonApplicableNo</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableNo()[pri:16, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1584688439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1584688439'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableNo()[pri:16, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997366722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997366722'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableNo()[pri:16, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -503,8 +388,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyGapReasonApplicableYes()'><b>verifyGapReasonApplicableYes</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableYes()[pri:18, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace589610983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace589610983'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableYes()[pri:18, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace610582821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace610582821'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyGapReasonApplicableYes()[pri:18, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -532,8 +417,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyNidPassportDropDown()'><b>verifyNidPassportDropDown</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyNidPassportDropDown()[pri:13, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477463877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace477463877'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyNidPassportDropDown()[pri:13, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961422681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961422681'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyNidPassportDropDown()[pri:13, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -561,37 +446,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyNidVoterIdAndDrivingLicenseDropDown()'><b>verifyNidVoterIdAndDrivingLicenseDropDown</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyNidVoterIdAndDrivingLicenseDropDown()[pri:15, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1939970407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1939970407'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyNidVoterIdAndDrivingLicenseDropDown()[pri:15, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyPendingSignOffBucket()'><b>verifyPendingSignOffBucket</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
-<td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyPendingSignOffBucket()[pri:4, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace753692748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace753692748'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyPendingSignOffBucket()[pri:4, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1070020292", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1070020292'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyNidVoterIdAndDrivingLicenseDropDown()[pri:15, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -619,8 +475,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyrouteToCandidateApplicableNo()'><b>verifyrouteToCandidateApplicableNo</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyrouteToCandidateApplicableNo()[pri:10, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538292941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace538292941'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyrouteToCandidateApplicableNo()[pri:10, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2126814619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2126814619'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyrouteToCandidateApplicableNo()[pri:10, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -648,8 +504,8 @@ Session ID: 93c507d54f292635b9909d18b318ed2d
 <tr>
 <td title='com.iBridge.testcases.TC_CatSignOffApplicable_01.verifyrouteToCandidateButtonPresentOrNot()'><b>verifyrouteToCandidateButtonPresentOrNot</b><br>Test class: com.iBridge.testcases.TC_CatSignOffApplicable_01</td>
 <td><div><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyrouteToCandidateButtonPresentOrNot()[pri:11, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1004219512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1004219512'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyrouteToCandidateButtonPresentOrNot()[pri:11, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace164828158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace164828158'><pre>java.lang.Throwable: Method TC_CatSignOffApplicable_01.verifyrouteToCandidateButtonPresentOrNot()[pri:11, instance:com.iBridge.testcases.TC_CatSignOffApplicable_01@3fb6a447] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)

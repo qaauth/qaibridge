@@ -688,7 +688,7 @@ public class CandidateLogin {
 	// Authorization --Step 3 - Candidate Summary
 	public void candidateAuthorization() throws InterruptedException {
 		
-		WebDriverWait wait =new WebDriverWait(ldriver, 60);
+		WebDriverWait wait =new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.invisibilityOf(verifyText));
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].scrollIntoView(true);", verifyText);

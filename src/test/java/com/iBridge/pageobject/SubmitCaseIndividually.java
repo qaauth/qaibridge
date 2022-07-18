@@ -920,7 +920,7 @@ public class SubmitCaseIndividually {
 
 	// Do It Yourself(DIY)
 	public void sidebarExpandBtn() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		clickOnSidebarExpand.click();
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInitiateNewCase));

@@ -79,13 +79,13 @@
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidInitiateCaseIndividuallyExtended_01" 
 		/> </classes> </test> -->
 
-	<test name="iBridge17"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge17"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" 
-		/> </classes> </test>
-
-	<!-- <test name="iBridge18"> <parameter name="browser" value="chrome" /> 
-		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
 		/> </classes> </test> -->
+
+	<test name="iBridge18"> <parameter name="browser" value="chrome" /> 
+		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
+		/> </classes> </test>
 
 	<!-- SignDrive Test Cases -->
 	

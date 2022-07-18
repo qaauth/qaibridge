@@ -641,16 +641,16 @@ public class TC_CatSignOffApplicable_01 extends BaseClass {
 		CatSignOffApplicable gapReasonNo = new CatSignOffApplicable(driver);
 		gapReasonNo.ibridgeCatLoginDetails(iBridgeCatUsername, iBridgeCatPassword);
 		logger.info("iBridge Cat account has Logged successfully!");
-		gapReasonNo.gapReasonApplicableYes();
-		logger.info("Gesture Signature Type On Arn has configured Successfully!");
-		if (gapReasonNo.verifyClientUpdatedSuccessfullyMsg().contains("Client updated Successfully")) {
-			Assert.assertTrue(true);
-			logger.info("Client updated has Successfully!");
-		} else {
-			logger.info("Client updated Has Not Successfully!");
-			captureScreen(driver, "verifyClientUpdatedSuccessfullyMsg");
-			Assert.assertTrue(false);
-		}
+//		gapReasonNo.gapReasonApplicableYes();
+//		logger.info("Gesture Signature Type On Arn has configured Successfully!");
+//		if (gapReasonNo.verifyClientUpdatedSuccessfullyMsg().contains("Client updated Successfully")) {
+//			Assert.assertTrue(true);
+//			logger.info("Client updated has Successfully!");
+//		} else {
+//			logger.info("Client updated Has Not Successfully!");
+//			captureScreen(driver, "verifyClientUpdatedSuccessfullyMsg");
+//			Assert.assertTrue(false);
+//		}
 		gapReasonNo.iBridgeCatLogout();
 
 		logger.info("iBridge Cat Account has logged Successfully!");

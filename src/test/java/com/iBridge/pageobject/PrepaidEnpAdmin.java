@@ -312,7 +312,7 @@ public class PrepaidEnpAdmin {
 
 	// Step 2 - Package Selection-- Check Wise
 	public void selectPackageCheckWise() throws InterruptedException {
-		wait = new WebDriverWait(ldriver, 60);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnPackageSelection));
 		Thread.sleep(2000);
 		JavaScriptManuplator.javaScriptExecutor(clickOnPackageSelection, "arguments[0].click()", ldriver);

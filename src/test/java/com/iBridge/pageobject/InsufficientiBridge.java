@@ -233,6 +233,10 @@ public class InsufficientiBridge extends BaseClass{
 	WebElement clickOnPendingReferredBackText;
 	
 	@CacheLookup
+	@FindBy(how = How.XPATH, using = "//*[@class='submit-btn fullfillbtn']")
+	WebElement submitButton;
+	
+	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[1]/div/div[3]/div/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[2]/form/div[1]/h4/a")
 	WebElement indianDatabaseVerification;
 
@@ -658,19 +662,20 @@ public class InsufficientiBridge extends BaseClass{
 		wait = new WebDriverWait(ldriver, 180);
 		wait.until(ExpectedConditions.visibilityOf(verifySubmitedText));
 		Thread.sleep(2000);
+		submitButton.click();
 //		clickOnPendingReferredBackText.click();
-		indianDatabaseVerification.click();
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(txtAddCommentsIndianDb));
-		Thread.sleep(2000);
-		txtAddCommentsIndianDb.sendKeys(insuffCommentsDb);
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].scrollIntoView(true);", clickOnIndianDbSubmitBtn);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(clickOnIndianDbSubmitBtn));
-		clickOnIndianDbSubmitBtn.click();
+//		indianDatabaseVerification.click();
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(txtAddCommentsIndianDb));
+//		Thread.sleep(2000);
+//		txtAddCommentsIndianDb.sendKeys(insuffCommentsDb);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].scrollIntoView(true);", clickOnIndianDbSubmitBtn);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnIndianDbSubmitBtn));
+//		clickOnIndianDbSubmitBtn.click();
 		// Route To Candidate Account Logged Out.
-		wait = new WebDriverWait(ldriver, 60);
+		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnRouteToCandidateProfileName));
 		clickOnRouteToCandidateProfileName.click();
 		wait = new WebDriverWait(ldriver, 60);
