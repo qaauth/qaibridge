@@ -1,15 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 1, Errors: 0, Skipped: 11, Time elapsed: 1,161.029 sec <<< FAILURE! - in TestSuite
-routeToCandidateRaiseInsuffAndFulfil(com.iBridge.testcases.TC_CatSignOffApplicable_01)  Time elapsed: 108.767 sec  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select name="Checks[9598643][INSUFF_FULFILL_ACTION]" id="CaseChecks">...</select> is not clickable at point (467, 10). Other element would receive the click: <a href="javascript:void(0);">...</a>
-  (Session info: chrome=101.0.4951.54)
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 240.855 sec <<< FAILURE! - in TestSuite
+candidateLoginAccount(com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01)  Time elapsed: 185.445 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='btn btn-default'])[1]"}
+  (Session info: headless chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.79.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.1.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.c1xdzQ}, goog:chromeOptions: {debuggerAddress: localhost:33303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 631ae516c0d4a832bc55ac3c2bb7989b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.yaIIwn}, goog:chromeOptions: {debuggerAddress: localhost:33037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2edbd2fcde00e9a873e4c5198048e38
+*** Element info: {Using=xpath, value=(//*[@class='btn btn-default'])[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -20,14 +22,13 @@ Session ID: 631ae516c0d4a832bc55ac3c2bb7989b
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.InsufficientBridge.superAdminInsufficiencyRejectFulfillment(InsufficientBridge.java:1857)
-	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyInsufficiencyRejectedFulfillment(TC_InsufficientBridge_01.java:260)
-	at com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil(TC_CatSignOffApplicable_01.java:257)
+	at com.iBridge.pageobject.CandidateLogin.candidatePreviousEmployment(CandidateLogin.java:1107)
+	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount(TC_InitiateCaseIndividuallyExtended_01.java:195)
 

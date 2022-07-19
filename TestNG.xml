@@ -13,11 +13,11 @@
 
 	<!-- <test name="iBridge2"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CasesPendingInitiation_01" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 
 	<test name="iBridge3"> <parameter name="browser" value="chrome"/> <classes> 
 		<class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01"/> 
-		</classes> </test> -->
+		</classes> </test>
 
 	<!-- <test name="iBridge4"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_InsufficientBridge_01" /> 
@@ -83,9 +83,9 @@
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" 
 		/> </classes> </test> -->
 
-	<test name="iBridge18"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge18"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 
 	<!-- SignDrive Test Cases -->
 	

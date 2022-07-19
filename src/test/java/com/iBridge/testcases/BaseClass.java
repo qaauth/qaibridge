@@ -100,7 +100,7 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
 			// WebDriverManager.chromedriver().setup();
 //			driver = new ChromeDriver();
-			 driver = new ChromeDriver(new ChromeOptions().setHeadless(false));
+			 driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
 
 		} else if (br.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", readconfig.getFirefoxPath());

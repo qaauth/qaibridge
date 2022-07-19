@@ -194,7 +194,7 @@ public class Initiate_newcase_page extends BaseClass {
 	WebElement employeeIDField;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//*[@id='caseflexfielddata-5']")
+	@FindBy(how = How.XPATH, using = "//*[@id='caseflexfielddata-2']")
 	WebElement clientNameField;
 
 	@CacheLookup

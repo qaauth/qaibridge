@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1,152.417" tests="20" errors="0" skipped="11" failures="1">
+<testsuite name="TestSuite" time="236.999" tests="10" errors="0" skipped="6" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2688670558611325442.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5576332312030841022.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,22 +59,19 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyiBridgeCatLoginDetails" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="5.592"/>
-  <testcase name="verifyBritishClientSignOffApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="9.475"/>
-  <testcase name="verifyInitiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="276.34"/>
-  <testcase name="verifyPendingSignOffBucket" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="16.083"/>
-  <testcase name="verifyBritishClientSignOffApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="14.601"/>
-  <testcase name="submitCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="247.267"/>
-  <testcase name="verifyBritishClientRouteToCandidateApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="13.667"/>
-  <testcase name="candidateInitiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="460.625"/>
-  <testcase name="routeToCandidateRaiseInsuffAndFulfil" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="108.767">
-    <failure message="element click intercepted: Element &lt;select name=&quot;Checks[9598643][INSUFF_FULFILL_ACTION]&quot; id=&quot;CaseChecks&quot;&gt;...&lt;/select&gt; is not clickable at point (467, 10). Other element would receive the click: &lt;a href=&quot;javascript:void(0);&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=101.0.4951.54)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.79.30&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.c1xdzQ}, goog:chromeOptions: {debuggerAddress: localhost:33303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 631ae516c0d4a832bc55ac3c2bb7989b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select name="Checks[9598643][INSUFF_FULFILL_ACTION]" id="CaseChecks">...</select> is not clickable at point (467, 10). Other element would receive the click: <a href="javascript:void(0);">...</a>
-  (Session info: chrome=101.0.4951.54)
+  <testcase name="initiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="44.901"/>
+  <testcase name="pendingCaseSubmissionVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="3.647"/>
+  <testcase name="candidateEmailVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="3.006"/>
+  <testcase name="candidateLoginAccount" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="185.445">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class=&apos;btn btn-default&apos;])[1]&quot;}&#10;  (Session info: headless chrome=101.0.4951.54)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.yaIIwn}, goog:chromeOptions: {debuggerAddress: localhost:33037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2edbd2fcde00e9a873e4c5198048e38&#10;*** Element info: {Using=xpath, value=(//*[@class=&apos;btn btn-default&apos;])[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='btn btn-default'])[1]"}
+  (Session info: headless chrome=101.0.4951.54)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.79.30', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
+System info: host: 'ARS-NBT-LAP-068', ip: '192.168.1.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.c1xdzQ}, goog:chromeOptions: {debuggerAddress: localhost:33303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 631ae516c0d4a832bc55ac3c2bb7989b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.yaIIwn}, goog:chromeOptions: {debuggerAddress: localhost:33037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2edbd2fcde00e9a873e4c5198048e38
+*** Element info: {Using=xpath, value=(//*[@class='btn btn-default'])[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -85,83 +82,77 @@ Session ID: 631ae516c0d4a832bc55ac3c2bb7989b
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.InsufficientBridge.superAdminInsufficiencyRejectFulfillment(InsufficientBridge.java:1857)
-	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyInsufficiencyRejectedFulfillment(TC_InsufficientBridge_01.java:260)
-	at com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil(TC_CatSignOffApplicable_01.java:257)
-]]></failure>
-    <system-out><![CDATA[enp.admin@authbridge.com
-Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:119)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:125)- Antecedents to Verify all Records have filled Successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:246)- Check is successfully marked as Insufficient.!
- INFO [main] (TC_InsufficientBridge_01.java:142)- iBridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:143)- Entered Username and password!
-enp.admin@authbridge.com
-Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:149)- Pending For Fulfilment Insufficient has Added successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:248)- Insufficient details have Submitted successfully.
- INFO [main] (TC_InsufficientBridge_01.java:166)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:167)- Bridge account has Logged successfully!
- INFO [main] (TC_InsufficientBridge_01.java:172)- Insufficiency Fulfillment details have added Successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:250)- Insufficient details have Submitted successfully.
- INFO [main] (TC_InsufficientBridge_01.java:189)- iBridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:190)- Entered Username and password!
-enp.admin@authbridge.com
-Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:195)- Ars Number has been Searched Successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:252)- Pending - Referred Back text has verified successfully.
- INFO [main] (TC_InsufficientBridge_01.java:212)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:217)- Antecedents to Verify all Records have filled Successfully!
- INFO [main] (TC_InsufficientBridge_01.java:221)- Check is successfully marked as Insufficient.!
- INFO [main] (TC_CatSignOffApplicable_01.java:254)- Check is successfully marked as Insufficient.!
- INFO [main] (TC_InsufficientBridge_01.java:234)- iBridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:235)- Entered Username and password!
-enp.admin@authbridge.com
-Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:241)- Pending For Fulfilment Insufficient has Added successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:256)- Insufficient details have Submitted successfully.
- INFO [main] (TC_InsufficientBridge_01.java:257)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:258)- Bridge account has Logged successfully!
+	at com.iBridge.pageobject.CandidateLogin.candidatePreviousEmployment(CandidateLogin.java:1107)
+	at com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01.candidateLoginAccount(TC_InitiateCaseIndividuallyExtended_01.java:195)
+</failure>
+    <system-out><![CDATA[ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:143)- iBridge Url is opened
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:146)- Candidate Login iBridge portal Url is opened
+SGP_1011_10513_70091===LCRG01RuIy
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:152)- Entered User Id and Password!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:155)- Step 3 - Candidate Summary Text has Verified successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:164)- Digital signature successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:168)- Candidate Profile Details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:173)- Candidate National Identity Details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:179)- Candidate Address details Setup Successfully!!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:184)- Candidate Education details Setup successfully!
+ INFO [main] (TC_InitiateCaseIndividuallyExtended_01.java:192)- Candidate Current Employment details Setup successfully!
+btn dropdown-toggle btn-default
+btn dropdown-toggle btn-default
+btn dropdown-toggle btn-default
+btn dropdown-toggle btn-default
+btn dropdown-toggle btn-default
+btn dropdown-toggle btn-default
+close
+new-continue-btn
+new-continue-btn pull-right
+
+
+
+
+
+
+
+
+continue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]]></system-out>
   </testcase>
-  <testcase name="verifyrouteToCandidateApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="submittedForVerification" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyrouteToCandidateButtonPresentOrNot" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="submittedCasesTrackerWipCases" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyBritishClientNidPassport" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="searchClientArsNoCaseList" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyNidPassportDropDown" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="verifyInsufficientDocsQcAllocator" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyBritishClientNidPassportAndPanCard" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="verifyInsufficientDocsQuality" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyNidVoterIdAndDrivingLicenseDropDown" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableFormNotPresent" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableFormPresent" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyEnpAdminLoginAccount" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="verifyInsufficientAllocator" classname="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01" time="0">
     <skipped/>
   </testcase>
 </testsuite>
