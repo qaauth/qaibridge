@@ -67,20 +67,20 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		CaseCompletionSme currentAddressVerification = new CaseCompletionSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
 		String arsNumber[] = data.split(" ");
-//		currentAddressVerification.currentAddressVerificationCheck(arsNumber[0], "110091", "Yes", "Ankit Kumar",
-//				"Two Years", "24-Feb-2021", "Good Comments", "Delhi", "Shariq Abbas", "12 PM", "White", "White Color",
-//				"Gurugram");
-//		logger.info("Current Address Verification Antecedents to Verify details have been filled successfully!");
-//
-//		if (currentAddressVerification.verifyCurrentAddressVerificationCompletedTextName()
-//				.contains("Current Address Verification ( Completed )")) {
-//			Assert.assertTrue(true);
-//			logger.info("Current Address Verification Check is successfully marked as Closed by Client.!");
-//		} else {
-//			logger.info("Current Address Verification Check is not successfully marked as Closed by Client.!");
-//			captureScreen(driver, "verifyCurrentAddressVerificationCompletedTextName");
-//			Assert.assertTrue(false);
-//		}
+		currentAddressVerification.currentAddressVerificationCheck(arsNumber[0], "110091", "Yes", "Ankit Kumar",
+				"Two Years", "24-Feb-2021", "Good Comments", "Delhi", "Shariq Abbas", "12 PM", "White", "White Color",
+				"Gurugram");
+		logger.info("Current Address Verification Antecedents to Verify details have been filled successfully!");
+
+		if (currentAddressVerification.verifyCurrentAddressVerificationCompletedTextName()
+				.contains("Current Address Verification ( Completed )")) {
+			Assert.assertTrue(true);
+			logger.info("Current Address Verification Check is successfully marked as Closed by Client.!");
+		} else {
+			logger.info("Current Address Verification Check is not successfully marked as Closed by Client.!");
+			captureScreen(driver, "verifyCurrentAddressVerificationCompletedTextName");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Verification Quality Allocator--Check List - Search Result - (14 records)
@@ -114,41 +114,41 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		CaseCompletionSme verificationQualityReleasedForReport = new CaseCompletionSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
 		String arsNumber[] = data.split(" ");
-//		verificationQualityReleasedForReport.superAdminVerificationQuality(arsNumber[0],
-//				"Verification Quality Released for report Comments are good");
-//		logger.info("Verification Quality details have been filled Successfully!");
-//
-//		if (verificationQualityReleasedForReport.verifyReleasedForReportSuccessfullyMsg()
-//				.contains("The check was successfully released for report.")) {
-//			Assert.assertTrue(true);
-//			logger.info("The check was successfully released for report.!");
-//		} else {
-//			logger.info("The check was Not successfully released for report.!");
-//			captureScreen(driver, "verifyReleasedForReportSuccessfullyMsg");
-//			Assert.assertTrue(false);
-//		}
+		verificationQualityReleasedForReport.superAdminVerificationQuality(arsNumber[0],
+				"Verification Quality Released for report Comments are good");
+		logger.info("Verification Quality details have been filled Successfully!");
+
+		if (verificationQualityReleasedForReport.verifyReleasedForReportSuccessfullyMsg()
+				.contains("The check was successfully released for report.")) {
+			Assert.assertTrue(true);
+			logger.info("The check was successfully released for report.!");
+		} else {
+			logger.info("The check was Not successfully released for report.!");
+			captureScreen(driver, "verifyReleasedForReportSuccessfullyMsg");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Verification Quality Allocator--Check List - Search Result - (14 records)
 	@Test(enabled = true, testName = "Verify Verification Quality Allocator for Report--Check List", priority = 4, dependsOnMethods = {
 			"verificationQualityReleasedForReport" })
 	public void verificationQualityAllocatorForReport() throws IOException, InterruptedException {
-//		CaseCompletionSme verificationQualityReleasedForReports = new CaseCompletionSme(driver);
-//		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
-//		String arsNumber[] = data.split(" ");
-//		verificationQualityReleasedForReports.superAdminVerificationQualityAllocators(arsNumber[0],
-//				"Verification Quality Allocator Comments are good");
-//		logger.info("Verification Quality Allocator details has been filled Successfully!");
-//
-//		if (verificationQualityReleasedForReports.verificationQualityAllocatorSuccessMsg()
-//				.contains("The selected checks were successfully released for report.")) {
-//			Assert.assertTrue(true);
-//			logger.info("The selected checks were successfully released for report..!");
-//		} else {
-//			logger.info("The selected checks were not successfully released for report.!");
-//			captureScreen(driver, "verificationQualityAllocatorSuccessMsg");
-//			Assert.assertTrue(false);
-//		}
+		CaseCompletionSme verificationQualityReleasedForReports = new CaseCompletionSme(driver);
+		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
+		String arsNumber[] = data.split(" ");
+		verificationQualityReleasedForReports.superAdminVerificationQualityAllocators(arsNumber[0],
+				"Verification Quality Allocator Comments are good");
+		logger.info("Verification Quality Allocator details has been filled Successfully!");
+
+		if (verificationQualityReleasedForReports.verificationQualityAllocatorSuccessMsg()
+				.contains("The selected checks were successfully released for report.")) {
+			Assert.assertTrue(true);
+			logger.info("The selected checks were successfully released for report..!");
+		} else {
+			logger.info("The selected checks were not successfully released for report.!");
+			captureScreen(driver, "verificationQualityAllocatorSuccessMsg");
+			Assert.assertTrue(false);
+		}
 	}
 
 	// Reports Manager -- Search Report

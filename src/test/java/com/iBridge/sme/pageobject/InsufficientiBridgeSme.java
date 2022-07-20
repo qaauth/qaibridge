@@ -38,6 +38,10 @@ public class InsufficientiBridgeSme {
 	@CacheLookup
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[2]/span[1]")
 	WebElement verifyInsufficienciesCountNo;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[3]/div/div/div[1]/ul/li[2]/a[2]")
+	WebElement insufficiencies;
 
 	// Insufficient Insufficient Case Summary--iBridge SME Portal
 	@CacheLookup
@@ -270,15 +274,20 @@ public class InsufficientiBridgeSme {
 	}
 
 	public String verifyInsufficienciesCountNumber() throws InterruptedException {
+		
+	
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(verifyInsufficienciesCountNo));
 		return verifyInsufficienciesCountNo.getText();
+	
 		
 	}
 
 	// Action Required-- Insufficient-- iBridge SME Portal
 	public void pendingInsuffRaisedByAuthbridge(String uploadInsuffDocs, String insuffComments)
 			throws InterruptedException {
+		
+		
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInsufficiesCountNumber));
 		js = (JavascriptExecutor) ldriver;

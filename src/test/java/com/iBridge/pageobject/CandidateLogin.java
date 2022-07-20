@@ -1086,33 +1086,24 @@ public class CandidateLogin {
 
 		// Submit Button Click
 		
-		List<WebElement> tag6 = ldriver.findElements(By.tagName("button"));
-		for (int i = 0; i < tag6.size(); i++) {
-			System.out.println(tag6.get(i).getAttribute("name"));
-			if (tag6.get(i).getAttribute("class").equals("continue")) {
-				JavaScriptManuplator.javaScriptExecutor(tag6.get(i), "arguments[0].click()", ldriver);
-				break;
-			}
-		}
-		
 		List<WebElement> tag13 = ldriver.findElements(By.tagName("button"));
-		for (int j = 0; j < tag13.size(); j++) {
-			if (tag13.get(j).getAttribute("name").equals("continue")) {
-				System.out.println("J inde is being printed here:"+ j);
+		for (int i = 0; i < tag13.size(); i++) {
+			if (tag13.get(i).getAttribute("name").equals("continue")) {
+				System.out.println("Index for I :"+i);
 				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
-				executor.executeScript("arguments[0].click();", tag13.get(j));
-				System.out.println("hi");
+				executor.executeScript("arguments[0].click();", tag13.get(i));
+				System.out.println("hii");
 				break;
-			}}
-		
+			} 
+		}
 		
 		
 		// Confirm- alert Ok Button
 		
-//		Thread.sleep(5000);
-//		List<WebElement> tag14 = ldriver.findElements(By.tagName("button"));
-//		tag14.get(8).click();
-//		System.out.println("alert box has been click");
+		Thread.sleep(5000);
+		List<WebElement> tag14 = ldriver.findElements(By.tagName("button"));
+		tag14.get(15).click();
+		System.out.println("alert box has been click");
 		
 			
 //		List<WebElement> tag14 = ldriver.findElements(By.tagName("button"));
@@ -1121,18 +1112,9 @@ public class CandidateLogin {
 //				System.out.println("Index for I :"+i);
 //				JavascriptExecutor executor = (JavascriptExecutor) ldriver;
 //				executor.executeScript("arguments[0].click();", tag14.get(i));
-//				System.out.println("hii");
+//				System.out.println("hello");
 //				break;
 //			} 
-//		}
-		
-//		List<WebElement> tag7 = ldriver.findElements(By.tagName("button"));
-//		for (int i = 0; i < tag7.size(); i++) {
-//			System.out.println(tag7.get(i).getAttribute("class"));
-//			if (tag7.get(i).getAttribute("class").equals("btn btn-default")) {
-//				JavaScriptManuplator.javaScriptExecutor(tag7.get(i), "arguments[0].click()", ldriver);
-//				break;
-//			}
 //		}
 		
 		try {

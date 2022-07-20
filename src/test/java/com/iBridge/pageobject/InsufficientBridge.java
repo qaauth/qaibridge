@@ -43,7 +43,7 @@ public class InsufficientBridge {
 	WebElement clickOnLoadResultLink;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr/td[4]/a")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[1]/div[2]/table/tbody/tr/td[4]/a")
 	WebElement clickOniBridgeCountAllNo;
 	
 	// Client Portal Count
@@ -848,7 +848,7 @@ public class InsufficientBridge {
 			js = (JavascriptExecutor) ldriver;
 			js.executeScript("arguments[0].click()", clickOnDashboard);
 			Thread.sleep(2000);
-			clickOnLoadResultLink.click();
+//			clickOnLoadResultLink.click();
 			wait = new WebDriverWait(ldriver, 360);
 			wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
 			clickOniBridgeCountAllNo.click();

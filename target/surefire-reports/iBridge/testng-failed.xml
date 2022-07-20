@@ -4,24 +4,29 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge3(failed)">
+  <test thread-count="1" verbose="0" name="iBridge13(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01">
+      <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02">
         <methods>
-          <include name="searchClientArsNoCaseList"/>
-          <include name="pendingCaseSubmissionVerification"/>
-          <include name="verifyInsufficientAllocator"/>
-          <include name="setup"/>
-          <include name="verifyInsufficientDocsQcAllocator"/>
-          <include name="candidateEmailVerification"/>
-          <include name="initiateCaseIndividuallyExtended"/>
-          <include name="candidateLoginAccount"/>
-          <include name="submittedCasesTrackerWipCases"/>
+          <include name="candidateSmeAccountLogin"/>
+          <include name="verifyCaseAppearingInTotalCaseSentList"/>
           <include name="verifyInsufficientDocsQuality"/>
-          <include name="submittedForVerification"/>
+          <include name="initiateViaCandidateCaseSme"/>
+          <include name="searchClientArsNoCaseList"/>
+          <include name="candidateSmeEmailVerification"/>
+          <include name="verifyFormSubmittedBucket"/>
+          <include name="candidateProfileDetailsFilling"/>
+          <include name="verifyWorkInProgressBucket"/>
+          <include name="verifyFormNotSubmittedCaseList"/>
+          <include name="verifyPaymentPendingBucket"/>
+          <include name="verifyInitiateViaCandidateCasePaymentPending"/>
+          <include name="setup"/>
+          <include name="verifyAuthorizationRelease"/>
+          <include name="verifyInsufficientDocsQcAllocator"/>
+          <include name="verifyInsufficientAllocator"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_InitiateCaseIndividuallyExtended_01 -->
+      </class> <!-- com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02 -->
     </classes>
-  </test> <!-- iBridge3(failed) -->
+  </test> <!-- iBridge13(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

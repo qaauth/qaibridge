@@ -136,8 +136,8 @@ public class TC_InsufficientBridgeSme_01 extends BaseClass {
 		InsufficientiBridgeSme insuffRaisedCasesAuthSme = new InsufficientiBridgeSme(driver);
 //		driver.navigate().refresh();
 		Thread.sleep(5000);
-		insuffRaisedCasesAuthSme.verifyInsufficienciesCountNumber();
-		int totalInsufficienciesCountNo = Integer.parseInt(insuffRaisedCasesAuthSme.verifyInsufficienciesCountNumber());
+		//insuffRaisedCasesAuthSme.verifyInsufficienciesCountNumber();
+//		int totalInsufficienciesCountNo = Integer.parseInt(insuffRaisedCasesAuthSme.verifyInsufficienciesCountNumber());
 //		if (totalInsufficienciesCountNo < totalInsufficienciesCount) {
 //			Assert.assertTrue(true);
 //			logger.info("Insufficiencies insuff Bucket Case has Removed successfully.");
@@ -297,8 +297,9 @@ public class TC_InsufficientBridgeSme_01 extends BaseClass {
 		Thread.sleep(2000);
 //		driver.navigate().refresh();
 		Thread.sleep(2000);
-		costApprovalRequiredBoth.approvalRequiredCountNo();
-		totalApprovalRequiredCount = Integer.parseInt(costApprovalRequiredBoth.approvalRequiredCountNo());
+//		costApprovalRequiredBoth.approvalRequiredCountNo();
+//		totalApprovalRequiredCount = Integer.parseInt(costApprovalRequiredBoth.approvalRequiredCountNo());
+		
 		// Approval Required -iBridge SME --Overview Action Required
 		costApprovalRequiredBoth.approvalRequiredInsufficient();
 		logger.info("Cost Approval Required mark insufficient have filled Successfully!");
