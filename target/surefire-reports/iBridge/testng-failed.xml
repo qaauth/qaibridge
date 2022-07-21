@@ -4,29 +4,27 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge13(failed)">
+  <test thread-count="1" verbose="0" name="iBridge6(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02">
+      <class name="com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02">
         <methods>
-          <include name="candidateSmeAccountLogin"/>
-          <include name="verifyCaseAppearingInTotalCaseSentList"/>
-          <include name="verifyInsufficientDocsQuality"/>
-          <include name="initiateViaCandidateCaseSme"/>
-          <include name="searchClientArsNoCaseList"/>
-          <include name="candidateSmeEmailVerification"/>
-          <include name="verifyFormSubmittedBucket"/>
-          <include name="candidateProfileDetailsFilling"/>
-          <include name="verifyWorkInProgressBucket"/>
-          <include name="verifyFormNotSubmittedCaseList"/>
-          <include name="verifyPaymentPendingBucket"/>
-          <include name="verifyInitiateViaCandidateCasePaymentPending"/>
-          <include name="setup"/>
-          <include name="verifyAuthorizationRelease"/>
+          <include name="submittedForVerification"/>
           <include name="verifyInsufficientDocsQcAllocator"/>
+          <include name="initiateCasesInBulkExtended"/>
+          <include name="candidateEmailVerification"/>
           <include name="verifyInsufficientAllocator"/>
+          <include name="verifyInsufficiencyFulfillment"/>
+          <include name="candidateLoginBulkAccount"/>
+          <include name="searchClientArsNoCaseList"/>
+          <include name="setup"/>
+          <include name="dragDropBrowse"/>
+          <include name="verifyInsufficientpendingForFulfilment"/>
+          <include name="verifyInsufficientDocsQuality"/>
+          <include name="submittedCasesTrackerWipCases"/>
+          <include name="verifyInsufficientVerifier"/>
         </methods>
-      </class> <!-- com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02 -->
+      </class> <!-- com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02 -->
     </classes>
-  </test> <!-- iBridge13(failed) -->
+  </test> <!-- iBridge6(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

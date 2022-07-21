@@ -672,7 +672,7 @@ public class InsufficientBridge {
 	WebElement txtBothInsuffTypeComments;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//input[@id='insuff_cost']")
+	@FindBy(how = How.XPATH, using = "//*[@name='data[CaseCheck][INSUFF_COST]']")
 	WebElement txtBothInsuffTypeCost;
 
 	@CacheLookup
@@ -760,8 +760,8 @@ public class InsufficientBridge {
 		Thread.sleep(3000);
 //		wait = new WebDriverWait(ldriver, 360);
 //		wait.until(ExpectedConditions.visibilityOf(clickOnLoadResultLink));
-		js = (JavascriptExecutor) ldriver;
-		js.executeScript("arguments[0].click()", clickOnLoadResultLink);
+//		js = (JavascriptExecutor) ldriver;
+//		js.executeScript("arguments[0].click()", clickOnLoadResultLink);
 //		clickOnLoadResultLink.click();
 		wait = new WebDriverWait(ldriver, 360);
 		wait.until(ExpectedConditions.visibilityOf(clickOniBridgeCountAllNo));
@@ -895,9 +895,9 @@ public class InsufficientBridge {
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
 		Thread.sleep(1000);
-		wait = new WebDriverWait(ldriver, 180);
-		wait.until(ExpectedConditions.visibilityOf(clickOnDocsQtLoadResultLink));
-		JavaScriptManuplator.javaScriptExecutor(clickOnDocsQtLoadResultLink, "arguments[0].click()", ldriver);
+//		wait = new WebDriverWait(ldriver, 180);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnDocsQtLoadResultLink));
+//		JavaScriptManuplator.javaScriptExecutor(clickOnDocsQtLoadResultLink, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		wait = new WebDriverWait(ldriver, 240);
 		wait.until(ExpectedConditions.visibilityOf(verifyCasesforQualityReview));
@@ -908,17 +908,18 @@ public class InsufficientBridge {
 
 		// How many rows in table
 		int rows = ldriver
-				.findElements(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr"))
+				.findElements(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr"))
 				.size();
 		// Get Client name, and clicked on British Telecom count number.
 		for (int r = 1; r <= rows; r++) {
 			String clientName = ldriver.findElement(By
-					.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[" + r + "]/td[1]"))
+					.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr["+r+"]/td[1]"))
 					.getText();
 			if (clientName.contains("British Telecom")) {
 
 				WebElement element = ldriver.findElement(
-						By.xpath("(//*[text()='British Telecom']//following::a)[1]"));
+						By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[" + r + "]/td[3]/a[1]"));
+				Thread.sleep(1000);
 				element.click();
 				break;
 			}

@@ -1216,7 +1216,10 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 420);
 		wait.until(ExpectedConditions.visibilityOf(verifyNotificationAlertsCasesStatus));
 		txtCompleteSearchNo.sendKeys(currentArsNumber);
-		clickOnCompleteSearchBtn.click();
+		Thread.sleep(2000);
+		JavascriptExecutor executor = (JavascriptExecutor)ldriver;
+		executor.executeScript("arguments[0].click();", clickOnCompleteSearchBtn);
+//		clickOnCompleteSearchBtn.click();
 		clickOnArsNumber.click();
 
 		// Current Employment Verification-- Checks Summary
@@ -1247,7 +1250,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyCvValidationClosedByClientSuccessfullyMsg));
 		txtCvValidationSearchNo.sendKeys(cvValidationArsNo);
-		clickOnCvValidationSearchBtn.click();
+		JavascriptExecutor exe = (JavascriptExecutor)ldriver;
+		exe.executeScript("arguments[0].click();", clickOnCvValidationSearchBtn);
+//		clickOnCvValidationSearchBtn.click();
 		clickOnCvValidationArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1275,7 +1280,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyDrugTestClosedByClientSuccessfullyMsg));
 		txtDrugTestSearchNo.sendKeys(drugTestArsNo);
-		clickOnDrugTestSearchBtn.click();
+		JavascriptExecutor exec = (JavascriptExecutor)ldriver;
+		exec.executeScript("arguments[0].click();", clickOnDrugTestSearchBtn);
+//		clickOnDrugTestSearchBtn.click();
 		clickOnDrugTestArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1303,7 +1310,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyEducationClosedByClientSuccessfullyMsg));
 		txtEducationSearchNo.sendKeys(educationArsNo);
-		clickOnEducationSearchBtn.click();
+		JavascriptExecutor execu = (JavascriptExecutor)ldriver;
+		execu.executeScript("arguments[0].click();", clickOnEducationSearchBtn);
+//		clickOnEducationSearchBtn.click();
 		clickOnEducationArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1331,7 +1340,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyGlobalClosedByClientSuccessfullyMsg));
 		txtGlobalSearchNo.sendKeys(globalArsNo);
-		clickOnGlobalSearchBtn.click();
+		JavascriptExecutor execut = (JavascriptExecutor)ldriver;
+		execut.executeScript("arguments[0].click();", clickOnGlobalSearchBtn);
+//		clickOnGlobalSearchBtn.click();
 		clickOnGlobalArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1359,7 +1370,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyIndiaAdvancedClosedByClientSuccessfullyMsg));
 		txtIndiaAdvancedSearchNo.sendKeys(indiaAdvancedArsNo);
-		clickOnIndiaAdvancedSearchBtn.click();
+		JavascriptExecutor executo = (JavascriptExecutor)ldriver;
+		executo.executeScript("arguments[0].click();", clickOnIndiaAdvancedSearchBtn);
+//		clickOnIndiaAdvancedSearchBtn.click();
 		clickOnIndiaAdvancedArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1387,7 +1400,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyIndiaCivilClosedByClientSuccessfullyMsg));
 		txtIndiaCivilSearchNo.sendKeys(indiaCivilArsNo);
-		clickOnIndiaCivilSearchBtn.click();
+		JavascriptExecutor js = (JavascriptExecutor)ldriver;
+		js.executeScript("arguments[0].click();", clickOnIndiaCivilSearchBtn);
+//		clickOnIndiaCivilSearchBtn.click();
 		clickOnIndiaCivilArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1415,7 +1430,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyIndiaComprehensiveClosedByClientSuccessfullyMsg));
 		txtIndiaComprehensiveSearchNo.sendKeys(indiaCompArsNo);
-		clickOnIndiaComprehensiveSearchBtn.click();
+		JavascriptExecutor jd = (JavascriptExecutor)ldriver;
+		jd.executeScript("arguments[0].click();", clickOnIndiaComprehensiveSearchBtn);
+//		clickOnIndiaComprehensiveSearchBtn.click();
 		clickOnIndiaComprehensiveArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1443,7 +1460,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyIndiaCourtRecordClosedByClientSuccessfullyMsg));
 		txtIndiaCourtRecordSearchNo.sendKeys(indiaCourtArsNo);
-		clickOnIndiaCourtRecordSearchBtn.click();
+		JavascriptExecutor jr = (JavascriptExecutor)ldriver;
+		jr.executeScript("arguments[0].click();", clickOnIndiaCourtRecordSearchBtn);
+//		clickOnIndiaCourtRecordSearchBtn.click();
 		clickOnIndiaCourtRecordArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1471,7 +1490,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyCourtRecordClosedByClientSuccessfullyMsg));
 		txtCourtRecordRecordSearchNo.sendKeys(courtRecordArsNo);
-		clickOnCourtRecordRecordSearchBtn.click();
+		JavascriptExecutor je = (JavascriptExecutor)ldriver;
+		je.executeScript("arguments[0].click();", clickOnCourtRecordRecordSearchBtn);
+//		clickOnCourtRecordRecordSearchBtn.click();
 		clickOnCourtRecordArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1499,7 +1520,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyIndiaCreditDefaultClosedByClientSuccessfullyMsg));
 		txtIndiaCreditDefaultSearchNo.sendKeys(creditDefaultArsNo);
-		clickOnIndiaCreditDefaultSearchBtn.click();
+		JavascriptExecutor ja = (JavascriptExecutor)ldriver;
+		ja.executeScript("arguments[0].click();", clickOnIndiaCreditDefaultSearchBtn);
+//		clickOnIndiaCreditDefaultSearchBtn.click();
 		clickOnIndiaCreditDefaultArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1527,7 +1550,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyIndiaDatabaseCheckClosedByClientSuccessfullyMsg));
 		txtIndiaDatabaseCheckSearchNo.sendKeys(databaseCheckArsNo);
-		clickOnIndiaDatabaseCheckSearchBtn.click();
+		JavascriptExecutor jb = (JavascriptExecutor)ldriver;
+		jb.executeScript("arguments[0].click();", clickOnIndiaDatabaseCheckSearchBtn);
+//		clickOnIndiaDatabaseCheckSearchBtn.click();
 		clickOnIndiaDatabaseCheckArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1555,7 +1580,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyNationalIdentityClosedByClientSuccessfullyMsg));
 		txtNationalIdentityCheckSearchNo.sendKeys(identityCheckArsNo);
-		clickOnNationalIdentityCheckSearchBtn.click();
+		JavascriptExecutor jc = (JavascriptExecutor)ldriver;
+		jc.executeScript("arguments[0].click();", clickOnNationalIdentityCheckSearchBtn);
+//		clickOnNationalIdentityCheckSearchBtn.click();
 		clickOnNationalIdentityArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1583,7 +1610,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyPanNoVerificationClosedByClientSuccessfullyMsg));
 		txtPanNoVerificationCheckSearchNo.sendKeys(panNoArsNo);
-		clickOnPanNoVerificationCheckSearchBtn.click();
+		JavascriptExecutor jf = (JavascriptExecutor)ldriver;
+		jf.executeScript("arguments[0].click();", clickOnPanNoVerificationCheckSearchBtn);
+//		clickOnPanNoVerificationCheckSearchBtn.click();
 		clickOnPanNoVerificationArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1611,7 +1640,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyPermanentAddressClosedByClientSuccessfullyMsg));
 		txtPermanentAddressCheckSearchNo.sendKeys(permanentCheckArsNo);
-		clickOnPermanentAddressCheckSearchBtn.click();
+		JavascriptExecutor jg = (JavascriptExecutor)ldriver;
+		jg.executeScript("arguments[0].click();", clickOnPermanentAddressCheckSearchBtn);
+//		clickOnPermanentAddressCheckSearchBtn.click();
 		clickOnPermanentAddressArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1639,7 +1670,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyPersonalReferenceClosedByClientSuccessfullyMsg));
 		txtPersonalReferenceCheckSearchNo.sendKeys(personalRefCheckArsNo);
-		clickOnPersonalReferenceCheckSearchBtn.click();
+		JavascriptExecutor jh = (JavascriptExecutor)ldriver;
+		jh.executeScript("arguments[0].click();", clickOnPersonalReferenceCheckSearchBtn);
+//		clickOnPersonalReferenceCheckSearchBtn.click();
 		clickOnPersonalReferenceArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1667,7 +1700,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyPreviousEmploymentClosedByClientSuccessfullyMsg));
 		txtPreviousEmploymentCheckSearchNo.sendKeys(previousEmpCheckArsNo);
-		clickOnPreviousEmploymentCheckSearchBtn.click();
+		JavascriptExecutor ji = (JavascriptExecutor)ldriver;
+		ji.executeScript("arguments[0].click();", clickOnPreviousEmploymentCheckSearchBtn);
+//		clickOnPreviousEmploymentCheckSearchBtn.click();
 		clickOnPreviousEmploymentArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;
@@ -1695,7 +1730,9 @@ public class CaseCompletionSme {
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(verifyProfessionalReferenceClosedByClientSuccessfullyMsg));
 		txtProfessionalReferenceCheckSearchNo.sendKeys(professRefCheckArsNo);
-		clickOnProfessionalReferenceCheckSearchBtn.click();
+		JavascriptExecutor jk = (JavascriptExecutor)ldriver;
+		jk.executeScript("arguments[0].click();", clickOnProfessionalReferenceCheckSearchBtn);
+//		clickOnProfessionalReferenceCheckSearchBtn.click();
 		clickOnProfessionalReferenceArsNumber.click();
 
 		js = (JavascriptExecutor) ldriver;

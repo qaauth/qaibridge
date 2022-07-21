@@ -27,11 +27,11 @@
 		<classes> <class name="com.iBridge.testcases.TC_CostApproval_01" /> </classes> 
 		</test> -->
 
-	<!-- <test name="iBridge6"> <parameter name="browser" value="chrome" /> 
+	<test name="iBridge6"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02" 
 		/> </classes> </test>
 		
-	<test name="iBridge7"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge7"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CaseCompletion_01" /> </classes> 
 		</test> -->
 
@@ -61,9 +61,9 @@
 		<classes> <class name="com.iBridge.sme.testcases.TC_WithdrawSmeCase_01" /> 
 		</classes> </test> -->
 
-	<test name="iBridge13"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge13"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_InitiateViaCandidateSmeExtended_02" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 
 	<!-- <test name="iBridge14"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.sme.testcases.TC_CaseCompletionSme_01" 

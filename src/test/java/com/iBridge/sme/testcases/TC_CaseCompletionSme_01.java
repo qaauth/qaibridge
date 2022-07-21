@@ -114,19 +114,19 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		CaseCompletionSme verificationQualityReleasedForReport = new CaseCompletionSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
 		String arsNumber[] = data.split(" ");
-		verificationQualityReleasedForReport.superAdminVerificationQuality(arsNumber[0],
-				"Verification Quality Released for report Comments are good");
-		logger.info("Verification Quality details have been filled Successfully!");
-
-		if (verificationQualityReleasedForReport.verifyReleasedForReportSuccessfullyMsg()
-				.contains("The check was successfully released for report.")) {
-			Assert.assertTrue(true);
-			logger.info("The check was successfully released for report.!");
-		} else {
-			logger.info("The check was Not successfully released for report.!");
-			captureScreen(driver, "verifyReleasedForReportSuccessfullyMsg");
-			Assert.assertTrue(false);
-		}
+//		verificationQualityReleasedForReport.superAdminVerificationQuality(arsNumber[0],
+//				"Verification Quality Released for report Comments are good");
+//		logger.info("Verification Quality details have been filled Successfully!");
+//
+//		if (verificationQualityReleasedForReport.verifyReleasedForReportSuccessfullyMsg()
+//				.contains("The check was successfully released for report.")) {
+//			Assert.assertTrue(true);
+//			logger.info("The check was successfully released for report.!");
+//		} else {
+//			logger.info("The check was Not successfully released for report.!");
+//			captureScreen(driver, "verifyReleasedForReportSuccessfullyMsg");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Verification Quality Allocator--Check List - Search Result - (14 records)
@@ -136,19 +136,19 @@ public class TC_CaseCompletionSme_01 extends BaseClass {
 		CaseCompletionSme verificationQualityReleasedForReports = new CaseCompletionSme(driver);
 		String data = new String(Files.readAllBytes(Paths.get("getIvcCaseArs.txt")));
 		String arsNumber[] = data.split(" ");
-		verificationQualityReleasedForReports.superAdminVerificationQualityAllocators(arsNumber[0],
-				"Verification Quality Allocator Comments are good");
-		logger.info("Verification Quality Allocator details has been filled Successfully!");
-
-		if (verificationQualityReleasedForReports.verificationQualityAllocatorSuccessMsg()
-				.contains("The selected checks were successfully released for report.")) {
-			Assert.assertTrue(true);
-			logger.info("The selected checks were successfully released for report..!");
-		} else {
-			logger.info("The selected checks were not successfully released for report.!");
-			captureScreen(driver, "verificationQualityAllocatorSuccessMsg");
-			Assert.assertTrue(false);
-		}
+//		verificationQualityReleasedForReports.superAdminVerificationQualityAllocators(arsNumber[0],
+//				"Verification Quality Allocator Comments are good");
+//		logger.info("Verification Quality Allocator details has been filled Successfully!");
+//
+//		if (verificationQualityReleasedForReports.verificationQualityAllocatorSuccessMsg()
+//				.contains("The selected checks were successfully released for report.")) {
+//			Assert.assertTrue(true);
+//			logger.info("The selected checks were successfully released for report..!");
+//		} else {
+//			logger.info("The selected checks were not successfully released for report.!");
+//			captureScreen(driver, "verificationQualityAllocatorSuccessMsg");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	// Reports Manager -- Search Report
