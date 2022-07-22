@@ -418,6 +418,8 @@ public class InsufficientiBridge extends BaseClass{
 	// INSUFFICIENT CASES-- Verify--Present or not.
 	public void verifyInsufficientPartiallyApprovedArsNumber(String arsNumber)
 			throws AWTException, InterruptedException {
+		
+		Thread.sleep(2000);
 		clickOnSidebarExpandSub.click();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(clickOnSubmittedCasesTracker));

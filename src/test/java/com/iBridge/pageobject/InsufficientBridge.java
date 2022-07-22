@@ -698,7 +698,7 @@ public class InsufficientBridge {
 	WebElement clickOnInsuffLoadResultLink;
 
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[1]/div/div[2]/table/tbody/tr/td[2]/a")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div[1]/div[2]/table/tbody/tr/td[2]/a")
 	WebElement clickOnInsuffRespondediBridgeCount;
 
 	@CacheLookup
@@ -722,7 +722,7 @@ public class InsufficientBridge {
 
 	// For Indian Database Verification
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "//select[@id='CaseChecks']")
+	@FindBy(how = How.XPATH, using = "//*[@id='CaseChecks']")
 	WebElement selectInsufficiencyIndianDatabaseFulfillmentAction;
 
 	@CacheLookup
@@ -1716,9 +1716,9 @@ public class InsufficientBridge {
 		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
-		wait = new WebDriverWait(ldriver, 240);
-		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffLoadResultLink));
-		JavaScriptManuplator.javaScriptExecutor(clickOnInsuffLoadResultLink, "arguments[0].click()", ldriver);
+//		wait = new WebDriverWait(ldriver, 240);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffLoadResultLink));
+//		JavaScriptManuplator.javaScriptExecutor(clickOnInsuffLoadResultLink, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		wait = new WebDriverWait(ldriver, 240);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffRespondediBridgeCount));
@@ -1770,9 +1770,9 @@ public class InsufficientBridge {
 		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
-		wait = new WebDriverWait(ldriver, 240);
-		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffLoadResultLink));
-		JavaScriptManuplator.javaScriptExecutor(clickOnInsuffLoadResultLink, "arguments[0].click()", ldriver);
+//		wait = new WebDriverWait(ldriver, 240);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffLoadResultLink));
+//		JavaScriptManuplator.javaScriptExecutor(clickOnInsuffLoadResultLink, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		wait = new WebDriverWait(ldriver, 240);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffRespondediBridgeCount));
@@ -1822,9 +1822,9 @@ public class InsufficientBridge {
 		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
-		wait = new WebDriverWait(ldriver, 240);
-		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffLoadResultLink));
-		JavaScriptManuplator.javaScriptExecutor(clickOnInsuffLoadResultLink, "arguments[0].click()", ldriver);
+//		wait = new WebDriverWait(ldriver, 240);
+//		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffLoadResultLink));
+//		JavaScriptManuplator.javaScriptExecutor(clickOnInsuffLoadResultLink, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		wait = new WebDriverWait(ldriver, 240);
 		wait.until(ExpectedConditions.visibilityOf(clickOnInsuffRespondediBridgeCount));

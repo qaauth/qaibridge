@@ -27,9 +27,9 @@
 		<classes> <class name="com.iBridge.testcases.TC_CostApproval_01" /> </classes> 
 		</test> -->
 
-	<test name="iBridge6"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge6"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 		
 	<!-- <test name="iBridge7"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CaseCompletion_01" /> </classes> 
@@ -83,9 +83,9 @@
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" 
 		/> </classes> </test> -->
 
-	<!-- <test name="iBridge18"> <parameter name="browser" value="chrome" /> 
+	<test name="iBridge18"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
-		/> </classes> </test> -->
+		/> </classes> </test>
 
 	<!-- SignDrive Test Cases -->
 	

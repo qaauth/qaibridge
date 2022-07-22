@@ -4,27 +4,34 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge6(failed)">
+  <test thread-count="1" verbose="0" name="iBridge18(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02">
+      <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01">
         <methods>
-          <include name="submittedForVerification"/>
-          <include name="verifyInsufficientDocsQcAllocator"/>
-          <include name="initiateCasesInBulkExtended"/>
-          <include name="candidateEmailVerification"/>
-          <include name="verifyInsufficientAllocator"/>
-          <include name="verifyInsufficiencyFulfillment"/>
-          <include name="candidateLoginBulkAccount"/>
-          <include name="searchClientArsNoCaseList"/>
+          <include name="verifyBritishClientNidPassportAndPanCard"/>
+          <include name="verifyEnpAdminLoginAccount"/>
+          <include name="verifyGapReasonApplicableNo"/>
+          <include name="verifyNidVoterIdAndDrivingLicenseDropDown"/>
+          <include name="verifyPendingSignOffBucket"/>
+          <include name="verifyiBridgeCatLoginDetails"/>
+          <include name="submitCaseIndividuallyExtended"/>
+          <include name="verifyBritishClientSignOffApplicableYes"/>
+          <include name="verifyBritishClientSignOffApplicableNo"/>
+          <include name="verifyInitiateCaseIndividuallyExtended"/>
+          <include name="verifyGapReasonApplicableFormPresent"/>
+          <include name="routeToCandidateRaiseInsuffAndFulfil"/>
+          <include name="verifyrouteToCandidateApplicableNo"/>
+          <include name="candidateInitiateCaseIndividuallyExtended"/>
+          <include name="verifyGapReasonApplicableYes"/>
+          <include name="verifyGapReasonApplicableFormNotPresent"/>
           <include name="setup"/>
-          <include name="dragDropBrowse"/>
-          <include name="verifyInsufficientpendingForFulfilment"/>
-          <include name="verifyInsufficientDocsQuality"/>
-          <include name="submittedCasesTrackerWipCases"/>
-          <include name="verifyInsufficientVerifier"/>
+          <include name="verifyBritishClientNidPassport"/>
+          <include name="verifyBritishClientRouteToCandidateApplicableYes"/>
+          <include name="verifyrouteToCandidateButtonPresentOrNot"/>
+          <include name="verifyNidPassportDropDown"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_InitiateCasesInBulkExtended_02 -->
+      </class> <!-- com.iBridge.testcases.TC_CatSignOffApplicable_01 -->
     </classes>
-  </test> <!-- iBridge6(failed) -->
+  </test> <!-- iBridge18(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

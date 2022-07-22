@@ -816,7 +816,7 @@ public class CaseCompletion {
 
 	// Report Review--
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[17]/form[1]/table[1]/thead[1]/tr[1]/td[1]/select[1]")
+	@FindBy(how = How.XPATH, using = "//*[@id='report_severity']")
 	WebElement selectReportSeverity;
 
 	@CacheLookup

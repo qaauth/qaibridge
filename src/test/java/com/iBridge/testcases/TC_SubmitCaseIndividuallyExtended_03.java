@@ -29,7 +29,7 @@ public class TC_SubmitCaseIndividuallyExtended_03 extends BaseClass {
 		driver.get(baseURL);
 		logger.info("iBridge Url is opened");
 
-//		LoginPage login = new LoginPage(driver);
+		LoginPage login = new LoginPage(driver);
 //		login.login(username, password);
 //		logger.info("Entered Username and password!");
 

@@ -127,7 +127,7 @@ public class SubmitCaseInFolderSubmit {
 	WebElement clickLoadResultLink;
 	
 	@CacheLookup
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div/div[2]/table/tbody/tr/td[4]/a")
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div/div/div[2]/table/tbody/tr/td[4]/a")
 	WebElement clickOniBridgeFolderCountNumber;
 
 	// iBridge Uploaded Case(s) Client wise count
@@ -236,9 +236,9 @@ public class SubmitCaseInFolderSubmit {
 		Thread.sleep(3000);
 		js = (JavascriptExecutor) ldriver;
 		js.executeScript("arguments[0].click()", clickOnDashboard);
-		wait = new WebDriverWait(ldriver, 60);
-		wait.until(ExpectedConditions.visibilityOf(clickLoadResultLink));
-		JavaScriptManuplator.javaScriptExecutor(clickLoadResultLink, "arguments[0].click()", ldriver);
+//		wait = new WebDriverWait(ldriver, 60);
+//		wait.until(ExpectedConditions.visibilityOf(clickLoadResultLink));
+//		JavaScriptManuplator.javaScriptExecutor(clickLoadResultLink, "arguments[0].click()", ldriver);
 		Thread.sleep(1000);
 		wait = new WebDriverWait(ldriver, 60);
 		wait.until(ExpectedConditions.visibilityOf(clickOniBridgeFolderCountNumber));
