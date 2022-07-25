@@ -161,9 +161,9 @@ public class SignDrive_Approved_Test extends BaseClass {
 
 		// Login BGV link receive by candidate with credentials
 		
-		Thread.sleep(20000);
-		driver.navigate().to(bgvUrl);
-//		driver.get(bgvUrl);
+		Thread.sleep(5000);
+//		driver.navigate().to(bgvUrl);
+		driver.get(BgvUrl);
 		logger.info("BGV URL is opened");
 		Assert.assertTrue(newCase.bgvLogin(bgvUserName, bgvPassword), "BGV not Logged In");
 		logger.info("BGV Logged In");

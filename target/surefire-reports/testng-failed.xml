@@ -4,34 +4,26 @@
   <listeners>
     <listener class-name="com.iBridge.utilities.Reporting"/>
   </listeners>
-  <test thread-count="1" verbose="0" name="iBridge18(failed)">
+  <test thread-count="1" verbose="0" name="iBridge 23(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01">
+      <class name="com.signdrive.testcases.SignDrive_ManaulTrigger_Test">
         <methods>
-          <include name="verifyBritishClientNidPassportAndPanCard"/>
-          <include name="verifyEnpAdminLoginAccount"/>
-          <include name="verifyGapReasonApplicableNo"/>
-          <include name="verifyNidVoterIdAndDrivingLicenseDropDown"/>
-          <include name="verifyPendingSignOffBucket"/>
-          <include name="verifyiBridgeCatLoginDetails"/>
-          <include name="submitCaseIndividuallyExtended"/>
-          <include name="verifyBritishClientSignOffApplicableYes"/>
-          <include name="verifyBritishClientSignOffApplicableNo"/>
-          <include name="verifyInitiateCaseIndividuallyExtended"/>
-          <include name="verifyGapReasonApplicableFormPresent"/>
-          <include name="routeToCandidateRaiseInsuffAndFulfil"/>
-          <include name="verifyrouteToCandidateApplicableNo"/>
-          <include name="candidateInitiateCaseIndividuallyExtended"/>
-          <include name="verifyGapReasonApplicableYes"/>
-          <include name="verifyGapReasonApplicableFormNotPresent"/>
+          <include name="addAdditionalDetail"/>
+          <include name="bgvLogin"/>
+          <include name="signDrivelogin"/>
+          <include name="verifyOLAcceptedByCandidate"/>
+          <include name="instaform"/>
+          <include name="emailVerification"/>
+          <include name="pendingSignOffBucket"/>
+          <include name="fillAndSubmitForm"/>
+          <include name="alLink"/>
           <include name="setup"/>
-          <include name="verifyBritishClientNidPassport"/>
-          <include name="verifyBritishClientRouteToCandidateApplicableYes"/>
-          <include name="verifyrouteToCandidateButtonPresentOrNot"/>
-          <include name="verifyNidPassportDropDown"/>
+          <include name="verifyInstaform"/>
+          <include name="initiateViaCandidate"/>
+          <include name="uploadCTCFile"/>
         </methods>
-      </class> <!-- com.iBridge.testcases.TC_CatSignOffApplicable_01 -->
+      </class> <!-- com.signdrive.testcases.SignDrive_ManaulTrigger_Test -->
     </classes>
-  </test> <!-- iBridge18(failed) -->
+  </test> <!-- iBridge 23(failed) -->
 </suite> <!-- Failed suite [iBridge] -->

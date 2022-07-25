@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1,383.638" tests="20" errors="0" skipped="11" failures="1">
+<testsuite name="TestSuite" time="430.92" tests="12" errors="0" skipped="6" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8051848480953510439.tmp"/>
+    <property name="classworlds.conf" value="/home/sapna.chaudhary/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5105138289038755175.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -59,22 +59,13 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyiBridgeCatLoginDetails" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="5.585"/>
-  <testcase name="verifyBritishClientSignOffApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="11.068"/>
-  <testcase name="verifyInitiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="287.699"/>
-  <testcase name="verifyPendingSignOffBucket" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="17.277"/>
-  <testcase name="verifyBritishClientSignOffApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="15.512"/>
-  <testcase name="submitCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="251.169"/>
-  <testcase name="verifyBritishClientRouteToCandidateApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="15.378"/>
-  <testcase name="candidateInitiateCaseIndividuallyExtended" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="551.931"/>
-  <testcase name="routeToCandidateRaiseInsuffAndFulfil" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="228.019">
-    <failure message="element click intercepted: Element &lt;select name=&quot;Checks[9608439][INSUFF_FULFILL_ACTION]&quot; id=&quot;CaseChecks&quot;&gt;...&lt;/select&gt; is not clickable at point (467, 10). Other element would receive the click: &lt;a href=&quot;javascript:void(0);&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=101.0.4951.54)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;ARS-NBT-LAP-068&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-51-generic&apos;, java.version: &apos;1.8.0_312&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.gm2VjL}, goog:chromeOptions: {debuggerAddress: localhost:38217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2ea744e35db1e9302d0851fe02bd723f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select name="Checks[9608439][INSUFF_FULFILL_ACTION]" id="CaseChecks">...</select> is not clickable at point (467, 10). Other element would receive the click: <a href="javascript:void(0);">...</a>
-  (Session info: chrome=101.0.4951.54)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ARS-NBT-LAP-068', ip: '192.168.1.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-51-generic', java.version: '1.8.0_312'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /tmp/.com.google.Chrome.gm2VjL}, goog:chromeOptions: {debuggerAddress: localhost:38217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ea744e35db1e9302d0851fe02bd723f
+  <testcase name="signDrivelogin" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="1.624"/>
+  <testcase name="initiateViaCandidate" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="21.57"/>
+  <testcase name="uploadCTCFile" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="15.954"/>
+  <testcase name="emailVerification" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="36.857"/>
+  <testcase name="verifyOLAcceptedByCandidate" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="150.908"/>
+  <testcase name="bgvLogin" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="204.007">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[text()=&apos;Instructions to Fill Background Verification Form&apos;]&apos; (tried for 120 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Instructions to Fill Background Verification Form']' (tried for 120 second(s) with 500 milliseconds interval)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -85,83 +76,43 @@ Session ID: 2ea744e35db1e9302d0851fe02bd723f
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.iBridge.pageobject.InsufficientBridge.superAdminInsufficiencyRejectFulfillment(InsufficientBridge.java:1858)
-	at com.iBridge.testcases.TC_InsufficientBridge_01.verifyInsufficiencyRejectedFulfillment(TC_InsufficientBridge_01.java:260)
-	at com.iBridge.testcases.TC_CatSignOffApplicable_01.routeToCandidateRaiseInsuffAndFulfil(TC_CatSignOffApplicable_01.java:257)
-]]></failure>
-    <system-out><![CDATA[enp.admin@authbridge.com
-Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:119)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:125)- Antecedents to Verify all Records have filled Successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:246)- Check is successfully marked as Insufficient.!
- INFO [main] (TC_InsufficientBridge_01.java:142)- iBridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:143)- Entered Username and password!
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.signdrive.pageobject.Initiate_newcase_page.bgvLogin(Initiate_newcase_page.java:1070)
+	at com.signdrive.testcases.SignDrive_ManaulTrigger_Test.bgvLogin(SignDrive_ManaulTrigger_Test.java:155)
+</failure>
+    <system-out><![CDATA[ INFO [main] (SignDrive_ManaulTrigger_Test.java:144)- Gmail URL is opened
 enp.admin@authbridge.com
 Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:149)- Pending For Fulfilment Insufficient has Added successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:248)- Insufficient details have Submitted successfully.
- INFO [main] (TC_InsufficientBridge_01.java:166)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:167)- Bridge account has Logged successfully!
- INFO [main] (TC_InsufficientBridge_01.java:172)- Insufficiency Fulfillment details have added Successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:250)- Insufficient details have Submitted successfully.
- INFO [main] (TC_InsufficientBridge_01.java:189)- iBridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:190)- Entered Username and password!
-enp.admin@authbridge.com
-Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:195)- Ars Number has been Searched Successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:252)- Pending - Referred Back text has verified successfully.
- INFO [main] (TC_InsufficientBridge_01.java:212)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:217)- Antecedents to Verify all Records have filled Successfully!
- INFO [main] (TC_InsufficientBridge_01.java:221)- Check is successfully marked as Insufficient.!
- INFO [main] (TC_CatSignOffApplicable_01.java:254)- Check is successfully marked as Insufficient.!
- INFO [main] (TC_InsufficientBridge_01.java:234)- iBridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:235)- Entered Username and password!
-enp.admin@authbridge.com
-Auth@123
- INFO [main] (TC_InsufficientBridge_01.java:241)- Pending For Fulfilment Insufficient has Added successfully!
- INFO [main] (TC_CatSignOffApplicable_01.java:256)- Insufficient details have Submitted successfully.
- INFO [main] (TC_InsufficientBridge_01.java:257)- Bridge Url is opened
- INFO [main] (TC_InsufficientBridge_01.java:258)- Bridge account has Logged successfully!
+ INFO [main] (SignDrive_ManaulTrigger_Test.java:154)- BGV URL is opened
 ]]></system-out>
   </testcase>
-  <testcase name="verifyrouteToCandidateApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="fillAndSubmitForm" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyrouteToCandidateButtonPresentOrNot" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="pendingSignOffBucket" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyBritishClientNidPassport" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="verifyInstaform" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyNidPassportDropDown" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="instaform" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyBritishClientNidPassportAndPanCard" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="addAdditionalDetail" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
     <skipped/>
   </testcase>
-  <testcase name="verifyNidVoterIdAndDrivingLicenseDropDown" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableNo" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableFormNotPresent" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableFormPresent" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyEnpAdminLoginAccount" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyGapReasonApplicableYes" classname="com.iBridge.testcases.TC_CatSignOffApplicable_01" time="0">
+  <testcase name="alLink" classname="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" time="0">
     <skipped/>
   </testcase>
 </testsuite>

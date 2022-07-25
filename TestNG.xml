@@ -83,9 +83,9 @@
 		<classes> <class name="com.iBridge.testcases.TC_PrepaidSubmitCaseIndividuallyExtended_02" 
 		/> </classes> </test> -->
 
-	<test name="iBridge18"> <parameter name="browser" value="chrome" /> 
+	<!-- <test name="iBridge18"> <parameter name="browser" value="chrome" /> 
 		<classes> <class name="com.iBridge.testcases.TC_CatSignOffApplicable_01" 
-		/> </classes> </test>
+		/> </classes> </test> -->
 
 	<!-- SignDrive Test Cases -->
 	
@@ -110,10 +110,10 @@
 		</classes>
 	</test> -->
 	
-	<!-- <test name="iBridge 23">
+	<test name="iBridge 23">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.signdrive.testcases.SignDrive_ManaulTrigger_Test" />
 		</classes>
-	</test> -->
+	</test>
 </suite>

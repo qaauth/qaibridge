@@ -4851,3 +4851,822 @@
 2022-07-22 17:52:00,243 - iBridge -INFO - Insufficient details have Submitted successfully.
 2022-07-22 17:52:01,576 - iBridge -INFO - Bridge Url is opened
 2022-07-22 17:52:01,578 - iBridge -INFO - Bridge account has Logged successfully!
+2022-07-25 10:38:44,090 - iBridge -INFO - iBridge Url is opened
+2022-07-25 10:38:46,640 - iBridge -INFO - iBridge Cat account has Logged successfully!
+2022-07-25 10:38:47,519 - iBridge -INFO - iBridge Cat Account has Logged In Successfully!
+2022-07-25 10:38:51,876 - iBridge -INFO - SignOff Applicable Yes has configured Successfully!
+2022-07-25 10:38:51,924 - iBridge -INFO - Client updated has Successfully!
+2022-07-25 10:38:56,123 - iBridge -INFO - iBridge Cat Account has logged Successfully!
+2022-07-25 10:38:56,871 - iBridge -INFO - iBridge Url is opened
+2022-07-25 10:38:57,403 - iBridge -INFO - Email and Password has Entered Successfully!
+2022-07-25 10:39:00,845 - iBridge -INFO - BT Client has logged Successfully!
+2022-07-25 10:39:03,512 - iBridge -INFO - Clicked on bar expand
+2022-07-25 10:39:08,198 - iBridge -INFO - Clicked on Initiate Via Candidate
+2022-07-25 10:39:11,952 - iBridge -INFO - URL is opened
+2022-07-25 10:39:46,143 - iBridge -INFO - URL is opened
+2022-07-25 10:39:46,805 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:41:59,465 - iBridge -INFO - URL is opened
+2022-07-25 10:42:00,065 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:44:16,756 - iBridge -INFO - URL is opened
+2022-07-25 10:44:17,401 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:45:27,624 - iBridge -INFO - URL is opened
+2022-07-25 10:45:28,438 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:49:56,595 - iBridge -INFO - URL is opened
+2022-07-25 10:49:57,171 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:52:02,349 - iBridge -INFO - URL is opened
+2022-07-25 10:52:03,054 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:57:46,176 - iBridge -INFO - URL is opened
+2022-07-25 10:57:46,948 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:57:49,889 - iBridge -INFO - User has logged Successfully!
+2022-07-25 10:57:52,183 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 10:57:58,475 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 10:57:59,555 - iBridge -INFO - Candidate information added
+2022-07-25 10:57:59,749 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 10:58:00,543 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 10:58:08,036 - iBridge -INFO - Additional fields added
+2022-07-25 10:58:24,696 - iBridge -INFO - CTC File uploaded
+2022-07-25 10:58:27,966 - iBridge -INFO - url is opened
+2022-07-25 10:58:32,198 - iBridge -INFO - Gmail account logged in
+2022-07-25 10:59:30,801 - iBridge -INFO - URL is opened
+2022-07-25 10:59:31,422 - iBridge -INFO - SignDrive Logged In
+2022-07-25 10:59:34,202 - iBridge -INFO - User has logged Successfully!
+2022-07-25 10:59:36,405 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 10:59:42,621 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 10:59:43,772 - iBridge -INFO - Candidate information added
+2022-07-25 10:59:43,982 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 10:59:44,744 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 10:59:52,367 - iBridge -INFO - Additional fields added
+2022-07-25 11:00:07,384 - iBridge -INFO - CTC File uploaded
+2022-07-25 11:00:10,385 - iBridge -INFO - url is opened
+2022-07-25 11:00:14,716 - iBridge -INFO - Gmail account logged in
+2022-07-25 11:00:38,608 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 11:02:48,531 - iBridge -INFO - Hit the cron
+2022-07-25 11:02:48,579 - iBridge -INFO - page is not refersh
+2022-07-25 11:02:48,580 - iBridge -INFO - verify pending review
+2022-07-25 11:04:54,041 - iBridge -INFO - URL is opened
+2022-07-25 11:04:55,104 - iBridge -INFO - SignDrive Logged In
+2022-07-25 11:04:58,328 - iBridge -INFO - User has logged Successfully!
+2022-07-25 11:05:01,070 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 11:05:07,595 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 11:05:08,866 - iBridge -INFO - Candidate information added
+2022-07-25 11:05:09,051 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 11:05:09,779 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 11:05:17,489 - iBridge -INFO - Additional fields added
+2022-07-25 11:05:33,165 - iBridge -INFO - CTC File uploaded
+2022-07-25 11:05:36,070 - iBridge -INFO - url is opened
+2022-07-25 11:05:40,306 - iBridge -INFO - Gmail account logged in
+2022-07-25 11:06:08,238 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 11:08:18,127 - iBridge -INFO - Hit the cron
+2022-07-25 11:08:18,182 - iBridge -INFO - verify pending review
+2022-07-25 11:08:39,989 - iBridge -INFO - Approve Offer Letter
+2022-07-25 11:08:40,039 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 11:08:46,170 - iBridge -INFO - Gmail URL is opened
+2022-07-25 11:09:17,438 - iBridge -INFO - BGV URL is opened
+2022-07-25 11:11:32,604 - iBridge -INFO - URL is opened
+2022-07-25 11:11:33,335 - iBridge -INFO - SignDrive Logged In
+2022-07-25 11:11:36,178 - iBridge -INFO - User has logged Successfully!
+2022-07-25 11:11:38,450 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 11:11:44,919 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 11:11:46,155 - iBridge -INFO - Candidate information added
+2022-07-25 11:11:46,380 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 11:11:47,255 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 11:11:55,406 - iBridge -INFO - Additional fields added
+2022-07-25 11:12:09,835 - iBridge -INFO - CTC File uploaded
+2022-07-25 11:12:13,699 - iBridge -INFO - url is opened
+2022-07-25 11:12:17,933 - iBridge -INFO - Gmail account logged in
+2022-07-25 11:12:41,970 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 11:14:49,893 - iBridge -INFO - Hit the cron
+2022-07-25 11:14:49,954 - iBridge -INFO - verify pending review
+2022-07-25 11:15:11,383 - iBridge -INFO - Approve Offer Letter
+2022-07-25 11:15:11,439 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 11:15:19,691 - iBridge -INFO - Gmail URL is opened
+2022-07-25 11:15:50,595 - iBridge -INFO - BGV URL is opened
+2022-07-25 11:22:15,975 - iBridge -INFO - URL is opened
+2022-07-25 11:22:16,751 - iBridge -INFO - SignDrive Logged In
+2022-07-25 11:22:20,138 - iBridge -INFO - User has logged Successfully!
+2022-07-25 11:22:22,616 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 11:22:29,014 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 11:22:30,237 - iBridge -INFO - Candidate information added
+2022-07-25 11:22:30,452 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 11:22:31,268 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 11:22:39,474 - iBridge -INFO - Additional fields added
+2022-07-25 11:22:54,730 - iBridge -INFO - CTC File uploaded
+2022-07-25 11:22:57,696 - iBridge -INFO - url is opened
+2022-07-25 11:23:01,993 - iBridge -INFO - Gmail account logged in
+2022-07-25 11:23:30,250 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 11:25:39,419 - iBridge -INFO - Hit the cron
+2022-07-25 11:25:39,472 - iBridge -INFO - verify pending review
+2022-07-25 11:26:41,610 - iBridge -INFO - Approve Offer Letter
+2022-07-25 11:26:41,668 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 11:26:50,327 - iBridge -INFO - Gmail URL is opened
+2022-07-25 11:27:20,303 - iBridge -INFO - BGV URL is opened
+2022-07-25 11:27:20,303 - iBridge -INFO - BGV Logged In
+2022-07-25 11:28:45,817 - iBridge -INFO - URL is opened
+2022-07-25 11:28:46,533 - iBridge -INFO - SignDrive Logged In
+2022-07-25 11:28:49,391 - iBridge -INFO - User has logged Successfully!
+2022-07-25 11:28:51,782 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 11:28:58,362 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 11:28:59,552 - iBridge -INFO - Candidate information added
+2022-07-25 11:28:59,748 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 11:29:00,591 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 11:29:08,159 - iBridge -INFO - Additional fields added
+2022-07-25 11:29:24,091 - iBridge -INFO - CTC File uploaded
+2022-07-25 11:29:27,711 - iBridge -INFO - url is opened
+2022-07-25 11:29:31,778 - iBridge -INFO - Gmail account logged in
+2022-07-25 11:29:59,901 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 11:32:10,989 - iBridge -INFO - Hit the cron
+2022-07-25 11:32:11,044 - iBridge -INFO - verify pending review
+2022-07-25 11:32:32,203 - iBridge -INFO - Approve Offer Letter
+2022-07-25 11:32:32,253 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 11:32:40,833 - iBridge -INFO - Gmail URL is opened
+2022-07-25 11:32:55,595 - iBridge -INFO - BGV URL is opened
+2022-07-25 11:48:27,407 - iBridge -INFO - URL is opened
+2022-07-25 11:48:28,080 - iBridge -INFO - SignDrive Logged In
+2022-07-25 11:48:35,958 - iBridge -INFO - User has logged Successfully!
+2022-07-25 11:48:39,271 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 11:48:45,877 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 11:48:47,229 - iBridge -INFO - Candidate information added
+2022-07-25 11:48:47,391 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 11:48:48,138 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 11:49:12,373 - iBridge -INFO - Additional fields added
+2022-07-25 11:49:40,609 - iBridge -INFO - CTC File uploaded
+2022-07-25 11:49:48,398 - iBridge -INFO - url is opened
+2022-07-25 11:49:52,791 - iBridge -INFO - Gmail account logged in
+2022-07-25 11:52:46,048 - iBridge -INFO - URL is opened
+2022-07-25 11:52:46,686 - iBridge -INFO - SignDrive Logged In
+2022-07-25 11:52:54,051 - iBridge -INFO - User has logged Successfully!
+2022-07-25 11:52:57,235 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 11:53:04,339 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 11:53:05,537 - iBridge -INFO - Candidate information added
+2022-07-25 11:53:05,735 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 11:53:06,546 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 11:53:27,746 - iBridge -INFO - Additional fields added
+2022-07-25 11:53:52,280 - iBridge -INFO - CTC File uploaded
+2022-07-25 11:53:58,348 - iBridge -INFO - url is opened
+2022-07-25 11:54:03,339 - iBridge -INFO - Gmail account logged in
+2022-07-25 11:54:48,792 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 11:57:07,293 - iBridge -INFO - Hit the cron
+2022-07-25 11:57:07,366 - iBridge -INFO - verify pending review
+2022-07-25 11:59:06,258 - iBridge -INFO - URL is opened
+2022-07-25 11:59:06,926 - iBridge -INFO - SignDrive Logged In
+2022-07-25 11:59:18,807 - iBridge -INFO - User has logged Successfully!
+2022-07-25 11:59:24,613 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 11:59:31,578 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 11:59:32,787 - iBridge -INFO - Candidate information added
+2022-07-25 11:59:33,079 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 11:59:33,879 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 12:00:31,116 - iBridge -INFO - Additional fields added
+2022-07-25 12:01:02,216 - iBridge -INFO - CTC File uploaded
+2022-07-25 12:01:18,828 - iBridge -INFO - url is opened
+2022-07-25 12:01:23,342 - iBridge -INFO - Gmail account logged in
+2022-07-25 12:02:01,443 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 12:04:16,955 - iBridge -INFO - Hit the cron
+2022-07-25 12:04:17,006 - iBridge -INFO - verify pending review
+2022-07-25 12:04:43,547 - iBridge -INFO - Approve Offer Letter
+2022-07-25 12:04:43,652 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 12:04:52,721 - iBridge -INFO - Gmail URL is opened
+2022-07-25 12:26:35,961 - iBridge -INFO - URL is opened
+2022-07-25 12:26:36,754 - iBridge -INFO - SignDrive Logged In
+2022-07-25 12:26:42,511 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 12:26:49,060 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 12:26:50,344 - iBridge -INFO - Candidate information added
+2022-07-25 12:26:50,557 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 12:26:51,448 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 12:26:58,957 - iBridge -INFO - Initiate new case
+2022-07-25 12:27:14,729 - iBridge -INFO - CTC File uploaded
+2022-07-25 12:27:17,451 - iBridge -INFO - url is opened
+2022-07-25 12:27:22,092 - iBridge -INFO - Gmail account logged in
+2022-07-25 12:27:53,496 - iBridge -INFO - Offer Letter Reject by candidate
+2022-07-25 12:30:40,584 - iBridge -INFO - URL is opened
+2022-07-25 12:30:41,134 - iBridge -INFO - SignDrive Logged In
+2022-07-25 12:30:45,251 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 12:30:50,940 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 12:30:51,652 - iBridge -INFO - Candidate information added
+2022-07-25 12:30:51,794 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 12:32:55,351 - iBridge -INFO - URL is opened
+2022-07-25 12:32:55,870 - iBridge -INFO - SignDrive Logged In
+2022-07-25 12:32:59,855 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 12:33:05,475 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 12:33:06,192 - iBridge -INFO - Candidate information added
+2022-07-25 12:33:06,324 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 12:34:27,668 - iBridge -INFO - URL is opened
+2022-07-25 12:34:28,287 - iBridge -INFO - SignDrive Logged In
+2022-07-25 12:34:33,216 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 12:34:39,649 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 12:34:40,772 - iBridge -INFO - Candidate information added
+2022-07-25 12:34:40,941 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 12:34:41,576 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 12:34:49,491 - iBridge -INFO - Initiate new case
+2022-07-25 12:35:04,473 - iBridge -INFO - CTC File uploaded
+2022-07-25 12:35:07,909 - iBridge -INFO - url is opened
+2022-07-25 12:35:12,169 - iBridge -INFO - Gmail account logged in
+2022-07-25 12:35:44,014 - iBridge -INFO - Offer Letter Reject by candidate
+2022-07-25 12:38:20,829 - iBridge -INFO - URL is opened
+2022-07-25 12:38:21,516 - iBridge -INFO - SignDrive Logged In
+2022-07-25 12:38:26,628 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 12:38:33,130 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 12:38:34,382 - iBridge -INFO - Candidate information added
+2022-07-25 12:38:34,573 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 12:38:35,448 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 12:38:43,711 - iBridge -INFO - Additional fields added
+2022-07-25 12:38:59,022 - iBridge -INFO - CTC File uploaded
+2022-07-25 12:39:02,099 - iBridge -INFO - url is opened
+2022-07-25 12:39:06,179 - iBridge -INFO - Gmail account logged in
+2022-07-25 12:39:35,439 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 12:41:45,410 - iBridge -INFO - Hit the cron
+2022-07-25 12:41:45,462 - iBridge -INFO - verify pending review
+2022-07-25 12:42:18,813 - iBridge -INFO - Approve Offer Letter
+2022-07-25 12:42:18,866 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 12:42:24,957 - iBridge -INFO - Gmail URL is opened
+2022-07-25 12:42:56,342 - iBridge -INFO - BGV URL is opened
+2022-07-25 12:45:32,955 - iBridge -INFO - URL is opened
+2022-07-25 12:45:33,644 - iBridge -INFO - SignDrive Logged In
+2022-07-25 12:45:38,639 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 12:45:44,999 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 12:45:46,308 - iBridge -INFO - Candidate information added
+2022-07-25 12:45:46,525 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 12:45:47,316 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 12:45:55,787 - iBridge -INFO - Additional fields added
+2022-07-25 12:46:11,041 - iBridge -INFO - CTC File uploaded
+2022-07-25 12:46:14,348 - iBridge -INFO - url is opened
+2022-07-25 12:46:18,472 - iBridge -INFO - Gmail account logged in
+2022-07-25 12:46:46,043 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 12:48:56,959 - iBridge -INFO - Hit the cron
+2022-07-25 12:48:57,017 - iBridge -INFO - verify pending review
+2022-07-25 12:49:19,456 - iBridge -INFO - Approve Offer Letter
+2022-07-25 12:49:19,505 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 12:49:26,273 - iBridge -INFO - Gmail URL is opened
+2022-07-25 12:49:57,071 - iBridge -INFO - BGV URL is opened
+2022-07-25 13:04:33,723 - iBridge -INFO - URL is opened
+2022-07-25 13:04:34,450 - iBridge -INFO - SignDrive Logged In
+2022-07-25 13:04:39,413 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 13:04:45,887 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 13:04:47,065 - iBridge -INFO - Candidate information added
+2022-07-25 13:04:47,311 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 13:04:48,146 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 13:04:56,616 - iBridge -INFO - Additional fields added
+2022-07-25 13:05:13,369 - iBridge -INFO - CTC File uploaded
+2022-07-25 13:05:16,419 - iBridge -INFO - url is opened
+2022-07-25 13:05:20,674 - iBridge -INFO - Gmail account logged in
+2022-07-25 13:05:48,737 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 13:07:56,950 - iBridge -INFO - Hit the cron
+2022-07-25 13:07:57,008 - iBridge -INFO - verify pending review
+2022-07-25 13:08:19,821 - iBridge -INFO - Approve Offer Letter
+2022-07-25 13:08:19,878 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 13:08:26,263 - iBridge -INFO - Gmail URL is opened
+2022-07-25 13:08:57,570 - iBridge -INFO - BGV URL is opened
+2022-07-25 13:16:55,861 - iBridge -INFO - URL is opened
+2022-07-25 13:16:56,601 - iBridge -INFO - SignDrive Logged In
+2022-07-25 13:17:01,857 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 13:17:08,427 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 13:17:09,656 - iBridge -INFO - Candidate information added
+2022-07-25 13:17:09,919 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 13:17:10,710 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 13:17:19,359 - iBridge -INFO - Additional fields added
+2022-07-25 13:17:34,851 - iBridge -INFO - CTC File uploaded
+2022-07-25 13:17:38,160 - iBridge -INFO - url is opened
+2022-07-25 13:17:42,272 - iBridge -INFO - Gmail account logged in
+2022-07-25 13:18:10,829 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 13:20:20,418 - iBridge -INFO - Hit the cron
+2022-07-25 13:20:20,480 - iBridge -INFO - verify pending review
+2022-07-25 13:20:43,797 - iBridge -INFO - Approve Offer Letter
+2022-07-25 13:20:43,847 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 13:20:51,984 - iBridge -INFO - Gmail URL is opened
+2022-07-25 13:21:22,563 - iBridge -INFO - BGV URL is opened
+2022-07-25 13:23:06,392 - iBridge -INFO - URL is opened
+2022-07-25 13:23:07,090 - iBridge -INFO - SignDrive Logged In
+2022-07-25 13:23:12,535 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 13:23:19,339 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 13:23:20,485 - iBridge -INFO - Candidate information added
+2022-07-25 13:23:20,724 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 13:23:21,486 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 13:23:29,760 - iBridge -INFO - Additional fields added
+2022-07-25 13:23:44,889 - iBridge -INFO - CTC File uploaded
+2022-07-25 13:23:48,099 - iBridge -INFO - url is opened
+2022-07-25 13:23:52,276 - iBridge -INFO - Gmail account logged in
+2022-07-25 13:24:19,666 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 13:26:29,811 - iBridge -INFO - Hit the cron
+2022-07-25 13:26:29,864 - iBridge -INFO - verify pending review
+2022-07-25 13:26:51,035 - iBridge -INFO - Approve Offer Letter
+2022-07-25 13:26:51,087 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 13:26:57,665 - iBridge -INFO - Gmail URL is opened
+2022-07-25 13:27:29,025 - iBridge -INFO - BGV URL is opened
+2022-07-25 13:29:23,898 - iBridge -INFO - URL is opened
+2022-07-25 13:29:24,541 - iBridge -INFO - SignDrive Logged In
+2022-07-25 13:29:29,403 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 13:29:35,833 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 13:29:37,003 - iBridge -INFO - Candidate information added
+2022-07-25 13:29:37,204 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 13:29:38,155 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 13:29:46,373 - iBridge -INFO - Additional fields added
+2022-07-25 13:30:02,472 - iBridge -INFO - CTC File uploaded
+2022-07-25 13:30:05,570 - iBridge -INFO - url is opened
+2022-07-25 13:30:09,555 - iBridge -INFO - Gmail account logged in
+2022-07-25 13:30:36,801 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 13:32:47,674 - iBridge -INFO - Hit the cron
+2022-07-25 13:32:47,731 - iBridge -INFO - verify pending review
+2022-07-25 13:33:09,707 - iBridge -INFO - Approve Offer Letter
+2022-07-25 13:33:09,759 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 13:33:16,253 - iBridge -INFO - Gmail URL is opened
+2022-07-25 13:33:47,227 - iBridge -INFO - BGV URL is opened
+2022-07-25 13:38:53,425 - iBridge -INFO - URL is opened
+2022-07-25 13:38:54,481 - iBridge -INFO - SignDrive Logged In
+2022-07-25 13:38:59,220 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 13:39:05,814 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 13:39:07,130 - iBridge -INFO - Candidate information added
+2022-07-25 13:39:07,310 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 13:39:08,167 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 13:39:17,414 - iBridge -INFO - Additional fields added
+2022-07-25 13:39:31,890 - iBridge -INFO - CTC File uploaded
+2022-07-25 13:39:34,920 - iBridge -INFO - url is opened
+2022-07-25 13:39:39,024 - iBridge -INFO - Gmail account logged in
+2022-07-25 13:40:07,200 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 13:42:18,147 - iBridge -INFO - Hit the cron
+2022-07-25 13:42:18,203 - iBridge -INFO - verify pending review
+2022-07-25 13:42:40,849 - iBridge -INFO - Approve Offer Letter
+2022-07-25 13:42:40,931 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 13:42:47,155 - iBridge -INFO - Gmail URL is opened
+2022-07-25 13:43:15,853 - iBridge -INFO - BGV URL is opened
+2022-07-25 13:45:11,384 - iBridge -INFO - URL is opened
+2022-07-25 13:45:12,009 - iBridge -INFO - SignDrive Logged In
+2022-07-25 13:45:17,114 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 13:45:23,716 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 13:45:24,968 - iBridge -INFO - Candidate information added
+2022-07-25 13:45:25,157 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 13:45:25,979 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 13:45:34,376 - iBridge -INFO - Additional fields added
+2022-07-25 13:45:49,647 - iBridge -INFO - CTC File uploaded
+2022-07-25 13:45:55,355 - iBridge -INFO - url is opened
+2022-07-25 13:45:59,513 - iBridge -INFO - Gmail account logged in
+2022-07-25 13:46:27,696 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 13:48:39,087 - iBridge -INFO - Hit the cron
+2022-07-25 13:48:39,139 - iBridge -INFO - verify pending review
+2022-07-25 13:49:26,753 - iBridge -INFO - Approve Offer Letter
+2022-07-25 13:49:26,802 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 13:49:33,377 - iBridge -INFO - Gmail URL is opened
+2022-07-25 13:50:04,583 - iBridge -INFO - BGV URL is opened
+2022-07-25 13:50:04,584 - iBridge -INFO - BGV Logged In
+2022-07-25 13:51:52,919 - iBridge -INFO - URL is opened
+2022-07-25 13:51:54,147 - iBridge -INFO - SignDrive Logged In
+2022-07-25 13:51:59,541 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 13:52:05,801 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 13:52:06,974 - iBridge -INFO - Candidate information added
+2022-07-25 13:52:07,150 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 13:52:08,025 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 13:52:16,102 - iBridge -INFO - Additional fields added
+2022-07-25 13:52:31,429 - iBridge -INFO - CTC File uploaded
+2022-07-25 13:52:34,613 - iBridge -INFO - url is opened
+2022-07-25 13:52:38,706 - iBridge -INFO - Gmail account logged in
+2022-07-25 13:53:06,738 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 13:55:17,189 - iBridge -INFO - Hit the cron
+2022-07-25 13:55:17,244 - iBridge -INFO - verify pending review
+2022-07-25 13:55:40,537 - iBridge -INFO - Approve Offer Letter
+2022-07-25 13:55:40,588 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 13:55:47,150 - iBridge -INFO - Gmail URL is opened
+2022-07-25 13:56:18,341 - iBridge -INFO - BGV URL is opened
+2022-07-25 14:00:04,217 - iBridge -INFO - URL is opened
+2022-07-25 14:00:04,866 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:00:10,665 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:00:17,062 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:00:18,258 - iBridge -INFO - Candidate information added
+2022-07-25 14:00:18,435 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:00:19,286 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:00:27,180 - iBridge -INFO - Additional fields added
+2022-07-25 14:00:41,521 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:00:45,017 - iBridge -INFO - url is opened
+2022-07-25 14:00:49,094 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:01:15,890 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:03:29,152 - iBridge -INFO - Hit the cron
+2022-07-25 14:03:29,212 - iBridge -INFO - verify pending review
+2022-07-25 14:03:52,007 - iBridge -INFO - Approve Offer Letter
+2022-07-25 14:03:52,056 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 14:04:01,102 - iBridge -INFO - Gmail URL is opened
+2022-07-25 14:04:31,451 - iBridge -INFO - BGV URL is opened
+2022-07-25 14:06:24,506 - iBridge -INFO - URL is opened
+2022-07-25 14:06:25,290 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:06:30,767 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:06:37,470 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:06:38,726 - iBridge -INFO - Candidate information added
+2022-07-25 14:06:38,935 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:06:39,644 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:06:48,099 - iBridge -INFO - Additional fields added
+2022-07-25 14:07:03,420 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:07:06,583 - iBridge -INFO - url is opened
+2022-07-25 14:07:10,836 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:07:39,510 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:09:43,742 - iBridge -INFO - Hit the cron
+2022-07-25 14:09:47,708 - iBridge -INFO - verify pending review
+2022-07-25 14:09:55,094 - iBridge -INFO - Approve Offer Letter
+2022-07-25 14:09:55,145 - iBridge -INFO -  status not completed today
+2022-07-25 14:09:55,147 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 14:10:04,108 - iBridge -INFO - Gmail URL is opened
+2022-07-25 14:11:48,806 - iBridge -INFO - URL is opened
+2022-07-25 14:11:49,563 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:11:54,302 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:12:00,658 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:12:01,801 - iBridge -INFO - Candidate information added
+2022-07-25 14:12:02,061 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:12:02,804 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:12:10,956 - iBridge -INFO - Additional fields added
+2022-07-25 14:12:27,253 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:12:30,215 - iBridge -INFO - url is opened
+2022-07-25 14:12:34,282 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:13:03,412 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:15:15,369 - iBridge -INFO - Hit the cron
+2022-07-25 14:15:15,432 - iBridge -INFO - verify pending review
+2022-07-25 14:15:37,607 - iBridge -INFO - Approve Offer Letter
+2022-07-25 14:15:37,657 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 14:15:46,316 - iBridge -INFO - Gmail URL is opened
+2022-07-25 14:16:16,583 - iBridge -INFO - BGV URL is opened
+2022-07-25 14:17:35,185 - iBridge -INFO - URL is opened
+2022-07-25 14:17:35,871 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:17:40,811 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:17:47,192 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:17:48,440 - iBridge -INFO - Candidate information added
+2022-07-25 14:17:48,641 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:17:49,562 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:17:59,027 - iBridge -INFO - Additional fields added
+2022-07-25 14:18:14,745 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:18:17,960 - iBridge -INFO - url is opened
+2022-07-25 14:18:22,255 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:18:48,784 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:20:53,513 - iBridge -INFO - Hit the cron
+2022-07-25 14:20:57,777 - iBridge -INFO - verify pending review
+2022-07-25 14:22:59,807 - iBridge -INFO - URL is opened
+2022-07-25 14:23:00,544 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:23:05,518 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:23:12,280 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:23:13,785 - iBridge -INFO - Candidate information added
+2022-07-25 14:23:13,986 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:23:14,957 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:23:22,925 - iBridge -INFO - Additional fields added
+2022-07-25 14:23:39,055 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:23:42,926 - iBridge -INFO - url is opened
+2022-07-25 14:23:47,025 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:24:15,782 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:26:23,151 - iBridge -INFO - Hit the cron
+2022-07-25 14:26:23,213 - iBridge -INFO - verify pending review
+2022-07-25 14:26:45,722 - iBridge -INFO - Approve Offer Letter
+2022-07-25 14:26:45,793 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 14:26:54,892 - iBridge -INFO - Gmail URL is opened
+2022-07-25 14:27:25,042 - iBridge -INFO - BGV URL is opened
+2022-07-25 14:37:19,733 - iBridge -INFO - URL is opened
+2022-07-25 14:37:20,374 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:37:25,377 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:37:31,661 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:37:33,008 - iBridge -INFO - Candidate information added
+2022-07-25 14:37:33,226 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:37:34,042 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:37:42,312 - iBridge -INFO - Additional fields added
+2022-07-25 14:37:58,151 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:38:02,075 - iBridge -INFO - url is opened
+2022-07-25 14:38:06,294 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:38:38,045 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:40:41,523 - iBridge -INFO - Hit the cron
+2022-07-25 14:40:41,578 - iBridge -INFO - verify pending review
+2022-07-25 14:41:12,622 - iBridge -INFO - Approve Offer Letter
+2022-07-25 14:41:12,676 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 14:41:19,602 - iBridge -INFO - Gmail URL is opened
+2022-07-25 14:41:50,890 - iBridge -INFO - BGV URL is opened
+2022-07-25 14:47:09,648 - iBridge -INFO - URL is opened
+2022-07-25 14:47:10,345 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:47:14,954 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:47:21,365 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:47:22,556 - iBridge -INFO - Candidate information added
+2022-07-25 14:47:22,738 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:47:23,528 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:47:31,884 - iBridge -INFO - Additional fields added
+2022-07-25 14:47:47,223 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:47:50,538 - iBridge -INFO - url is opened
+2022-07-25 14:47:54,953 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:48:21,994 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:50:23,538 - iBridge -INFO - Hit the cron
+2022-07-25 14:50:27,715 - iBridge -INFO - verify pending review
+2022-07-25 14:50:49,037 - iBridge -INFO - Approve Offer Letter
+2022-07-25 14:50:49,084 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 14:50:57,809 - iBridge -INFO - Gmail URL is opened
+2022-07-25 14:51:28,380 - iBridge -INFO - BGV URL is opened
+2022-07-25 14:55:21,686 - iBridge -INFO - URL is opened
+2022-07-25 14:55:22,418 - iBridge -INFO - SignDrive Logged In
+2022-07-25 14:55:27,324 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 14:55:33,744 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 14:55:34,921 - iBridge -INFO - Candidate information added
+2022-07-25 14:55:35,172 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 14:55:36,015 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 14:55:43,950 - iBridge -INFO - Additional fields added
+2022-07-25 14:55:59,161 - iBridge -INFO - CTC File uploaded
+2022-07-25 14:56:02,924 - iBridge -INFO - url is opened
+2022-07-25 14:56:07,242 - iBridge -INFO - Gmail account logged in
+2022-07-25 14:56:35,970 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 14:58:37,665 - iBridge -INFO - Hit the cron
+2022-07-25 14:58:37,720 - iBridge -INFO - verify pending review
+2022-07-25 14:58:59,637 - iBridge -INFO - Approve Offer Letter
+2022-07-25 14:58:59,696 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 14:59:08,046 - iBridge -INFO - Gmail URL is opened
+2022-07-25 14:59:38,656 - iBridge -INFO - BGV URL is opened
+2022-07-25 15:26:17,204 - iBridge -INFO - URL is opened
+2022-07-25 15:26:17,810 - iBridge -INFO - SignDrive Logged In
+2022-07-25 15:26:22,484 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 15:26:28,772 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 15:26:29,911 - iBridge -INFO - Candidate information added
+2022-07-25 15:26:30,133 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 15:26:30,903 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 15:26:38,576 - iBridge -INFO - Additional fields added
+2022-07-25 15:26:55,686 - iBridge -INFO - CTC File uploaded
+2022-07-25 15:26:58,591 - iBridge -INFO - url is opened
+2022-07-25 15:27:02,763 - iBridge -INFO - Gmail account logged in
+2022-07-25 15:27:30,825 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 15:29:34,209 - iBridge -INFO - Hit the cron
+2022-07-25 15:29:34,275 - iBridge -INFO - verify pending review
+2022-07-25 15:29:46,328 - iBridge -INFO - Approve Offer Letter
+2022-07-25 15:29:46,381 - iBridge -INFO -  status not completed today
+2022-07-25 15:29:46,382 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 15:29:52,467 - iBridge -INFO - Gmail URL is opened
+2022-07-25 15:32:18,750 - iBridge -INFO - URL is opened
+2022-07-25 15:32:19,428 - iBridge -INFO - SignDrive Logged In
+2022-07-25 15:32:24,216 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 15:32:30,475 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 15:32:31,761 - iBridge -INFO - Candidate information added
+2022-07-25 15:32:31,966 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 15:32:32,801 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 15:32:41,391 - iBridge -INFO - Additional fields added
+2022-07-25 15:32:57,694 - iBridge -INFO - CTC File uploaded
+2022-07-25 15:33:01,094 - iBridge -INFO - url is opened
+2022-07-25 15:33:05,191 - iBridge -INFO - Gmail account logged in
+2022-07-25 15:33:33,306 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 15:35:38,903 - iBridge -INFO - Hit the cron
+2022-07-25 15:35:38,955 - iBridge -INFO - verify pending review
+2022-07-25 15:36:10,395 - iBridge -INFO - Approve Offer Letter
+2022-07-25 15:36:10,467 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 15:36:19,022 - iBridge -INFO - Gmail URL is opened
+2022-07-25 15:36:49,328 - iBridge -INFO - BGV URL is opened
+2022-07-25 16:09:37,850 - iBridge -INFO - URL is opened
+2022-07-25 16:09:38,562 - iBridge -INFO - SignDrive Logged In
+2022-07-25 16:09:43,700 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 16:09:50,199 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 16:09:51,516 - iBridge -INFO - Candidate information added
+2022-07-25 16:09:51,757 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 16:09:52,670 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 16:10:01,247 - iBridge -INFO - Additional fields added
+2022-07-25 16:10:18,729 - iBridge -INFO - CTC File uploaded
+2022-07-25 16:10:22,298 - iBridge -INFO - url is opened
+2022-07-25 16:10:26,780 - iBridge -INFO - Gmail account logged in
+2022-07-25 16:10:57,639 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 16:13:05,465 - iBridge -INFO - Hit the cron
+2022-07-25 16:13:05,526 - iBridge -INFO - verify pending review
+2022-07-25 16:13:39,736 - iBridge -INFO - URL is opened
+2022-07-25 16:13:40,537 - iBridge -INFO - SignDrive Logged In
+2022-07-25 16:13:45,855 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 16:13:52,853 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 16:13:53,829 - iBridge -INFO - Candidate information added
+2022-07-25 16:13:53,979 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 16:13:54,635 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 16:14:02,932 - iBridge -INFO - Additional fields added
+2022-07-25 16:14:18,894 - iBridge -INFO - CTC File uploaded
+2022-07-25 16:14:23,653 - iBridge -INFO - url is opened
+2022-07-25 16:14:27,732 - iBridge -INFO - Gmail account logged in
+2022-07-25 16:14:58,258 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 16:17:03,305 - iBridge -INFO - Hit the cron
+2022-07-25 16:17:03,364 - iBridge -INFO - verify pending review
+2022-07-25 16:17:26,306 - iBridge -INFO - Approve Offer Letter
+2022-07-25 16:17:26,359 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 16:17:36,646 - iBridge -INFO - Gmail URL is opened
+2022-07-25 16:26:11,766 - iBridge -INFO - URL is opened
+2022-07-25 16:26:12,477 - iBridge -INFO - SignDrive Logged In
+2022-07-25 16:26:17,659 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 16:26:24,176 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 16:26:25,503 - iBridge -INFO - Candidate information added
+2022-07-25 16:26:25,686 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 16:26:26,647 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 16:26:35,201 - iBridge -INFO - Additional fields added
+2022-07-25 16:26:52,596 - iBridge -INFO - CTC File uploaded
+2022-07-25 16:26:55,653 - iBridge -INFO - url is opened
+2022-07-25 16:26:59,994 - iBridge -INFO - Gmail account logged in
+2022-07-25 16:27:29,879 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 16:29:36,475 - iBridge -INFO - Hit the cron
+2022-07-25 16:29:36,525 - iBridge -INFO - verify pending review
+2022-07-25 16:30:03,128 - iBridge -INFO - Approve Offer Letter
+2022-07-25 16:30:03,184 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 16:30:11,776 - iBridge -INFO - Gmail URL is opened
+2022-07-25 16:30:23,231 - iBridge -INFO - BGV URL is opened
+2022-07-25 16:31:01,709 - iBridge -INFO - URL is opened
+2022-07-25 16:31:02,534 - iBridge -INFO - SignDrive Logged In
+2022-07-25 16:31:08,191 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 16:31:14,894 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 16:31:16,311 - iBridge -INFO - Candidate information added
+2022-07-25 16:31:16,512 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 16:31:17,422 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 16:31:26,196 - iBridge -INFO - Additional fields added
+2022-07-25 16:31:42,971 - iBridge -INFO - CTC File uploaded
+2022-07-25 16:31:47,633 - iBridge -INFO - url is opened
+2022-07-25 16:31:51,912 - iBridge -INFO - Gmail account logged in
+2022-07-25 16:32:23,155 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 16:34:28,990 - iBridge -INFO - Hit the cron
+2022-07-25 16:34:29,047 - iBridge -INFO - verify pending review
+2022-07-25 16:34:52,174 - iBridge -INFO - Approve Offer Letter
+2022-07-25 16:34:52,224 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 16:35:00,648 - iBridge -INFO - Gmail URL is opened
+2022-07-25 16:37:30,494 - iBridge -INFO - URL is opened
+2022-07-25 16:37:31,189 - iBridge -INFO - SignDrive Logged In
+2022-07-25 16:37:36,338 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 16:37:43,115 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 16:37:44,457 - iBridge -INFO - Candidate information added
+2022-07-25 16:37:44,667 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 16:37:45,575 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 16:37:52,913 - iBridge -INFO - Additional fields added
+2022-07-25 16:38:08,816 - iBridge -INFO - CTC File uploaded
+2022-07-25 16:38:12,261 - iBridge -INFO - url is opened
+2022-07-25 16:38:16,800 - iBridge -INFO - Gmail account logged in
+2022-07-25 16:38:47,669 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 16:40:51,379 - iBridge -INFO - Hit the cron
+2022-07-25 16:40:55,793 - iBridge -INFO - verify pending review
+2022-07-25 16:41:11,770 - iBridge -INFO - Approve Offer Letter
+2022-07-25 16:41:11,822 - iBridge -INFO -  status not completed today
+2022-07-25 16:41:11,827 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 16:41:20,711 - iBridge -INFO - Gmail URL is opened
+2022-07-25 16:42:04,210 - iBridge -INFO - URL is opened
+2022-07-25 16:42:04,915 - iBridge -INFO - SignDrive Logged In
+2022-07-25 16:42:10,073 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 16:42:16,618 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 16:42:17,913 - iBridge -INFO - Candidate information added
+2022-07-25 16:42:18,127 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 16:42:18,966 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 16:42:27,785 - iBridge -INFO - Additional fields added
+2022-07-25 16:42:43,705 - iBridge -INFO - CTC File uploaded
+2022-07-25 16:42:47,190 - iBridge -INFO - url is opened
+2022-07-25 16:42:51,383 - iBridge -INFO - Gmail account logged in
+2022-07-25 16:43:22,783 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 16:45:29,453 - iBridge -INFO - Hit the cron
+2022-07-25 16:45:29,506 - iBridge -INFO - verify pending review
+2022-07-25 16:45:59,959 - iBridge -INFO - Approve Offer Letter
+2022-07-25 16:46:00,019 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 16:46:10,466 - iBridge -INFO - Gmail URL is opened
+2022-07-25 16:46:28,372 - iBridge -INFO - BGV URL is opened
+2022-07-25 16:59:42,262 - iBridge -INFO - URL is opened
+2022-07-25 16:59:43,097 - iBridge -INFO - SignDrive Logged In
+2022-07-25 16:59:48,590 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 16:59:55,795 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 16:59:57,112 - iBridge -INFO - Candidate information added
+2022-07-25 16:59:57,325 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 16:59:58,176 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:00:06,230 - iBridge -INFO - Additional fields added
+2022-07-25 17:00:21,977 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:00:24,609 - iBridge -INFO - url is opened
+2022-07-25 17:00:28,999 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:00:59,095 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 17:02:59,661 - iBridge -INFO - Hit the cron
+2022-07-25 17:03:03,557 - iBridge -INFO - verify pending review
+2022-07-25 17:03:26,382 - iBridge -INFO - Approve Offer Letter
+2022-07-25 17:03:26,428 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 17:03:34,902 - iBridge -INFO - Gmail URL is opened
+2022-07-25 17:20:33,566 - iBridge -INFO - URL is opened
+2022-07-25 17:20:34,313 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:20:39,522 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:20:46,147 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:20:47,374 - iBridge -INFO - Candidate information added
+2022-07-25 17:20:47,573 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:20:48,374 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:20:57,107 - iBridge -INFO - Additional fields added
+2022-07-25 17:21:13,053 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:21:16,471 - iBridge -INFO - url is opened
+2022-07-25 17:21:20,903 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:21:50,081 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 17:23:54,072 - iBridge -INFO - Hit the cron
+2022-07-25 17:23:54,128 - iBridge -INFO - verify pending review
+2022-07-25 17:24:10,759 - iBridge -INFO - Approve Offer Letter
+2022-07-25 17:24:10,812 - iBridge -INFO -  status not completed today
+2022-07-25 17:24:10,813 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 17:24:18,315 - iBridge -INFO - Gmail URL is opened
+2022-07-25 17:24:37,643 - iBridge -INFO - URL is opened
+2022-07-25 17:24:38,235 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:24:43,386 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:24:49,935 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:24:51,117 - iBridge -INFO - Candidate information added
+2022-07-25 17:24:51,300 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:24:52,100 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:25:00,670 - iBridge -INFO - Additional fields added
+2022-07-25 17:25:16,381 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:25:19,748 - iBridge -INFO - url is opened
+2022-07-25 17:25:23,860 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:25:52,959 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 17:27:56,050 - iBridge -INFO - Hit the cron
+2022-07-25 17:28:00,345 - iBridge -INFO - verify pending review
+2022-07-25 17:28:22,745 - iBridge -INFO - Approve Offer Letter
+2022-07-25 17:28:22,800 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 17:28:30,610 - iBridge -INFO - Gmail URL is opened
+2022-07-25 17:28:41,637 - iBridge -INFO - BGV URL is opened
+2022-07-25 17:33:57,742 - iBridge -INFO - URL is opened
+2022-07-25 17:33:58,478 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:34:04,285 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:34:10,725 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:34:11,879 - iBridge -INFO - Candidate information added
+2022-07-25 17:34:12,104 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:34:12,871 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:34:21,221 - iBridge -INFO - Additional fields added
+2022-07-25 17:34:38,665 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:34:41,578 - iBridge -INFO - url is opened
+2022-07-25 17:34:45,946 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:35:14,230 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 17:37:20,247 - iBridge -INFO - Hit the cron
+2022-07-25 17:37:20,306 - iBridge -INFO - verify pending review
+2022-07-25 17:37:42,449 - iBridge -INFO - Approve Offer Letter
+2022-07-25 17:37:42,499 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 17:37:50,448 - iBridge -INFO - Gmail URL is opened
+2022-07-25 17:41:53,467 - iBridge -INFO - URL is opened
+2022-07-25 17:41:54,171 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:42:30,661 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:42:37,288 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:42:38,436 - iBridge -INFO - Candidate information added
+2022-07-25 17:42:38,644 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:42:39,599 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:43:07,269 - iBridge -INFO - Additional fields added
+2022-07-25 17:43:44,589 - iBridge -INFO - URL is opened
+2022-07-25 17:43:45,325 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:43:53,436 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:44:00,534 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:44:01,396 - iBridge -INFO - Candidate information added
+2022-07-25 17:44:01,543 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:44:02,205 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:44:27,753 - iBridge -INFO - Additional fields added
+2022-07-25 17:44:52,209 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:45:02,522 - iBridge -INFO - url is opened
+2022-07-25 17:45:06,743 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:47:06,098 - iBridge -INFO - URL is opened
+2022-07-25 17:47:06,809 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:47:11,803 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:47:18,213 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:47:19,348 - iBridge -INFO - Candidate information added
+2022-07-25 17:47:19,604 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:47:20,412 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:47:31,662 - iBridge -INFO - Additional fields added
+2022-07-25 17:47:47,496 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:47:50,607 - iBridge -INFO - url is opened
+2022-07-25 17:47:55,144 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:48:46,476 - iBridge -INFO - URL is opened
+2022-07-25 17:48:47,123 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:48:52,173 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:48:58,725 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:48:59,972 - iBridge -INFO - Candidate information added
+2022-07-25 17:49:00,186 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:49:01,011 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:49:09,848 - iBridge -INFO - Additional fields added
+2022-07-25 17:49:26,854 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:49:30,223 - iBridge -INFO - url is opened
+2022-07-25 17:49:34,478 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:50:04,683 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 17:52:12,072 - iBridge -INFO - Hit the cron
+2022-07-25 17:52:12,119 - iBridge -INFO - verify pending review
+2022-07-25 17:53:40,577 - iBridge -INFO - URL is opened
+2022-07-25 17:53:41,305 - iBridge -INFO - SignDrive Logged In
+2022-07-25 17:53:46,286 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 17:53:52,864 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 17:53:54,127 - iBridge -INFO - Candidate information added
+2022-07-25 17:53:54,300 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 17:53:55,033 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 17:54:03,533 - iBridge -INFO - Additional fields added
+2022-07-25 17:54:18,485 - iBridge -INFO - CTC File uploaded
+2022-07-25 17:54:21,502 - iBridge -INFO - url is opened
+2022-07-25 17:54:25,902 - iBridge -INFO - Gmail account logged in
+2022-07-25 17:54:55,084 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 17:56:56,176 - iBridge -INFO - Hit the cron
+2022-07-25 17:57:00,404 - iBridge -INFO - verify pending review
+2022-07-25 17:57:22,927 - iBridge -INFO - Approve Offer Letter
+2022-07-25 17:57:22,988 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 17:57:29,831 - iBridge -INFO - Gmail URL is opened
+2022-07-25 17:57:41,622 - iBridge -INFO - BGV URL is opened
+2022-07-25 18:13:01,914 - iBridge -INFO - URL is opened
+2022-07-25 18:13:02,586 - iBridge -INFO - SignDrive Logged In
+2022-07-25 18:13:07,485 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 18:13:13,870 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 18:13:15,027 - iBridge -INFO - Candidate information added
+2022-07-25 18:13:15,230 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 18:13:16,026 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 18:13:23,793 - iBridge -INFO - Additional fields added
+2022-07-25 18:13:40,968 - iBridge -INFO - CTC File uploaded
+2022-07-25 18:13:44,231 - iBridge -INFO - url is opened
+2022-07-25 18:13:48,263 - iBridge -INFO - Gmail account logged in
+2022-07-25 18:14:17,067 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 18:16:24,469 - iBridge -INFO - Hit the cron
+2022-07-25 18:16:24,542 - iBridge -INFO - verify pending review
+2022-07-25 18:16:53,537 - iBridge -INFO - Approve Offer Letter
+2022-07-25 18:16:53,636 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 18:17:03,369 - iBridge -INFO - Gmail URL is opened
+2022-07-25 18:17:11,325 - iBridge -INFO - BGV URL is opened
+2022-07-25 18:21:02,788 - iBridge -INFO - URL is opened
+2022-07-25 18:21:03,608 - iBridge -INFO - SignDrive Logged In
+2022-07-25 18:21:08,966 - iBridge -INFO - Clicked on expand bar and initiate new case
+2022-07-25 18:21:15,106 - iBridge -INFO - Clicked on checkwise and fill the checkwise counts
+2022-07-25 18:21:16,267 - iBridge -INFO - Candidate information added
+2022-07-25 18:21:16,470 - iBridge -INFO - Enter Employee ID and Client Name
+2022-07-25 18:21:17,284 - iBridge -INFO - Clicked on add to Queue Button has Successfully!
+2022-07-25 18:21:25,221 - iBridge -INFO - Additional fields added
+2022-07-25 18:21:41,176 - iBridge -INFO - CTC File uploaded
+2022-07-25 18:21:44,351 - iBridge -INFO - url is opened
+2022-07-25 18:21:48,594 - iBridge -INFO - Gmail account logged in
+2022-07-25 18:22:18,033 - iBridge -INFO - Offer Letter Signed By Candidate
+2022-07-25 18:24:23,779 - iBridge -INFO - Hit the cron
+2022-07-25 18:24:23,828 - iBridge -INFO - verify pending review
+2022-07-25 18:24:48,886 - iBridge -INFO - Approve Offer Letter
+2022-07-25 18:24:48,943 - iBridge -INFO - Verify Review status Enterprice User 
+2022-07-25 18:24:57,183 - iBridge -INFO - Gmail URL is opened
+2022-07-25 18:25:07,993 - iBridge -INFO - BGV URL is opened

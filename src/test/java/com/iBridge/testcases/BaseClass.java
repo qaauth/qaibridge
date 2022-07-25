@@ -75,7 +75,7 @@ public class BaseClass {
 	public String cronUrl = readconfig.getCronUrl();
 
 	// BGV Url
-	public String bgvUrl = readconfig.getbgvUrl();
+	public String BgvUrl = readconfig.getbgvUrl();
 	
 	public static WebDriver driver;
 	public static Logger logger;

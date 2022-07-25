@@ -149,9 +149,8 @@ public class SignDrive_ManaulTrigger_Test extends BaseClass {
 		
 // 		Login BGV link receive by candidate with credentials
 		
-		Thread.sleep(20000);
-		driver.navigate().to(bgvUrl);
-//		driver.get(bgvUrl);
+		driver.navigate().to(BgvUrl);
+//    	driver.get(BgvUrl);
 		logger.info("BGV URL is opened");
 		Assert.assertTrue(newCase.bgvLogin(bgvUserName, bgvPassword), "BGV not Logged In");
 		logger.info("BGV Logged In");

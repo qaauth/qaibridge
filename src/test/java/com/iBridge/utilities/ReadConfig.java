@@ -267,7 +267,8 @@ public class ReadConfig {
 	//BGV Url
 	public String getbgvUrl()
 	{
-		return pro.getProperty("BgvUrl");
+		String BgvUrl = pro.getProperty("BgvUrl");
+		return BgvUrl;
 	}
 	
 }

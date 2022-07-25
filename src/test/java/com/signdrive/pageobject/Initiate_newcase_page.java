@@ -270,6 +270,14 @@ public class Initiate_newcase_page extends BaseClass {
 	// BGV Login credentials
 
 	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/nav/div[2]/div/ul/li[3]/a/span")
+	WebElement profile;
+	
+	@CacheLookup
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/nav/div[2]/div/ul/li[3]/ul/li[3]/a")
+	WebElement logoutPrifileButton;
+	
+	@CacheLookup
 	@FindBy(xpath = "//*[@id='username']")
 	WebElement bgvUsernameField;
 
@@ -1000,11 +1008,8 @@ public class Initiate_newcase_page extends BaseClass {
 		ldriver.switchTo().window(tabs.get(1));
 		ldriver.get(cronUrl);
 		Thread.sleep(5000);
-		System.out.println("-------------CRON start value from UI::" + cronRun.getText() + "-------------");
-		Thread.sleep(5000);
 		wait = new WebDriverWait(ldriver, 300);
 		wait.until(ExpectedConditions.visibilityOf(cronRun));
-		System.out.println("-------------CRON End value from UI::" + cronRun.getText() + "-------------");
 		ldriver.close();
 	}
 
@@ -1013,12 +1018,12 @@ public class Initiate_newcase_page extends BaseClass {
 
 		String statusCronHit = ldriver.findElement(By.xpath(hitCronStatusStart.concat(newName).concat(hitCronEnd)))
 				.getText();
-		if (statusCronHit.equals(config.getHitCronStatus())) {
-			return true;
-
-		} else {
-			logger.info("page is not refersh");
-		}
+//		if (statusCronHit.equals(config.getHitCronStatus())) {
+//			return true;
+//
+//		} else {
+//			logger.info("page is not refersh");
+//		}
 		return false;
 	}
 
@@ -1053,9 +1058,13 @@ public class Initiate_newcase_page extends BaseClass {
 	// BGV Login
 	public boolean bgvLogin(String username, String password) throws InterruptedException {
 
-		Thread.sleep(5000);
+		Thread.sleep(3000);
+		profile.click();
+		logoutPrifileButton.click();
 		bgvUsernameField.sendKeys(username);
+		Thread.sleep(1000);
 		bgvPasswordField.sendKeys(password);
+		Thread.sleep(1000);
 		bgv_Login_Btn.click();
 		wait = new WebDriverWait(ldriver, 120);
 		wait.until(ExpectedConditions.visibilityOf(bgvLoginScreenMsg));
